@@ -40,6 +40,10 @@
 - [Aging as a risk factor for neurodegenerative disease](ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
 
 - [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md)
+
+# Cellular Senescence
+
+- [Epigenetic Basis of Cellular Senescence and Its Implications in Aging](senescence/epigenetic_basis_of_senescence_implications_in_aging.md)
  
 - [Four faces of cellular senescence](senescence/Four_faces_of_cellular_senescence.md)
 
