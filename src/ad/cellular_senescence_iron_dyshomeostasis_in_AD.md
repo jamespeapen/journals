@@ -2,9 +2,12 @@ March 18, 2021
 
 # Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease
 
-[Pharmaceuticals](https://doi.org/10.3390/ph12020093)
-
 June 19, 2019
+
+[Pharmaceuticals](https://doi.org/10.3390/ph12020093)
+> Masaldan S, Belaidi AA, Ayton S, Bush AI. Cellular Senescence and Iron
+> Dyshomeostasis in Alzheimer's Disease. Pharmaceuticals (Basel). 2019 Jun
+> 19;12(2):93. doi: 10.3390/ph12020093. PMID: 31248150; PMCID: PMC6630536.
 
 The accumulation of Aβ has been the primary target of therapies, but attempt to
 lower the plaque burden have not been successful in lowering cognitive decline.
@@ -46,9 +49,9 @@ neurodegeneration and that the removal of senescent cells in the brain leads to
 improved cognition in mice models.
 
 Senescent cells in vitro show iron dyshomeostasis and their abundance could
-influence iron levels in ageing tissue. Iron promotes senescence in
-cultured microglia. Chelators can reduce and prevent the accumulation of iron
-and ferritin seen in senescence in vitro. Chelating iron in *C. elegans* led to
+influence iron levels in ageing tissue. Iron promotes senescence in cultured
+microglia. Chelators can reduce and prevent the accumulation of iron and
+ferritin seen in senescence in vitro. Chelating iron in *C. elegans* led to
 reduction in iron-dependent oxidation and cell death. The SASP may be a ferritin
 expression driver in neurons and glia which makes them more susceptible to
 ferroptosis - iron mediated cell death.
