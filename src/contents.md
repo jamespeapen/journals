@@ -2,6 +2,8 @@
 
 ### Cellular Senescence
 
+  - [A multidimensional systems biology analysis of cellular senescence in aging and disease ](https://doi.org/10.1186/s13059-020-01990-9)
+
 - [Epigenetic Basis of Cellular Senescence and Its Implications in Aging](senescence/epigenetic_basis_of_senescence_implications_in_aging.md)
 
 - [Four faces of cellular senescence](senescence/Four_faces_of_cellular_senescence.md)
