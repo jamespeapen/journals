@@ -9,7 +9,7 @@
 - [Four faces of cellular senescence](senescence/Four_faces_of_cellular_senescence.md)
 
 - [Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts](senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.md)
-- [Cellular senescence and failure of myelin repair in MS](ad/Cellular_senescence_and_failure_of_myelin_repair_in_MS.md)
+- [Cellular senescence and failure of myelin repair in MS](senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.md)
 
 - [Astrocyte senescence promotes glutamate toxicity in cortical neurons](ad/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.md)
 
