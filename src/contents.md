@@ -1,6 +1,6 @@
-# Summary
+# contents
 
-### Cellular Senescence
+## Cellular Senescence
 
 - [A multidimensional systems biology analysis of cellular senescence in aging and disease](senescence/multidim_systems_bio_analysis_senescence_aging_disease.md)
 
@@ -19,15 +19,15 @@
 
 - [Cellular senescence: Defining a path forward](senescence/Cellular_senescence_Defining_a_path_forward.md)
 
-### Neuroscience
+## Neuroscience
 
-#### Neurodegeneration
+### Neurodegeneration
 
 - [Cellular Senescence in Neurodegenerative Diseases](ad/Cellular_Senescence_in_Neurodegenerative_Diseases.md)
 
 - [Aging as a risk factor for neurodegenerative disease](ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
 
-##### Alzheimer’s Disease
+#### Alzheimer’s Disease
 
 - [The Genetic Landscape of Alzheimer’s Disease](ad/The_Genetic_Landscape_of_AD.md)
 
@@ -53,12 +53,16 @@
 
 - [Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease](ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.md)
 
-###### Cellular senescence and AD
+##### Cellular senescence and AD
 
   - [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md)
+
   - [Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease](ad/cellular_senescence_iron_dyshomeostasis_in_AD.md)
+
   - [Cellular senescence and Alzheimer disease: the egg and the chicken scenario](ad/Cellular_senescence_and_AD.md)
+
   - [Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis](ad/Senescence_as_an_Amyloid_Cascade.md)
+
   - [Astrocyte Senescence and Alzheimer’s Disease: A Review](ad/Astrocyte_Senescence_and_AD.md)
 
 ### Transcriptomics
