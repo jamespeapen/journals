@@ -1,9 +1,16 @@
-# Four faces of cellular senescence
-
 January 20, 2021
 
+# Four faces of cellular senescence
+
+February 21, 2011
+
 [Full text](https://rupress.org/jcb/article/192/4/547/36360/Four-faces-of-cellular-senescenceFour-faces-of)
-## Abstract 
+
+> Rodier F, Campisi J. Four faces of cellular senescence. J Cell Biol. 2011 Feb
+> 21;192(4):547-56. doi: 10.1083/jcb.201009094. Epub 2011 Feb 14. PMID:
+> 21321098; PMCID: PMC3044123.
+
+## Abstract
 
 Cellular senescence is an important mechanism for preventing the proliferation
 of potential cancer cells. Recently, however, it has become apparent that this
