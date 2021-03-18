@@ -2,9 +2,9 @@ December 11, 2020
 
 # Cellular senescence: Defining a path forward
 
-October 31, 2019
-
 [Full Text](https://doi.org/10.1016/j.cell.2019.10.005)
+
+October 31, 2019
 
 > Gorgoulis V, Adams PD, Alimonti A, Bennett DC, Bischof O, Bishop C, Campisi J,
 > Collado M, Evangelou K, Ferbeyre G, Gil J, Hara E, Krizhanovsky V, Jurk D,

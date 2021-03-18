@@ -2,9 +2,9 @@ March 8, 2021
 
 # Astrocyte senescence promotes glutamate toxicity in cortical neurons
 
-January 16, 2020
-
 [PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227887)
+
+January 16, 2020
 
 > Limbad C, Oron TR, Alimirah F, Davalos AR, Tracy TE, Gan L, Desprez PY,
 > Campisi J. Astrocyte senescence promotes glutamate toxicity in cortical
