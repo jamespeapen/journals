@@ -1,8 +1,8 @@
-# Contents
+# Summary
 
 ### Cellular Senescence
 
-  - [A multidimensional systems biology analysis of cellular senescence in aging and disease ](https://doi.org/10.1186/s13059-020-01990-9)
+- [A multidimensional systems biology analysis of cellular senescence in aging and disease](senescence/multidim_systems_bio_analysis_senescence_aging_disease.md)
 
 - [Epigenetic Basis of Cellular Senescence and Its Implications in Aging](senescence/epigenetic_basis_of_senescence_implications_in_aging.md)
 
@@ -15,11 +15,19 @@
 
 - [Cellular senescence: Immunosurveillance and future immunotherapy](senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.md)
 
+- [Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor](senescence/Senescence-Associated_Secretory_Phenotypes.md)
+
+- [Cellular senescence: Defining a path forward](senescence/Cellular_senescence_Defining_a_path_forward.md)
+
 ### Neuroscience
 
-#### Alzheimer’s Disease
+#### Neurodegeneration
 
-- [Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease](ad/cellular_senescence_iron_dyshomeostasis_in_AD.md)
+- [Cellular Senescence in Neurodegenerative Diseases](ad/Cellular_Senescence_in_Neurodegenerative_Diseases.md)
+
+- [Aging as a risk factor for neurodegenerative disease](ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
+
+##### Alzheimer’s Disease
 
 - [The Genetic Landscape of Alzheimer’s Disease](ad/The_Genetic_Landscape_of_AD.md)
 
@@ -29,21 +37,13 @@
 
 - [Genetic meta-analysis of diagnosed Alzheimer’s disease](ad/Genetic_meta-analysis_of_diagnosed_AD.md)
 
+- [The Cellular Phase of Alzheimers Disease](ad/The_Cellular_Phase_of_AD.md)
+
 - [Single-cell transcriptomic analysis of Alzheimer’s disease](ad/Single-cell_transcriptomic_analysis_of_AD.md)
 
 - [Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease](./ad/scRNA_seq_human_microglia_uncovers_subset_associated_with_AD.md)
 
-- [The Cellular Phase of Alzheimers Disease](ad/The_Cellular_Phase_of_AD.md)
-
 - [Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation](ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.md)
-
-- [Cellular Senescence in Neurodegenerative Diseases](ad/Cellular_Senescence_in_Neurodegenerative_Diseases.md)
-
-- [Cellular senescence and Alzheimer disease: the egg and the chicken scenario](ad/Cellular_senescence_and_AD.md)
-
-- [Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis](ad/Senescence_as_an_Amyloid_Cascade.md)
-
-- [Astrocyte Senescence and Alzheimer’s Disease: A Review](ad/Astrocyte_Senescence_and_AD.md)
 
 - [Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease](ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.md)
 
@@ -51,18 +51,18 @@
 
 - [Telomere Attrition in Neurodegenerative Disorders](ad/Telomere_Attrition_in_Neurodegenerative_Disorders.md)
 
-- [Cellular senescence: Defining a path forward](senescence/Cellular_senescence_Defining_a_path_forward.md)
-
-- [Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor](senescence/Senescence-Associated_Secretory_Phenotypes.md)
 - [Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease](ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.md)
 
-- [Aging as a risk factor for neurodegenerative disease](ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
-
-- [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md)
+- [Cellular senescence and AD]()
+  - [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md)
+  - [Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease](ad/cellular_senescence_iron_dyshomeostasis_in_AD.md)
+  - [Cellular senescence and Alzheimer disease: the egg and the chicken scenario](ad/Cellular_senescence_and_AD.md)
+  - [Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis](ad/Senescence_as_an_Amyloid_Cascade.md)
+  - [Astrocyte Senescence and Alzheimer’s Disease: A Review](ad/Astrocyte_Senescence_and_AD.md)
 
 ### Transcriptomics
 
-#### Single-nucleus RNA-seq
+- [Single-nucleus RNA-seq]()
 
 - [Systematic comparison of single-cell and single-nucleus RNA-sequencing methods](snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
 
