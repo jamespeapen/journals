@@ -2,7 +2,7 @@ February 26, 2020
 
 # Cellular senescence and failure of myelin repair in MS
 
-[Full text](https://doi.org/10.1016/j.mad.2020.111366)
+[Mechanisms of Ageing and Development](https://doi.org/10.1016/j.mad.2020.111366)
 
 December 2020
 
@@ -25,7 +25,7 @@ in the BBB increases its permeability and the entry of fibrinogen can interfere
 with the differentiation of OPCs and affect remyelination. Treatments with
 senolytics reduced neuroinflammation and cognitive deficits which shows that
 senescence could contribute to the state of neuroinflammation and to the loss of
-cognitive function. 
+cognitive function.
 
 Myelin is negatively related to age and loss of myelin could contribute to AD
 pathology. A number of cell types have been shown to become senescent on
