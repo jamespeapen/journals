@@ -2,7 +2,14 @@ January 20, 2021
 
 # Astrocyte Senescence and Alzheimer’s Disease: A Review
 
-[Full Text](https://www.frontiersin.org/articles/10.3389/fnagi.2020.00148/full)
+[Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fnagi.2020.00148/full)
+
+June 9, 2020
+
+> Han X, Zhang T, Liu H, Mi Y, Gou X. Astrocyte Senescence and Alzheimer's
+> Disease: A Review. Front Aging Neurosci. 2020 Jun 9;12:148. doi:
+> 10.3389/fnagi.2020.00148. PMID:
+> [32581763](https://pubmed.ncbi.nlm.nih.gov/32581763); PMCID: PMC7297132.
 
 This review examines findings about astrocyte senescence and its relationship
 with AD as well as the potential therapeutic value this research. 

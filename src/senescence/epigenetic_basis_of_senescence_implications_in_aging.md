@@ -8,7 +8,8 @@ November 24, 2017
 
 > Nacarelli T, Liu P, Zhang R. Epigenetic Basis of Cellular Senescence and Its
 > Implications in Aging. Genes (Basel). 2017 Nov 24;8(12):343. doi:
-> 10.3390/genes8120343. PMID: 29186801; PMCID: PMC5748661.
+> 10.3390/genes8120343. PMID:
+> [29186801](https://pubmed.ncbi.nlm.nih.gov/29186801); PMCID: PMC5748661.
 
 Cellular senescence serves an important tumour supressive role and prevents
 stressed cells from turning oncogenic and proliferating.

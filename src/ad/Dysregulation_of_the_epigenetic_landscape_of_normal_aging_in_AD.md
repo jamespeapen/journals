@@ -4,9 +4,18 @@ Mar 16, 2021
 
 [Nature Neuroscience](https://www.nature.com/articles/s41593-018-0101-9)
 
+April 21, 2018
+
+> Nativio R, Donahue G, Berson A, Lan Y, Amlie-Wolf A, Tuzer F, Toledo JB, Gosai
+> SJ, Gregory BD, Torres C, Trojanowski JQ, Wang LS, Johnson FB, Bonini NM,
+> Berger SL. Dysregulation of the epigenetic landscape of normal aging in
+> Alzheimer's disease. Nat Neurosci. 2018 Apr;21(4):497-505. doi:
+> 10.1038/s41593-018-0101-9. Epub 2018 Mar 5. Erratum in: Nat Neurosci. 2018 Mar
+> 19;: PMID: [29507413](https://pubmed.ncbi.nlm.nih.gov/29507413); PMCID: PMC6124498.
+
 This paper examines the genome-wide enrichment of H4K16ac, an epigenetic
 modification to the DNA packaging protein H4. H4K16ac has both transcriptional
-activation and repression activities. 
+activation and repression activities.
 
 H4K16ac regulates chromatin compaction, gene expression, stress response and DNA
 damage repair. Modulators of H4K16ac play a role in whole organism ageing and
@@ -35,7 +44,7 @@ differentially expressed genes.
 ## H4K16ac changes during normal ageing negatively correlated with changes in AD
 
 Checking if the direction of the changes is correlated with the processes of
-ageing and disease: 
+ageing and disease:
 
 Pairwise comparisons showed a positive linear correlation between ageing and
 ageing mixed with disease - demonstrates a component of normal ageing in AD.

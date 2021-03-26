@@ -10,7 +10,7 @@ August 11, 2020
 > P, Jin W, Ni T. Single-Cell Transcriptome Analysis Reveals Six Subpopulations
 > Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts.
 > Front Genet. 2020 Aug 11;11:867. doi: 10.3389/fgene.2020.00867. PMID:
-> 32849838; PMCID: PMC7431633.
+> [32849838](https://pubmed.ncbi.nlm.nih.gov/32849838); PMCID: PMC7431633.
 
 They conducted snRNA-seq on Mouse Embryonic Fibroblasts (MEFs) to examine the
 heterogeneity of single MEFs during cellular senescence. PCA showed that they

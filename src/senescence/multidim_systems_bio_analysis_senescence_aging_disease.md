@@ -10,8 +10,8 @@ April 07, 2020
 > Chatsirisupachai K, Johnson E, Murray A, Shields S, Tejada-Martinez D,
 > Thornton D, Fraifeld VE, Bishop CL, de Magalhães JP. A multidimensional
 > systems biology analysis of cellular senescence in aging and disease. Genome
-> Biol. 2020 Apr 7;21(1):91. doi: 10.1186/s13059-020-01990-9. PMID: 32264951;
-> PMCID: PMC7333371.
+> Biol. 2020 Apr 7;21(1):91. doi: 10.1186/s13059-020-01990-9. PMID:
+> [32264951](https://pubmed.ncbi.nlm.nih.gov/32264951); PMCID: PMC7333371.
 
 ## Introduction
 

@@ -10,7 +10,7 @@ June 21, 2018
 > AD, Whalley HC, Porteous DJ, McIntosh AM, Evans KL, Deary IJ, Marioni RE.
 > Investigating the relationship between DNA methylation age acceleration and
 > risk factors for Alzheimer's disease. Alzheimers Dement (Amst). 2018 Jun
-> 21;10:429-437. doi: 10.1016/j.dadm.2018.05.006. PMID: 30167451; PMCID:
-> PMC6111045.
+> 21;10:429-437. doi: 10.1016/j.dadm.2018.05.006. PMID:
+> [30167451](https://pubmed.ncbi.nlm.nih.gov/30167451); PMCID: PMC6111045.
 
 

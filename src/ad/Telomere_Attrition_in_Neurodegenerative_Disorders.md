@@ -2,7 +2,14 @@ November 18, 2020
 
 # Telomere Attrition in Neurodegenerative Disorders
 
-[Full text](https://www.frontiersin.org/articles/10.3389/fncel.2020.00219/full)
+July 15, 2020
+
+[Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fncel.2020.00219/full)
+
+> Levstek T, Kozjek E, Dolžan V, Trebušak Podkrajšek K. Telomere Attrition in
+> Neurodegenerative Disorders. Front Cell Neurosci. 2020 Jul 15;14:219. doi:
+> 10.3389/fncel.2020.00219. PMID:
+> [32760251](https://pubmed.ncbi.nlm.nih.gov/32760251); PMCID: PMC7373805.
 
 Telomere attrition is found in a number of disorders and studies have tried to
 understand the relationship between TL length and these disorders. This paper

@@ -2,7 +2,13 @@ January 20, 2021
 
 # Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown
 
-[Full text](https://www.ahajournals.org/doi/10.1161/STROKEAHA.115.010835)
+[Stroke](https://www.ahajournals.org/doi/10.1161/STROKEAHA.115.010835)
+
+> Yamazaki Y, Baker DJ, Tachibana M, Liu CC, van Deursen JM, Brott TG, Bu G,
+> Kanekiyo T. Vascular Cell Senescence Contributes to Blood-Brain Barrier
+> Breakdown. Stroke. 2016 Apr;47(4):1068-77. doi: 10.1161/STROKEAHA.115.010835.
+> Epub 2016 Feb 16. PMID: [26883501](https://pubmed.ncbi.nlm.nih.gov/26883501);
+> PMCID: PMC4811685.
 
 ## Abstract Background and Purpose— Age-related changes in the
 cerebrovasculature, including blood–brain barrier (BBB) disruption, are emerging

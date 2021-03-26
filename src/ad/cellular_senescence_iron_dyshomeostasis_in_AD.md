@@ -7,7 +7,8 @@ June 19, 2019
 [Pharmaceuticals](https://doi.org/10.3390/ph12020093)
 > Masaldan S, Belaidi AA, Ayton S, Bush AI. Cellular Senescence and Iron
 > Dyshomeostasis in Alzheimer's Disease. Pharmaceuticals (Basel). 2019 Jun
-> 19;12(2):93. doi: 10.3390/ph12020093. PMID: 31248150; PMCID: PMC6630536.
+> 19;12(2):93. doi: 10.3390/ph12020093. PMID:
+> [31248150](https://pubmed.ncbi.nlm.nih.gov/31248150); PMCID: PMC6630536.
 
 The accumulation of Aβ has been the primary target of therapies, but attempt to
 lower the plaque burden have not been successful in lowering cognitive decline.

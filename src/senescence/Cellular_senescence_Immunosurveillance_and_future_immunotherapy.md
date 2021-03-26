@@ -8,7 +8,8 @@ May 2018
 
 > Burton DGA, Stolzing A. Cellular senescence: Immunosurveillance and future
 > immunotherapy. Ageing Res Rev. 2018 May;43:17-25. doi:
-> 10.1016/j.arr.2018.02.001. Epub 2018 Feb 7. PMID: 29427795.
+> 10.1016/j.arr.2018.02.001. Epub 2018 Feb 7. PMID:
+> [29427795](https://pubmed.ncbi.nlm.nih.gov/29427795).
 
 ## Introduction
 

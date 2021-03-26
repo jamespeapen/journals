@@ -4,7 +4,11 @@ November 9, 2020
 
 11 February 2020
 
-[Full Text](https://www.frontiersin.org/articles/10.3389/fncel.2020.00016/full)
+[Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fncel.2020.00016/full)
+
+> Martínez-Cué C, Rueda N. Cellular Senescence in Neurodegenerative Diseases.
+> Front Cell Neurosci. 2020 Feb 11;14:16. doi: 10.3389/fncel.2020.00016. PMID:
+> [32116562](https://pubmed.ncbi.nlm.nih.gov/32116562); PMCID: PMC7026683.
 
 Cellular senescence is necessary to prevent the spread of damaged cells and
 could be a type of cell differentiation. There can be acute or chronic

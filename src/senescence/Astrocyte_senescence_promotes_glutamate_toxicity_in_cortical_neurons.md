@@ -9,7 +9,8 @@ January 16, 2020
 > Limbad C, Oron TR, Alimirah F, Davalos AR, Tracy TE, Gan L, Desprez PY,
 > Campisi J. Astrocyte senescence promotes glutamate toxicity in cortical
 > neurons. PLoS One. 2020 Jan 16;15(1):e0227887. doi:
-> 10.1371/journal.pone.0227887. PMID: 31945125; PMCID: PMC6964973.
+> 10.1371/journal.pone.0227887. PMID:
+> [31945125](https://pubmed.ncbi.nlm.nih.gov/31945125); PMCID: PMC6964973.
 
 A study showed that glioblastoma cells undergo senescence and develop the SASP
 which promotes tumor growth in the brain. The authors of this paper asked

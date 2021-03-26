@@ -2,7 +2,7 @@ December 11, 2020
 
 # Cellular senescence: Defining a path forward
 
-[Full Text](https://doi.org/10.1016/j.cell.2019.10.005)
+[Cell](https://doi.org/10.1016/j.cell.2019.10.005)
 
 October 31, 2019
 
@@ -11,7 +11,7 @@ October 31, 2019
 > Maier AB, Narita M, Niedernhofer L, Passos JF, Robbins PD, Schmitt CA, Sedivy
 > J, Vougas K, von Zglinicki T, Zhou D, Serrano M, Demaria M. Cellular
 > Senescence: Defining a Path Forward. Cell. 2019 Oct 31;179(4):813-827. doi:
-> 10.1016/j.cell.2019.10.005. PMID: 31675495.
+> 10.1016/j.cell.2019.10.005. PMID: [31675495](https://pubmed.ncbi.nlm.nih.gov/31675495).
 
 This review examines methods to detect senescent cells since there is not one
 defining trait that is unique to senescenct cells. Senescenece can happen
