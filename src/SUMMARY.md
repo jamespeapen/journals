@@ -32,6 +32,7 @@
       - [Loss-of-function of p53 isoform Δ113p53 accelerates brain aging in zebrafish](ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.md)
       - [Telomere Attrition in Neurodegenerative Disorders](ad/Telomere_Attrition_in_Neurodegenerative_Disorders.md)
       - [Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease](ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.md)
+      - [Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48](ad/molecular_mechanism_for_age_related_memory_loss_rbap48.md)
 
       - [Cellular senescence and AD]()
         - [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md)
