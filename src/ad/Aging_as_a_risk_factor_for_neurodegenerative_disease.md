@@ -2,14 +2,20 @@ December 17, 2020
 
 # Ageing as a risk factor for neurodegenerative disease
 
+[Nature](https://www.nature.com/articles/s41582-019-0244-7)
 
-[Nature abstract](https://www.nature.com/articles/s41582-019-0244-7)
+October 15, 2019
 
 Since neurodegenerative diseases are common in ageing brains, the authors
 suggest that brain ageing might form a continuum with neurodegeneration. They
 believe that ageing is a major risk factor for neurodegenerative disease. AD and
 PD tend to be observed in the elderly and the risk for disease increases with
 age.
+
+> Hou Y, Dan X, Babbar M, Wei Y, Hasselbalch SG, Croteau DL, Bohr VA. Ageing as
+> a risk factor for neurodegenerative disease. Nat Rev Neurol. 2019
+> Oct;15(10):565-581. doi: 10.1038/s41582-019-0244-7. Epub 2019 Sep 9. PMID:
+> [31501588](https://pubmed.ncbi.nlm.nih.gov/31501588).
 
 ## Ageing biology
 

@@ -4,6 +4,12 @@ February 15, 2021
 
 [Cell Press](https://doi.org/10.1016/j.cell.2015.12.056)
 
+February 11, 2015
+
+> De Strooper B, Karran E. The Cellular Phase of Alzheimer's Disease. Cell. 2016
+> Feb 11;164(4):603-15. doi: 10.1016/j.cell.2015.12.056. PMID:
+> [26871627](https://pubmed.ncbi.nlm.nih.gov/26871627).
+
 The linearity of the cascade remains very controversial. For instance,
 exploration of the direct link between Aβ and neurotoxicity has resulted in a
 rather confusing literature with at least ten different molecular mechanisms and
