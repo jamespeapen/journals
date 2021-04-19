@@ -20,7 +20,7 @@ which had elevated β-amyloid and other AD pathologies.  Compared to bulk level
 analysis, snRNA-Seq was better able to capture the complexity of alterations
 across cells and cell groups.  They compared the gene expression levels between
 the AD-pathology and no-pathology cells and found "1031 unique
-differentially-extressed genes (DEGs) that implicate all major cell types". 
+differentially-extressed genes (DEGs) that implicate all major cell types".
 
 These genes showed repression in exitatory and inhibitory neurons and
 upregulation in oligodendrocytes, astrocytes and microglia.  Compared to this,

@@ -40,4 +40,3 @@ Final proposed model including immune response to senescence:
 
 tags: Aβ hypothesis, senolytics, senescence, amyloid cascade, alzheimer's,
 immume response
-

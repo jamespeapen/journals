@@ -72,5 +72,4 @@ senescent cells could be problematic and prevent normal functioning like wound
 healing and tumor suppression.
 
 Senolytics that use the immune system to target senescent cells may not work if
-the immune system has itself undergone senescence. 
-
+the immune system has itself undergone senescence.

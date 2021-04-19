@@ -12,13 +12,13 @@ November 9, 2020
 
 Cellular senescence is necessary to prevent the spread of damaged cells and
 could be a type of cell differentiation. There can be acute or chronic
-senescence. 
+senescence.
 
 * Acute senescence is part of normal body functioning and processese like tissue
   repair.
 
 * Chronic senescence is induced by extended exposure to stress and this produces
-  cellular and tissue alterations. 
+  cellular and tissue alterations.
 
     * Replicative senescence Stress induced premature senescence (SIPS)
     * Mitochondrial dysfunction-associated senescence
@@ -33,15 +33,15 @@ senescence.
   stress induce senescence during aging and promote neuronal DNA damage,
   deregulated DNA damage response (DDR), changes to cell cycle progression and
   cell morphology, premature replicative senescence.
- 
+
 - Changes to cellular metabolism from altered mitochondrial function.
- 
+
 - Damage and alterations in DNA damage response
 
 - Telomere shortening and dysfunction: there is reduced DNA repair and cell
   cycle arrest. While telomeric shortening is a major aging mechanism, telomere
   length does not always correlate with senescence
- 
+
 - Epigenetic modifications: changes in methylation enzyme activity that are
   associated with neuropathology
 
@@ -50,13 +50,13 @@ senescence.
 
 - Altered proteostasis: increased unfolded protein response associated with
   endoplasmic reticulum stress.
-  
+
 - Promotion of chronic inflammation: neuroinflammation is both a trigger and a
   consequence of senescence and can spread the damage to neighbouring cells
-  
+
 - reduction in nervous system regenerative capacity because of the cell cycle
   arrest from senescence
-  
+
 - Loss of CNS cell function from the senescence and cell cycle arrests
 
 ## Senescence in Alzheimer's Disease
@@ -83,11 +83,11 @@ exposure to Aβ.
 - Oxidative stress and mitochondrial dysfunction: increased ROS and altered
   mitochondrial structure and function - leads to cellular changes associated
   with senescence
- 
+
 - Telomeric DNA damage: non-telomeric DNA damage and repair: Increased DNA
- 
+
 - Damage and alterations in DNA damage response
- 
+
 - Epigenetic modifications: aberrant phosphorylation of histones, changes in
   methylation of AD critical genes - **what genes?**
 
@@ -97,4 +97,3 @@ exposure to Aβ.
 - Altered proteostasis: loss of protein homeostasis, nuclear dysfunction,
   accumulation of abnormal proteins (amyloid peptides and hyperphosphorylated
   tau)
-

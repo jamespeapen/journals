@@ -5,7 +5,7 @@ December 08, 2020
 This study identified new risk loci and implicated Aβ, tau, immunity and lipid
 processing.
 
-## Resuts 
+## Resuts
 
 Genome-wide-significant associations:
 
@@ -27,5 +27,3 @@ Suggestive association:
 - *IQCK*:
 
 - *ACE*
-
-

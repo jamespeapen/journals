@@ -19,7 +19,7 @@ age.
 
 ## Ageing biology
 
-Hallmarks of ageing: 
+Hallmarks of ageing:
 
 ### Primary
 
@@ -47,11 +47,11 @@ hallmarks and are "ultimately responsible for the functional decline associated
 with ageing".
 
 Tissues with postmitotic cells are particularly sensitive to the effects of
-ageing because they are more vulnerable to DNA damage. 
+ageing because they are more vulnerable to DNA damage.
 
 ### Cellular senescence
 
-Cellular senescence is increased in AD, PD, ALS and Huntington disease. 
+Cellular senescence is increased in AD, PD, ALS and Huntington disease.
 
 The authors believe that the hallmarks related to mitochondrial dysfunction are
 central and studies investigating communication between the nucleus and

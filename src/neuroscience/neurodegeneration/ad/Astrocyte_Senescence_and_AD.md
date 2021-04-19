@@ -12,7 +12,7 @@ June 9, 2020
 > [32581763](https://pubmed.ncbi.nlm.nih.gov/32581763); PMCID: PMC7297132.
 
 This review examines findings about astrocyte senescence and its relationship
-with AD as well as the potential therapeutic value this research. 
+with AD as well as the potential therapeutic value this research.
 Astrocytes "perform critical roles in regulation of homeostasis and metabolism
 of the neurons, mediating uptake and recycling of neurotransmitters. Astrocytes
 also play a key role in maintenance of the blood–brain barrier (BBB). They also

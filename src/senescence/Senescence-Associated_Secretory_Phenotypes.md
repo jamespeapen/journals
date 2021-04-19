@@ -35,4 +35,3 @@ because of antagonistic pleiotropy which may be explained as a "consequence of
 the declining force of natural selection with age." Older individuals are fewer
 in number because of extrinsic hazards and natural selection tends to favor
 traits that promote "early life fitness" at the cost of longevity.
-

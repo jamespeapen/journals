@@ -24,9 +24,9 @@ gradual progression with different stages.
   indicates a loss of synaptic activity.
 - Structural and Functional MRI: cerebral atrophy can be quantified with MRI and
   be detected before the onset of clinical symptoms. It is considered a reliable
-  diagnostic tool. It shows atrophy and thinning of the cerebral cortex. 
-  
-  
+  diagnostic tool. It shows atrophy and thinning of the cerebral cortex.
+
+
 ## When AD starts
 
 AD is an extended disease that with a latent start that progresses gradually
@@ -50,4 +50,4 @@ both markers became positive with disease progression.
 - A: β-amyloid marker - on the Alzheimer's continuum
 - T: value of tau marker - have AD
 - N: neurodegeneration or neuronal injury markers - have AD
-- 
+-

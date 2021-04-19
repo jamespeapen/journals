@@ -22,7 +22,7 @@ types, their interactions with each other, and the gradual evolution of the
 disease.
 
 Instead of Aβ and Tau, the real causes of sporadic disease are upstream of these
-proteopathies and are likely manifold, with aging being the major driver. 
+proteopathies and are likely manifold, with aging being the major driver.
 
 This paper examines the amyloid cascade hypothesis and questions the linearity
 of the amyloid cascade in producing AD pathology, saying the biochemistry of the
@@ -43,4 +43,3 @@ mechanisms and pathways can be explored.
 They also suggested that instead of Aβ and tau, the real causes of sporadic
 disease may be upstream of those proteopathies, with aging being the major
 driver of these conditions.
-

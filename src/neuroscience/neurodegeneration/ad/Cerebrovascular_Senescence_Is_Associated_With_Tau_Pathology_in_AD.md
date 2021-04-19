@@ -19,7 +19,7 @@ and tau NFT formation have shown a positive feedback relationship and
 suppression of senescence prevents tau aggregation. They examined whether
 endothelial senescence contributes to microvascular alterations in tau-related
 neurodegenerative disease using microvessels from the dorsolateral prefrontal
-cortex.  
+cortex.
 
 ## Results
 

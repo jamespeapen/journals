@@ -48,4 +48,3 @@ level of glutamate in the brain, neurons are at risk of death from
 excitotoxicity. The RNA-seq also found that APOE is upregulated in senescent
 astrocytes which could put AD patients at greater risk of losing neurons to
 glutamate toxicity.
-

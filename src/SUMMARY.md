@@ -17,7 +17,7 @@
 
   - [Neurodegeneration]()
     - [Cellular Senescence in Neurodegenerative Diseases](neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.md)
-    - [Aging as a risk factor for neurodegenerative disease](neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md) 
+    - [Aging as a risk factor for neurodegenerative disease](neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
     - [Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes](neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.md)
     - [Alzheimer’s Disease]()
       - [The Genetic Landscape of Alzheimer’s Disease](neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.md)

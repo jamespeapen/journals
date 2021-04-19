@@ -24,7 +24,7 @@ on the Alzheimer's spectrum.
 Senescence in AD is characterized by the following phenotypes:
 
 - arrest of the cell cycle and attempting reentry SASP with microglial
- 
+
 - overactivation and the release of inflammatory cytokines aggravating Aβ and
   tau pathology
 
@@ -36,4 +36,3 @@ Senescence in AD is characterized by the following phenotypes:
 Once senescent, the neuron can enter a stage of secondary senescence marked by
 p26. This stage also involves the spread of senescent signals to neighbours and
 induce senescence in them.
-

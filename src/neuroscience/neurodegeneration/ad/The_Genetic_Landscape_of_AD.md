@@ -24,4 +24,3 @@ both early and late onset AD. It does not cause the disease on its own.
 *TREM2* codes for the triggering receptor expressed on myeloid cells and
 increses risk for late onset AD. It's effect is comparable to that of *APOE*
 but its frequency is low.
-

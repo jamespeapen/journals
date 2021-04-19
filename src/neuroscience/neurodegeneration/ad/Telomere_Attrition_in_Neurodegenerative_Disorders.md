@@ -16,7 +16,7 @@ understand the relationship between TL length and these disorders. This paper
 reviews the literature concerning TL, AD, and PD. Telomere length is maintained
 by telomerase and, while its activity in the brain decreases after birth, there
 is high activity in neuronal stem cells and neuronal progenitor cells. There are
-only inconsistent results between cognitive performance and TL. 
+only inconsistent results between cognitive performance and TL.
 
 Results in AD studies have been contradictory. Telomere shortening and reduced
 telomerase activity was found in rat microglial cells, but in aged telomerase
