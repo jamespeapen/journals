@@ -21,8 +21,6 @@ This study used universally expressed transcripts from different senescent cell
 models and, using RNA-seq, found RNAs that could be used to identify senescent
 cells.
 
-## Results
-
 The main differences in RNA expression depended on the cell type of origin, and
 not on the senescence induction method which supports the idea that senescence
 is not a single phenotypic state.
