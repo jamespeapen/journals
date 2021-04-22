@@ -23,24 +23,24 @@ Hallmarks of ageing:
 
 ### Primary
 
- - genomic instability
- - telomere attrition
- - epigenetic alterations
- - loss of proteostasis
+- genomic instability
+- telomere attrition
+- epigenetic alterations
+- loss of proteostasis
 
 ### Antagonistic or compensatory responses
 
- - mitochondrial dysfunction
- - cellular senescence
- - deregulated nutrient sensing
+- mitochondrial dysfunction
+- cellular senescence
+- deregulated nutrient sensing
 
 There antagonistic responses are meant to combat the primary damage, but they
 can eventually become damaging themselves.
 
 ### Integrative hallmarks
 
- - stem cell exhaustion
- - altered intercellular communication
+- stem cell exhaustion
+- altered intercellular communication
 
 There arise as a result of cumulative damage from the primary and antagonistic
 hallmarks and are "ultimately responsible for the functional decline associated

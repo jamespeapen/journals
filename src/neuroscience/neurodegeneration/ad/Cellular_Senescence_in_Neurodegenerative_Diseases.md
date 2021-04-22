@@ -14,14 +14,14 @@ Cellular senescence is necessary to prevent the spread of damaged cells and
 could be a type of cell differentiation. There can be acute or chronic
 senescence.
 
-* Acute senescence is part of normal body functioning and processese like tissue
+- Acute senescence is part of normal body functioning and processese like tissue
   repair.
 
-* Chronic senescence is induced by extended exposure to stress and this produces
+- Chronic senescence is induced by extended exposure to stress and this produces
   cellular and tissue alterations.
 
-    * Replicative senescence Stress induced premature senescence (SIPS)
-    * Mitochondrial dysfunction-associated senescence
+  - Replicative senescence Stress induced premature senescence (SIPS)
+  - Mitochondrial dysfunction-associated senescence
 
 ## General Senescence phenotypes
 

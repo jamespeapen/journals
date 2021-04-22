@@ -18,12 +18,14 @@ dysfunction, we evaluated whether senescent vascular cells are associated with
 compromised BBB integrity.
 
 ## Methods Effects of vascular cell senescence on tight junction and barrier
+
 integrity were studied using an in vitro BBB model, composed of endothelial
 cells, pericytes, and astrocytes. In addition, tight junction coverage in
 microvessels and BBB integrity in BubR1 hypomorphic (BubR1H/H) mice, which
 display senescence cell-dependent phenotypes, were examined.
 
 ## Results When an in vitro BBB model was constructed with senescent endothelial
+
 cells and pericytes, tight junction structure and barrier integrity (evaluated
 by transendothelial electric resistance and tracer efflux assay using sodium
 fluorescein and Evans blue-albumin were significantly impaired. Endothelial
@@ -36,5 +38,6 @@ end-feet of aquaporin 4–immunoreactive astrocytes was not altered in the corte
 of the BubR1H/H mice.
 
 ## Conclusions Our results indicate that accumulation of senescent vascular
+
 cells is associated with compromised BBB integrity, providing insights into the
 mechanism of BBB disruption related to biological aging.

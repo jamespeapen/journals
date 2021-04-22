@@ -27,7 +27,6 @@ They found upregulation of the senescence and leukocyte adhesion associated
 genes that are also involved in DNA damage response signalling pathway that is
 involved in cellular senescence.
 
-
 They found that senescence associated genes are upregulated in B3 PFC
 microvessels (2.5-fold increase in senescence-associated genes mRNA).
 

@@ -12,7 +12,6 @@ December 2, 2008
 > PLoS Biol. 2008 Dec 2;6(12):2853-68. doi: 10.1371/journal.pbio.0060301. PMID:
 > [19053174](https://pubmed.ncbi.nlm.nih.gov/19053174); PMCID: PMC2592359.
 
-
 This paper identifies SASP, a hallmark of cellular senescence. This phenotype is
 particularly enhanced by the gain of "oncogenic RAS or loss of p53 function".
 

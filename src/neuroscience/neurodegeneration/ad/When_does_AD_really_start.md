@@ -26,7 +26,6 @@ gradual progression with different stages.
   be detected before the onset of clinical symptoms. It is considered a reliable
   diagnostic tool. It shows atrophy and thinning of the cerebral cortex.
 
-
 ## When AD starts
 
 AD is an extended disease that with a latent start that progresses gradually

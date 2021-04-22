@@ -22,7 +22,7 @@ Ways to induce senescence:
 
 1. Induce neurons to reenter the cell cycle which then leads to neuronal
    senescence.
-2. Induce the production of ROS that leads to senescence. This can be using
+1. Induce the production of ROS that leads to senescence. This can be using
    aberrant activation of post-synaptic receptors or independent of receptor
    activation.
 
@@ -35,8 +35,8 @@ Final proposed model including immune response to senescence:
 - senescence in neurons, but natural killer cells cannot enter the longer works
   since the senescence is irreversible
 - with age related loss of the blood brain barrier functionality, NK cells enter
- the brain parenchyma and clear the many senescent cells leading to the onset of
- clinical AD. The potential for AβO to induce senescence must not be discounted.
+  the brain parenchyma and clear the many senescent cells leading to the onset of
+  clinical AD. The potential for AβO to induce senescence must not be discounted.
 
 tags: Aβ hypothesis, senolytics, senescence, amyloid cascade, alzheimer's,
 immume response

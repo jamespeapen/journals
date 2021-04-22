@@ -9,7 +9,7 @@ December 2020
 > Koutsoudaki PN, Papadopoulos D, Passias PG, Koutsoudaki P, Gorgoulis VG.
 > Cellular senescence and failure of myelin repair in multiple sclerosis. Mech
 > Ageing Dev. 2020 Dec;192:111366. doi: 10.1016/j.mad.2020.111366. Epub 2020 Sep
-> 28. PMID: [32991921](https://pubmed.ncbi.nlm.nih.gov/32991921).
+> 28\. PMID: [32991921](https://pubmed.ncbi.nlm.nih.gov/32991921).
 
 This review examined the role of cellular senescence and remyelination failure
 in MS. OPCs are responsible for the myelination of neurons in the brain when
