@@ -14,6 +14,8 @@
 
 - [Cellular senescence: Defining a path forward](senescence/Cellular_senescence_Defining_a_path_forward.md)
 
+- [Impaired immune surveillance accelerates accumulation of senescent cells and aging ](senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.md)
+
 - [Astrocyte senescence promotes glutamate toxicity in cortical neurons](senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.md)
 
 - [A multidimensional systems biology analysis of cellular senescence in aging and disease](senescence/multidim_systems_bio_analysis_senescence_aging_disease.md)
