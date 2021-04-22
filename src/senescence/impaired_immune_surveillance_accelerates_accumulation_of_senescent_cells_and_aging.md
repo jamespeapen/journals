@@ -45,10 +45,10 @@ internal organs as well as increased urea, probably from kidney damage. The KO
 mice were less active and had poorer grip strength and coordination that the WT
 mice. Further, these mice also had a decreased lifespan than the WT mice.
 
-They also used a mouse with the *LMMN* gene mutation which resulted in
+They also used a mouse with the *LMNA* gene mutation which resulted in
 senescent cell accumulation. These mice, when crossed with those with the
 preforin deficiency, acquired the deficiency and their lifespans were shorter
-than the mice with just the *LMMN* gene mutation. This suggests that despite an
+than the mice with just the *LMNA* gene mutation. This suggests that despite an
 increased senescent cell burden, a functioning immune surveillance system can
 help to slow senescence-induced ageing.
 
@@ -59,7 +59,7 @@ inflammation and immune cell infiltration, and increased activity and lifespan.
 The treatment drove the expression of SASP genes down to levels found in young
 mice, counteracting the effect of ageing.
 
-In the mice with the *LNMA* mutation, treatment extended their lifespan and
+In the mice with the *LMNA* mutation, treatment extended their lifespan and
 decreased the senescent cell burden and cytokine levels.
 
 If senolytic treatments are able to preserve the benefits of senescence, they
