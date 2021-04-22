@@ -10,12 +10,12 @@ January 20, 2021
 > Epub 2016 Feb 16. PMID: [26883501](https://pubmed.ncbi.nlm.nih.gov/26883501);
 > PMCID: PMC4811685.
 
-## Abstract Background and Purpose— Age-related changes in the
-cerebrovasculature, including blood–brain barrier (BBB) disruption, are emerging
-as potential risks for diverse neurological conditions. Because the accumulation
-of senescent cells in tissues is increasingly recognized as a critical step
-leading to age-related organ dysfunction, we evaluated whether senescent
-vascular cells are associated with compromised BBB integrity.
+Age-related changes in the cerebrovasculature, including blood–brain barrier
+(BBB) disruption, are emerging as potential risks for diverse neurological
+conditions. Because the accumulation of senescent cells in tissues is
+increasingly recognized as a critical step leading to age-related organ
+dysfunction, we evaluated whether senescent vascular cells are associated with
+compromised BBB integrity.
 
 ## Methods Effects of vascular cell senescence on tight junction and barrier
 integrity were studied using an in vitro BBB model, composed of endothelial
