@@ -2,6 +2,8 @@ April 19, 2021
 
 # Transcriptome signature of cellular senescence
 
+[Nucleic Acids Research](https://academic.oup.com/nar/article/47/21/11476/5587628)
+
 June 28, 2019
 
 > Casella G, Munk R, Kim KM, Piao Y, De S, Abdelmohsen K, Gorospe M.
