@@ -36,6 +36,8 @@
 
 #### Alzheimer’s Disease
 
+- [Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration](neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md)
+
 - [The Genetic Landscape of Alzheimer’s Disease](neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.md)
 
 - [Genetics of Alzheimer’s disease: where we are, and where we are going](neuroscience/neurodegeneration/ad/Genetics_of_AD.md)
