@@ -35,6 +35,8 @@
 
     - [Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes](neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.md)
 
+    - [Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells-Implications for Cancer and Neurodegeneration](neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.md)
+
     - [Alzheimer’s Disease](<>)
 
       - [Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration](neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md)
