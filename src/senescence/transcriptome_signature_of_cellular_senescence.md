@@ -2,15 +2,15 @@ April 19, 2021
 
 # Transcriptome signature of cellular senescence
 
-[Nucleic Acids Research](https://academic.oup.com/nar/article/47/21/11476/5587628)
+[Nucleic Acids Research](https://doi.org/10.1093/nar/gkz555)
 
 June 28, 2019
 
 > Casella G, Munk R, Kim KM, Piao Y, De S, Abdelmohsen K, Gorospe M.
-> Transcriptome signature of cellular senescence. Nucleic Acids Res. 2019 Dec
-> 2;47(21):11476. doi: 10.1093/nar/gkz879. Erratum for: Nucleic Acids Res. 2019
-> Aug 22;47(14):7294-7305. PMID:
-> [31612919](https://pubmed.ncbi.nlm.nih.gov/31612919); PMCID: PMC6868356.
+> Transcriptome signature of cellular senescence. Nucleic Acids Res. 2019 Aug
+> 22;47(14):7294-7305. doi: 10.1093/nar/gkz555. Erratum in: Nucleic Acids Res.
+> 2019 Dec 2;47(21):11476. PMID:
+> [31251810](https://pubmed.ncbi.nlm.nih.gov/31251810); PMCID: PMC6698740.
 
 Cellular senescence has a number of characteristics including DNA damage,
 induction of the p53/CDKN1A (p21) and CDKN2A (p16)/pRB pathways,
@@ -33,9 +33,9 @@ senescence models and were more uniform than the p21 and p16 markers.
 
 Examining the 68 transcripts shared between the senescent types, a PCA showed
 that senescence state gave the clearest separation between the cell types. An ML
-models using LASSO showed that 5 transcripts, *SLCO2B1*, *CLSTN2* mRNAs and
-*LINCO2154* and *PURPL* lncRNAs, were the minimum needed to distinguish
-senescent cells. *PURPL* was one of the most highly and consistently elevated
-transcripts and is controlled by the transcription factor p53, which is elevated
-in senescent cells. It may contribute to the survival of senescent cells as it
-does in tumors.
+models using LASSO showed that 5 transcripts, *SLCO2B1*, *CLSTN2*, *PTCHD4*
+mRNAs and *LINCO2154* and *PURPL* lncRNAs, were the minimum needed to
+distinguish senescent cells. *PURPL* was one of the most highly and consistently
+elevated transcripts and is controlled by the transcription factor p53, which is
+elevated in senescent cells. It may contribute to the survival of senescent
+cells as it does in tumors.
