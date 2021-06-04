@@ -6,6 +6,8 @@
 
 - [Four faces of cellular senescence](senescence/Four_faces_of_cellular_senescence.md)
 
+- [Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub>](senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.md)
+
 - [Epigenetic Basis of Cellular Senescence and Its Implications in Aging](senescence/epigenetic_basis_of_senescence_implications_in_aging.md)
 
 - [Cellular senescence: Immunosurveillance and future immunotherapy](senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.md)
