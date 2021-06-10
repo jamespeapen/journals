@@ -2,6 +2,12 @@
 
 [Contents](contents.md)
 
+- [Bioinformatics](<>)
+
+- [Databases](<>)
+
+  - [Evaluation of relational and NoSQL database architectures to manage genomic annotations](bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md)
+
 - [Cellular Senescence](<>)
 
   - [Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor](senescence/Senescence-Associated_Secretory_Phenotypes.md)
