@@ -50,6 +50,9 @@
 
 - [Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells-Implications for Cancer and Neurodegeneration](neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.md)
 
+- [Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition
+  ](src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.md)
+
 #### Alzheimer’s Disease
 
 - [Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration](neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md)
