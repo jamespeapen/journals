@@ -56,6 +56,8 @@
     - [Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition
       ](src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.md)
 
+    - [Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain](neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.md)
+
     - [Alzheimer’s Disease](<>)
 
       - [Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration](neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md)
