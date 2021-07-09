@@ -1,0 +1,1915 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Journals</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="contents.html">Contents</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.</strong> Bioinformatics</div></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> Databases</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html"><strong aria-hidden="true">2.1.</strong> Evaluation of relational and NoSQL database architectures to manage genomic annotations</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">3.</strong> Cellular Senescence</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="senescence/Senescence-Associated_Secretory_Phenotypes.html"><strong aria-hidden="true">3.1.</strong> Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a></li><li class="chapter-item "><a href="senescence/Four_faces_of_cellular_senescence.html"><strong aria-hidden="true">3.2.</strong> Four faces of cellular senescence</a></li><li class="chapter-item "><a href="senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html"><strong aria-hidden="true">3.3.</strong> Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q10</a></li><li class="chapter-item "><a href="senescence/epigenetic_basis_of_senescence_implications_in_aging.html"><strong aria-hidden="true">3.4.</strong> Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a></li><li class="chapter-item "><a href="senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html"><strong aria-hidden="true">3.5.</strong> Cellular senescence: Immunosurveillance and future immunotherapy</a></li><li class="chapter-item "><a href="senescence/transcriptome_signature_of_cellular_senescence.html"><strong aria-hidden="true">3.6.</strong> Transcriptome signature of cellular senescence</a></li><li class="chapter-item "><a href="senescence/Cellular_senescence_Defining_a_path_forward.html"><strong aria-hidden="true">3.7.</strong> Cellular senescence: Defining a path forward</a></li><li class="chapter-item "><a href="senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html"><strong aria-hidden="true">3.8.</strong> Impaired immune surveillance accelerates accumulation of senescent cells and aging </a></li><li class="chapter-item "><a href="senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html"><strong aria-hidden="true">3.9.</strong> Astrocyte senescence promotes glutamate toxicity in cortical neurons</a></li><li class="chapter-item "><a href="senescence/multidim_systems_bio_analysis_senescence_aging_disease.html"><strong aria-hidden="true">3.10.</strong> A multidimensional systems biology analysis of cellular senescence in aging and disease</a></li><li class="chapter-item "><a href="senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html"><strong aria-hidden="true">3.11.</strong> Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a></li><li class="chapter-item "><a href="senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html"><strong aria-hidden="true">3.12.</strong> Cellular senescence and failure of myelin repair in MS</a></li><li class="chapter-item "><a href="senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html"><strong aria-hidden="true">3.13.</strong> The long non-coding RNA MIR31HG regulates the senescence associated secretory phenotype</a></li><li class="chapter-item "><a href="senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html"><strong aria-hidden="true">3.14.</strong> Early onset senescence and cognitive impairment in a murine model of repeated mTBI </a></li><li class="chapter-item "><a href="senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html"><strong aria-hidden="true">3.15.</strong> An aged immune system drives senescence and ageing of solid organs</a></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">4.</strong> Neuroscience</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">4.1.</strong> Neurodegeneration</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html"><strong aria-hidden="true">4.1.1.</strong> Cellular Senescence in Neurodegenerative Diseases</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html"><strong aria-hidden="true">4.1.2.</strong> Aging as a risk factor for neurodegenerative disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html"><strong aria-hidden="true">4.1.3.</strong> Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html"><strong aria-hidden="true">4.1.4.</strong> Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells-Implications for Cancer and Neurodegeneration</a></li><li class="chapter-item "><a href="src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html"><strong aria-hidden="true">4.1.5.</strong> Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition </a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html"><strong aria-hidden="true">4.1.6.</strong> Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.1.7.</strong> Alzheimer’s Disease</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html"><strong aria-hidden="true">4.1.7.1.</strong> Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html"><strong aria-hidden="true">4.1.7.2.</strong> The Genetic Landscape of Alzheimer’s Disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Genetics_of_AD.html"><strong aria-hidden="true">4.1.7.3.</strong> Genetics of Alzheimer’s disease: where we are, and where we are going</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/When_does_AD_really_start.html"><strong aria-hidden="true">4.1.7.4.</strong> When does Alzheimer’s disease really start? The Role of Biomarkers</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html"><strong aria-hidden="true">4.1.7.5.</strong> Genetic meta-analysis of diagnosed Alzheimer’s disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html"><strong aria-hidden="true">4.1.7.6.</strong> The Cellular Phase of Alzheimers Disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html"><strong aria-hidden="true">4.1.7.7.</strong> Single-cell transcriptomic analysis of Alzheimer’s disease</a></li><li class="chapter-item "><a href="ad/scRNA_seq_human_microglia_uncovers_subset_associated_with_AD.html"><strong aria-hidden="true">4.1.7.8.</strong> Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html"><strong aria-hidden="true">4.1.7.9.</strong> Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html"><strong aria-hidden="true">4.1.7.10.</strong> Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html"><strong aria-hidden="true">4.1.7.11.</strong> Loss-of-function of p53 isoform Δ113p53 accelerates brain aging in zebrafish</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html"><strong aria-hidden="true">4.1.7.12.</strong> Telomere Attrition in Neurodegenerative Disorders</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html"><strong aria-hidden="true">4.1.7.13.</strong> Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html"><strong aria-hidden="true">4.1.7.14.</strong> Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html"><strong aria-hidden="true">4.1.7.15.</strong> Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a></li><li class="chapter-item "><div><strong aria-hidden="true">4.1.7.16.</strong> Cellular senescence and AD</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood%E2%80%93Brain_Barrier_Breakdown.html"><strong aria-hidden="true">4.1.7.16.1.</strong> Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html"><strong aria-hidden="true">4.1.7.16.2.</strong> Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html"><strong aria-hidden="true">4.1.7.16.3.</strong> Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html"><strong aria-hidden="true">4.1.7.16.4.</strong> Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a></li><li class="chapter-item "><a href="neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html"><strong aria-hidden="true">4.1.7.16.5.</strong> Astrocyte Senescence and Alzheimer’s Disease: A Review</a></li></ol></li></ol></li></ol></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">5.</strong> Transcriptomics</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">5.1.</strong> Single-nucleus RNA-seq</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html"><strong aria-hidden="true">5.1.1.</strong> Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a></li><li class="chapter-item "><a href="snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html"><strong aria-hidden="true">5.1.2.</strong> Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Journals</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/jamespeapen/journals" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="contents"><a class="header" href="#contents">contents</a></h1>
+<h2 id="bioinformatics"><a class="header" href="#bioinformatics">Bioinformatics</a></h2>
+<h3 id="databases"><a class="header" href="#databases">Databases</a></h3>
+<ul>
+<li><a href="bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a></li>
+</ul>
+<h2 id="cellular-senescence"><a class="header" href="#cellular-senescence">Cellular Senescence</a></h2>
+<ul>
+<li>
+<p><a href="senescence/Senescence-Associated_Secretory_Phenotypes.html">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a></p>
+</li>
+<li>
+<p><a href="senescence/Four_faces_of_cellular_senescence.html">Four faces of cellular senescence</a></p>
+</li>
+<li>
+<p><a href="senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a></p>
+</li>
+<li>
+<p><a href="senescence/epigenetic_basis_of_senescence_implications_in_aging.html">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a></p>
+</li>
+<li>
+<p><a href="senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html">Cellular senescence: Immunosurveillance and future immunotherapy</a></p>
+</li>
+<li>
+<p><a href="senescence/transcriptome_signature_of_cellular_senescence.html">Transcriptome signature of cellular senescence</a></p>
+</li>
+<li>
+<p><a href="senescence/Cellular_senescence_Defining_a_path_forward.html">Cellular senescence: Defining a path forward</a></p>
+</li>
+<li>
+<p><a href="senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html">Impaired immune surveillance accelerates accumulation of senescent cells and aging </a></p>
+</li>
+<li>
+<p><a href="senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a></p>
+</li>
+<li>
+<p><a href="senescence/multidim_systems_bio_analysis_senescence_aging_disease.html">A multidimensional systems biology analysis of cellular senescence in aging and disease</a></p>
+</li>
+<li>
+<p><a href="senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a></p>
+</li>
+<li>
+<p><a href="senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html">Cellular senescence and failure of myelin repair in MS</a></p>
+</li>
+<li>
+<p><a href="senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a></p>
+</li>
+<li>
+<p><a href="senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html">An aged immune system drives senescence and ageing of solid organs</a></p>
+</li>
+<li>
+<p><a href="senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a></p>
+</li>
+</ul>
+<h2 id="neuroscience"><a class="header" href="#neuroscience">Neuroscience</a></h2>
+<h3 id="neurodegeneration"><a class="header" href="#neurodegeneration">Neurodegeneration</a></h3>
+<ul>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html">Cellular Senescence in Neurodegenerative Diseases</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html">Aging as a risk factor for neurodegenerative disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells-Implications for Cancer and Neurodegeneration</a></p>
+</li>
+<li>
+<p><a href="src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition
+</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a></p>
+</li>
+</ul>
+<h4 id="alzheimers-disease"><a class="header" href="#alzheimers-disease">Alzheimer’s Disease</a></h4>
+<ul>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html">The Genetic Landscape of Alzheimer’s Disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Genetics_of_AD.html">Genetics of Alzheimer’s disease: where we are, and where we are going</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/When_does_AD_really_start.html">When does Alzheimer’s disease really start? The Role of Biomarkers</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html">Genetic meta-analysis of diagnosed Alzheimer’s disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html">The Cellular Phase of Alzheimers Disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html">Single-cell transcriptomic analysis of Alzheimer’s disease</a></p>
+</li>
+<li>
+<p><a href="./ad/scRNA_seq_human_microglia_uncovers_subset_associated_with_AD.html">Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html">Loss-of-function of p53 isoform Δ113p53 accelerates brain aging in zebrafish</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html">Telomere Attrition in Neurodegenerative Disorders</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a></p>
+</li>
+</ul>
+<h5 id="cellular-senescence-and-ad"><a class="header" href="#cellular-senescence-and-ad">Cellular senescence and AD</a></h5>
+<ul>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood%E2%80%93Brain_Barrier_Breakdown.html">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a></p>
+</li>
+<li>
+<p><a href="neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html">Astrocyte Senescence and Alzheimer’s Disease: A Review</a></p>
+</li>
+</ul>
+<h3 id="transcriptomics"><a class="header" href="#transcriptomics">Transcriptomics</a></h3>
+<ul>
+<li>
+<p><a href="">Single-nucleus RNA-seq</a></p>
+</li>
+<li>
+<p><a href="snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a></p>
+</li>
+<li>
+<p><a href="snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a></p>
+</li>
+</ul>
+<p>June 10, 2021</p>
+<h1 id="evaluation-of-relational-and-nosql-database-architectures-to-manage-genomic-annotations"><a class="header" href="#evaluation-of-relational-and-nosql-database-architectures-to-manage-genomic-annotations">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a></h1>
+<p><a href="https://doi.org/10.1016/j.jbi.2016.10.015">Journal of Bimedical Informatics</a></p>
+<p>October 31, 2016</p>
+<blockquote>
+<p>Schulz WL, Nelson BG, Felker DK, Durant TJS, Torres R. Evaluation of
+relational and NoSQL database architectures to manage genomic annotations. J
+Biomed Inform. 2016 Dec;64:288-295. doi: 10.1016/j.jbi.2016.10.015. Epub
+2016 Oct 31. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27810480">27810480</a>.</p>
+</blockquote>
+<p>Document-oriented databases don't use SQL or schemas like SQL databases. They
+don't need their structure to be defined in advance and can change over time.
+Genomic data is well suited to the document structure because files like VCFs
+have extensible fields and can vary. These databases also have faster write
+operations and in-memory indexes that improve query efficiency. Some
+relational database management systems have the ability to work with both
+relational and semi-structured data.</p>
+<p>This paper assesses the efficiency of different database types (MongoDB, MySQL,
+PostgreSQL)to store and query SNP annotations from dbSNP. They also compared
+the efficiency of using a relational model or the binary JSONB data type in
+PostgreSQL.</p>
+<h2 id="results"><a class="header" href="#results">Results</a></h2>
+<h3 id="write-efficiency"><a class="header" href="#write-efficiency">Write efficiency</a></h3>
+<p>Document-oriented databases offer better performance during write operations
+since they do not require any foreign key generation. JSONB objects with
+PostgreSQL had faster write performance followed by MongoDB and PostgreSQL.</p>
+<h3 id="index-creation"><a class="header" href="#index-creation">Index Creation</a></h3>
+<p>The time needed to create an index on the dbSNP data depended on the field used
+to create it on. For the JSONB PostgreSQL implementation, the Generalized
+Inverted Index method provided the best indexing results on the clinical
+significance or the gene name. Since the GIN cannot make a unique index, when
+the RSID field was indexed, it was significantly slower than the other
+databases.</p>
+<h3 id="query-performance"><a class="header" href="#query-performance">Query performance</a></h3>
+<p>MongoDB performed best on all but complex queries while MySQL has the lowest.
+For the complex query, PostgreSQL with JSONB was the fastest. Overall the
+document based models were significantly faster than the relational ones.</p>
+<p>December 10, 2020</p>
+<h1 id="senescence-associated-secretory-phenotypes-reveal-cell-nonautonomous-functions-of-oncogenic-ras-and-the-p53-tumor-suppressor"><a class="header" href="#senescence-associated-secretory-phenotypes-reveal-cell-nonautonomous-functions-of-oncogenic-ras-and-the-p53-tumor-suppressor">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a></h1>
+<p><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0060301">PLoS</a></p>
+<p>December 2, 2008</p>
+<blockquote>
+<p>Coppé JP, Patil CK, Rodier F, Sun Y, Muñoz DP, Goldstein J, Nelson PS, Desprez
+PY, Campisi J. Senescence-associated secretory phenotypes reveal
+cell-nonautonomous functions of oncogenic RAS and the p53 tumor suppressor.
+PLoS Biol. 2008 Dec 2;6(12):2853-68. doi: 10.1371/journal.pbio.0060301. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/19053174">19053174</a>; PMCID: PMC2592359.</p>
+</blockquote>
+<p>This paper identifies SASP, a hallmark of cellular senescence. This phenotype is
+particularly enhanced by the gain of &quot;oncogenic RAS or loss of p53 function&quot;.</p>
+<p>While there were differences between the way the phenotype was expressed between
+different cells, there were also similarities between them indicating that there
+is a &quot;conserved core secretory program that any cell undergoing senescence would
+trigger&quot;. They all had &quot;high levels of secreted inflammatory cytokines, immune
+modulators, and gwowth factors, suggenting that SASPs might have myriad
+biological activities&quot;.  They found that tumor cells were very likely to become
+senescent in response to DNA damage.  Senescent cells create a &quot;proinflammatory
+environment&quot;.</p>
+<p>Although senescent cells tend to be removed by the immune system, they increase
+in number with age. This may be because aging or age-related related pathologies
+dampen immune response and/or increase the rate at which senescent cells are
+produced.</p>
+<p>The authors suggest that senescence has both beneficial and detrimental effects
+because of antagonistic pleiotropy which may be explained as a &quot;consequence of
+the declining force of natural selection with age.&quot; Older individuals are fewer
+in number because of extrinsic hazards and natural selection tends to favor
+traits that promote &quot;early life fitness&quot; at the cost of longevity.</p>
+<p>January 20, 2021</p>
+<h1 id="four-faces-of-cellular-senescence"><a class="header" href="#four-faces-of-cellular-senescence">Four faces of cellular senescence</a></h1>
+<p><a href="https://rupress.org/jcb/article/192/4/547/36360/Four-faces-of-cellular-senescenceFour-faces-of">Journal of Cell Biology</a></p>
+<p>February 21, 2011</p>
+<blockquote>
+<p>Rodier F, Campisi J. Four faces of cellular senescence. J Cell Biol. 2011 Feb
+21;192(4):547-56. doi: 10.1083/jcb.201009094. Epub 2011 Feb 14. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/21321098">21321098</a>; PMCID: PMC3044123.</p>
+</blockquote>
+<h2 id="abstract"><a class="header" href="#abstract">Abstract</a></h2>
+<p>Cellular senescence is an important mechanism for preventing the proliferation
+of potential cancer cells. Recently, however, it has become apparent that this
+process entails more than a simple cessation of cell growth. In addition to
+suppressing tumorigenesis, cellular senescence might also promote tissue repair
+and fuel inflammation associated with aging and cancer progression. Thus,
+cellular senescence might participate in four complex biological processes
+(tumor suppression, tumor promotion, aging, and tissue repair), some of which
+have apparently opposing effects. The challenge now is to understand the
+senescence response well enough to harness its benefits while suppressing its
+drawbacks.</p>
+<p>Jun 04, 2021</p>
+<h1 id="inhibition-of-stress-induced-premature-senescence-in-presenilin-1-mutated-cells-with-water-soluble-coenzyme-qsub10sub"><a class="header" href="#inhibition-of-stress-induced-premature-senescence-in-presenilin-1-mutated-cells-with-water-soluble-coenzyme-qsub10sub">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a></h1>
+<p><a href="http://dx.doi.org/10.1016/j.mito.2014.07.004">Mitochondrion</a></p>
+<p>July 15, 2014</p>
+<blockquote>
+<p>Ma D, Stokes K, Mahngar K, Domazet-Damjanov D, Sikorska M, Pandey S.
+Inhibition of stress induced premature senescence in presenilin-1 mutated
+cells with water soluble Coenzyme Q10. Mitochondrion. 2014 Jul;17:106-15. doi:
+10.1016/j.mito.2014.07.004. Epub 2014 Jul 15. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/25034304">25034304</a>.</p>
+</blockquote>
+<p>In AD, one of the early events in vulnerable neurons is the increased
+production of reactive oxygen species (ROS). Neurons have low antioxidant
+capabilities and live for long periods which makes this oxidative stress
+particularly damaging and exacerbate mitochondrial dysfunction. Extended
+exposure to oxidative stress can lead to stress-induced premature senescence
+(SIPS).</p>
+<p>AD is associated with mutations in amyloid percursor protein (APP) and
+presenilin-1 (PS-1) and presenilin-2. PS-1 is responsible for AD familial type 3
+and is part of the Ɣ-secretase complex involved in APP processing to Aβ.</p>
+<p>Coenzyme Q<sub>10</sub> is an antioxidant in mitochondrial membranes and
+facilitates the efficient transport of electrons and protects against oxidative
+injury.</p>
+<p>This study uses PS-1 mutated AD familial type 3 fibroblasts (PSAF) and healthy
+skin fibroblasts to examine the therapeutic effect of water soluble
+coenzymeQ<sub>10</sub>. They found that the PSAF had higher ROS levels than the
+healthy fibroblasts as well as p53, p21 and p16Ink4a - proteins involved in
+cellular senescence.</p>
+<p>PSAF cultured with the coenzymeQ showed lower levels of senescence markers like
+p21 and no changes in p53 suggesting that the water soluble coenzymeQ is able to
+delay the onset of SIPS. It also maintained proliferation status in PSAF and
+reduced the levels of ROS in the PSAFs and in mitochondria isolated from them.</p>
+<p>In AD, studies have reported deficits in autophagy needed for the degradation
+and recycling of dangerous intracellular components. The water soluble
+coenzymeQ was able to partly restore the autophagic activity in PSAF.</p>
+<p>March 17, 2021</p>
+<h1 id="epigenetic-basis-of-cellular-senescence-and-its-implications-in-aging"><a class="header" href="#epigenetic-basis-of-cellular-senescence-and-its-implications-in-aging">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a></h1>
+<p><a href="https://doi.org/10.3390/genes8120343">Genes</a></p>
+<p>November 24, 2017</p>
+<blockquote>
+<p>Nacarelli T, Liu P, Zhang R. Epigenetic Basis of Cellular Senescence and Its
+Implications in Aging. Genes (Basel). 2017 Nov 24;8(12):343. doi:
+10.3390/genes8120343. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/29186801">29186801</a>; PMCID: PMC5748661.</p>
+</blockquote>
+<p>Cellular senescence serves an important tumour supressive role and prevents
+stressed cells from turning oncogenic and proliferating.</p>
+<p>However, long-term or chronic senescence has deleterious effects. Their
+cell-autonomous proliferative arrest is maintained by p53 and CDK4 and CDK6
+inhibitor p16. p53 upregulates p21 to arrest the cell cycle. p16 is activated by
+stress-related pathways like the p38 MAP kinase pathway. Since senescence cells
+resist death and can persist, they may accumulate and exhaust tissues of
+proliferation-competent cells and renewable stem cells, overall reducing the
+its regenerative capacity. The SASP can also promote DNA damage response and
+proliferative arrest and promote senescence in neighbouring cells.</p>
+<h2 id="epigenetic-changes-during-senescence-and-ageing"><a class="header" href="#epigenetic-changes-during-senescence-and-ageing">Epigenetic changes during senescence and ageing</a></h2>
+<p>Senescence-associated heterochromatic foci form during cellular senescence and
+are enriched in markers that repress proliferation-related genes. SAHF may not
+always be found in senescent cells. The heterochromatin in the SAHF is formed
+through heterochromatin redistribution from its loss from nuclear periphery,
+which is mediated by a loss of lamin B1. Lamin B1 is downregulated in senescence
+and silencing it can induce senescence.</p>
+<h2 id="epigenetic-effectors-of-cellular-senescence"><a class="header" href="#epigenetic-effectors-of-cellular-senescence">Epigenetic effectors of cellular senescence</a></h2>
+<p>High Mobility Group proteins HMGA1 and HMGA2 accumulate in the chromatin of
+senescent cells, displacing linker histone H1, and structurally support the
+SAHF. HMGB1 has p53-dependent secretion and activates NFκB and pro-inflammatory
+pathways. HMGA2 also has pro-inflammatory roles, different from HMGB1, one of
+which is binding the loci of SASP genes to prevent them from being incorporated
+into SAHF regions that repress transcription - the SASP could be separated from
+the more beneficial senescent cell cycle arrests.</p>
+<h2 id="epigenetic-regulators-of-the-sasp"><a class="header" href="#epigenetic-regulators-of-the-sasp">Epigenetic regulators of the SASP</a></h2>
+<p>Inhibition of the SASP enhancer BRD4 suppressed the SASP while maintaining the
+arrest of senescent cells. SASP is negatively regulated by SIRT1. With SIRT1
+knockdown or reduced expression in senescence, acetylation of H3K9 and H4K16 is
+increased at interleukin 6 and 8 promoters and their increased transcription.</p>
+<p>2021-03-17</p>
+<h1 id="cellular-senescence-immunosurveillance-and-future-immunotherapy"><a class="header" href="#cellular-senescence-immunosurveillance-and-future-immunotherapy">Cellular senescence: Immunosurveillance and future immunotherapy</a></h1>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1568163718300114">Ageing Research Reviews</a></p>
+<p>May 2018</p>
+<blockquote>
+<p>Burton DGA, Stolzing A. Cellular senescence: Immunosurveillance and future
+immunotherapy. Ageing Res Rev. 2018 May;43:17-25. doi:
+10.1016/j.arr.2018.02.001. Epub 2018 Feb 7. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/29427795">29427795</a>.</p>
+</blockquote>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>Cellular ageing is a result of gradual accumulation of damage over time while
+cellular senescence is a programmed change in cell state and a permanent
+inhibition of growth. Senescent cells gain new functions, but aged cells do not.</p>
+<p>Senescence induction is the programmed response following DNA damage response
+(DDR) triggered by stressing stimuli.</p>
+<p>One of the main phenotypes of senescent cells is the senescence-associated
+secretory phenotype in which the cells secrete pro-inflammatory cytokines,
+growth factors and proteases.</p>
+<h2 id="immune-response"><a class="header" href="#immune-response">Immune response</a></h2>
+<p>The DDR during the induction of senescence induces an altered secretome that
+attracts and activates immune cells and upregulates the expression of NKG2D
+ligands on senescent cells allowing them to be recognized by immune cells.</p>
+<p>The reactivation of p53 in p53-deficient tumours promoted the induction of
+senescence which was associated with the activation of the innate immune system
+leading to tumour clearance. Clearance of senescent cells in fibrotic livers
+prevented excess fibrosis.</p>
+<p>NK mediated killing depended on granule exocytosis and mice with defects in
+granule exocytosis accumulated senescent cells. There are cell receptors that
+are upregulated after senescence induction to allow identification by natural
+killer cells.</p>
+<p>Senescent cells also release factors that promote macrophage polarisation
+towards a tumour-inhibiting M1 state capable of targeting senescent cells.</p>
+<h2 id="immunosuppressive-response"><a class="header" href="#immunosuppressive-response">Immunosuppressive response</a></h2>
+<p>The senescence-mediated immune response can be immunosuppessive and tumour
+promoting. This may be dependent on the genetic background of the cells and the
+mode of senescence induction as well as whether the cells have persisted in
+senescence and undergone changes associated with a chronic response rather than
+a beneficial acute response. A chronic senescence response can promote
+age-related inflammatory disease.</p>
+<h2 id="senescence-of-immune-cells"><a class="header" href="#senescence-of-immune-cells">Senescence of immune cells</a></h2>
+<p>The senescence of immune system cells can lead to immune suppression, elevated
+inflammation, accumulation of other senescent cells and immunosenescence which
+is the ageing of the immune system.</p>
+<h3 id="astrocytes"><a class="header" href="#astrocytes">Astrocytes</a></h3>
+<p>β-amyloid can trigger cell senescence in astrocytes which could increase the
+risk of sporadic AD. Genes involved in neuronal development and differentiation
+were down-regulated in senescent astrocytes.</p>
+<h2 id="immunotherapy-targeting-senescent-cells"><a class="header" href="#immunotherapy-targeting-senescent-cells">Immunotherapy targeting senescent cells</a></h2>
+<p>The removal of senescent cells could be a potential therapy for
+senescence associated ageing diseases like AD. However, removing acute
+senescent cells could be problematic and prevent normal functioning like wound
+healing and tumor suppression.</p>
+<p>Senolytics that use the immune system to target senescent cells may not work if
+the immune system has itself undergone senescence.</p>
+<p>April 19, 2021</p>
+<h1 id="transcriptome-signature-of-cellular-senescence"><a class="header" href="#transcriptome-signature-of-cellular-senescence">Transcriptome signature of cellular senescence</a></h1>
+<p><a href="https://doi.org/10.1093/nar/gkz555">Nucleic Acids Research</a></p>
+<p>June 28, 2019</p>
+<blockquote>
+<p>Casella G, Munk R, Kim KM, Piao Y, De S, Abdelmohsen K, Gorospe M.
+Transcriptome signature of cellular senescence. Nucleic Acids Res. 2019 Aug
+22;47(14):7294-7305. doi: 10.1093/nar/gkz555. Erratum in: Nucleic Acids Res.
+2019 Dec 2;47(21):11476. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/31251810">31251810</a>; PMCID: PMC6698740.</p>
+</blockquote>
+<p>Cellular senescence has a number of characteristics including DNA damage,
+induction of the p53/CDKN1A (p21) and CDKN2A (p16)/pRB pathways,
+senescence-associated β-galactosidase activity, cytoskeletal alterations, the
+formation of senescence-associated heterochromatin foci, and the SASP. However,
+these markers of senescence are not universal and are not a good way to ensure
+that a cell is senescent.</p>
+<p>This study used universally expressed transcripts from different senescent cell
+models and, using RNA-seq, found RNAs that could be used to identify senescent
+cells.</p>
+<p>The main differences in RNA expression depended on the cell type of origin, and
+not on the senescence induction method which supports the idea that senescence
+is not a single phenotypic state.</p>
+<p>The RNA-seq analysis revealed 50 elevated and 18 reduced transcripts between the
+senescent and non-senescent cells, some of which were consistent between all
+senescence models and were more uniform than the p21 and p16 markers.</p>
+<p>Examining the 68 transcripts shared between the senescent types, a PCA showed
+that senescence state gave the clearest separation between the cell types. An ML
+models using LASSO showed that 5 transcripts, <em>SLCO2B1</em>, <em>CLSTN2</em>, <em>PTCHD4</em>
+mRNAs and <em>LINCO2154</em> and <em>PURPL</em> lncRNAs, were the minimum needed to
+distinguish senescent cells. <em>PURPL</em> was one of the most highly and consistently
+elevated transcripts and is controlled by the transcription factor p53, which is
+elevated in senescent cells. It may contribute to the survival of senescent
+cells as it does in tumors.</p>
+<p>December 11, 2020</p>
+<h1 id="cellular-senescence-defining-a-path-forward"><a class="header" href="#cellular-senescence-defining-a-path-forward">Cellular senescence: Defining a path forward</a></h1>
+<p><a href="https://doi.org/10.1016/j.cell.2019.10.005">Cell</a></p>
+<p>October 31, 2019</p>
+<blockquote>
+<p>Gorgoulis V, Adams PD, Alimonti A, Bennett DC, Bischof O, Bishop C, Campisi J,
+Collado M, Evangelou K, Ferbeyre G, Gil J, Hara E, Krizhanovsky V, Jurk D,
+Maier AB, Narita M, Niedernhofer L, Passos JF, Robbins PD, Schmitt CA, Sedivy
+J, Vougas K, von Zglinicki T, Zhou D, Serrano M, Demaria M. Cellular
+Senescence: Defining a Path Forward. Cell. 2019 Oct 31;179(4):813-827. doi:
+10.1016/j.cell.2019.10.005. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31675495">31675495</a>.</p>
+</blockquote>
+<p>This review examines methods to detect senescent cells since there is not one
+defining trait that is unique to senescenct cells. Senescenece can happen
+independently of the organisms' age and have both advantageous and deleterious
+effects. They define cell cycle arrest, secretion, macromolecular damage, and
+deregulated molecular profile as characteristics of cellular senescence. They
+also examine ways to detect senescent cells in humans. While there are markers
+that can be used, no marker is a unique or defining enough to decide whether the
+cell is senescent. Even the SASP, while a common feature, is a varied one. The
+authors advise a multi-pronged approach to identifying senescence.</p>
+<p>April 22, 2021</p>
+<h1 id="impaired-immune-surveillance-accelerates-accumulation-of-senescent-cells-and-aging"><a class="header" href="#impaired-immune-surveillance-accelerates-accumulation-of-senescent-cells-and-aging">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a></h1>
+<p><a href="https://www.nature.com/articles/s41467-018-07825-3">Nature Communications</a></p>
+<p>December 21, 2018</p>
+<blockquote>
+<p>Ovadya Y, Landsberger T, Leins H, Vadai E, Gal H, Biran A, Yosef R, Sagiv A,
+Agrawal A, Shapira A, Windheim J, Tsoory M, Schirmbeck R, Amit I, Geiger H,
+Krizhanovsky V. Impaired immune surveillance accelerates accumulation of
+senescent cells and aging. Nat Commun. 2018 Dec 21;9(1):5435. doi:
+10.1038/s41467-018-07825-3. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/30575733">30575733</a>; PMCID: PMC6303397.</p>
+</blockquote>
+<p>Cellular senescence is a component of ageing that prevents damaged cells from
+proliferating and spreading that damage. Senescent cells are normally removed by
+the immune system and cells in that tissue regenerate. Senescence is also part
+of ageing and the efficiency of senescent cell removal decreases with age
+leading to an accumulation of senescent cells. With accumulation, the
+beneficial effects of senescence are outweighed by its negative effects.</p>
+<p>Perforin-mediated granule exocytosis is necessary for immune surveillance of
+senescent cells in damaged livers. This study used perforin knockout mice to
+understand the consequences of impaired immune surveillance.</p>
+<h2 id="results-1"><a class="header" href="#results-1">Results</a></h2>
+<p>The results showed that perforin deficiency accelerates senescence with age. In
+WT mice senescent cells made up 10% of the examined tissue while in the preforin
+knockout mice, it was 43% at 24 months. The expression of p16, another
+senescence marker, increased more in the KO mice than the WT. This senescence
+increase was tested with a number of other known senescence markers and shown to
+be consistent.</p>
+<p>Along with the increase in senescent cell numbers, there was also an increase in
+age-dependent chronic inflammation with increased cytokine expression and
+more tissue-infiltrating immune cells. In 24 month-old mice there was an
+increase in serum cytokine levels and pro-inflammatory factors, but not in 2 and
+12 month-old mice. The accumulation of senescent cells in tissues is accompanied
+by an increased inflammatory response.</p>
+<p>Loss of perforin also resulted in age-related disorders like fibrosis in various
+organs, loss of the subcutaneous fat layer, and loss of hair follicles. An
+examination of their blood for tissue damage markers found tissue damage in
+internal organs as well as increased urea levels, probably from kidney damage.
+The KO mice were less active and had poorer grip strength and coordination that
+the WT mice. Further, these mice also had a decreased lifespan than the WT mice.</p>
+<p>They also used a mouse with the <em>LMNA</em> gene mutation which resulted in
+senescent cell accumulation. These mice, when crossed with those with the
+preforin deficiency, acquired the deficiency and their lifespans were shorter
+than the mice with just the <em>LMNA</em> gene mutation. This suggests that despite an
+increased senescent cell burden, a functioning immune surveillance system can
+help to slow senescence-induced ageing.</p>
+<h2 id="senolytic-treatment"><a class="header" href="#senolytic-treatment">Senolytic treatment</a></h2>
+<p>Using the ABT-737 senolytic resulted in decreased senescent cell burden, reduced
+inflammation and immune cell infiltration, and increased activity and lifespan.
+The treatment drove the expression of SASP genes down to levels found in young
+mice, counteracting the effect of ageing.</p>
+<p>In the mice with the <em>LMNA</em> mutation, treatment extended their lifespan and
+decreased the senescent cell burden and cytokine levels.</p>
+<p>If senolytic treatments are able to preserve the benefits of senescence, they
+could be part of therapeutics for age-related diseases and ameliorate the
+negative effects of ageing.</p>
+<p>March 8, 2021</p>
+<h1 id="astrocyte-senescence-promotes-glutamate-toxicity-in-cortical-neurons"><a class="header" href="#astrocyte-senescence-promotes-glutamate-toxicity-in-cortical-neurons">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a></h1>
+<p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227887">PLOS One</a></p>
+<p>January 16, 2020</p>
+<blockquote>
+<p>Limbad C, Oron TR, Alimirah F, Davalos AR, Tracy TE, Gan L, Desprez PY,
+Campisi J. Astrocyte senescence promotes glutamate toxicity in cortical
+neurons. PLoS One. 2020 Jan 16;15(1):e0227887. doi:
+10.1371/journal.pone.0227887. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/31945125">31945125</a>; PMCID: PMC6964973.</p>
+</blockquote>
+<p>A study showed that glioblastoma cells undergo senescence and develop the SASP
+which promotes tumor growth in the brain. The authors of this paper asked
+whether this senescence could contribute to neurodegeneration since astrocyte
+senescence has been observed in AD patients.</p>
+<p>They used X-irradiation to induce senescence in astrocytes. Since astrocytes
+maintain glutamate, potassium and water homeostasis, they tested how senescence
+would affect the expression of genes involved in these homeostatic processes.
+Examining the excitatory amino acid transporters 1 and 2, their qPCR showed that
+in senescent astrocytes these genes were downregulated.</p>
+<p>Using RNA-seq, they checked whether senescence affected these homeostatic
+pathways. Senescence markers like p16INK4a mRNA were significantly increased in
+the senescent astrocytes and lamin B1 was decreased according to expectations
+since they were both known senescence markers.</p>
+<p>Disease enrichment analysis on the differentially upregulated genes showed that
+they were involved in cancer, infectious disease or AD. The downregulated genes
+were involved in cancer and neurological disease. Using a dataset from NetWork
+Glia they filtered for Transporter associated astrocyte enriched genes. A
+gene-set enrichment analysis on this data gave a p-value of 0.08. This confirmed
+the downregulation of the amino acid transporters in senescent astrocytes.</p>
+<p>Their next question was whether this downregulation affected glutamate uptake in
+astrocytes. Using a co-culture of neurons with senescent and non-senescent
+astrocytes, both with and without a 10mM solution of glutamate, they found that
+neurons died when cultured with glutamate and were in co-culture with senescent
+astrocytes. The senescent astrocytes did not take up glutamate efficiently
+leading to the death of co-cultured neurons.</p>
+<p>Astrocytes are important to neuron survival and this capability is compromised
+when they become senescent. If astrocytes are unable maintain an appropriate
+level of glutamate in the brain, neurons are at risk of death from
+excitotoxicity. The RNA-seq also found that APOE is upregulated in senescent
+astrocytes which could put AD patients at greater risk of losing neurons to
+glutamate toxicity.</p>
+<p>March 18, 2021</p>
+<h1 id="a-multidimensional-systems-biology-analysis-of-cellular-senescence-in-aging-and-disease"><a class="header" href="#a-multidimensional-systems-biology-analysis-of-cellular-senescence-in-aging-and-disease">A multidimensional systems biology analysis of cellular senescence in aging and disease</a></h1>
+<p><a href="https://doi.org/10.1186/s13059-020-01990-9">Genome Biology</a></p>
+<p>April 07, 2020</p>
+<blockquote>
+<p>Avelar RA, Ortega JG, Tacutu R, Tyler EJ, Bennett D, Binetti P, Budovsky A,
+Chatsirisupachai K, Johnson E, Murray A, Shields S, Tejada-Martinez D,
+Thornton D, Fraifeld VE, Bishop CL, de Magalhães JP. A multidimensional
+systems biology analysis of cellular senescence in aging and disease. Genome
+Biol. 2020 Apr 7;21(1):91. doi: 10.1186/s13059-020-01990-9. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/32264951">32264951</a>; PMCID: PMC7333371.</p>
+</blockquote>
+<h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
+<p>Hayflick and Moorhead demonstrated replicative senescence in fibroblasts that
+reached a stable proliferative growth arrest. The cells remained metabolically
+active and had a distinct vacuolated morphology.</p>
+<p>Replicative senescence is driven by telomere attrition that exposes the
+chromosome end and triggers the DNA damage response. Other types of senescence
+occur with exposure to stressors like oncogenic factors, oxidative stress or
+radiation. It is a pleiotropic phenomenon vital to embryogenesis, tumour
+suppression, and wound healing.</p>
+<p>The persistence of senescence cells without clearance by the immune system can
+lead to a chronic state of senescence and inflammation through the
+senescence-associated secretory phenotype - a state that can spread senescence
+to neighbouring healthy cells.</p>
+<p>It can be hard to determine what cellular senescence is since there is no one
+marker to identify it. β-galactosidase activity and p16 expression are usually
+used to identify senescent cells, but these markers are not unique or always
+found in senescent cells. The CellAge database uses existing data on human
+ageing to provide data on senescence.</p>
+<h2 id="results-2"><a class="header" href="#results-2">Results</a></h2>
+<p>CellAge has 279 senescence genes in different senescence pathways. They ran a
+meta-analysis to get a molecular signature of replicative senescence and found
+526 overexpressed and 734 underexpressed genes. 44 of the 279 CellAge genes were
+found in cellular senescence signatures, a significant overlap.</p>
+<h3 id="cellage-gene-functions"><a class="header" href="#cellage-gene-functions">CellAge gene functions</a></h3>
+<p>Functional enrichment analyses showed that CellAge genes are enriched with
+several clusters associated with Protein Kinase Activity, transcription
+regulation DNA-binding, DNA damage repair, and cell cycle regulation in cancer.
+Genes inducing senescence were more associated with promoting transcription and
+genes inhibiting senescence were associated with transcription repression.</p>
+<p>Clustering related processes resulted in 298 categories that were significantly
+enriched.</p>
+<h3 id="evolutionary-conservation-of-cellage-genes-in-model-organisms"><a class="header" href="#evolutionary-conservation-of-cellage-genes-in-model-organisms">Evolutionary conservation of CellAge genes in model organisms</a></h3>
+<p>There were significantly more orthologues for human CellAge genes in mice, rats,
+and monkeys than for other genes. Senescence inducers were more conserved than
+inhibitors.</p>
+<p>22 orthogroups were conserved in the 24 mammals studied.</p>
+<h3 id="cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes"><a class="header" href="#cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes">CellAge vs human orthologues of longevity-associated model organism genes</a></h3>
+<p>Senescence inducers overlapped with anti-longevity genes and not with
+pro-longevity genes and vice-versa with senescence inhibitors. They did however
+find an overrepresentation of senescence inhibitors in the anti-longevity genes
+set. There is a significant association between cellular senescence and the
+ageing process and there may be an inverse relationship between senescence and
+longevity for some pathways.</p>
+<h3 id="cellage-genes-differentially-expressed-with-age"><a class="header" href="#cellage-genes-differentially-expressed-with-age">CellAge genes differentially expressed with age</a></h3>
+<p>Genes overexpressed with age overlapped with the CellAge genes and genes
+underexpressed with age did not show any significant overlap. Overexpressed
+signatures of ageing overlapped with overexpressed signatures of replicative
+senescence, but not underexpressed signatures of ageing.</p>
+<p>Underexpressed signatures of replicative senescence did not overlap with
+overexpressed or underexpressed ageing signatures.</p>
+<p>91 inducers and 72 inhibitors overlapped with ageing signatures in fibroblasts.</p>
+<p>Functional enrichment analysis showed that 71 GO terms were enriched for the
+overlap between CellAge senescence inducers and age upregulated genes.</p>
+<h3 id="tissue-specific-senescence-gene-expression-and-differential-expression-of"><a class="header" href="#tissue-specific-senescence-gene-expression-and-differential-expression-of">Tissue specific senescence gene expression and differential expression of</a></h3>
+<p>They asked if CellAge genes and differentially expressed signatures of
+senescence were tissue-specific. CellAge genes were generally expressed across
+tissue types. Only 10% of CellAge genes and 11% of senescence signatures had
+tissue-specific expression.</p>
+<p>Overexpressed senescence signatures were across tissue types with age. 64% of
+protein-coding genes did not significantly change expression with age in any
+tissues. The number of CellAge senescence inducers overexpressed with age was
+higher than the genome average.</p>
+<p>Overexpressed signatures of senescence were significantly differentially
+expressed with age compared to all protein-coding genes. The number of
+underexpressed signatures of senescence was underexpressed more than expected by
+chance.</p>
+<p>The expression of most of the senescence genes did not change with age, but a
+significant number tend to be differentially expressed with age across multiple
+tissues in humans.</p>
+<h3 id="senescence-and-longevity-genes-associate-with-ageing-related-diseases"><a class="header" href="#senescence-and-longevity-genes-associate-with-ageing-related-diseases">Senescence and longevity genes associate with ageing related-diseases</a></h3>
+<p>Using data on 769 ageing related diseases, they found that all were
+significantly associated with CellAge genes.</p>
+<h3 id="are-cs-genes-associated-with-cancer-genes"><a class="header" href="#are-cs-genes-associated-with-cancer-genes">Are CS genes associated with cancer genes?</a></h3>
+<p>There was a significant overlap between CellAge genes and cancer, with both
+oncogenes and tumour suppression genes.</p>
+<p>Senescence inducers tended to be tumour suppressors, while inhibitors were
+oncogenes which is consistent with the view that senescence is a
+tumour-suppressing mechanism.</p>
+<h3 id="network-analysis"><a class="header" href="#network-analysis">Network analysis</a></h3>
+<p>RNA-Seq Unweighted Co-expression network:</p>
+<p>There were a number of clusters found and one was related to immunity.</p>
+<p>February 11, 2021</p>
+<h1 id="single-cell-transcriptome-analysis-reveals-six-subpopulations-reflecting-distinct-cellular-fates-in-senescent-mouse-embryonic-fibroblasts"><a class="header" href="#single-cell-transcriptome-analysis-reveals-six-subpopulations-reflecting-distinct-cellular-fates-in-senescent-mouse-embryonic-fibroblasts">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a></h1>
+<p><a href="https://doi.org/10.3389/fgene.2020.00867">Frontiers in Genetics</a></p>
+<p>August 11, 2020</p>
+<blockquote>
+<p>Chen W, Wang X, Wei G, Huang Y, Shi Y, Li D, Qiu S, Zhou B, Cao J, Chen M, Qin
+P, Jin W, Ni T. Single-Cell Transcriptome Analysis Reveals Six Subpopulations
+Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts.
+Front Genet. 2020 Aug 11;11:867. doi: 10.3389/fgene.2020.00867. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/32849838">32849838</a>; PMCID: PMC7431633.</p>
+</blockquote>
+<p>They conducted snRNA-seq on Mouse Embryonic Fibroblasts (MEFs) to examine the
+heterogeneity of single MEFs during cellular senescence. PCA showed that they
+could be divided into six subpopulations and three distinct lineages during
+senescence.</p>
+<p>February 26, 2020</p>
+<h1 id="cellular-senescence-and-failure-of-myelin-repair-in-ms"><a class="header" href="#cellular-senescence-and-failure-of-myelin-repair-in-ms">Cellular senescence and failure of myelin repair in MS</a></h1>
+<p><a href="https://doi.org/10.1016/j.mad.2020.111366">Mechanisms of Ageing and Development</a></p>
+<p>December 2020</p>
+<blockquote>
+<p>Koutsoudaki PN, Papadopoulos D, Passias PG, Koutsoudaki P, Gorgoulis VG.
+Cellular senescence and failure of myelin repair in multiple sclerosis. Mech
+Ageing Dev. 2020 Dec;192:111366. doi: 10.1016/j.mad.2020.111366. Epub 2020 Sep
+28. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32991921">32991921</a>.</p>
+</blockquote>
+<p>This review examined the role of cellular senescence and remyelination failure
+in MS. OPCs are responsible for the myelination of neurons in the brain when
+they differentiate into oligodendrocytes in response to microglial signalling.
+Senescent microglia show dysfunctional degradation which inhibits OPC
+differentiation into oligodendrocytes. OPC senescence is associated with ageing
+and exposure to amyloid-beta oligomers, with expression of p16, p21 and
+senescence-associated beta galactosidase. Some SASP components secreted by
+senescent cells could interfere with myelination. Senescence also affects other
+cells like astrocytes, microglia and neurons. Treating senescent astrocytes with
+rapamycin restored astrocyte ability to support OPC differentiation. Senescence
+in the BBB increases its permeability and the entry of fibrinogen can interfere
+with the differentiation of OPCs and affect remyelination. Treatments with
+senolytics reduced neuroinflammation and cognitive deficits which shows that
+senescence could contribute to the state of neuroinflammation and to the loss of
+cognitive function.</p>
+<p>Myelin is negatively related to age and loss of myelin could contribute to AD
+pathology. A number of cell types have been shown to become senescent on
+exposure to amyloid or tau in AD brains and other papers have shown that myelin
+disruption is found in AD and could be an early feature. TREM2 which is an AD
+associated gene is involved in myelin debris removal. When the myelin debris
+overwhelms microglia, they can become senescent and myelination an be affected.</p>
+<p>Jun 18, 2021</p>
+<h1 id="the-long-non-coding-rna-mir31hg-regulates-the-senescence-associated-secretory-phenotype"><a class="header" href="#the-long-non-coding-rna-mir31hg-regulates-the-senescence-associated-secretory-phenotype">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a></h1>
+<p><a href="https://doi.org/10.1038/s41467-021-22746-4">Nature Communications</a></p>
+<p>April 28, 2021</p>
+<blockquote>
+<p>Montes M, Lubas M, Arendrup FS, Mentz B, Rohatgi N, Tumas S, Harder LM,
+Skanderup AJ, Andersen JS, Lund AH. The long non-coding RNA MIR31HG regulates
+the senescence associated secretory phenotype. Nat Commun. 2021 Apr
+28;12(1):2459. doi: 10.1038/s41467-021-22746-4. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/33911076">33911076</a>; PMCID: PMC8080841.</p>
+</blockquote>
+<p>The SASP can prevent cancer progression through autocrine and paracrine
+senescence and activate the immune system to clear damaged cells. However, the
+SASP can also promote tumorigenic processes like angiogenesis and invasion.
+During ageing the SASP can lead to chronic inflammation and spread of senescence
+into neighboring cells. lncRNAs could be important in regulating SASP genes.
+<em>MIR310HG</em> knock-down in BRAF-induced senescent fibroblasts reduced expression
+and secretion of SASP components.</p>
+<p>They found that <em>MIR310HG</em> depletion during oncogene induced senescence affected
+the SASP as they did not upregulate the main components of the SASP. These cells
+without the <em>MIR310HG</em> produced less IL6 and CXCL1, SASP inflammatory factors.</p>
+<p>Their examination of the paracrine effects of <em>MIR310HG</em> showed that the
+knock-down did not affect the senescence but did affect the induction of
+paracrine invasion. The depletion also resulted in reduced CEBPB and NF-κB
+activation in oncogene-induced senescence as well as decreased IL1A translation.</p>
+<p>Senescence-targeting therapies try to affect the SASP without changing the
+tumor-suppressive benefits of senescence and <em>MIR310HG</em> is able to reduce
+senescence invasion without affecting the growth arrest. Overall they've found
+that depletion of <em>MIR310HG</em> results in p16 induction without SASP activation
+and decreases the pro-invasive factors of the SASP.</p>
+<p>May 14, 2021</p>
+<h1 id="early-onset-senescence-and-cognitive-impairment-in-a-murine-model-of-repeated-mtbi"><a class="header" href="#early-onset-senescence-and-cognitive-impairment-in-a-murine-model-of-repeated-mtbi">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a></h1>
+<p><a href="https://doi.org/10.1186/s40478-021-01190-x">Acta Neuropathologica Communications</a></p>
+<p>May 8, 2021</p>
+<blockquote>
+<p>Schwab N, Ju Y, Hazrati LN. Early onset senescence and cognitive impairment
+in a murine model of repeated mTBI. Acta Neuropathol Commun. 2021 May
+8;9(1):82. doi: 10.1186/s40478-021-01190-x. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/33964983">33964983</a>; PMCID: PMC8106230.</p>
+</blockquote>
+<p>Mild traumatic brain injury is a risk factor for neurodegenerative diseases.
+There is an increase in oxidative stress that can lead to DNA damage that
+overwhelms the cells damage response mechanisms. Brain cells may start to become
+senescent with repeated activation of the DDR pathway. This paper uses a mouse
+model with repeated mild traumatic brain injury (rmTBI) to examine the role of
+senescence in mTBI related neurodegeneration.</p>
+<p>The injured mice showed a poorer righting reflex than the control mice as well
+as spatial and memory impairment. The examination of their brains revealed that
+they had gliosis, mircogliosis and axonal damage. rnaSeq showed that 24 hours
+after the injuries, the DDR was activated and cell-cycle arrest induced. Seven
+days after the injuries, more genes were found to be significantly different
+between the two mice groups. There was an increase in cellular
+senescence-related genes  as well as genes known to be risk factors and
+biomarkers of neurodegenerative diseases. Several of these genes are associated
+with AD-like pathology which shows that neurodegenerative processes may begin as
+soon as a week after the injury.  Further, there was a decrease in DDR gene
+expression which would put the brain at greater risk of damage if there were
+repeated incidences of TBI.</p>
+<p>May 19, 2021</p>
+<h1 id="an-aged-immune-system-drives-senescence-and-ageing-of-solid-organs"><a class="header" href="#an-aged-immune-system-drives-senescence-and-ageing-of-solid-organs">An aged immune system drives senescence and ageing of solid organs</a></h1>
+<p><a href="https://doi.org/10.1038/s41586-021-03547-7">Nature</a></p>
+<p>12 May, 2021</p>
+<blockquote>
+<p>Yousefzadeh MJ, Flores RR, Zhu Y, Schmiechen ZC, Brooks RW, Trussoni CE, Cui
+Y, Angelini L, Lee KA, McGowan SJ, Burrack AL, Wang D, Dong Q, Lu A, Sano T,
+O'Kelly RD, McGuckian CA, Kato JI, Bank MP, Wade EA, Pillai SPS, Klug J,
+Ladiges WC, Burd CE, Lewis SE, LaRusso NF, Vo NV, Wang Y, Kelley EE, Huard J,
+Stromnes IM, Robbins PD, Niedernhofer LJ. An aged immune system drives
+senescence and ageing of solid organs. Nature. 2021 May 12. doi:
+10.1038/s41586-021-03547-7. Epub ahead of print. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/33981041">33981041</a>.</p>
+</blockquote>
+<p>Ageing is one of the greatest risk factors for chronic diseases and ageing
+processing like senescence are a treatment target. Senolytics can be used to
+target senescence, but more work need to be done to understand what cells to
+target therapeutically.</p>
+<p>Immunosenescence is the decline in immune function with ageing and the
+development of senescence that increase disease susceptibility and contribute to
+mortality.</p>
+<p><em>ERCC1</em> is involved in the repair of DNA damage and reducing its expression can
+lead to the accumulation of oxidative lesions and senescent cells that then
+cause age-associated pathologies. This study used mice with <em>ERCC1</em> removed from
+lymphoid organs that showed an accelerated ageing phenotype.</p>
+<h3 id="immune-system-changes"><a class="header" href="#immune-system-changes">Immune system changes</a></h3>
+<p>The fraction of T cells was reduced in these mice at 4-5 months and T cells and
+B cells were reduced in older mutant mice unlike WT mice. Natural killer
+cytotoxicity was impaired in the mutant mice showing unhealthy immune ageing.
+Overall the <em>ERCC1</em> deletion caused accelerated ageing in the mice immune system
+and shows that the immune system is vulnerable to DNA damage.</p>
+<p><em>p16</em> and <em>p21</em> were significantly reduced in B and T cells, natural killer
+cells and in macrophages along with an increase in SASP expression. <em>p16</em>
+was found in the liver, kidneys, and the lungs. SA-β-galactosidase was increased
+in renal tubules and the liver.</p>
+<p>The mutant mice were poorer muscle regeneration after injury as well as reduced
+grip strength. They also had a shorter lifespan than the control mice showing
+that an aged immune system can lead to the loss of homeostasis and damage in
+peripheral organs, negatively affecting lifespan.</p>
+<h3 id="cell-non-autonomous-mechanism"><a class="header" href="#cell-non-autonomous-mechanism">Cell non-autonomous mechanism</a></h3>
+<p>The authors transplanted splenocytes from the mutant mice and two-year-old WT
+mice into <em>p16<sup>Ink4a</sup></em> luciferase reporter mice. The mutant splenocytes
+had increased levels of luciferase signal than those from controls. SASP protein
+levels were also increased in the recipients of mutant splenocytes. These
+results show that senescent immune cells can drive ageing and affect lifespan.</p>
+<h3 id="cell-autonomous-mechanism"><a class="header" href="#cell-autonomous-mechanism">Cell autonomous mechanism</a></h3>
+<p>Then they also transplanted splenocytes from young WT mice into the mutant mice.
+This resulted in the mutant mice showing reduced senescence and SASP factors
+levels. This also reduced <em>p16</em> and <em>p21</em> mRNA in mutant mice supporting the
+idea that a loss-of-function mechanism is involved in the inability of aged
+immune cells to suppress senescence.</p>
+<h3 id="rapamycin-rejuvenation"><a class="header" href="#rapamycin-rejuvenation">Rapamycin rejuvenation</a></h3>
+<p>Rapamycin is used in elderly people to improve their immune response to flu
+vaccination. The mutant mice were treated with rapamycin and their immune
+response was improved and <em>p16</em> and <em>p21</em> expression was reduced suggesting a
+modulation of the gain- and loss-of-function mechanisms through which senescence
+drives ageing.</p>
+<p>The study concluded that immune cells are vulnerable to endogenous DNA damage
+that can cause cell death or senescence if left unrepaired. Immunosenescence
+affects innate and adaptive immunity and drives senescence and age-related
+changes in solid organs.</p>
+<p>November 9, 2020</p>
+<h1 id="cellular-senescence-in-neurodegenerative-diseases"><a class="header" href="#cellular-senescence-in-neurodegenerative-diseases">Cellular Senescence in Neurodegenerative Diseases</a></h1>
+<p>11 February 2020</p>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fncel.2020.00016/full">Frontiers in Neuroscience</a></p>
+<blockquote>
+<p>Martínez-Cué C, Rueda N. Cellular Senescence in Neurodegenerative Diseases.
+Front Cell Neurosci. 2020 Feb 11;14:16. doi: 10.3389/fncel.2020.00016. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/32116562">32116562</a>; PMCID: PMC7026683.</p>
+</blockquote>
+<p>Cellular senescence is necessary to prevent the spread of damaged cells and
+could be a type of cell differentiation. There can be acute or chronic
+senescence.</p>
+<ul>
+<li>
+<p>Acute senescence is part of normal body functioning and processese like tissue
+repair.</p>
+</li>
+<li>
+<p>Chronic senescence is induced by extended exposure to stress and this produces
+cellular and tissue alterations.</p>
+<ul>
+<li>Replicative senescence Stress induced premature senescence (SIPS)</li>
+<li>Mitochondrial dysfunction-associated senescence</li>
+</ul>
+</li>
+</ul>
+<h2 id="general-senescence-phenotypes"><a class="header" href="#general-senescence-phenotypes">General Senescence phenotypes</a></h2>
+<ul>
+<li>
+<p>Permanent cell cycle arrest because entrance to the S phase</p>
+</li>
+<li>
+<p>SASP: synthesis and release of proinflammatory cytokines, growth factors</p>
+</li>
+<li>
+<p>Oxidative stress and mitochondrial dysfunction: high levels of oxidative
+stress induce senescence during aging and promote neuronal DNA damage,
+deregulated DNA damage response (DDR), changes to cell cycle progression and
+cell morphology, premature replicative senescence.</p>
+</li>
+<li>
+<p>Changes to cellular metabolism from altered mitochondrial function.</p>
+</li>
+<li>
+<p>Damage and alterations in DNA damage response</p>
+</li>
+<li>
+<p>Telomere shortening and dysfunction: there is reduced DNA repair and cell
+cycle arrest. While telomeric shortening is a major aging mechanism, telomere
+length does not always correlate with senescence</p>
+</li>
+<li>
+<p>Epigenetic modifications: changes in methylation enzyme activity that are
+associated with neuropathology</p>
+</li>
+<li>
+<p>Morphological changes: cytoskeletal rearrangement, more flat and irregular
+shape</p>
+</li>
+<li>
+<p>Altered proteostasis: increased unfolded protein response associated with
+endoplasmic reticulum stress.</p>
+</li>
+<li>
+<p>Promotion of chronic inflammation: neuroinflammation is both a trigger and a
+consequence of senescence and can spread the damage to neighbouring cells</p>
+</li>
+<li>
+<p>reduction in nervous system regenerative capacity because of the cell cycle
+arrest from senescence</p>
+</li>
+<li>
+<p>Loss of CNS cell function from the senescence and cell cycle arrests</p>
+</li>
+</ul>
+<h2 id="senescence-in-alzheimers-disease"><a class="header" href="#senescence-in-alzheimers-disease">Senescence in Alzheimer's Disease</a></h2>
+<p>Increased senescence is found in AD brains through SA-β-gal expression, p53
+expression, release of SASP components, DNA damage, telomeric damage and
+senescence-like morphological changes.</p>
+<p>Increased oxidative stress, neuroinflammation, and cellular senescence increase
+Aβ burden, tau hyperphosphorylation, neuronal death and accelerated cognitive
+decline, all symptoms and pathology in Alzheimer's disease</p>
+<p>The expression of senescence associated genes was shown to be upregulated on
+exposure to Aβ.</p>
+<h3 id="senescence-phenotypes-in-ad"><a class="header" href="#senescence-phenotypes-in-ad">Senescence Phenotypes in AD</a></h3>
+<ul>
+<li>
+<p>Permanent cell cycle arrest: Aβ hypothesis: neurons are induced to divide
+which causes them to enter senescence</p>
+</li>
+<li>
+<p>SASP: microglial overactivation, enhanced release of proinflammatory cytokines
+that aggravate Aβ and tau pathology</p>
+</li>
+<li>
+<p>Oxidative stress and mitochondrial dysfunction: increased ROS and altered
+mitochondrial structure and function - leads to cellular changes associated
+with senescence</p>
+</li>
+<li>
+<p>Telomeric DNA damage: non-telomeric DNA damage and repair: Increased DNA</p>
+</li>
+<li>
+<p>Damage and alterations in DNA damage response</p>
+</li>
+<li>
+<p>Epigenetic modifications: aberrant phosphorylation of histones, changes in
+methylation of AD critical genes - <strong>what genes?</strong></p>
+</li>
+<li>
+<p>Morphological changes: increased size, flat and irregular shape, changes in
+membrane composition</p>
+</li>
+<li>
+<p>Altered proteostasis: loss of protein homeostasis, nuclear dysfunction,
+accumulation of abnormal proteins (amyloid peptides and hyperphosphorylated
+tau)</p>
+</li>
+</ul>
+<p>December 17, 2020</p>
+<h1 id="ageing-as-a-risk-factor-for-neurodegenerative-disease"><a class="header" href="#ageing-as-a-risk-factor-for-neurodegenerative-disease">Ageing as a risk factor for neurodegenerative disease</a></h1>
+<p><a href="https://www.nature.com/articles/s41582-019-0244-7">Nature</a></p>
+<p>October 15, 2019</p>
+<blockquote>
+<p>Hou Y, Dan X, Babbar M, Wei Y, Hasselbalch SG, Croteau DL, Bohr VA. Ageing as
+a risk factor for neurodegenerative disease. Nat Rev Neurol. 2019
+Oct;15(10):565-581. doi: 10.1038/s41582-019-0244-7. Epub 2019 Sep 9. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/31501588">31501588</a>.</p>
+</blockquote>
+<p>Since neurodegenerative diseases are common in ageing brains, the authors
+suggest that brain ageing might form a continuum with neurodegeneration. They
+believe that ageing is a major risk factor for neurodegenerative disease. AD and
+PD tend to be observed in the elderly and the risk for disease increases with
+age.</p>
+<h2 id="ageing-biology"><a class="header" href="#ageing-biology">Ageing biology</a></h2>
+<p>Hallmarks of ageing:</p>
+<h3 id="primary"><a class="header" href="#primary">Primary</a></h3>
+<ul>
+<li>genomic instability</li>
+<li>telomere attrition</li>
+<li>epigenetic alterations</li>
+<li>loss of proteostasis</li>
+</ul>
+<h3 id="antagonistic-or-compensatory-responses"><a class="header" href="#antagonistic-or-compensatory-responses">Antagonistic or compensatory responses</a></h3>
+<ul>
+<li>mitochondrial dysfunction</li>
+<li>cellular senescence</li>
+<li>deregulated nutrient sensing</li>
+</ul>
+<p>There antagonistic responses are meant to combat the primary damage, but they
+can eventually become damaging themselves.</p>
+<h3 id="integrative-hallmarks"><a class="header" href="#integrative-hallmarks">Integrative hallmarks</a></h3>
+<ul>
+<li>stem cell exhaustion</li>
+<li>altered intercellular communication</li>
+</ul>
+<p>There arise as a result of cumulative damage from the primary and antagonistic
+hallmarks and are &quot;ultimately responsible for the functional decline associated
+with ageing&quot;.</p>
+<p>Tissues with postmitotic cells are particularly sensitive to the effects of
+ageing because they are more vulnerable to DNA damage.</p>
+<h3 id="cellular-senescence-1"><a class="header" href="#cellular-senescence-1">Cellular senescence</a></h3>
+<p>Cellular senescence is increased in AD, PD, ALS and Huntington disease.</p>
+<p>The authors believe that the hallmarks related to mitochondrial dysfunction are
+central and studies investigating communication between the nucleus and
+mitochondria will contribute to the understanding of ageing.</p>
+<p>April 12, 2021</p>
+<h1 id="genetically-determined-susceptibility-to-neurodegeneration-is-associated-with-expression-of-inflammatory-genes"><a class="header" href="#genetically-determined-susceptibility-to-neurodegeneration-is-associated-with-expression-of-inflammatory-genes">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a></h1>
+<p>October 2006</p>
+<blockquote>
+<p>Swanberg M, Duvefelt K, Diez M, Hillert J, Olsson T, Piehl F, Lidman O.
+Genetically determined susceptibility to neurodegeneration is associated with
+expression of inflammatory genes. Neurobiol Dis. 2006 Oct;24(1):67-88. doi:
+10.1016/j.nbd.2006.05.016. Epub 2006 Aug 23. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/16934480">16934480</a>.</p>
+</blockquote>
+<p>Axonal lesions are a common feature of neurodegenerative diseases like ALS, MS,
+and Alzheimer's disease. The response to these lesions is the axon reaction and
+includes metabolic and structural changes in the lesioned nerve cells and an
+activation of surrounding glial cells. This innate immune response can have
+beneficial and harmful effects.</p>
+<p>They removed the ventral root in two strains of adult rats and found that the
+ensuing neurodegeneration had the activation of astrocytes and microglia and
+upregulation of immunological compounds. The DA strain represents an injury
+susceptible model and the PVG represents an injury resistant one.  Their DA
+strain had more glial activation and greater lesioned motorneuron loss compared
+to the PVG strain.  This differences between the strains could show the
+importance of susceptibility to inflammatory disease in humans.</p>
+<p>The largest group of upregulated genes were part of an immunological and
+inflammatory gene group and these were more expressed in the strain susceptible
+to neurodegeneration.</p>
+<p>May 07, 2021</p>
+<h1 id="evidence-of-the-cellular-senescence-stress-response-in-mitotically-active-brain-cells--implications-for-cancer-and-neurodegeneration"><a class="header" href="#evidence-of-the-cellular-senescence-stress-response-in-mitotically-active-brain-cells--implications-for-cancer-and-neurodegeneration">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a></h1>
+<p><a href="https://www.mdpi.com/2075-1729/11/2/153/htm">Life</a></p>
+<p>February 17, 2021</p>
+<blockquote>
+<p>Gillispie GJ, Sah E, Krishnamurthy S, Ahmidouch MY, Zhang B, Orr ME. Evidence
+of the Cellular Senescence Stress Response in Mitotically Active Brain
+Cells-Implications for Cancer and Neurodegeneration. Life (Basel). 2021 Feb
+17;11(2):153. doi: 10.3390/life11020153. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/33671362">33671362</a>; PMCID: PMC7922097.</p>
+</blockquote>
+<p>While the risks for both neurodegeneration and cancer increase with age, there
+is an inverse correlation between the odds of getting one or the other. A number
+of genes, proteins, and pathways are shared, but in opposite directions. A
+recent study found that the most shared risk SNPs were in the locus containing
+the lncRNA ANRIL that modulates cell cycle regulators like <em>CDKN2A-B</em> that codes
+for p16<sup>INK4A</sup>, a mediator of cellular senescence. Senescence may
+contribute towards the inverse correlation between the risks for cancer and
+neurodegeneration. Senescent cells could be a way to avoid cancer development,
+but may contribute to neurodegeneration with age.</p>
+<p>For the review of the evidence of senescence in these diseases, they used cell
+cycle arrest, apoptosis resistance, the SASP, and SA-β-gal as senescence
+markers.</p>
+<p>They found some evidence to suggest that senescence protects against cancer, but
+they did not find enough to come to a strong conclusion. One study found that in
+pilocytic asrocytoma, a tumor formed from astrocytes, the presence of p16 and
+SA-β-gal were associated with increased patient survival. Exposure to genetic
+and external carcinogenic stimuli resulted in senescence markers being expressed
+in brain cells.</p>
+<p>However, most of the papers they read did not fully characterize
+senescence, using only a few markers which meant that there may have been other
+explanations for their results that don't include senescence. Some markers used,
+like p21, are part of normal cell functioning and by themselves do not
+necessarily indicate senescence.</p>
+<p>Their conclusion was that additional work needed to be done in the area that
+better identified senescence.</p>
+<h1 id="neuroblast-senescence-in-the-aged-brain-augments-natural-killer-cell-cytotoxicity-leading-to-impaired-neurogenesis-and-cognition"><a class="header" href="#neuroblast-senescence-in-the-aged-brain-augments-natural-killer-cell-cytotoxicity-leading-to-impaired-neurogenesis-and-cognition">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a></h1>
+<p>July 02, 2021</p>
+<h1 id="dystrophic-microglia-are-associated-with-neurodegenerative-disease-and-not-healthy-aging-in-the-human-brain"><a class="header" href="#dystrophic-microglia-are-associated-with-neurodegenerative-disease-and-not-healthy-aging-in-the-human-brain">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a></h1>
+<p>March 2021</p>
+<p><a href="https://doi.org/10.1016/j.neurobiolaging.2020.12.003">Neurobiology of Aging</a></p>
+<blockquote>
+<p>Shahidehpour RK, Higdon RE, Crawford NG, Neltner JH, Ighodaro ET, Patel E,
+Price D, Nelson PT, Bachstetter AD. Dystrophic microglia are associated with
+neurodegenerative disease and not healthy aging in the human brain. Neurobiol
+Aging. 2021 Mar;99:19-27. doi: 10.1016/j.neurobiolaging.2020.12.003. Epub 2021
+Jan 7. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33422891">33422891</a>.</p>
+</blockquote>
+<p>Dystrophic microglia are beaded and fragmented compared to normal microglia and
+are thought to be a form of microglial senescence. They have been found in aged
+humans without neurodegenerative pathologies but the authors suggest that it is
+associated with neurodegenerative disease.</p>
+<p>Studying human brains between 10 and 100 years of age, they found that
+dystrophic microglia were present at a greater frequency in brains with
+neurodegenerative pathology than in those without. It the brains with
+pathologies, they found a strong association of ferritin light chain which is
+responsible for storing intracellular iron with dystrophic microglia.</p>
+<p>There was no clear pattern of increased microglial dystrophy with age in the
+hippocampus or white matter, but there was an increase in the proportion of
+dystrophic microglia in the frontal cortex. Overall, dystrophic microglia were
+associated with neurodegenerative disease status.</p>
+<p>April 26, 2021</p>
+<h1 id="inflammation-a-beta-deposition-and-neurofibrillary-tangle-formation-as-correlates-of-alzheimers-disease-neurodegeneration"><a class="header" href="#inflammation-a-beta-deposition-and-neurofibrillary-tangle-formation-as-correlates-of-alzheimers-disease-neurodegeneration">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration</a></h1>
+<p>Journal of Neuropathology and Experimental Neurology</p>
+<p>October, 1996</p>
+<blockquote>
+<p>Lue LF, Brachova L, Civin WH, Rogers J. Inflammation, A beta deposition, and
+neurofibrillary tangle formation as correlates of Alzheimer's disease
+neurodegeneration. J Neuropathol Exp Neurol. 1996 Oct;55(10):1083-8. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/8858005">8858005</a>.</p>
+</blockquote>
+<p>This study demonstrated the significance of inflammation in the development of AD neurodegeneration by comparing brains from AD patients, high pathology controls and normal controls. The high pathology controls (HPC) had Aβ deposition and NFT formation that qualified for an AD diagnosis.</p>
+<p>Despite similar levels of Aβ deposition, the HPC patients showed no evidence of
+synapse loss, but the AD patients did. The high pathology controls also had
+significantly higher brain weights than those with AD.</p>
+<p>Inflammation was measured as C5b-9 immunoreactivity and was found abundantly in
+AD samples. The HPC inflamamtion levels on the other hand were more comparable
+to those of normal controls. This immunoreactivity was the most sensitive
+correlate of synapse loss. Lue et al. believed that it was one of the final
+pathways through which Aβ and NFTs convey their neurodegenerative effects (Lue
+et al. 1996) and move from just pathlogy to dementia.</p>
+<h1 id="the-genetic-landscape-of-alzheimers-disease"><a class="header" href="#the-genetic-landscape-of-alzheimers-disease">The Genetic Landscape of Alzheimer's disease</a></h1>
+<h2 id="amyloid-precursor-protein"><a class="header" href="#amyloid-precursor-protein">Amyloid precursor protein</a></h2>
+<p>In the amyloidogenic pathway, its proteolysis produces two variants of Aβ, one
+of which is aggredation prone and is found in AD brain plaques.</p>
+<h2 id="presenilin-1-and-2"><a class="header" href="#presenilin-1-and-2">Presenilin 1 and 2</a></h2>
+<p>Mutations in these genes impair the γ-secretase mediated cleavage of APP. PSEN 1
+mutations can have complete penetrance.</p>
+<h2 id="apolipoprotein-e"><a class="header" href="#apolipoprotein-e">Apolipoprotein E</a></h2>
+<p><em>APOE</em> encodes for ApoE which is involved in neuronal growth, repair response to
+injury, nerve regeneration, immunoregulation and activation of lipolytic
+enzymes.</p>
+<p>There are three major allelic variants with <em>APOE</em> ε4 increasing the risk of
+both early and late onset AD. It does not cause the disease on its own.</p>
+<h2 id="trem2"><a class="header" href="#trem2"><em>TREM2</em></a></h2>
+<p><em>TREM2</em> codes for the triggering receptor expressed on myeloid cells and
+increses risk for late onset AD. It's effect is comparable to that of <em>APOE</em>
+but its frequency is low.</p>
+<h1 id="genetics-of-alzheimers-disease-where-we-are-and-where-we-are-going"><a class="header" href="#genetics-of-alzheimers-disease-where-we-are-and-where-we-are-going">Genetics of Alzheimer’s disease: where we are, and where we are going</a></h1>
+<p>An examination of the progression of GWAS and the loci found associated with AD
+as well as an evaluation GWAS and its reliability.</p>
+<p>November 10, 2020</p>
+<h1 id="when-does-alzheimers-disease-really-start-the-role-of-biomarkers"><a class="header" href="#when-does-alzheimers-disease-really-start-the-role-of-biomarkers">When does Alzheimer's disease really start? The role of biomarkers</a></h1>
+<p>This paper reviews biomarkers and their usefullness at diagnosing AD. Since
+biomarkers can do so before traditional clinical symptoms, the authors evaluate
+when AD can be said to have started. They consider the disease one with a
+gradual progression with different stages.</p>
+<h2 id="ad-biomarkers"><a class="header" href="#ad-biomarkers">AD biomarkers</a></h2>
+<h3 id="in-cerebrospinal-fluid"><a class="header" href="#in-cerebrospinal-fluid">In cerebrospinal fluid</a></h3>
+<ul>
+<li>Aβ42 and tau. Aβ is diminished in the CSF of patients with AD compared to
+healthy patients since it forms Aβ oligomers in the brain. An increase of tau
+in the CSF is a good predictor, while not specific to AD.</li>
+</ul>
+<h3 id="imaging-biomarkers"><a class="header" href="#imaging-biomarkers">Imaging biomarkers</a></h3>
+<ul>
+<li>PiB-PET: a ligand of Aβ that allows analysis of Aβ load and spatial
+distribution when used in PET.</li>
+<li>FDG-PET: measures the cerebral metabolism of glucose and indicates neuronal
+and glial function. It correlates with decreased levels of synaptophysin that
+indicates a loss of synaptic activity.</li>
+<li>Structural and Functional MRI: cerebral atrophy can be quantified with MRI and
+be detected before the onset of clinical symptoms. It is considered a reliable
+diagnostic tool. It shows atrophy and thinning of the cerebral cortex.</li>
+</ul>
+<h2 id="when-ad-starts"><a class="header" href="#when-ad-starts">When AD starts</a></h2>
+<p>AD is an extended disease that with a latent start that progresses gradually
+untli the patient's cognition is compromised. Dementia is the final stage rather
+than the onset of the disease.</p>
+<p>Increased levels of Aβ would lead to the formation of plaques and a reduction in
+the levels of Aβ in the CSF - all while the patient is cognitively normal. Then
+there would be in increase in CSF tau abnormalities. The final stage would show
+cortical atrophy and decreased hippocampal volume that an MRI would detect.</p>
+<h2 id="risk-factors-in-biomarker-dynamics"><a class="header" href="#risk-factors-in-biomarker-dynamics">Risk factors in biomarker dynamics</a></h2>
+<p>People without APOE4 show an initial increase and then a decrease in CSF Aβ42
+with a progression of CSF tau. Those with at least one APOE4 allele showed only
+a decrease in CSF Aβ42 associated with a progression of tau pathology and then
+both markers became positive with disease progression.</p>
+<h2 id="new-classification---atn-system"><a class="header" href="#new-classification---atn-system">New classification - A/T/N system</a></h2>
+<ul>
+<li>A: β-amyloid marker - on the Alzheimer's continuum</li>
+<li>T: value of tau marker - have AD</li>
+<li>N: neurodegeneration or neuronal injury markers - have AD</li>
+<li></li>
+</ul>
+<p>December 08, 2020</p>
+<h1 id="genetic-meta-analysis-of-diagnosed-alzheimers-disease"><a class="header" href="#genetic-meta-analysis-of-diagnosed-alzheimers-disease">Genetic meta-analysis of diagnosed Alzheimer’s disease</a></h1>
+<p>This study identified new risk loci and implicated Aβ, tau, immunity and lipid
+processing.</p>
+<h2 id="resuts"><a class="header" href="#resuts">Resuts</a></h2>
+<p>Genome-wide-significant associations:</p>
+<ul>
+<li>
+<p>R47H <em>TREM2</em> coding variant: triggering receptor expressed in myeloid cells 2.
+With its antiinflammatory role, the P47H mutation may affect the brain's
+ability to prevent the buildup of plaque.</p>
+</li>
+<li>
+<p><em>ECHDC3</em>: may be part of fatty acid biosynthesis and insulin sensitivity</p>
+</li>
+<li>
+<p><em>ACE</em>: aangiotensin-converting enzyme.</p>
+</li>
+</ul>
+<p>Suggestive association:</p>
+<ul>
+<li>
+<p><em>ADAM10</em>: stabilization and regulation of the molecular optimization of the
+glutamatergic synapse.</p>
+</li>
+<li>
+<p><em>ADAMGS1</em>:</p>
+</li>
+<li>
+<p><em>IQCK</em>:</p>
+</li>
+<li>
+<p><em>ACE</em></p>
+</li>
+</ul>
+<p>February 15, 2021</p>
+<h1 id="the-cellular-phase-of-alzheimers-disease"><a class="header" href="#the-cellular-phase-of-alzheimers-disease">The Cellular Phase of Alzheimer's Disease</a></h1>
+<p><a href="https://doi.org/10.1016/j.cell.2015.12.056">Cell Press</a></p>
+<p>February 11, 2015</p>
+<blockquote>
+<p>De Strooper B, Karran E. The Cellular Phase of Alzheimer's Disease. Cell. 2016
+Feb 11;164(4):603-15. doi: 10.1016/j.cell.2015.12.056. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/26871627">26871627</a>.</p>
+</blockquote>
+<p>The linearity of the cascade remains very controversial. For instance,
+exploration of the direct link between Aβ and neurotoxicity has resulted in a
+rather confusing literature with at least ten different molecular mechanisms and
+receptors (see Figure 1) (Benilova et al., 2012). It is debatable whether they
+all equally contribute to the disease process in humans, as many of the
+supporting studies used non-physiologically high concentrations of Aβ or
+transgenic mice significantly overexpressing APP Thus, the neuron-centric view
+has to be expanded to one that considers the contribution of different cell
+types, their interactions with each other, and the gradual evolution of the
+disease.</p>
+<p>Instead of Aβ and Tau, the real causes of sporadic disease are upstream of these
+proteopathies and are likely manifold, with aging being the major driver.</p>
+<p>This paper examines the amyloid cascade hypothesis and questions the linearity
+of the amyloid cascade in producing AD pathology, saying the biochemistry of the
+brain needs to be intergrated. They found that studies supporting the amyloid
+cascade hypothesis used non-physiologically high concentrations of Aβ or
+transgenic mice overexpressing APP. Since a lot of 'confusing' literature with
+many different molecular mechanisms have come out they are skeptical that all
+equally contribute to AD pathology.  They also suggested that instead of Aβ and
+tau, the real causes of sporadic disease may be upstream of those proteopathies,
+with aging being the major driver of these conditions.</p>
+<p>In general, they believe that the neuron-centric view needs to be expanded to
+consider the contribution of different cell types and interactions including
+astrocytes, microglia, oligodendrocytes, and the role of the neurovascular unit
+and the vascular hypothesis of AD. With single-cell sequencing, more of these
+mechanisms and pathways can be explored.</p>
+<p>They also suggested that instead of Aβ and tau, the real causes of sporadic
+disease may be upstream of those proteopathies, with aging being the major
+driver of these conditions.</p>
+<p>December 22, 2020</p>
+<h1 id="single-cell-transcriptomic-analysis-of-alzheimers-disease"><a class="header" href="#single-cell-transcriptomic-analysis-of-alzheimers-disease">Single-cell transcriptomic analysis of Alzheimer’s disease</a></h1>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865822/">Nature</a></p>
+<p>May 1, 2019</p>
+<blockquote>
+<p>Mathys H, Davila-Velderrain J, Peng Z, Gao F, Mohammadi S, Young JZ, Menon M,
+He L, Abdurrob F, Jiang X, Martorell AJ, Ransohoff RM, Hafler BP, Bennett DA,
+Kellis M, Tsai LH. Single-cell transcriptomic analysis of Alzheimer's disease.
+Nature. 2019 Jun;570(7761):332-337. doi: 10.1038/s41586-019-1195-2. Epub 2019
+May 1. Erratum in: Nature. 2019 Jun 17;: PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/31042697">31042697</a>; PMCID: PMC6865822.</p>
+</blockquote>
+<p><a href="https://www.ncbi.nlm.nih.gov/pubmed/31216459">Commentary</a></p>
+<p>This study examined 80,660 single nucleus transcriptomes from 48 brains, 24 of
+which had elevated β-amyloid and other AD pathologies.  Compared to bulk level
+analysis, snRNA-Seq was better able to capture the complexity of alterations
+across cells and cell groups.  They compared the gene expression levels between
+the AD-pathology and no-pathology cells and found &quot;1031 unique
+differentially-extressed genes (DEGs) that implicate all major cell types&quot;.</p>
+<p>These genes showed repression in exitatory and inhibitory neurons and
+upregulation in oligodendrocytes, astrocytes and microglia.  Compared to this,
+the bulk analysis was only able to capture the expression from the single-cell
+level in exitatory neurons and oligodendrocytes, not the other cell types. Bulk
+sequencing could also not capture when the differentially-expressed genes had
+opposite directionality.</p>
+<p>The authors used an unsupervised learning framework called self-organizing maps
+to find the gene sets with similar expression patterns that also correlated with
+the AD phenotype. They found that in exitatory and inhibitory neurons,
+astrocytes, microglia, and oligodendrocytes, each cell type had a distinct SOM
+unit which meant that different gene groups respond to AD pathology.</p>
+<p>Examining the pathology between sexes, they found differences in AD-associated
+cell subpopulations, transcriptional activations, and responses to amyloid.</p>
+<h1 id="single-cell-rna-sequencing-of-human-microglia-uncovers-a-subset-associated-with-alzheimers-disease"><a class="header" href="#single-cell-rna-sequencing-of-human-microglia-uncovers-a-subset-associated-with-alzheimers-disease">Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease</a></h1>
+<p>February 12, 2021</p>
+<h1 id="alzheimers-patient-microglia-exhibit-enhanced-aging-and-unique-transcriptional-activation"><a class="header" href="#alzheimers-patient-microglia-exhibit-enhanced-aging-and-unique-transcriptional-activation">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a></h1>
+<p><a href="https://doi.org/10.1016/j.celrep.2020.107843">Cell</a></p>
+<p>Mar 16, 2021</p>
+<h1 id="dysregulation-of-the-epigenetic-landscape-of-normal-aging-in-alzheimers-disease"><a class="header" href="#dysregulation-of-the-epigenetic-landscape-of-normal-aging-in-alzheimers-disease">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a></h1>
+<p><a href="https://www.nature.com/articles/s41593-018-0101-9">Nature Neuroscience</a></p>
+<p>April 21, 2018</p>
+<blockquote>
+<p>Nativio R, Donahue G, Berson A, Lan Y, Amlie-Wolf A, Tuzer F, Toledo JB, Gosai
+SJ, Gregory BD, Torres C, Trojanowski JQ, Wang LS, Johnson FB, Bonini NM,
+Berger SL. Dysregulation of the epigenetic landscape of normal aging in
+Alzheimer's disease. Nat Neurosci. 2018 Apr;21(4):497-505. doi:
+10.1038/s41593-018-0101-9. Epub 2018 Mar 5. Erratum in: Nat Neurosci. 2018 Mar
+19;: PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29507413">29507413</a>; PMCID: PMC6124498.</p>
+</blockquote>
+<p>This paper examines the genome-wide enrichment of H4K16ac, an epigenetic
+modification to the DNA packaging protein H4. H4K16ac has both transcriptional
+activation and repression activities.</p>
+<p>H4K16ac regulates chromatin compaction, gene expression, stress response and DNA
+damage repair. Modulators of H4K16ac play a role in whole organism ageing and
+cellular senescence. Senescent cells display a H4K16ac enrichment over promoter
+regions of expressed genes. They considered that epigenetic regulation by
+H4K16ac may be involved in human brain ageing and the progression of AD. They
+compare the genome-wide profiles of H4K16ac in the brain tissue of AD patients
+and age-matched and younger individuals without dementia. They found that normal
+changes in brain H4K16ac is disturbed in AD.</p>
+<h2 id="h4k16ac-is-redistributed-during-normal-ageing-and-ad"><a class="header" href="#h4k16ac-is-redistributed-during-normal-ageing-and-ad">H4K16ac is redistributed during normal ageing and AD</a></h2>
+<p>Examining the H4K16ac changes they found no correlation between the neuronal
+fractions and H4K16ac, but did find that AD patients had lower levels of H4K16ac
+than age-matched controls.</p>
+<p>The redistribution of H4K16ac peaks was different during normal ageing than AD
+as in normal ageing H4K16ac was gained but in AD it was lost.</p>
+<p>RNA-seq showed positive linear correlation between the enrichment at the closest
+H4K16ac peak and gene expression in all subjects. There was also a mild
+correlation between the magnitude of differential genes expression and
+differential enrichment of the nearest H4K16ac peak for the significantly
+differentially expressed genes.</p>
+<h2 id="h4k16ac-changes-during-normal-ageing-negatively-correlated-with-changes-in-ad"><a class="header" href="#h4k16ac-changes-during-normal-ageing-negatively-correlated-with-changes-in-ad">H4K16ac changes during normal ageing negatively correlated with changes in AD</a></h2>
+<p>Checking if the direction of the changes is correlated with the processes of
+ageing and disease:</p>
+<p>Pairwise comparisons showed a positive linear correlation between ageing and
+ageing mixed with disease - demonstrates a component of normal ageing in AD.
+There was also positive linear correlation between ageing mixed with disease and
+disease alone. There was a clear negative correlation between the aging and
+disease: decreased H4K16ac in AD compared to non-AD old patients correlated with
+a higher H4K16ac in Old compared to Young.</p>
+<h2 id="3-classes-of-h4k16ac-changes-detected-in-ad"><a class="header" href="#3-classes-of-h4k16ac-changes-detected-in-ad">3 classes of H4K16ac changes detected in AD</a></h2>
+<p>Age-regulated, age-dysregulated, disease-specific</p>
+<p>March 12, 2021</p>
+<h1 id="loss-of-function-of-p53-isoform-Δ113p53-accelerates-brain-ageing-in-zebrafish"><a class="header" href="#loss-of-function-of-p53-isoform-Δ113p53-accelerates-brain-ageing-in-zebrafish">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a></h1>
+<p><a href="https://www.nature.com/articles/s41419-021-03438-9#Sec1">Cell Death and Disease</a></p>
+<p>February 4, 2021</p>
+<blockquote>
+<p>Zhao T, Ye S, Tang Z, Guo L, Ma Z, Zhang Y, Yang C, Peng J, Chen J.
+Loss-of-function of p53 isoform Δ113p53 accelerates brain aging in zebrafish.
+Cell Death Dis. 2021 Feb 4;12(2):151. doi: 10.1038/s41419-021-03438-9. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/33542214">33542214</a>; PMCID: PMC7862496.</p>
+</blockquote>
+<p>This study investigated the effects of an isoform of p53 on the zebrafish brain
+ageing, learning and memory.</p>
+<p>The zebrafish Δ133p53 isoform is an ortholog of the same human isoform and is
+highly induced in response to low ROS levels and promotes cell survival and
+inhibits senescence. It is found in the telencephalon ventricular zone.
+Zebrafish with a mutant variant of this isoform have higher levels of ROS and
+show accelerated ageing. Decreased expression of human Δ113p53 is associated
+with replicative senescence and has been observed in the brains of patients with
+AD and ALS. Examining a variant of this isoform and its role in brain ageing
+they found that the expression of antioxidant genes significantly decreased in
+mutant telencephalons compared to wild type. There were increased levels of
+hydrogen peroxide as well as an increase in the level of SA-β-gal activity, an
+indicator of cellular senescence.</p>
+<p>They also ran a test to see how memory and learning would be affected by the
+mutation. Using a swim tank, with one half colored red and the other colored
+white, they shocked the fish when they were in the white area. The wild type
+fish spent less time in the area coloured white compared to the mutant fish.
+Although these differences were found between the two groups, they did not find
+any significant differences between the DNA damage response or apoptotic
+activity.</p>
+<p>Interestingly, they also note that SIRT1, a senescence-related gene plays a
+protective role in neurodegenerative disease and that it was downregulated in
+the mutant group.  This downregulation along with the increased levels of ROS
+could lead to increased brain ageing.</p>
+<p>This paper showed how a mutation in the p53 isomer resulted in an increased risk
+for developing senescence and also resulted in cognitive problems. This suggests
+that there could be a link between an increased risk of senescence and
+developing cognitive problems.</p>
+<p>November 18, 2020</p>
+<h1 id="telomere-attrition-in-neurodegenerative-disorders"><a class="header" href="#telomere-attrition-in-neurodegenerative-disorders">Telomere Attrition in Neurodegenerative Disorders</a></h1>
+<p>July 15, 2020</p>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fncel.2020.00219/full">Frontiers in Neuroscience</a></p>
+<blockquote>
+<p>Levstek T, Kozjek E, Dolžan V, Trebušak Podkrajšek K. Telomere Attrition in
+Neurodegenerative Disorders. Front Cell Neurosci. 2020 Jul 15;14:219. doi:
+10.3389/fncel.2020.00219. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/32760251">32760251</a>; PMCID: PMC7373805.</p>
+</blockquote>
+<p>Telomere attrition is found in a number of disorders and studies have tried to
+understand the relationship between TL length and these disorders. This paper
+reviews the literature concerning TL, AD, and PD. Telomere length is maintained
+by telomerase and, while its activity in the brain decreases after birth, there
+is high activity in neuronal stem cells and neuronal progenitor cells. There are
+only inconsistent results between cognitive performance and TL.</p>
+<p>Results in AD studies have been contradictory. Telomere shortening and reduced
+telomerase activity was found in rat microglial cells, but in aged telomerase
+knockout mice had decreased progression of amyloid plaque pathology. The authors
+think small study cohorts may be responsible for the inconsistencies since a
+meta-analysis showed more consistent evidence for shorter telomeres in AD.</p>
+<p>They concluded that telomere length is a questionable biomarker for clinical
+use because it has low specificity and sensitivity. It could still be important
+because it is unclear whether telomere length is a cause or consequence of
+age-related disorders, but should be understood in the context of other markers.</p>
+<p>It was interesing because I expected telomeres to be reliable biomarkers since
+they are a major part of cellular senescence. However, with better methods and
+the longitudinal studies that the authors recommend, there may be important
+relationships to be discovered that could contribute to the explanation of AD
+pathogenesis and the role of senescence.</p>
+<p>December 17, 2020</p>
+<h1 id="cerebrovascular-senescence-is-associated-with-tau-pathology-in-alzheimers-disease"><a class="header" href="#cerebrovascular-senescence-is-associated-with-tau-pathology-in-alzheimers-disease">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease</a></h1>
+<p><a href="https://doi.org/10.3389/fneur.2020.575953">Frontiers in Neurogy</a></p>
+<p>September 16, 2020</p>
+<blockquote>
+<p>Bryant AG, Hu M, Carlyle BC, Arnold SE, Frosch MP, Das S, Hyman BT, Bennett
+RE. Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's
+Disease. Front Neurol. 2020 Sep 16;11:575953. doi: 10.3389/fneur.2020.575953.
+PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33041998">33041998</a>; PMCID: PMC7525127.</p>
+</blockquote>
+<p>This paper examines the relationship between cerebrovascular senescence and
+AD-related tau pathology. Vascular dysfunction is increasingly implicated in AD
+pathogenesis. There is evidence to suggest that tau pathology may interact with
+endothelial cell changes to drive vascular impairment in AD. Cellular senescence
+and tau NFT formation have shown a positive feedback relationship and
+suppression of senescence prevents tau aggregation. They examined whether
+endothelial senescence contributes to microvascular alterations in tau-related
+neurodegenerative disease using microvessels from the dorsolateral prefrontal
+cortex.</p>
+<h2 id="results-3"><a class="header" href="#results-3">Results</a></h2>
+<p>They found upregulation of the senescence and leukocyte adhesion associated
+genes that are also involved in DNA damage response signalling pathway that is
+involved in cellular senescence.</p>
+<p>They found that senescence associated genes are upregulated in B3 PFC
+microvessels (2.5-fold increase in senescence-associated genes mRNA).</p>
+<p>Of the 40 genes, 11 were significantly upregulated by at least a 2-fold average
+increase in mRNA expression.</p>
+<p>They did not find that plasma senescence-associated protein levels are
+associated with postmortem severity of AD-related neuropathological changes.</p>
+<p>March 29, 2021</p>
+<h1 id="molecular-mechanism-for-age-related-memory-loss-the-histone-binding-protein-rbap48"><a class="header" href="#molecular-mechanism-for-age-related-memory-loss-the-histone-binding-protein-rbap48">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a></h1>
+<p><a href="https://doi.org/10.1126/scitranslmed.3006373">Science Translational Medicine</a></p>
+<p>August 28, 2013</p>
+<blockquote>
+<p>Pavlopoulos E, Jones S, Kosmidis S, Close M, Kim C, Kovalerchik O, Small SA,
+Kandel ER. Molecular mechanism for age-related memory loss: the
+histone-binding protein RbAp48. Sci Transl Med. 2013 Aug 28;5(200):200ra115.
+doi: 10.1126/scitranslmed.3006373. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/23986399">23986399</a>; PMCID: PMC4940031.</p>
+</blockquote>
+<p>Both normal ageing and AD affect memory processes dependent on the hippocampus.
+This paper identified 17 candidate ageing-associated genes and examined one
+called RbAp48 whose expression decline was best correlated with ageing human
+dentate gyrus.</p>
+<p>RbAp48 is involved in histone acetylation and transcriptional regulation and the
+cAMP-PKA-CREB1 pathway. These are important for normal hippocampal function and
+ageing.</p>
+<h2 id="results-4"><a class="header" href="#results-4">Results</a></h2>
+<h3 id="rbap48-deficiency-in-the-ageing-human-hippocampus"><a class="header" href="#rbap48-deficiency-in-the-ageing-human-hippocampus">RbAp48 deficiency in the ageing human hippocampus</a></h3>
+<p>Using human brains free of pathology, they examined the expression of genes in
+the dentate gyrus and found that RbAp48 had the largest expression change.</p>
+<h3 id="a-forebrain-specific-dominant-negative-inhibitor-of-rbap48-in-mice"><a class="header" href="#a-forebrain-specific-dominant-negative-inhibitor-of-rbap48-in-mice">A forebrain-specific, dominant-negative inhibitor of RbAp48 in mice</a></h3>
+<p>In WT mice, RbAp48 was expressed at high levels and was more abundant in young
+mice than aged mice - selectively in the DG. Using a mouse with a
+dominant-negative (RbAp48-DN) form of RbAp48 without the ability to interact with histone
+H4, they inhibited RbAp48 function in the adult forebrain.</p>
+<h3 id="effect-of-forebrain-specific-inhibition-of-rbap48-on-memory-in-young-mice"><a class="header" href="#effect-of-forebrain-specific-inhibition-of-rbap48-on-memory-in-young-mice">Effect of forebrain-specific inhibition of RbAp48 on memory in young mice</a></h3>
+<p>They examined all their mice in open field tests and both the inhibited and
+functional RbAp48 has similar results which meant that their anxiety levels were
+not affected by the inhibition.</p>
+<p>In a novel objection recognition test, both mice showed similar behaviour
+initially, but after 48 hours however, the inhibited mice did not show a
+preference for a novel object like the control mice did.When the expression of
+the double-negative form of the protein was inhibited, both groups of mice
+performed similarly in the novel object recognition test. The inhibition of
+RbAp48 resulted in poorer novel object recognition performance.</p>
+<p>In the Morris water maze, after one day of learning, the transgenic mice showed
+impaired memory, but no noncognitive differences.</p>
+<h3 id="memory-deficits-in-the-transgenic-and-aged-mice"><a class="header" href="#memory-deficits-in-the-transgenic-and-aged-mice">Memory deficits in the transgenic and aged mice</a></h3>
+<p>Aged mice showed memory deficits similar to the young transgenic mice and had
+similar performances as the young mice in learning tasks. The inhibition of
+RbAp48 in the forebrain leads to the cognitive defects characteristic of
+hippocampal ageing.</p>
+<h3 id="effects-of-the-dominant-negative-in-the-dg"><a class="header" href="#effects-of-the-dominant-negative-in-the-dg">Effects of the dominant-negative in the DG</a></h3>
+<p>Compared to control mice, the transgenic mice showed selective dysfunction in
+the DG which was reversed when the dominant-negative gene was turned off.</p>
+<h3 id="effect-of-rbap48-dn-on-histone-acetylation-in-the-dg"><a class="header" href="#effect-of-rbap48-dn-on-histone-acetylation-in-the-dg">Effect of RbAp48-DN on histone acetylation in the DG</a></h3>
+<p>Examination of the acetylation of H4 and H2B showed that RbAp48 inhibition
+caused a reduction in acetylation. This was also reversible when RbAp48-DN
+expression was turned off.</p>
+<h3 id="effect-of-upregulating-rbap48-in-aged-mice"><a class="header" href="#effect-of-upregulating-rbap48-in-aged-mice">Effect of upregulating RbAp48 in aged mice</a></h3>
+<p>Increasing RbAp48 in the DG improved memory performance in the novel object
+recognition test and the water test.</p>
+<h3 id="effect-of-rbap48-dn-expression-in-the-forebrain-on-hat-activity-of-cbp"><a class="header" href="#effect-of-rbap48-dn-expression-in-the-forebrain-on-hat-activity-of-cbp">Effect of RbAp48-DN expression in the forebrain on HAT activity of CBP</a></h3>
+<p>The CBP HAT activity was lower in the DG of the transgenic mice, but the amount
+of CBP protein was the same. A selective reduction of CBP HAT activity in the DG
+was found in aged WT mice.</p>
+<h2 id="discussion"><a class="header" href="#discussion">Discussion</a></h2>
+<p>RbAp48 deficiency occurs in rodent and human DG in association with normal
+ageing. RbAp48 interaction with CREB1-dependent CBP and HAT regulation, which is
+important for memory storage. There was a DG-specific reduction of HAT activity
+in the transgenic young and aged mice. These effects were reversed in by
+increasing RbAp48 abundance.</p>
+<p>These results show that RbAp48 in the DG is necessary for hippocampal
+functioning. They also suggest that age-related memory loss is independent of
+AD and since other studies have not implicated RbAp48, these results show that
+they have distinct mechanisms.</p>
+<p>Since RbAp48 works through the PKA-CREB1-CBP pathway which is important to
+age-related memory loss in mice, it could be a potential therapeutic avenue.
+Enhancing he CREB1 pathway reduces age-related hippocampal dysfunction in
+rodents and could have benefits for humans.</p>
+<p>April 21, 2021</p>
+<h1 id="big-data-analysis-of-genes-associated-with-neuropsychiatric-disorders-in-an-alzheimers-disease-animal-model"><a class="header" href="#big-data-analysis-of-genes-associated-with-neuropsychiatric-disorders-in-an-alzheimers-disease-animal-model">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a></h1>
+<p><a href="https://doi.org/10.3389/fnins.2018.00407">Frontiers in Neuroscience</a></p>
+<p>June 15, 2018</p>
+<blockquote>
+<p>Ham S, Kim TK, Hong H, Kim YS, Tang YP, Im HI. Big Data Analysis of Genes
+Associated With Neuropsychiatric Disorders in an Alzheimer's Disease Animal
+Model. Front Neurosci. 2018 Jun 15;12:407. doi: 10.3389/fnins.2018.00407.
+PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29962931">29962931</a>; PMCID: PMC6013555.</p>
+</blockquote>
+<p>Neuropsychiatric symptoms like mood swings, hallucinations, and depression are
+shared between AD and disorders like bipolar disorder and schizophrenia. This
+study analyzes genes expression changes in genes associated with bipolar
+disorder (BIP), schizophrenia (SCZ), and major depressive disorder (MDD) using
+an AD animal model.  They identified significantly altered genes in the gene
+ontology pools associated with these psychiatric disorders to see whether these
+symptoms in AD could be associated with them.</p>
+<p>They found that the BIP, SCZ, and MDD related were significantly changed in the
+AD animal model. The number of SCZ associated genes were higher than those of
+BIP and MDD and SCZ was the most associated with AD and these genes are thought
+to be involved in synaptic dysfunction in AD mice. They interpreted the genes
+changes in the model as the probable cause of the neuropsychiatric symptoms in
+the AD mice</p>
+<h1 id="vascular-cell-senescence-contributes-to-bloodbrain-barrier-breakdown"><a class="header" href="#vascular-cell-senescence-contributes-to-bloodbrain-barrier-breakdown">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a></h1>
+<p>March 18, 2021</p>
+<h1 id="cellular-senescence-and-iron-dyshomeostasis-in-alzheimers-disease"><a class="header" href="#cellular-senescence-and-iron-dyshomeostasis-in-alzheimers-disease">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a></h1>
+<p>June 19, 2019</p>
+<p><a href="https://doi.org/10.3390/ph12020093">Pharmaceuticals</a></p>
+<blockquote>
+<p>Masaldan S, Belaidi AA, Ayton S, Bush AI. Cellular Senescence and Iron
+Dyshomeostasis in Alzheimer's Disease. Pharmaceuticals (Basel). 2019 Jun
+19;12(2):93. doi: 10.3390/ph12020093. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/31248150">31248150</a>; PMCID: PMC6630536.</p>
+</blockquote>
+<p>The accumulation of Aβ has been the primary target of therapies, but attempt to
+lower the plaque burden have not been successful in lowering cognitive decline.
+The homeostatic regulation of iron could be a targetable pathway since there is
+evidence it is disturbed in neurodegeneration.</p>
+<p>Iron is involved in cellular respiration, DNA synthesis, cell division, oxygen
+transport and neurotransmission. Iron can cycle through oxidation states, which
+while biologically important, can lead to oxidative damage. There are
+homeostatic mechanisms designed to regulate iron, but there is also an
+age-related accumulation of iron in the brain. Iron dyshomeostasis may not get
+high enough to result in iron toxicity, but its dyshomeostasis could result in
+increased susceptibility to oxidative dysfunction.</p>
+<h2 id="iron-dyshomeostasis-and-ad"><a class="header" href="#iron-dyshomeostasis-and-ad">Iron dyshomeostasis and AD</a></h2>
+<p>Iron accumulation has been observed in brain regions affected by AD. The
+intensity of accumulation depends on the subtype of AD and can be used to
+distinguish between sporadic and familial AD. The forms of iron in AD patients
+vary in the torque they experience in a magnetic field compared to controls.</p>
+<p>Iron is associated with the pathological lesions in AD and it could be that it
+promotes the aggregation and oligomerization of Aβ peptides. Iron and the iron
+storage protein ferritin levels are associated with amyloid deposition amount.</p>
+<p>Iron could enhance the translation and amyloidogenic processing of amyloid
+precursor protein by its aberrant binding to APP mRNA. Iron is also involved in
+tau phosphorylation and aggregation - events mitigated by iron chelation. NFT
+tau accumulation is associated with the induction of heme oxygenase-1 which
+releases iron from heme exacerbating oxidative stress.</p>
+<p>Iron is associated with the rate of cognitive decline 12 years before death. CSF
+ferritin levels can predict cognitive decline and the transition from MCI to AD.</p>
+<h2 id="cellular-senescence-iron-dyshomeostasis-and-ad"><a class="header" href="#cellular-senescence-iron-dyshomeostasis-and-ad">Cellular senescence, iron dyshomeostasis and AD</a></h2>
+<p>There is increasing evidence that senescence induction in the brain is linked to
+neurodegeneration and that the removal of senescent cells in the brain leads to
+improved cognition in mice models.</p>
+<p>Senescent cells in vitro show iron dyshomeostasis and their abundance could
+influence iron levels in ageing tissue. Iron promotes senescence in cultured
+microglia. Chelators can reduce and prevent the accumulation of iron and
+ferritin seen in senescence in vitro. Chelating iron in <em>C. elegans</em> led to
+reduction in iron-dependent oxidation and cell death. The SASP may be a ferritin
+expression driver in neurons and glia which makes them more susceptible to
+ferroptosis - iron mediated cell death.</p>
+<h2 id="iron-as-a-therapeutic-target"><a class="header" href="#iron-as-a-therapeutic-target">Iron as a therapeutic target</a></h2>
+<p>Iron chelators have shown promise in PD and motor neuron disease. A study on
+iron chelation found that using the chelator deferoxamine over two years slowed
+the clinical progression of dementia associated with AD. Another study
+inhibiting zinc and copper ions from binding to Aβ showed a positive effect and
+reduction in cognitive decline rate for severely affected patients. There was
+also a decline in Aβ42 in plasma.</p>
+<p>November 2, 2020</p>
+<h1 id="cellular-senescence-and-alzheimer-disease-the-egg-and-the-chicken-scenario"><a class="header" href="#cellular-senescence-and-alzheimer-disease-the-egg-and-the-chicken-scenario">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a></h1>
+<p><a href="https://doi.org/10.1038/s41583-020-0325-z">Nature Reviews Neuroscience</a></p>
+<p>June 29, 2020</p>
+<blockquote>
+<p>Saez-Atienzar S, Masliah E. Cellular senescence and Alzheimer disease: the egg
+and the chicken scenario. Nat Rev Neurosci. 2020 Aug;21(8):433-444. doi:
+10.1038/s41583-020-0325-z. Epub 2020 Jun 29. Erratum in: Nat Rev Neurosci.
+2020 Oct;21(10):587. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32601397">32601397</a>.</p>
+</blockquote>
+<p>It is hard to know whether the accumulation of senescent cells is the cause or
+result of AD-related disease.</p>
+<ul>
+<li>p53: controls the activation of pro-apoptotic regulators in response to cell
+damage</li>
+<li>p21: induce senescence to control milder damage p26: marks a further senescent</li>
+<li>stage; inhibits CDK4 and CDK6 leading to long-lasting arrest of the cell cycle</li>
+</ul>
+<p>Senescence is helpful when there is an acute insult, but when the problem is
+chronic, it can be cytotoxic.</p>
+<p>If senescent cells are not cleared, they enter a stage called late senescene
+which that is associated with neurodegeneration.  Senescent cells can spread
+senescent signals to their neighbours and induce senescence - bystander effect.
+This could account for how post-mitotic cells enter senescence.</p>
+<p>Are any known or yet­to­be discovered genetic risk loci associated with AD
+involved in the senescence pathway?</p>
+<p>tags: senescence, alzheimer's, p53</p>
+<p>December 20, 2021</p>
+<h1 id="senescence-as-an-amyloid-cascade-the-amyloid-senescence-hypothesis"><a class="header" href="#senescence-as-an-amyloid-cascade-the-amyloid-senescence-hypothesis">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a></h1>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fncel.2020.00129/full">Frontiers in Neuroscience</a></p>
+<h2 id="aβ-hypothesis"><a class="header" href="#aβ-hypothesis">Aβ Hypothesis</a></h2>
+<p>Aβ oligomers are thought to be the major driver of AD. However, the fact that
+their removal by antibodies does not affect disease progression can be used as
+an argument against this hypothesis. Senolytics were then proposed as an
+alternative treatment strategy that worked because it did not use the Aβ
+pathway, but it has been shown to work in both the tau and Aβ pathways. It could
+be that Aβ triggers a cascade that is then unaffected by the removal of AβO
+because they appear up to 25 years before the symptoms of AD. This cascade may
+be senescence itself.</p>
+<p>They argue that AβO is a Stress induced premature senescence inducer. It could
+mediate cell-cycle reentry in neurons resulting in senescence.</p>
+<p>Ways to induce senescence:</p>
+<ol>
+<li>Induce neurons to reenter the cell cycle which then leads to neuronal
+senescence.</li>
+<li>Induce the production of ROS that leads to senescence. This can be using
+aberrant activation of post-synaptic receptors or independent of receptor
+activation.</li>
+</ol>
+<p>After the induction of senescence, neurons develop SASP which then leads to
+inflammation, tau pathology and secondary senescence and disease spread.</p>
+<p>Final proposed model including immune response to senescence:</p>
+<ul>
+<li>AβO appears 15 to 25 years before the clinical onset of AD AβO induces</li>
+<li>senescence in neurons, but natural killer cells cannot enter the longer works
+since the senescence is irreversible</li>
+<li>with age related loss of the blood brain barrier functionality, NK cells enter
+the brain parenchyma and clear the many senescent cells leading to the onset of
+clinical AD. The potential for AβO to induce senescence must not be discounted.</li>
+</ul>
+<p>tags: Aβ hypothesis, senolytics, senescence, amyloid cascade, alzheimer's,
+immume response</p>
+<p>January 20, 2021</p>
+<h1 id="astrocyte-senescence-and-alzheimers-disease-a-review"><a class="header" href="#astrocyte-senescence-and-alzheimers-disease-a-review">Astrocyte Senescence and Alzheimer’s Disease: A Review</a></h1>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fnagi.2020.00148/full">Frontiers in Neuroscience</a></p>
+<p>June 9, 2020</p>
+<blockquote>
+<p>Han X, Zhang T, Liu H, Mi Y, Gou X. Astrocyte Senescence and Alzheimer's
+Disease: A Review. Front Aging Neurosci. 2020 Jun 9;12:148. doi:
+10.3389/fnagi.2020.00148. PMID:
+<a href="https://pubmed.ncbi.nlm.nih.gov/32581763">32581763</a>; PMCID: PMC7297132.</p>
+</blockquote>
+<p>This review examines findings about astrocyte senescence and its relationship
+with AD as well as the potential therapeutic value this research.
+Astrocytes &quot;perform critical roles in regulation of homeostasis and metabolism
+of the neurons, mediating uptake and recycling of neurotransmitters. Astrocytes
+also play a key role in maintenance of the blood–brain barrier (BBB). They also
+act as modulators of synaptic plasticity and transmission, supporting the view
+that astrocytes play an integral role in the initiation and progression of
+cognitive decline and AD.&quot;</p>
+<p>Astrocytes undergo stress-induced premature senescence and Aβ oligomers can
+induce senescence and promote the production of SASP in human astrocytes. Bhat
+et al showed that after exposure to Aβ<sub>1-42</sub> astrocytes show senescence
+characteristics, particularly those from AD brains. Senolytic or genetic
+ablation of senescent astrocytes and microglia prevents NFT formation and
+neurodegeneration in mice.</p>
+<h2 id="aβ-clearance"><a class="header" href="#aβ-clearance">Aβ clearance</a></h2>
+<p>Astrocytes play an important role in clearing and degrading Aβ and the receptors
+involved (low-density lipoprotein receptor-related protein 1 (LRP1) and
+scavenger receptor B1 (SR-B1)) reduce in expression in aged astrocytes. The
+appearance of senescent astrocytes was &quot;earlier than Aβ accumulation. The
+proinflammatory factors senescent astrocytes secrete can increase APP expression
+and Aβ generation in neurons.</p>
+<h2 id="nft"><a class="header" href="#nft">NFT</a></h2>
+<p>Neurons carrying NFTs become senescent and cause toxicity to nearby neurons. NFT
+containing neurons has increased cellular senescence hallmarks and upregulation
+of senescence associated genes. Clearing senescent astrocytes prevented NFT
+deposition and hyperphosphorylated tau.</p>
+<h2 id="synaptics"><a class="header" href="#synaptics">Synaptics</a></h2>
+<p>&quot;astrocytes play a critical role in supporting neuronal growth and modulating
+synaptic function and transmission, yet the neuroprotective capacity of
+astrocytes decreased during aging&quot;.</p>
+<h2 id="inflammation"><a class="header" href="#inflammation">Inflammation</a></h2>
+<p>Senescent astrocytes may promote inflammation in AD brains and contribute to
+pathogenesis.</p>
+<h1 id="systematic-comparison-of-single-cell-and-single-nucleus-rna-sequencing-methods"><a class="header" href="#systematic-comparison-of-single-cell-and-single-nucleus-rna-sequencing-methods">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a></h1>
+<p><a href="https://www.nature.com/articles/s41587-020-0465-8">Nature biotechnology</a></p>
+<p>scRNA-seq methods:</p>
+<ul>
+<li>low-throughput, plate-based:
+<ul>
+<li>sort a cell into a well of multi-well plates</li>
+</ul>
+</li>
+<li>high-throughput bead-based:
+<ul>
+<li>distribute cell suspension into droplets or wells containing reagent
+and barcoded beads</li>
+<li>each droplet contains one cell and and bead that will mark all the DNA
+from that cell</li>
+</ul>
+</li>
+</ul>
+<p>This paper compares seven methods of RNA-seq and analyzes a number of different
+cell types. For each sample they characterized the performance of the sequencing
+method.</p>
+<h1 id="single-nucleus-rna-seq-is-not-suitable-for-detection-of-microglial-activation-genes-in-humans"><a class="header" href="#single-nucleus-rna-seq-is-not-suitable-for-detection-of-microglial-activation-genes-in-humans">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a></h1>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<p>snRNA-seqs have failed to detect a consistent microglial activation signature in
+AD. Using four subjects, they show that while most genes show relative abundance
+in cells and nuclei, some genes are depleted in nuclei compared to whole cells.
+These cells are enriched for genes implicated in microglial activation making up
+18% of microglial-disease-associated genes.</p>
+<h2 id="intro"><a class="header" href="#intro">Intro</a></h2>
+<p>It is difficult to dissociate individual cells, especially in the brain since
+most available samples are frozen. While snRNA-seq has been shown effective for
+transcriptomic profiles, it is not clear if it works as effectively for dynamic
+cellular substates like microglial activation.</p>
+<p>Microglia have been shown to become activated in response to amyloid plaques.
+Microglia play a role in amyloid clearance.</p>
+<p>However snRNA-seq studies have not been able to recover a similar activation
+signature from microglia.</p>
+<h2 id="results-5"><a class="header" href="#results-5">Results</a></h2>
+<p>Most genes show similar abundance levels between cells and nuclei. There were
+however, 246 genes that were less abundant in nuclei and 67 genes were found to
+be more abundant in nuclei. 3248 genes were only detected in cells and 5068 were
+only found in nuclei. These differences were consistent across the four
+subjects. Compared with other datasets, they found that their
+nuclei-underrepresented genes were also depleted in the other datasets.
+Similarly, the nuclei-abundant genes were also enriched in those datasets
+compared to microglial cells.</p>
+<p>A GSEA showed that cytoplasmic RNA was enriched among genes more abundant in
+cells (also mitochondrial mRNA). Nucleus mRNA was also enriched in the nucleus
+but not significantly. Ribosomal protein genes were depleted in the nucleus.
+Genes with shorter coding sequences were depleted in the nuclei.</p>
+<p>Activation genes identified in mouse AD models were depleted in human nuclei.</p>
+<p>Checking with another study that used fresh cells for snRNA-seq analysis, they
+found that there was very little difference between the fresh nuclei and the cells.
+The differences returned when the frozen nuclei were compared to cells.</p>
+<p>They were unable to attribute the differences to a biological mechanism like
+mRNA trafficking. The differences between fresh and frozen nuclei suggests that
+the freezing or thawing process could play a role.</p>
+<p>They advise using caution when using snRNA seq to assess cellular states.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
