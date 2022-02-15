@@ -2,18 +2,18 @@
 
 [Contents](contents.md)
 
-- [Bioinformatics](<>)
+- [Bioinformatics]()
 
-- [Databases](<>)
+  - [Databases]()
 
-  - [Evaluation of relational and NoSQL database architectures to manage genomic annotations](bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md)
+    - [Evaluation of relational and NoSQL database architectures to manage genomic annotations](bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md)
 
-- [Ageing](<>)
+- [Ageing]()
 
   - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span
-](ageing/counteracting_age_related_VEGF_insufficiecy.md)
+    ](ageing/counteracting_age_related_VEGF_insufficiecy.md)
 
-- [Cellular Senescence](<>)
+- [Cellular Senescence]()
 
   - [Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor](senescence/Senescence-Associated_Secretory_Phenotypes.md)
 
@@ -39,7 +39,7 @@
 
   - [Cellular senescence and failure of myelin repair in MS](senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.md)
 
-  - [The long non-coding RNA *MIR31HG* regulates the senescence associated secretory phenotype](senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.md)
+  - [The long non-coding RNA _MIR31HG_ regulates the senescence associated secretory phenotype](senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.md)
 
   - [Early onset senescence and cognitive impairment in a murine model of repeated mTBI
     ](senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.md)
@@ -47,9 +47,10 @@
   - [An aged immune system drives senescence and ageing of solid
     organs](senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.md)
 
-- [Neuroscience](<>)
+- [Neuroscience]()
 
-  - [Neurodegeneration](<>)
+  - [Neurodegeneration]()
+
     - [Cellular Senescence in Neurodegenerative Diseases](neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.md)
 
     - [Aging as a risk factor for neurodegenerative disease](neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.md)
@@ -63,7 +64,7 @@
 
     - [Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain](neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.md)
 
-    - [Alzheimer’s Disease](<>)
+    - [Alzheimer’s Disease]()
 
       - [Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration](neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md)
 
@@ -95,7 +96,7 @@
 
       - [Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model](neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.md)
 
-      - [Cellular senescence and AD](<>)
+      - [Cellular senescence and AD]()
 
         - [Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown](neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood%E2%80%93Brain_Barrier_Breakdown.md)
         - [Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease](neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.md)
@@ -103,8 +104,8 @@
         - [Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis](neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.md)
         - [Astrocyte Senescence and Alzheimer’s Disease: A Review](neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.md)
 
-- [Transcriptomics](<>)
+- [Transcriptomics]()
 
-  - [Single-nucleus RNA-seq](<>)
+  - [Single-nucleus RNA-seq]()
     - [Systematic comparison of single-cell and single-nucleus RNA-sequencing methods](snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
     - [Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans](snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)
