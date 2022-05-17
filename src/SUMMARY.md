@@ -8,6 +8,10 @@
 
     - [Evaluation of relational and NoSQL database architectures to manage genomic annotations](bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md)
 
+- [Epigenetics]()
+
+  - [Interplay between the cancer genome and epigenome](epigenetics/interplay_between_cancer_genome_epigenome.md)
+
 - [Ageing]()
 
   - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span
