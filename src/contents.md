@@ -10,6 +10,8 @@
 
 - [Interplay between the cancer genome and epigenome](epigenetics/interplay_between_cancer_genome_epigenome.md)
 
+- [The diverse roles of DNA methylation in mammalian development and disease](epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md)
+
 ## Ageing
 
 - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span
