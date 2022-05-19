@@ -12,6 +12,8 @@
 
 - [The diverse roles of DNA methylation in mammalian development and disease](epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md)
 
+- [DNA methylation loss in late-replicating domains is linked to mitotic cell division](epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md)
+
 ## Ageing
 
 - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span
