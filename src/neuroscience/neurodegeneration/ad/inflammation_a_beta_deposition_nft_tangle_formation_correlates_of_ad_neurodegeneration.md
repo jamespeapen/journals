@@ -1,6 +1,8 @@
-April 26, 2021
+---
+date: April 26, 2021
+---
 
-# Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration
+# Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration {.unnumbered}
 
 Journal of Neuropathology and Experimental Neurology
 

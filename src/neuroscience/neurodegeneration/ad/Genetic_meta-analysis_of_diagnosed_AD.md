@@ -1,6 +1,8 @@
-December 08, 2020
+---
+date: December 08, 2020
+---
 
-# Genetic meta-analysis of diagnosed Alzheimer’s disease
+# Genetic meta-analysis of diagnosed Alzheimer’s disease {.unnumbered}
 
 This study identified new risk loci and implicated Aβ, tau, immunity and lipid
 processing.

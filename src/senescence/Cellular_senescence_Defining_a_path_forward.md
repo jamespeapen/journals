@@ -1,6 +1,8 @@
-December 11, 2020
+---
+date: December 11, 2020
+---
 
-# Cellular senescence: Defining a path forward
+# Cellular senescence: Defining a path forward {.unnumbered}
 
 [Cell](https://doi.org/10.1016/j.cell.2019.10.005)
 

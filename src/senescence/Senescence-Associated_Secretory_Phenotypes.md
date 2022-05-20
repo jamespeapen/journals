@@ -1,6 +1,8 @@
-December 10, 2020
+---
+date: December 10, 2020
+---
 
-# Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor
+# Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor {.unnumbered}
 
 [PLoS](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0060301)
 

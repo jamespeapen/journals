@@ -1,6 +1,8 @@
-January 15, 2021
+---
+date: January 15, 2021
+---
 
-# Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease
+# Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease {.unnumbered}
 
 [Nature](https://www.nature.com/articles/s41467-020-19737-2)
 

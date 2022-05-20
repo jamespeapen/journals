@@ -1,6 +1,8 @@
-December 17, 2020
+---
+date: December 17, 2020
+---
 
-# Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease
+# Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease {.unnumbered}
 
 [Frontiers in Neurogy](https://doi.org/10.3389/fneur.2020.575953)
 

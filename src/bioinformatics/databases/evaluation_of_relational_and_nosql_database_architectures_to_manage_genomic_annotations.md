@@ -1,6 +1,8 @@
-June 10, 2021
+---
+date: June 10, 2021
+---
 
-# Evaluation of relational and NoSQL database architectures to manage genomic annotations
+# Evaluation of relational and NoSQL database architectures to manage genomic annotations {.unnumbered}
 
 [Journal of Bimedical Informatics](https://doi.org/10.1016/j.jbi.2016.10.015)
 

@@ -1,6 +1,8 @@
-February 11, 2021
+---
+date: February 11, 2021
+---
 
-# Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts
+# Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts {.unnumbered}
 
 [Frontiers in Genetics](https://doi.org/10.3389/fgene.2020.00867)
 

@@ -1,6 +1,8 @@
-March 8, 2021
+---
+date: March 8, 2021
+---
 
-# Astrocyte senescence promotes glutamate toxicity in cortical neurons
+# Astrocyte senescence promotes glutamate toxicity in cortical neurons {.unnumbered}
 
 [PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227887)
 

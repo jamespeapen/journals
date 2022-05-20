@@ -1,6 +1,8 @@
-July 02, 2021
+---
+date: July 02, 2021
+---
 
-# Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain
+# Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain {.unnumbered}
 
 March 2021
 

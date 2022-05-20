@@ -1,6 +1,8 @@
-February 26, 2020
+---
+date: February 26, 2020
+---
 
-# Cellular senescence and failure of myelin repair in MS
+# Cellular senescence and failure of myelin repair in MS {.unnumbered}
 
 [Mechanisms of Ageing and Development](https://doi.org/10.1016/j.mad.2020.111366)
 

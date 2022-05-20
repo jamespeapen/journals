@@ -1,6 +1,8 @@
-May 07, 2021
+---
+date: May 07, 2021
+---
 
-# Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration
+# Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration {.unnumbered}
 
 [Life](https://www.mdpi.com/2075-1729/11/2/153/htm)
 

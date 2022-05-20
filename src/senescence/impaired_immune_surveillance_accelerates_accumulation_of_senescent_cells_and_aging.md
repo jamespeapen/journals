@@ -1,6 +1,8 @@
-April 22, 2021
+---
+date: April 22, 2021
+---
 
-# Impaired immune surveillance accelerates accumulation of senescent cells and aging
+# Impaired immune surveillance accelerates accumulation of senescent cells and aging {.unnumbered}
 
 [Nature Communications](https://www.nature.com/articles/s41467-018-07825-3)
 

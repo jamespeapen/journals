@@ -1,4 +1,8 @@
-# Systematic comparison of single-cell and single-nucleus RNA-sequencing methods
+---
+date: June 2020
+---
+
+# Systematic comparison of single-cell and single-nucleus RNA-sequencing methods {.unnumbered}
 
 [Nature biotechnology](https://www.nature.com/articles/s41587-020-0465-8)
 

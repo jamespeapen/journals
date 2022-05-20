@@ -1,6 +1,8 @@
-February 15, 2021
+---
+date: February 15, 2021
+---
 
-# The Cellular Phase of Alzheimer's Disease
+# The Cellular Phase of Alzheimer's Disease {.unnumbered}
 
 [Cell Press](https://doi.org/10.1016/j.cell.2015.12.056)
 

@@ -1,6 +1,8 @@
-December 22, 2020
+---
+date: December 22, 2020
+---
 
-# Single-cell transcriptomic analysis of Alzheimer’s disease
+# Single-cell transcriptomic analysis of Alzheimer’s disease {.unnumbered}
 
 [Nature](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865822/)
 

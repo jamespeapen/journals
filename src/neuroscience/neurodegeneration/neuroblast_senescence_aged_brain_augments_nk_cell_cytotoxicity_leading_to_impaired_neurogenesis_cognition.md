@@ -1,6 +1,8 @@
-June 25, 2021
+---
+date: June 25, 2021
+---
 
-# Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition
+# Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition {.unnumbered}
 
 [Nature Neuroscience](https://doi.org/10.1038/s41593-020-00745-w)
 

@@ -1,6 +1,8 @@
-November 2, 2020
+---
+date: November 2, 2020
+---
 
-# Cellular senescence and Alzheimer disease: the egg and the chicken scenario
+# Cellular senescence and Alzheimer disease: the egg and the chicken scenario {.unnumbered}
 
 [Nature Reviews Neuroscience](https://doi.org/10.1038/s41583-020-0325-z)
 

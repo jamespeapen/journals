@@ -1,6 +1,8 @@
-January 20, 2021
+---
+date: January 20, 2021
+---
 
-# Four faces of cellular senescence
+# Four faces of cellular senescence {.unnumbered}
 
 [Journal of Cell Biology](https://rupress.org/jcb/article/192/4/547/36360/Four-faces-of-cellular-senescenceFour-faces-of)
 

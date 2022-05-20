@@ -1,6 +1,8 @@
-March 17, 2021
+---
+date: March 17, 2021
+---
 
-# Investigating the relationship between DNA methylation age acceleration and risk factors for Alzheimer's disease
+# Investigating the relationship between DNA methylation age acceleration and risk factors for Alzheimer's disease {.unnumbered}
 
 June 21, 2018
 

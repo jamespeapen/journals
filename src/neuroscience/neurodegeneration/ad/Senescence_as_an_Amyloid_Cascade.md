@@ -1,6 +1,8 @@
-December 20, 2021
+---
+date: December 20, 2020
+---
 
-# Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis
+# Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis {.unnumbered}
 
 [Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fncel.2020.00129/full)
 

@@ -1,6 +1,10 @@
-May 18, 2022
+---
+categories: ["epigenetics", "methylation", "intro"]
+date: May 18, 2022
+---
 
-# The diverse roles of DNA methylation in mammalian development and disease
+
+# The diverse roles of DNA methylation in mammalian development and disease {.unnumbered}
 
 > Greenberg MVC, Bourc'his D. The diverse roles of DNA methylation in mammalian
 > development and disease. Nat Rev Mol Cell Biol. 2019 Oct;20(10):590-607. doi:

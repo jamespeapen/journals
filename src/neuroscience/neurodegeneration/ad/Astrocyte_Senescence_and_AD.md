@@ -1,6 +1,8 @@
-January 20, 2021
+---
+date: January 20, 2021
+---
 
-# Astrocyte Senescence and Alzheimer’s Disease: A Review
+# Astrocyte Senescence and Alzheimer’s Disease: A Review {.unnumbered}
 
 [Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fnagi.2020.00148/full)
 

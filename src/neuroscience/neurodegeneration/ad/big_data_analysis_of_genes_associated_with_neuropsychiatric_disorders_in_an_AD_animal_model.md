@@ -1,6 +1,8 @@
-April 21, 2021
+---
+date: April 21, 2021
+---
 
-# Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model
+# Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model {.unnumbered}
 
 [Frontiers in Neuroscience](https://doi.org/10.3389/fnins.2018.00407)
 

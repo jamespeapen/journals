@@ -1,6 +1,8 @@
-May 14, 2021
+---
+date: May 14, 2021
+---
 
-# Early onset senescence and cognitive impairment in a murine model of repeated mTBI
+# Early onset senescence and cognitive impairment in a murine model of repeated mTBI {.unnumbered}
 
 [Acta Neuropathologica Communications](https://doi.org/10.1186/s40478-021-01190-x)
 

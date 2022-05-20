@@ -1,6 +1,8 @@
-Jun 04, 2021
+---
+date: Jun 04, 2021
+---
 
-# Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub>
+# Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub> {.unnumbered}
 
 [Mitochondrion](http://dx.doi.org/10.1016/j.mito.2014.07.004)
 

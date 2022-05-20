@@ -1,6 +1,8 @@
-December 17, 2020
+---
+date: December 17, 2020
+---
 
-# Ageing as a risk factor for neurodegenerative disease
+# Ageing as a risk factor for neurodegenerative disease {.unnumbered}
 
 [Nature](https://www.nature.com/articles/s41582-019-0244-7)
 

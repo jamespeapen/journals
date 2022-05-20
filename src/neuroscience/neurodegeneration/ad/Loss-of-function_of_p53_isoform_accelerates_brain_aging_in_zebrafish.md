@@ -1,6 +1,8 @@
-March 12, 2021
+---
+date: March 12, 2021
+---
 
-# Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish
+# Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish {.unnumbered}
 
 [Cell Death and Disease](https://www.nature.com/articles/s41419-021-03438-9#Sec1)
 
