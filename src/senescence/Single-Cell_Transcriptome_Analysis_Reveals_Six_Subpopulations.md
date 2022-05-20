@@ -1,5 +1,6 @@
 ---
 date: February 11, 2021
+categories: ["transcriptomics", "scRNA-seq", "senescence"] 
 ---
 
 # Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts {.unnumbered}

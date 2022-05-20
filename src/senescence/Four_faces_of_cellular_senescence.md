@@ -1,5 +1,6 @@
 ---
 date: January 20, 2021
+categories: ["intro", "senescence"] 
 ---
 
 # Four faces of cellular senescence {.unnumbered}

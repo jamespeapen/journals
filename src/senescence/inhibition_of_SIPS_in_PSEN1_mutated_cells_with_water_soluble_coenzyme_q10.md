@@ -1,5 +1,6 @@
 ---
 date: Jun 04, 2021
+categories: ["senescence", "PSEN1"] 
 ---
 
 # Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub> {.unnumbered}

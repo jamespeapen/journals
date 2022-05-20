@@ -1,5 +1,6 @@
 ---
 date: March 18, 2021
+categories: ["senescence", "systems biology"] 
 ---
 
 # A multidimensional systems biology analysis of cellular senescence in aging and disease {.unnumbered}

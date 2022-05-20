@@ -1,5 +1,6 @@
 ---
 date: December 11, 2020
+categories: ["intro", "SASP", "senescence"] 
 ---
 
 # Cellular senescence: Defining a path forward {.unnumbered}

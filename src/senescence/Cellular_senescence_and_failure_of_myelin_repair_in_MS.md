@@ -1,5 +1,6 @@
 ---
 date: February 26, 2020
+categories: ["senescence", "myelin", "MS"] 
 ---
 
 # Cellular senescence and failure of myelin repair in MS {.unnumbered}

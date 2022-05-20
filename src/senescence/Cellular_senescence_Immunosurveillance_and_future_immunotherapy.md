@@ -1,5 +1,6 @@
 ---
 date: 2021-03-17
+categories: ["immune system", "senescence", "immunotherapy"] 
 ---
 
 # Cellular senescence: Immunosurveillance and future immunotherapy {.unnumbered}

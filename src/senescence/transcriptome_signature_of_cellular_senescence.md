@@ -1,5 +1,6 @@
 ---
 date: April 19, 2021
+categories: ["transcriptomics", "senescence"]
 ---
 
 # Transcriptome signature of cellular senescence {.unnumbered}

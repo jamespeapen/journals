@@ -1,5 +1,6 @@
 ---
 date: March 17, 2021
+categories: ["epigenetics", "senescence", "ageing", "SASP"] 
 ---
 
 # Epigenetic Basis of Cellular Senescence and Its Implications in Aging {.unnumbered}

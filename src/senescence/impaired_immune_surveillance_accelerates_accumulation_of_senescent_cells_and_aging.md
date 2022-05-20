@@ -1,5 +1,6 @@
 ---
 date: April 22, 2021
+categories: ["immune system", "senescence", "senolytics"] 
 ---
 
 # Impaired immune surveillance accelerates accumulation of senescent cells and aging {.unnumbered}

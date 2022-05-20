@@ -1,5 +1,6 @@
 ---
 date: Jun 18, 2021
+categories: ["SASP", "senescence", "lncRNA"] 
 ---
 
 # The long non-coding RNA *MIR31HG* regulates the senescence associated secretory phenotype {.unnumbered}
