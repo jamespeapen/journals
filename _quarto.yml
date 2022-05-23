@@ -29,6 +29,11 @@ book:
           - src/epigenetics/interplay_between_cancer_genome_epigenome.md
           - src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md
           - src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md
+    - part: "Single-cell biology"
+      chapters:
+        - part: "Cell-type vs cell-state"
+          chapters:
+            - src/single_cell/defining_cell_type_states_single_cell_genomics.md
     - part: "Ageing"
       chapters: 
         - src/ageing/counteracting_age_related_VEGF_insufficiecy.md
