@@ -86,8 +86,8 @@ book:
       chapters:
       - part: "Single-nucleus RNA-seq"
         chapters:
-          - src/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
-          - src/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
+          - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
+          - src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
     - index.qmd
 bibliography: references.bib
 

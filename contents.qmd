@@ -131,12 +131,12 @@
 
 - [Astrocyte Senescence and Alzheimer’s Disease: A Review](src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.md)
 
-#### Transcriptomics
+### Transcriptomics
 
 ##### Single-nucleus RNA-seq
 
 - [Systematic comparison of single-cell and single-nucleus RNA-sequencing
-  methods](src/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
+  methods](src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
 
 - [Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation
-  Genes in Humans](src/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)
+  Genes in Humans](src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)
