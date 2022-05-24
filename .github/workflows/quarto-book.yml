@@ -17,14 +17,16 @@ jobs:
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/install-quarto@v1
 
-      - name: Build book
+      - name: Render book to all format
+        # Add any command line argument needed
         run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git checkout -b gh-pages
           quarto render --to html
-          git add docs
-          cid=$(git rev-parse --short "$GITHUB_SHA")
-          git commit -am "Deploy $cid to gh-pages"
-          git push origin HEAD:gh-pages --force
-
+      - name: Deploy 🚀
+        # only deploy when push to main
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # The branch the action should deploy to.
+          branch: gh-pages
+          # The folder the action should deploy. Adapt if you changed in Quarto config
+          folder: _book
