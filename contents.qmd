@@ -22,6 +22,9 @@
 - [Defining cell types and states with single-cell
   genomics](src/single_cell/defining_cell_type_states_single_cell_genomics.md)
 
+- [The evolving concept of cell identity in the single cell era
+  ](src/single_cell/the_evolving_concept_of_cell_identity_in_single_cell_era.md)
+
 ### Ageing
 
 - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span
