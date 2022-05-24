@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.449">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2021-03-18">
+
+<title>Journals - A multidimensional systems biology analysis of cellular senescence in aging and disease</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<link href="../../src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" rel="next">
+<link href="../../src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link class="quarto-color-scheme" href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="../../site_libs/bootstrap/bootstrap-dark.min.css">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">A multidimensional systems biology analysis of cellular senescence in aging and disease</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Journals</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../contents.html" class="sidebar-item-text sidebar-link">Contents</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Bioinformatics</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Databases</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="sidebar-item-text sidebar-link">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Epigenetics</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">General</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="sidebar-item-text sidebar-link">Interplay between the cancer genome and epigenome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">The diverse roles of DNA methylation in mammalian development and disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Single-cell biology</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Cell-type vs cell-state</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/single_cell/defining_cell_type_states_single_cell_genomics.html" class="sidebar-item-text sidebar-link">Defining cell types and states with single-cell genomics</a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Ageing</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
+  </div>
+</li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Cellular Senescence</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Four_faces_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Four faces of cellular senescence</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="sidebar-item-text sidebar-link">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="sidebar-item-text sidebar-link">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="sidebar-item-text sidebar-link">Cellular senescence: Immunosurveillance and future immunotherapy</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/transcriptome_signature_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Transcriptome signature of cellular senescence</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="sidebar-item-text sidebar-link">Cellular senescence: Defining a path forward</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="sidebar-item-text sidebar-link">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="sidebar-item-text sidebar-link">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="sidebar-item-text sidebar-link active">A multidimensional systems biology analysis of cellular senescence in aging and disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="sidebar-item-text sidebar-link">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="sidebar-item-text sidebar-link">Cellular senescence and failure of myelin repair in MS</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="sidebar-item-text sidebar-link">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="sidebar-item-text sidebar-link">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="sidebar-item-text sidebar-link">An aged immune system drives senescence and ageing of solid organs</a>
+  </div>
+</li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">Neuroscience</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">Neurodegeneration</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">Cellular Senescence in Neurodegenerative Diseases</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="sidebar-item-text sidebar-link">Ageing as a risk factor for neurodegenerative disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="sidebar-item-text sidebar-link">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="sidebar-item-text sidebar-link">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="sidebar-item-text sidebar-link">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="sidebar-item-text sidebar-link">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">Alzheimer’s Disease</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Genetic Landscape of Alzheimer’s disease</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Genetics_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Genetics of Alzheimer’s disease: where we are, and where we are going</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="sidebar-item-text sidebar-link">When does Alzheimer’s disease really start? The role of biomarkers</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="sidebar-item-text sidebar-link">Genetic meta-analysis of diagnosed Alzheimer’s disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="sidebar-item-text sidebar-link">The Cellular Phase of Alzheimer’s Disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="sidebar-item-text sidebar-link">Single-cell transcriptomic analysis of Alzheimer’s disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="sidebar-item-text sidebar-link">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="sidebar-item-text sidebar-link">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="sidebar-item-text sidebar-link">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="sidebar-item-text sidebar-link">Telomere Attrition in Neurodegenerative Disorders</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="sidebar-item-text sidebar-link">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="sidebar-item-text sidebar-link">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="sidebar-item-text sidebar-link">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">Cellular senescence and AD</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth4 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="sidebar-item-text sidebar-link">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="sidebar-item-text sidebar-link">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="sidebar-item-text sidebar-link">Astrocyte Senescence and Alzheimer’s Disease: A Review</a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">Transcriptomics</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 ">  
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">Single-nucleus RNA-seq</a>
+      <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="sidebar-item-text sidebar-link">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Categories</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#cellage-gene-functions" id="toc-cellage-gene-functions" class="nav-link" data-scroll-target="#cellage-gene-functions">CellAge gene functions</a></li>
+  <li><a href="#evolutionary-conservation-of-cellage-genes-in-model-organisms" id="toc-evolutionary-conservation-of-cellage-genes-in-model-organisms" class="nav-link" data-scroll-target="#evolutionary-conservation-of-cellage-genes-in-model-organisms">Evolutionary conservation of CellAge genes in model organisms</a></li>
+  <li><a href="#cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes" id="toc-cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes" class="nav-link" data-scroll-target="#cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes">CellAge vs human orthologues of longevity-associated model organism genes</a></li>
+  <li><a href="#cellage-genes-differentially-expressed-with-age" id="toc-cellage-genes-differentially-expressed-with-age" class="nav-link" data-scroll-target="#cellage-genes-differentially-expressed-with-age">CellAge genes differentially expressed with age</a></li>
+  <li><a href="#tissue-specific-senescence-gene-expression-and-differential-expression-of" id="toc-tissue-specific-senescence-gene-expression-and-differential-expression-of" class="nav-link" data-scroll-target="#tissue-specific-senescence-gene-expression-and-differential-expression-of">Tissue specific senescence gene expression and differential expression of</a></li>
+  <li><a href="#senescence-and-longevity-genes-associate-with-ageing-related-diseases" id="toc-senescence-and-longevity-genes-associate-with-ageing-related-diseases" class="nav-link" data-scroll-target="#senescence-and-longevity-genes-associate-with-ageing-related-diseases">Senescence and longevity genes associate with ageing related-diseases</a></li>
+  <li><a href="#are-cs-genes-associated-with-cancer-genes" id="toc-are-cs-genes-associated-with-cancer-genes" class="nav-link" data-scroll-target="#are-cs-genes-associated-with-cancer-genes">Are CS genes associated with cancer genes?</a></li>
+  <li><a href="#network-analysis" id="toc-network-analysis" class="nav-link" data-scroll-target="#network-analysis">Network analysis</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.md" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">A multidimensional systems biology analysis of cellular senescence in aging and disease</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">senescence</div>
+    <div class="quarto-category">systems biology</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 18, 2021</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p><a href="https://doi.org/10.1186/s13059-020-01990-9">Genome Biology</a></p>
+<p>April 07, 2020</p>
+<blockquote class="blockquote">
+<p>Avelar RA, Ortega JG, Tacutu R, Tyler EJ, Bennett D, Binetti P, Budovsky A, Chatsirisupachai K, Johnson E, Murray A, Shields S, Tejada-Martinez D, Thornton D, Fraifeld VE, Bishop CL, de Magalhães JP. A multidimensional systems biology analysis of cellular senescence in aging and disease. Genome Biol. 2020 Apr 7;21(1):91. doi: 10.1186/s13059-020-01990-9. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32264951">32264951</a>; PMCID: PMC7333371.</p>
+</blockquote>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Hayflick and Moorhead demonstrated replicative senescence in fibroblasts that reached a stable proliferative growth arrest. The cells remained metabolically active and had a distinct vacuolated morphology.</p>
+<p>Replicative senescence is driven by telomere attrition that exposes the chromosome end and triggers the DNA damage response. Other types of senescence occur with exposure to stressors like oncogenic factors, oxidative stress or radiation. It is a pleiotropic phenomenon vital to embryogenesis, tumour suppression, and wound healing.</p>
+<p>The persistence of senescence cells without clearance by the immune system can lead to a chronic state of senescence and inflammation through the senescence-associated secretory phenotype - a state that can spread senescence to neighbouring healthy cells.</p>
+<p>It can be hard to determine what cellular senescence is since there is no one marker to identify it. β-galactosidase activity and p16 expression are usually used to identify senescent cells, but these markers are not unique or always found in senescent cells. The CellAge database uses existing data on human ageing to provide data on senescence.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>CellAge has 279 senescence genes in different senescence pathways. They ran a meta-analysis to get a molecular signature of replicative senescence and found 526 overexpressed and 734 underexpressed genes. 44 of the 279 CellAge genes were found in cellular senescence signatures, a significant overlap.</p>
+<section id="cellage-gene-functions" class="level3">
+<h3 class="anchored" data-anchor-id="cellage-gene-functions">CellAge gene functions</h3>
+<p>Functional enrichment analyses showed that CellAge genes are enriched with several clusters associated with Protein Kinase Activity, transcription regulation DNA-binding, DNA damage repair, and cell cycle regulation in cancer. Genes inducing senescence were more associated with promoting transcription and genes inhibiting senescence were associated with transcription repression.</p>
+<p>Clustering related processes resulted in 298 categories that were significantly enriched.</p>
+</section>
+<section id="evolutionary-conservation-of-cellage-genes-in-model-organisms" class="level3">
+<h3 class="anchored" data-anchor-id="evolutionary-conservation-of-cellage-genes-in-model-organisms">Evolutionary conservation of CellAge genes in model organisms</h3>
+<p>There were significantly more orthologues for human CellAge genes in mice, rats, and monkeys than for other genes. Senescence inducers were more conserved than inhibitors.</p>
+<p>22 orthogroups were conserved in the 24 mammals studied.</p>
+</section>
+<section id="cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes" class="level3">
+<h3 class="anchored" data-anchor-id="cellage-vs-human-orthologues-of-longevity-associated-model-organism-genes">CellAge vs human orthologues of longevity-associated model organism genes</h3>
+<p>Senescence inducers overlapped with anti-longevity genes and not with pro-longevity genes and vice-versa with senescence inhibitors. They did however find an overrepresentation of senescence inhibitors in the anti-longevity genes set. There is a significant association between cellular senescence and the ageing process and there may be an inverse relationship between senescence and longevity for some pathways.</p>
+</section>
+<section id="cellage-genes-differentially-expressed-with-age" class="level3">
+<h3 class="anchored" data-anchor-id="cellage-genes-differentially-expressed-with-age">CellAge genes differentially expressed with age</h3>
+<p>Genes overexpressed with age overlapped with the CellAge genes and genes underexpressed with age did not show any significant overlap. Overexpressed signatures of ageing overlapped with overexpressed signatures of replicative senescence, but not underexpressed signatures of ageing.</p>
+<p>Underexpressed signatures of replicative senescence did not overlap with overexpressed or underexpressed ageing signatures.</p>
+<p>91 inducers and 72 inhibitors overlapped with ageing signatures in fibroblasts.</p>
+<p>Functional enrichment analysis showed that 71 GO terms were enriched for the overlap between CellAge senescence inducers and age upregulated genes.</p>
+</section>
+<section id="tissue-specific-senescence-gene-expression-and-differential-expression-of" class="level3">
+<h3 class="anchored" data-anchor-id="tissue-specific-senescence-gene-expression-and-differential-expression-of">Tissue specific senescence gene expression and differential expression of</h3>
+<p>They asked if CellAge genes and differentially expressed signatures of senescence were tissue-specific. CellAge genes were generally expressed across tissue types. Only 10% of CellAge genes and 11% of senescence signatures had tissue-specific expression.</p>
+<p>Overexpressed senescence signatures were across tissue types with age. 64% of protein-coding genes did not significantly change expression with age in any tissues. The number of CellAge senescence inducers overexpressed with age was higher than the genome average.</p>
+<p>Overexpressed signatures of senescence were significantly differentially expressed with age compared to all protein-coding genes. The number of underexpressed signatures of senescence was underexpressed more than expected by chance.</p>
+<p>The expression of most of the senescence genes did not change with age, but a significant number tend to be differentially expressed with age across multiple tissues in humans.</p>
+</section>
+<section id="senescence-and-longevity-genes-associate-with-ageing-related-diseases" class="level3">
+<h3 class="anchored" data-anchor-id="senescence-and-longevity-genes-associate-with-ageing-related-diseases">Senescence and longevity genes associate with ageing related-diseases</h3>
+<p>Using data on 769 ageing related diseases, they found that all were significantly associated with CellAge genes.</p>
+</section>
+<section id="are-cs-genes-associated-with-cancer-genes" class="level3">
+<h3 class="anchored" data-anchor-id="are-cs-genes-associated-with-cancer-genes">Are CS genes associated with cancer genes?</h3>
+<p>There was a significant overlap between CellAge genes and cancer, with both oncogenes and tumour suppression genes.</p>
+<p>Senescence inducers tended to be tumour suppressors, while inhibitors were oncogenes which is consistent with the view that senescence is a tumour-suppressing mechanism.</p>
+</section>
+<section id="network-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="network-analysis">Network analysis</h3>
+<p>RNA-Seq Unweighted Co-expression network:</p>
+<p>There were a number of clusters found and one was related to immunity.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+    } else {
+      disableStylesheet(alternateStylesheets);
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Astrocyte senescence promotes glutamate toxicity in cortical neurons</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="pagination-link">
+        <span class="nav-page-text">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
