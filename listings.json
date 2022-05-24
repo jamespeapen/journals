@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/single_cell/the_evolving_concept_of_cell_identity_in_single_cell_era.html",
       "/src/single_cell/defining_cell_type_states_single_cell_genomics.html",
       "/src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html",
       "/src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html",
