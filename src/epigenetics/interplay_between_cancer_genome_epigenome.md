@@ -11,7 +11,8 @@ date: May 17, 2022
 March 28, 2013
 
 > Shen H, Laird PW. Interplay between the cancer genome and epigenome. Cell.
-> 2013 Mar 28;153(1):38-55. doi: 10.1016/j.cell.2013.03.008. PMID: [23540689](https://pubmed.ncbi.nlm.nih.gov/23540689/); PMCID: PMC3648790.
+> 2013 Mar 28;153(1):38-55. doi: 10.1016/j.cell.2013.03.008. PMID:
+> [23540689](https://pubmed.ncbi.nlm.nih.gov/23540689/); PMCID: PMC3648790.
 
 ## DNA methylation mechanism
 
@@ -23,7 +24,7 @@ tumor-supressor genes or work with epigenetic mechanisms to make mutations and
 epigenetic dsyregulation more likely.
 
 
-####  CpG cytosine-5 methylation
+###  CpG cytosine-5 methylation
 
 This is catalysed by DNMT3A and DNMT3B and maintained by DNAMT3B. Most of the
 mammalian genome is not methylated. The sparse methylated regions contain
@@ -38,7 +39,7 @@ MBDs and Kaiso (zinc finger) are involved in DNA methylation-mediated
 transcriptional repression of tumor suppressor genes with promoter DNA
 methylation.
 
-#### Histone variants and modifications
+### Histone variants and modifications
 
 Histone modifications are carried out by histone methyltransferases 
 demethylases, acetyltransferases and deacetylases, and writers and erasers of
@@ -58,7 +59,7 @@ Histone variants are found in different cell types and regions. Some like H2A.Z
 are found in regions requiring frequent changes and wide prevalence indicates
 prevalent chromatin exchange in embryonic stem cells.
 
-#### Nucleosome positioning and remodelling
+### Nucleosome positioning and remodelling
 
 Nucleosome position can influence transcriptional activation and repression.
 There are chromatin remodelling complexes (SWI/SNF, chromodomain and
@@ -87,7 +88,7 @@ These changes are made by
     interactions with unintended promoters. It also separates active and
     repressive chromatin domains.
 
-#### Epigenetic state maintainance
+### Epigenetic state maintainance
 
 The epigenome is copied between cell divisions by DNMT1 and H3K9
 methyltransferase which are loaded into the replication fork and copy the marks.
@@ -104,7 +105,7 @@ or structural inactivation of the gene. Further mouse models need epigenetic
 readers and writers for tumor development. Some methylation changes are
 essential for cancer cell survival.
 
-#### Disruption of differentiation and development
+### Disruption of differentiation and development
 
 Polycomb repressors mark genes differentiation and development regulator genes
 depending on that cells trajectory. These genes tend to be hypermethylated in
@@ -115,14 +116,14 @@ silencing over time and lose their ability to differentiate, but are still able
 to proliferate. This would mean that it is an epigenetic modification rather
 than a genetic one that leads to malignant transformation.
 
-#### CpG island methylator phenotypes 
+### CpG island methylator phenotypes 
 
 The CpG island methylator phenotype shows a high frequency of CpG island
 hypermethylation. There are distinct epigenetic subtypes for some cancers like
 CRC and glioblastoma, while others like ovarian cancer do not show such distinct
 subtypes.
 
-#### Epigenetic influences on genomic integrity
+### Epigenetic influences on genomic integrity
 
 Epigenetic mechanisms can affect the rates of lesion formation and repair.
 Methylated and unmethylated cytosine can both be deaminated. Unmethylated C
@@ -133,7 +134,7 @@ contain MeC than other SNVs in the genome. The deamination of 5mC before
 replication leads to a normal T:A base that is not a repair candidate. About a
 quarter of *TP53* mutations in cancer result from this epigenetic mark.
 
-#### Regional effects of chromatic organization
+### Regional effects of chromatic organization
 
 Megabase regions of repressive chromatin (H3K9me3) are correlated with cancer
 SNVs. Genes resistant to cancer-associated hypermethylation tend to have
@@ -141,7 +142,7 @@ retrotransposons near their transcription start sites compared to
 methylation-prone genes. Mouse models of DNMT deficiency tend to have
 chromosomal instability.
 
-#### Epigenetic influences on DNA repair
+### Epigenetic influences on DNA repair
 
 Removal of DNA methyltransferases can lead to increased microsatellite
 instability (MSI), increased telomere lengths and telomeric recombination. The

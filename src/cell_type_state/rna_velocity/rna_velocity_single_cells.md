@@ -34,14 +34,16 @@ where
 
 - $s$ is the spliced mRNA.
 
-The quantity of spliced mRNA at a certain timepoint is correlated with and can
-be predictive of the quantity of unspliced mRNA at the next timepoint. Knowing
-how much unspliced mRNA there is for a gene at one point means we can predict
-whether that gene is actively expressed or was previously expressed and will not
-be expressed in the future. Coupled with information on genes that define cell
-states and types, we can show the trajectory a cell will take in the near
-future. RNA velocity allows us to understand what the origin of different cell
-types and states are before we have information about the developmental process.
+The quantity of spliced mRNA at a certain timepoint is *correlated
+with*[![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-018-0414-6/MediaObjects/41586_2018_414_Fig1_HTML.png?as=webp)]{.aside}
+and can be predictive of the quantity of unspliced mRNA at the next timepoint.
+Knowing how much unspliced mRNA there is for a gene at one point means we can
+predict whether that gene is actively expressed or was previously expressed and
+will not be expressed in the future. Coupled with information on genes that
+define cell states and types, we can show the trajectory a cell will take in the
+near future. RNA velocity allows us to understand what the origin of different
+cell types and states are before we have information about the developmental
+process [![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-018-0414-6/MediaObjects/41586_2018_414_Fig3_HTML.png?as=webp)]{.aside}.
 
 Computed velocities can be projected onto low dimensional embeddings of data
 like a PCA to visualise the trajectories between different cell states. However,
