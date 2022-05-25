@@ -17,13 +17,23 @@
 
 - [DNA methylation loss in late-replicating domains is linked to mitotic cell division](src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md)
 
-### Single-Cell biology
+### Cell type vs cell state
 
 - [Defining cell types and states with single-cell
-  genomics](src/single_cell/defining_cell_type_states_single_cell_genomics.md)
+  genomics](src/cell_type_state/defining_cell_type_states_single_cell_genomics.md)
 
 - [The evolving concept of cell identity in the single cell era
-  ](src/single_cell/the_evolving_concept_of_cell_identity_in_single_cell_era.md)
+  ](src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.md)
+
+### Transcriptomics
+
+##### Single-nucleus RNA-seq
+
+- [Systematic comparison of single-cell and single-nucleus RNA-sequencing
+  methods](src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
+
+- [Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation
+  Genes in Humans](src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)
 
 ### Ageing
 
@@ -139,12 +149,3 @@
 
 - [Astrocyte Senescence and Alzheimer’s Disease: A Review](src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.md)
 
-### Transcriptomics
-
-##### Single-nucleus RNA-seq
-
-- [Systematic comparison of single-cell and single-nucleus RNA-sequencing
-  methods](src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md)
-
-- [Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation
-  Genes in Humans](src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)

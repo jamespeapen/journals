@@ -28,12 +28,16 @@ book:
           - src/epigenetics/interplay_between_cancer_genome_epigenome.md
           - src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md
           - src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md
-    - part: "Single-cell biology"
+    - part: "Cell-type vs cell-state"
       chapters:
-        - part: "Cell-type vs cell-state"
-          chapters:
-            - src/single_cell/defining_cell_type_states_single_cell_genomics.md
-            - src/single_cell/the_evolving_concept_of_cell_identity_in_single_cell_era.md
+        - src/cell_type_state/defining_cell_type_states_single_cell_genomics.md
+        - src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.md
+    - part: "Transcriptomics"
+      chapters:
+      - part: "Single-nucleus RNA-seq"
+        chapters:
+          - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
+          - src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
     - part: "Ageing"
       chapters: 
         - src/ageing/counteracting_age_related_VEGF_insufficiecy.md
@@ -87,12 +91,6 @@ book:
                   - src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.md
                   - src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.md
                   - src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.md
-    - part: "Transcriptomics"
-      chapters:
-      - part: "Single-nucleus RNA-seq"
-        chapters:
-          - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
-          - src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
     - index.qmd
 bibliography: references.bib
 
