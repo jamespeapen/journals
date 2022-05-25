@@ -9,6 +9,8 @@ date: May 24, 2022
 > Development. 2019 Jun 27;146(12):dev169748. doi: 10.1242/dev.169748. PMID:
 > [31249002](https://pubmed.ncbi.nlm.nih.gov/31249002/).
 
+[Development](https://journals.biologists.com/dev/article/146/12/dev169748/19444/The-evolving-concept-of-cell-identity-in-the)
+
 June 27, 2019
 
 Cells can exist in a range of phenotypes and expression profiles, within one

@@ -9,6 +9,8 @@ date: May 23, 2022
 > Res. 2015 Oct;25(10):1491-8. doi: 10.1101/gr.190595.115. PMID:
 > [26430159](https://pubmed.ncbi.nlm.nih.gov/26430159/); PMCID: PMC4579334.
 
+[Genome Research](https://genome.cshlp.org/content/25/10/1491)
+
 Oct 25, 2015
 
 ### Problems with bulk methods
