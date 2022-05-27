@@ -1,5 +1,5 @@
 ---
-categories: ["rna velocity", "cell-state", "single-cell", "transcriptomics"]
+categories: ["rna velocity", "cell-type vs cell-state", "single-cell", "transcriptomics"]
 date: May 25, 2022
 ---
 
