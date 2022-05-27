@@ -31,6 +31,10 @@
 
 - [Generalizing RNA velocity to transient cell states through dynamical
   modeling](src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.md)
+  
+- [RNA velocity—current challenges and future
+  perspectives](src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.md)
+
 
 ### Transcriptomics
 
