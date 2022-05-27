@@ -35,6 +35,7 @@ book:
         - part: "RNA velocity"
           chapters:
             - src/cell_type_state/rna_velocity/rna_velocity_single_cells.md
+            - src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.md
     - part: "Transcriptomics"
       chapters:
       - part: "Single-nucleus RNA-seq"

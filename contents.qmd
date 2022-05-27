@@ -29,6 +29,9 @@
 
 - [RNA velocity of single cells](src/cell_type_state/rna_velocity/rna_velocity_single_cells.md)
 
+- [Generalizing RNA velocity to transient cell states through dynamical
+  modeling](src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.md)
+
 ### Transcriptomics
 
 ##### Single-nucleus RNA-seq
