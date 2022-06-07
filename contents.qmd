@@ -35,6 +35,10 @@
 - [RNA velocity—current challenges and future
   perspectives](src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.md)
 
+#### Lineage tracing
+
+- [Lineage tracing in human tissues](src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.md)
+
 
 ### Transcriptomics
 
