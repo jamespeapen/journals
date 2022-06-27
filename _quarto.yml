@@ -34,9 +34,9 @@ book:
         - src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.md
         - part: "RNA velocity"
           chapters:
-            - src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.md
             - src/cell_type_state/rna_velocity/rna_velocity_single_cells.md
             - src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.md
+            - src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.md
         - part: "Lineage tracing"
           chapters: 
             - src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.md
