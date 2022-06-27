@@ -18,9 +18,9 @@ March 28, 2013
 
 While genetic mechanisms of oncogenesis are more easily seen and understood,
 epigenetic mechanisms can be powerful ones that can be transferred through
-cell divisions. Mutations in epigenetic regulators are important lead to major
+cell divisions. Mutations in epigenetic regulators are important and lead to major
 changes in cancer cell epigenomes. Genetic mechanisms can inactivate
-tumor-supressor genes or work with epigenetic mechanisms to make mutations and
+tumor-suppressor genes or work with epigenetic mechanisms to make mutations and
 epigenetic dsyregulation more likely.
 
 
@@ -44,7 +44,7 @@ methylation.
 Histone modifications are carried out by histone methyltransferases 
 demethylases, acetyltransferases and deacetylases, and writers and erasers of
 phosphorylation and other modifications. They act in complexes like the Polycomb
-complec and counterbalance each other to regulate developmental genes, some of
+complex and counterbalance each other to regulate developmental genes, some of
 which are implicated in cancer. The Polycomb repressive complex 2 (PRC2) allows
 PRC1 to dock. PRC1 has a RING1B enzymatic core that monoubiquitinylates histone
 H2A at K119 and blocks RNA polymerase II elongation. The H3K4 methylation mark
@@ -107,7 +107,7 @@ essential for cancer cell survival.
 
 ### Disruption of differentiation and development
 
-Polycomb repressors mark genes differentiation and development regulator genes
+Polycomb repressors mark differentiation and development regulator genes
 depending on that cells trajectory. These genes tend to be hypermethylated in
 their CpG islands during proliferation, ageing and malignant
 transformation. Cancer cells also show silencing of differentiation genes. This
