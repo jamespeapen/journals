@@ -36,7 +36,7 @@ Data analysis in single-cell experiments are significantly more challenging than
 bulk experiments since it can be highly variable and hard to distinguish between
 technical and biological variation. Some of these problems can be solved by
 normalization techniques like spike-ins or molecular barcoding. Further, since
-the data is orders of magnitude larger and algorithms need to be particularly
+the data is orders of magnitude larger, algorithms need to be particularly
 efficient with dealing with that data.
 
 ### A dynamical systems view of the cell
@@ -60,7 +60,7 @@ Attractors of such a landscape can be identified through clustering methods like
 PCA. These dimensionality reduction techniques can help deal with the "**curse of
 dimensionality**"[Distances between points become increasingly similar as the
 dimensions of their space increase]{.aside} In biological systems, genes can be
-grouped into modules that correlated expression levels allowing one gene to
+grouped into modules with correlated expression levels allowing one gene to
 represent a group, further reducing dimensionality.
 
 Clustering could also be used to understand cell transition paths. Algorithms

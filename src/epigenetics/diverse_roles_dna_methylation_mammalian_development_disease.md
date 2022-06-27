@@ -36,7 +36,7 @@ sequence context, but only the methylation in CpG contexts are preserved through
 cell division by the methylation maintenance enzyme DNMT1 working with the E3
 ubiquitin ligase UHRF1.
 
-Demethylation is done by TET that oxidises methylation cytosine. Oxidised forms
+Demethylation is done by TET that oxidises methylated cytosine. Oxidised forms
 of C can promote demethylation during replication.
 
 Gene bodies tend to be quite heavily methylated which is paradoxical since
@@ -60,7 +60,7 @@ The main targets of DNA methylation are retrotransposons that occupy around half
 of the genomic space. Their expression is controlled by CpG-rich promoters whose
 methylation is necessary for silencing them. DNMT3C is a newly discovered de
 novo DNMT specifically working to control retrotransposons. DNA methylation also
-servers to inactivate retrotransposons through the increased mutagenesis by
+serves to inactivate retrotransposons through increased mutagenesis by
 deamination.
 
 ### Methylation patterning in development
@@ -77,7 +77,7 @@ Sex-specific patterns of methylation are established in germlines. Sperm have
 
 ### Methylation and disease
 
-DNMT1 mutations is associated with neurological disorders like hereditary
+DNMT1 mutations are associated with neurological disorders like hereditary
 sensory autonomic neuropathy 1E with dementia and hearing loss. DNMT3B mutations
 are found in immunodeficiency diseases. Heterozygous, germline mutations in
 *DNMT3A* are associated with growth disorders of early prenatal onset. Somatic
