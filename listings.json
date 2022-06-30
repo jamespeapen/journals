@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html",
+      "/src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html",
+      "/src/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html",
       "/src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html",
       "/src/cell_type_state/rna_velocity/rna_velocity_single_cells.html",
       "/src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html",
