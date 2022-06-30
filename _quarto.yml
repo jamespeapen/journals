@@ -1,3 +1,4 @@
+validate-yaml: false
 project:
   type: book
   preview: 
