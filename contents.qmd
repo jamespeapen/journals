@@ -54,7 +54,11 @@
 - [Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation
   Genes in Humans](src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md)
 
-### Ovarian cancer
+### Cancer
+
+- [Non-genetic determinants of malignant clonal fitness at single-cell resolution](src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md)
+
+#### Ovarian cancer
 
 - [A single-cell landscape of high-grade serous ovarian cancer](src/ovarian_cancer/single_cell_landscape_hgsoc.md)
 

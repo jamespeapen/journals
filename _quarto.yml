@@ -50,10 +50,13 @@ book:
         chapters:
           - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
           - src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
-    - part: "Ovarian cancer"
-      chapters: 
-        - src/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md
-        - src/ovarian_cancer/single_cell_landscape_hgsoc.md
+    - part: "Cancer"
+      chapters:
+        - src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md 
+        - part: "Ovarian cancer"
+          chapters: 
+            - src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md
+            - src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md
     - part: "Ageing"
       chapters: 
         - src/ageing/counteracting_age_related_VEGF_insufficiecy.md
