@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html",
       "/src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html",
       "/src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.html",
       "/src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html",
