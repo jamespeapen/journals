@@ -34,6 +34,7 @@ book:
         - src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.md
         - src/cell_type_state/defining_cell_type_states_single_cell_genomics.md
         - src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.md
+        - src/cell_type_state/what_is_a_cell_type_how_to_define_it.md
         - part: "RNA velocity"
           chapters:
             - src/cell_type_state/rna_velocity/rna_velocity_single_cells.md

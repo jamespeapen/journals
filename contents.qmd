@@ -28,6 +28,8 @@
 - [The evolving concept of cell identity in the single cell era
   ](src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.md)
 
+- [What is a cell type and how to define it](src/cell_type_state/what_is_a_cell_type_how_to_define_it.md)
+
 #### RNA velocity
 
 - [RNA velocity of single cells](src/cell_type_state/rna_velocity/rna_velocity_single_cells.md)
