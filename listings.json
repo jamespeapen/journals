@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/what_is_a_cell_type_how_to_define_it.html",
       "/src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html",
       "/src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html",
       "/src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.html",
@@ -9,7 +10,6 @@
       "/src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html",
       "/src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html",
       "/src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html",
-      "/src/cell_type_state/what_is_a_cell_type_how_to_define_it.html",
       "/src/cell_type_state/rna_velocity/rna_velocity_single_cells.html",
       "/src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html",
       "/src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html",
