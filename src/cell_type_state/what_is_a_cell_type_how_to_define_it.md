@@ -1,6 +1,6 @@
 ---
 categories: ["cell-type vs cell-state", "single-cell", "transcriptomics", "systems biology"]
-date: May 25, 2022
+date: July 22, 2022
 ---
 
 # What is a cell type and how to define it {.unnumbered}
