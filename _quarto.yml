@@ -46,6 +46,9 @@ book:
         - part: "Cancer"
           chapters:
             - src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.md
+        - part: "State space"
+          chapters: 
+            - src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.md
     - part: "Transcriptomics"
       chapters:
       - part: "Single-nucleus RNA-seq"
