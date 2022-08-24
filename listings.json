@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html",
       "/src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html",
       "/src/cell_type_state/what_is_a_cell_type_how_to_define_it.html",
       "/src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html",
