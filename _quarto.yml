@@ -62,6 +62,7 @@ book:
           chapters: 
             - src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md
             - src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md
+            - src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.md
     - part: "Ageing"
       chapters: 
         - src/ageing/counteracting_age_related_VEGF_insufficiecy.md
