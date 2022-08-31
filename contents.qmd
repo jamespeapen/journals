@@ -30,6 +30,9 @@
 
 - [What is a cell type and how to define it](src/cell_type_state/what_is_a_cell_type_how_to_define_it.md)
 
+- [Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational
+  model](src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.md)
+
 #### RNA velocity
 
 - [RNA velocity of single cells](src/cell_type_state/rna_velocity/rna_velocity_single_cells.md)
