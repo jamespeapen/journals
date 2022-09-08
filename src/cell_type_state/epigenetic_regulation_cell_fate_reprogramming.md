@@ -1,6 +1,6 @@
 ---
 categories: ["cell-type vs cell-state", "metabolism", "chromatin remodelling", "epigenetics"]
-date: May 25, 2022
+date: August 31, 2022
 ---
 # Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model {.unnumbered}
 
