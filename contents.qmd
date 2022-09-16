@@ -33,6 +33,8 @@
 - [Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational
   model](src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.md)
 
+- [Control of cell state transitions](src/cell_type_state/control_of_cell_state_transitions.md)
+
 #### RNA velocity
 
 - [RNA velocity of single cells](src/cell_type_state/rna_velocity/rna_velocity_single_cells.md)
