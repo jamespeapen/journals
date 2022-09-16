@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/control_of_cell_state_transitions.html",
       "/src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html",
       "/src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html",
       "/src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html",
