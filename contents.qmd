@@ -45,6 +45,9 @@
 - [RNA velocity—current challenges and future
   perspectives](src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.md)
 
+- [Multi-omic single-cell velocity models epigenome–transcriptome interactions
+  and improves cell fate prediction](src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.md)
+
 #### Lineage tracing
 
 - [Lineage tracing in human tissues](src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.md)
