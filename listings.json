@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html",
+      "/src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html",
       "/src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html",
       "/src/cell_type_state/control_of_cell_state_transitions.html",
       "/src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html",

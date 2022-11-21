@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" rel="next">
-<link href="../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" rel="prev">
+<link href="../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -154,12 +154,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">The diverse roles of DNA methylation in mammalian development and disease</a>
+  <a href="//src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">The diverse roles of DNA methylation in mammalian development and disease</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="sidebar-item-text sidebar-link">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</a>
   </div>
 </li>
       </ul>
@@ -245,6 +250,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="sidebar-item-text sidebar-link">Lineage tracing in human tissues</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="sidebar-item-text sidebar-link">Barcode-free prediction of cell lineages from scRNA-seq datasets</a>
   </div>
 </li>
       </ul>
@@ -652,6 +662,7 @@ ul.task-list li input[type="checkbox"] {
       <p class="date">July 19, 2022</p>
     </div>
   </div>
+  
     
   </div>
   
@@ -665,7 +676,7 @@ ul.task-list li input[type="checkbox"] {
 <p>September 12, 2016</p>
 <p>Waddington’s landscape shows how a progenitor cell may choose one of four paths as the path a ball rolling down a hill takes is influenced by the terrain. The biological terrain is made of genetic regulatory networks that shape the cell’s trajectory. This analogy, while intuitive, is hard to implement as a model since cellular potential cannot be calculated. Further, rather than passively sliding into the nearest channel, cells may need to jump into the next state.</p>
 <p>Cells can change their state through stochastic fluctuations that are an intrinsic part of biological systems. These fluctuations disturb the landscape and drive cells towards one state or another. Cells can also change their state based on changes to the landscape itself that affect the number of available states or the ease with which some states are reached. Knowing the underlying regulatory network allows us to predict behaviour.</p>
-<div class="page-columns page-full"><p> Single-cell RNA sequencing captures transcriptional information with cellular resolution and these studies have shown that, in general, differential expression profiles make up cell types. However, even within cell types of a certain expression profile, there remains transcriptional heterogeneity. Some of this is technical noise, but it could also represent a transition state where the cell is making a decision about its next state. The transition state contains the same cell type expressing different genes in varying levels. These cells can cluster into macrostates of the same cell type with different microstates. Each of these microstates have different probabilities of transitioning to the next state. Once a decision is made the cells express the genes associated with the final state. This transition state is dynamic and can be influenced by both cell intrinsic factors as well as external factors like cell-cell signalling and the transition may be discontinuous.</p><div class="no-row-height column-margin column-container"><span class="aside"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrg.2016.98/MediaObjects/41576_2016_Article_BFnrg201698_Fig3_HTML.jpg?as=webp" class="img-fluid"></span></div></div>
+<div class="page-columns page-full"><p> Single-cell RNA sequencing captures transcriptional information with cellular resolution and these studies have shown that, in general, differential expression profiles make up cell types. However, even within cell types of a certain expression profile, there remains transcriptional heterogeneity. Some of this is technical noise, but it could also represent a transition state where the cell is making a decision about its next state. The transition state contains the same cell type expressing different genes in varying levels. These cells can cluster into macrostates of the same cell type with different microstates. Each of these microstates have different probabilities of transitioning to the next state. Once a decision is made the cells express the genes associated with the final state. This transition state is dynamic and can be influenced by both cell intrinsic factors as well as external factors like cell-cell signalling and the transition may be discontinuous.</p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrg.2016.98/MediaObjects/41576_2016_Article_BFnrg201698_Fig3_HTML.jpg?as=webp" class="img-fluid"></span></div></div>
 <p>This discontinuity in some of these transition states represent the step before a state jump rather than cells along a transition continuum. While cellular trajectories do exist, some of them may be discontinuous and the heterogeneity seen in the macrostates represents the array of cells before they commit to a state. Such systems evolve as a function of parameters like extracellular signalling rather than as a function of time. Depending on the parameters, the stability of the transition state can change and push cells into another state. ES cells are an example of cells where the parameters stabilise the transition state to keep them in an pluripotent state.</p>
 
 
@@ -803,7 +814,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -825,7 +838,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -861,31 +891,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DNA methylation loss in late-replicating domains is linked to mitotic cell division</span>
+      <a href="../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
