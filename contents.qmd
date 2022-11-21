@@ -17,6 +17,8 @@
 
 - [DNA methylation loss in late-replicating domains is linked to mitotic cell division](src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md)
 
+- [Cell division drives DNA methylation loss in late-replicating domains in primary human cells](src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md)
+
 ### Cell type vs cell state
 
 - [Transition states and cell fate decisions in epigenetic landscapes
