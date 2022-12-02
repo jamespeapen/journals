@@ -83,6 +83,9 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 
 #### Ovarian cancer
 
+- [Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx
+  disease states identified using scRNA-seq](src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.md)
+
 - [A single-cell landscape of high-grade serous ovarian
   cancer](src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md)
 
