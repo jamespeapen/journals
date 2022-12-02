@@ -3,7 +3,7 @@ categories: ["ovarian cancer", "hgsoc", "single-cell", "scRNA-seq"]
 date: July 01, 2022
 ---
 
-#  A single-cell landscape of high-grade serous ovarian cancer
+# A single-cell landscape of high-grade serous ovarian cancer {.unnumbered}
 
 > Izar B, Tirosh I, Stover EH, Wakiro I, Cuoco MS, Alter I, Rodman C, Leeson R,
 > Su MJ, Shah P, Iwanicki M, Walker SR, Kanodia A, Melms JC, Mei S, Lin JR,
