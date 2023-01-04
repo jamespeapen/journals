@@ -46,6 +46,7 @@ book:
             - src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.md
         - part: "Lineage tracing"
           chapters: 
+            - src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.md
             - src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.md
             - src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.md
         - part: "Cancer"

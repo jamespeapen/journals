@@ -52,6 +52,9 @@
 
 #### Lineage tracing
 
+- [Defining ancestry, heritability and plasticity of cellular phenotypes in somatic
+  evolution](src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.md)
+
 - [Lineage tracing in human tissues](src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.md)
 
 - [Barcode-free prediction of cell lineages from scRNA-seq datasets](src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.md)
