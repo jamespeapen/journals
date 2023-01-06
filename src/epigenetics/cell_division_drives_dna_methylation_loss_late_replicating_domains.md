@@ -1,5 +1,5 @@
 ---
-categories: ["epigenetics", "mitosis", "demethylation", "PMD", "DNA replication", "DNA methylation"]
+categories: ["epigenetics", "clocks", "mitosis", "demethylation", "PMD", "DNA replication", "DNA methylation"]
 date: November 18, 2022
 ---
 
