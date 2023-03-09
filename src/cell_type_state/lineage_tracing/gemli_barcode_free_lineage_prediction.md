@@ -1,13 +1,12 @@
 ---
 categories: ["lineage tracing", "scRNA-seq", "transcriptomics"]
-date: Nov 21, 2022
+date: September 20, 2022
+date-modified: Nov 21, 2022
 ---
 
 # Barcode-free prediction of cell lineages from scRNA-seq datasets {.unnumbered}
 
 [BioRχiv](https://www.biorxiv.org/content/10.1101/2022.09.20.508646v1.full)
-
-September 20, 2022
 
 While most scRNA-seq methods need cellular barcoding for lineage tracing, this
 paper uses standard scRNA-sequencing methods and finds genes that maintain their

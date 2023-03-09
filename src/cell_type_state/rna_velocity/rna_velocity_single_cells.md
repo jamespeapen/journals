@@ -1,6 +1,8 @@
 ---
 categories: ["rna velocity", "cell-type vs cell-state", "single-cell", "transcriptomics"]
-date: May 25, 2022
+date: August 8, 2018
+date-modified: May 25, 2022
+doi: 10.1038/s41586-018-0414-6
 ---
 
 # RNA velocity of single cells {.unnumbered}
@@ -13,8 +15,6 @@ date: May 25, 2022
 > Adameyko I, Linnarsson S, Kharchenko PV. RNA velocity of single cells. Nature.
 > 2018 Aug;560(7719):494-498. doi: 10.1038/s41586-018-0414-6. Epub 2018 Aug 8.
 > PMID: [30089906](https://pubmed.ncbi.nlm.nih.gov/30089906/); PMCID: PMC6130801.
-
-August 8, 2018
 
 RNA abundance is an indicator of cell state and single-cell RNA sequencing can be
 used to capture cell-level RNA levels. To go beyond the static picture that RNA

@@ -1,10 +1,10 @@
 ---
-date: November 18, 2020
+date: July 15, 2020
+date-modified: November 18, 2020
+doi: 10.3389/fncel.2020.00219
 ---
 
 # Telomere Attrition in Neurodegenerative Disorders {.unnumbered}
-
-July 15, 2020
 
 [Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fncel.2020.00219/full)
 

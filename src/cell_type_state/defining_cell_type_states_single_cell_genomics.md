@@ -1,6 +1,8 @@
 ---
 categories: ["cell-type vs cell-state", "single-cell", "scRNA-seq"]
-date: May 23, 2022
+date: Oct 25, 2015
+date-modified: May 23, 2022
+doi: 10.1101/gr.190595.115
 ---
 
 # Defining cell types and states with single-cell genomics {.unnumbered}
@@ -11,7 +13,6 @@ date: May 23, 2022
 
 [Genome Research](https://genome.cshlp.org/content/25/10/1491)
 
-Oct 25, 2015
 
 ### Problems with bulk methods
 

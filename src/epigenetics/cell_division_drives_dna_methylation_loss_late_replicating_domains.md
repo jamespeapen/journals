@@ -1,6 +1,8 @@
 ---
 categories: ["epigenetics", "clocks", "mitosis", "demethylation", "PMD", "DNA replication", "DNA methylation"]
-date: November 18, 2022
+date: November 8, 2022
+date-modified: November 18, 2022
+doi: 10.1038/s41467-022-34268-8
 ---
 
 ## Cell division drives DNA methylation loss in late-replicating domains in primary human cells {.unnumbered}
@@ -11,8 +13,6 @@ date: November 18, 2022
 > [36347867](https://pubmed.ncbi.nlm.nih.gov/36347867/); PMCID: PMC9643452.
 
 [Nature Communications](https://doi.org/10.1038/s41467-022-34268-8)
-
-November 8, 2022
 
 [Zhou et al.](dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md)
 showed that there is a loss of DNA methylation at certain regions of the genome

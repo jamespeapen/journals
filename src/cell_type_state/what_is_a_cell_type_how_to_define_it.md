@@ -1,13 +1,13 @@
 ---
 categories: ["cell-type vs cell-state", "single-cell", "transcriptomics", "systems biology"]
-date: July 22, 2022
+date: July 21, 2022
+date-modified: July 22, 2022
+doi: 10.1016/j.cell.2022.06.031
 ---
 
 # What is a cell type and how to define it {.unnumbered}
 
-[Cell](https://doi.org/10.1016/j.cell.2022.06.031)
-
-July 21, 2022
+[Cell](https://www.sciencedirect.com/science/article/pii/S0092867422007838)
 
 Setting up standardized definitions and classification methods for cell types
 is necessary for reproducible research. This review looks at cell types and

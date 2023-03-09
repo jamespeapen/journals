@@ -1,5 +1,6 @@
 ---
 date: April 12, 2021
+doi: 10.1016/j.nbd.2006.05.016
 ---
 
 # Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes {.unnumbered}

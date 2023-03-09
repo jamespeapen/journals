@@ -1,6 +1,8 @@
 ---
 categories: ["rna velocity", "cell-type vs cell-state", "single-cell", "transcriptomics"]
-date: May 25, 2022
+date: August 3, 2022
+date-modified: May 25, 2022
+doi: 10.1038/s41587-020-0591-3
 ---
 
 # Generalizing RNA velocity to transient cell states through dynamical modeling {.unnumbered}
@@ -11,8 +13,6 @@ date: May 25, 2022
 > [32747759](https://pubmed.ncbi.nlm.nih.gov/32747759/).
 
 [Nature biotechnology](https://www.nature.com/articles/s41587-020-0591-3)
-
-August 3, 2022
 
 RNA velocity is the change in mRNA abundance. This depends on the ratio between
 spliced and unspliced mRNA and the assumption that they reach a steady-state.

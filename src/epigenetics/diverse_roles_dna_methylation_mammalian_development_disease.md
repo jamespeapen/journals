@@ -1,8 +1,9 @@
 ---
 categories: ["epigenetics", "methylation", "intro"]
-date: May 18, 2022
+date: Aug 9, 2019
+date-modified: May 18, 2022
+doi: 10.1038/s41580-019-0159-6
 ---
-
 
 # The diverse roles of DNA methylation in mammalian development and disease {.unnumbered}
 
@@ -12,8 +13,6 @@ date: May 18, 2022
 > [31399642](https://pubmed.ncbi.nlm.nih.gov/31399642/).
 
 [Nature Reviews Molecular Cell Biology](https://www.nature.com/articles/s41580-019-0159-6)
-
-Aug 9, 2019
 
 DNA methylation of the 5mC is associated with transcriptional repression and
 through that repression affects genomic imprinting X chromosome

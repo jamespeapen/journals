@@ -1,13 +1,12 @@
 ---
 categories: ["lineage tracing", "scRNA-seq", "modelling", "evolution"]
-date: Jan 04, 2023
+date: December 30, 2022
+date-modified: Jan 04, 2023
 ---
 
 # Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution {.unnumbered}
 
 [BioRχiv](https://www.biorxiv.org/content/10.1101/2022.12.28.522128v1)
-
-December 30, 2022
 
 Although all cells in a multicellular organism come from a single-cell and have
 the same genetic information, they can still be phenotypically diverse. This

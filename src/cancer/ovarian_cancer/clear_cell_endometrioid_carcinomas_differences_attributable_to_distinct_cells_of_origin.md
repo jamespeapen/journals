@@ -1,6 +1,8 @@
 ---
 categories: ["ovarian cancer", "ccoc", "enoc"]
-date: May 27, 2022
+date: August 7, 2017
+date-modified: May 27, 2022
+doi: 10.1002/path.4934
 ---
 
 # Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin? {.unnumbered}
@@ -11,8 +13,6 @@ date: May 27, 2022
 > distinct cells of origin? J Pathol. 2017 Sep;243(1):26-36. doi:
 > 10.1002/path.4934. Epub 2017 Aug 7. PMID:
 > [28678427](https://pubmed.ncbi.nlm.nih.gov/28678427/).
-
-August 7, 2017
 
 Both clear cell ovarian carcinoma (CCOC) and endometriod ovarian carcinoma
 (ENOC) are associated with ovarian endometriotic cysts. It is unknown how

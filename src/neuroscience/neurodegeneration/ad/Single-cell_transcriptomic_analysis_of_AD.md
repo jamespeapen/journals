@@ -1,12 +1,12 @@
 ---
-date: December 22, 2020
+date: May 1, 2019
+date-modified: December 22, 2020
+doi: 10.1038/s41586-019-1195-2
 ---
 
 # Single-cell transcriptomic analysis of Alzheimer’s disease {.unnumbered}
 
 [Nature](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865822/)
-
-May 1, 2019
 
 > Mathys H, Davila-Velderrain J, Peng Z, Gao F, Mohammadi S, Young JZ, Menon M,
 > He L, Abdurrob F, Jiang X, Martorell AJ, Ransohoff RM, Hafler BP, Bennett DA,

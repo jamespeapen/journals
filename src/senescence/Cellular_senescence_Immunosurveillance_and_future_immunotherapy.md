@@ -1,13 +1,13 @@
 ---
-date: 2021-03-17
 categories: ["immune system", "senescence", "immunotherapy"] 
+date: May, 2018
+date-modified: 2021-03-17
+doi: 10.1016/j.arr.2018.02.001
 ---
 
 # Cellular senescence: Immunosurveillance and future immunotherapy {.unnumbered}
 
 [Ageing Research Reviews](https://www.sciencedirect.com/science/article/pii/S1568163718300114)
-
-May 2018
 
 > Burton DGA, Stolzing A. Cellular senescence: Immunosurveillance and future
 > immunotherapy. Ageing Res Rev. 2018 May;43:17-25. doi:

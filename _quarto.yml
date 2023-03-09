@@ -27,7 +27,7 @@ book:
       - part: "General"
         chapters:
           - src/epigenetics/interplay_between_cancer_genome_epigenome.md
-          - /src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md
+          - src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md
           - src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md
           - src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md
     - part: "Cell-type vs cell-state"

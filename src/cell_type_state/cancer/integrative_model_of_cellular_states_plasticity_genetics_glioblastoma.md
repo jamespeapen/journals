@@ -1,6 +1,8 @@
 ---
 categories: ["cell-type vs cell-state", "glioblastoma", "scRNA-seq"]
-date: June 28, 2022
+date: August 8, 2019
+date-modified: June 28, 2022
+doi: 10.1016/j.cell.2019.06.024
 ---
 
 # An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma {.unnumbered}
@@ -19,8 +21,6 @@ date: June 28, 2022
 > [31327527](https://pubmed.ncbi.nlm.nih.gov/31327527/); PMCID: PMC6703186.
 
 [Cell](https://doi.org/10.1016/j.cell.2019.06.024)
-
-August 8, 2019
 
 Glioblastoma tumors show heterogeneity in their subtypes and the genetic
 alterations associated with them as well as in the developmental states of the

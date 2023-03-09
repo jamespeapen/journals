@@ -1,12 +1,12 @@
 ---
-date: January 15, 2021
+date: November 30, 2020
+date-modified: January 15, 2021
+doi: 10.1038/s41467-020-19737-2
 ---
 
 # Single cell RNA sequencing of human microglia uncovers a subset associated with Alzheimer’s disease {.unnumbered}
 
 [Nature](https://www.nature.com/articles/s41467-020-19737-2)
-
-November 30, 2020
 
 > Olah M, Menon V, Habib N, Taga MF, Ma Y, Yung CJ, Cimpean M, Khairallah A,
 > Coronas-Samano G, Sankowski R, Grün D, Kroshilina AA, Dionne D, Sarkis RA,

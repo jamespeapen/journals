@@ -1,13 +1,13 @@
 ---
-date: February 11, 2021
 categories: ["transcriptomics", "scRNA-seq", "senescence"] 
+date: August 11, 2020
+date-modified: February 11, 2021
+doi: 10.3389/fgene.2020.00867
 ---
 
 # Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts {.unnumbered}
 
-[Frontiers in Genetics](https://doi.org/10.3389/fgene.2020.00867)
-
-August 11, 2020
+[Frontiers in Genetics](https://www.frontiersin.org/articles/10.3389/fgene.2020.00867/full)
 
 > Chen W, Wang X, Wei G, Huang Y, Shi Y, Li D, Qiu S, Zhou B, Cao J, Chen M, Qin
 > P, Jin W, Ni T. Single-Cell Transcriptome Analysis Reveals Six Subpopulations

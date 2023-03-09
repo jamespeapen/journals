@@ -1,13 +1,12 @@
 ---
-date: March 18, 2021
+date: June 19, 2019
+date-modified: March 18, 2021
+doi: 10.3390/ph12020093
 ---
 
-# Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease
-{.unnumbered}
+# Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease {.unnumbered}
 
-June 19, 2019
-
-[Pharmaceuticals](https://doi.org/10.3390/ph12020093)
+[Pharmaceuticals](https://www.mdpi.com/1424-8247/12/2/93)
 
 > Masaldan S, Belaidi AA, Ayton S, Bush AI. Cellular Senescence and Iron
 > Dyshomeostasis in Alzheimer's Disease. Pharmaceuticals (Basel). 2019 Jun

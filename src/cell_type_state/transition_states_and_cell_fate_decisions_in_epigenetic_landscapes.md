@@ -1,6 +1,8 @@
 ---
 categories: ["cell-type vs cell-state", "single-cell", "gene regulatory networks"]
-date: July 19, 2022
+date: September 12, 2016
+date-modified: July 19, 2022
+doi: 10.1038/nrg.2016.98
 ---
 
 # Transition states and cell fate decisions in epigenetic landscapes {.unnumbered}
@@ -11,8 +13,6 @@ date: July 19, 2022
 > [27616569](https://pubmed.ncbi.nlm.nih.gov/27616569/).
 
 [Nature Reviews Genetics](https://www.nature.com/articles/nrg.2016.98)
-
-September 12, 2016
 
 Waddington's landscape shows how a progenitor cell may choose one of four paths
 as the path a ball rolling down a hill takes is influenced by the terrain. The

@@ -1,10 +1,10 @@
 ---
-date: November 9, 2020
+date: 11 February, 2020
+date-modified: November 9, 2020
+doi: 10.3389/fncel.2020.00016
 ---
 
 # Cellular Senescence in Neurodegenerative Diseases {.unnumbered}
-
-11 February 2020
 
 [Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fncel.2020.00016/full)
 

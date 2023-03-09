@@ -1,9 +1,11 @@
 ---
 categories: ["ovarian cancer", "hgsoc", "single-cell", "scRNA-seq"]
-date: July 01, 2022
+date: June 22, 2020
+date-modified: July 01, 2022
+doi: 10.1038/s41591-020-0926-0
 ---
 
-# A single-cell landscape of high-grade serous ovarian cancer {.unnumbered}
+#  A single-cell landscape of high-grade serous ovarian cancer
 
 > Izar B, Tirosh I, Stover EH, Wakiro I, Cuoco MS, Alter I, Rodman C, Leeson R,
 > Su MJ, Shah P, Iwanicki M, Walker SR, Kanodia A, Melms JC, Mei S, Lin JR,
@@ -16,7 +18,6 @@ date: July 01, 2022
 
 [Nature medicine](https://www.nature.com/articles/s41591-020-0926-0)
 
-June 22, 2020
 
 Intra-tumor heterogeneity of tumor and associated cells can drive treatment
 resistance in ovarian cancer. Ascites are malignant abdominal fluid collections

@@ -1,12 +1,12 @@
 ---
-date: January 11, 2021
+date: October 13, 2020
+date-modified: January 11, 2021
+doi: 10.1073/pnas.2008762117
 ---
 
 # Single-nucleus transcriptome analysis reveals dysregulation of angiogenic endothelial cells and neuroprotective glia in Alzheimer’s disease {.unnumbered}
 
 [PNAS](https://www.pnas.org/content/117/41/25800)
-
-October 13, 2020
 
 > Lau SF, Cao H, Fu AKY, Ip NY. Single-nucleus transcriptome analysis reveals
 > dysregulation of angiogenic endothelial cells and neuroprotective glia in

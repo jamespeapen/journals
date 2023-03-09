@@ -1,12 +1,12 @@
 ---
-date: Mar 16, 2021
+date: April 21, 2018
+date-modified: Mar 16, 2021
+doi: 10.1038/s41593-018-0101-9
 ---
 
 # Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease {.unnumbered}
 
 [Nature Neuroscience](https://www.nature.com/articles/s41593-018-0101-9)
-
-April 21, 2018
 
 > Nativio R, Donahue G, Berson A, Lan Y, Amlie-Wolf A, Tuzer F, Toledo JB, Gosai
 > SJ, Gregory BD, Torres C, Trojanowski JQ, Wang LS, Johnson FB, Bonini NM,

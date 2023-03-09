@@ -1,6 +1,8 @@
 ---
 categories: ["ovarian cancer", "hgsoc", "single-cell", "scRNA-seq", "stem cells"]
-date: Dec 02, 2022
+date: April 11, 2022
+date-modified: Dec 02, 2022
+doi: 10.1016/j.devcel.2022.02.017
 ---
 
 # Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq {.unnumbered}
@@ -13,9 +15,7 @@ date: Dec 02, 2022
 > 22. PMID: [35320732](https://pubmed.ncbi.nlm.nih.gov/35320732/); PMCID:
 > PMC9007916.
 
-[Developmental Cell](https://doi.org/10.1016/j.devcel.2022.02.017)
-
-April 11, 2022
+[Developmental Cell](https://www.sciencedirect.com/science/article/pii/S1534580722001198)
 
 The fallopian tube contains epithelial cells, stromal cells and immune cells.
 This study makes an atlas of these cell types and subtypes in normal and
@@ -49,3 +49,4 @@ is a marker for T and natural killer cells and is not expressed highly in the
 other epithelial cells. The highest expression of RUNX3 in epithelial cells is
 in a secretory subtype that is not a predicted progenitor according to RNA
 velocity.
+

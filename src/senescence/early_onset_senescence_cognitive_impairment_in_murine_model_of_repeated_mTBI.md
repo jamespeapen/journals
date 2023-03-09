@@ -1,13 +1,13 @@
 ---
-date: May 14, 2021
 categories: ["brain injury", "senescence", "DNA damage"] 
+date: May 8, 2021
+date-modified: May 14, 2021
+doi: 10.1186/s40478-021-01190-x
 ---
 
 # Early onset senescence and cognitive impairment in a murine model of repeated mTBI {.unnumbered}
 
-[Acta Neuropathologica Communications](https://doi.org/10.1186/s40478-021-01190-x)
-
-May 8, 2021
+[Acta Neuropathologica Communications](https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-021-01190-x)
 
 > Schwab N, Ju Y, Hazrati LN. Early onset senescence and cognitive impairment
 > in a murine model of repeated mTBI. Acta Neuropathol Commun. 2021 May

@@ -1,13 +1,13 @@
 ---
-date: April 19, 2021
 categories: ["transcriptomics", "senescence"]
+date: June 28, 2019
+date-modified: April 19, 2021
+doi: 10.1093/nar/gkz555
 ---
 
 # Transcriptome signature of cellular senescence {.unnumbered}
 
-[Nucleic Acids Research](https://doi.org/10.1093/nar/gkz555)
-
-June 28, 2019
+[Nucleic Acids Research](https://academic.oup.com/nar/article/47/14/7294/5525056)
 
 > Casella G, Munk R, Kim KM, Piao Y, De S, Abdelmohsen K, Gorospe M.
 > Transcriptome signature of cellular senescence. Nucleic Acids Res. 2019 Aug

@@ -1,12 +1,12 @@
 ---
-date: March 29, 2021
+date: August 28, 2013
+date-modified: March 29, 2021
+doi: 10.1126/scitranslmed.3006373
 ---
 
 # Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48 {.unnumbered}
 
-[Science Translational Medicine](https://doi.org/10.1126/scitranslmed.3006373)
-
-August 28, 2013
+[Science Translational Medicine](https://www.science.org/doi/10.1126/scitranslmed.3006373)
 
 > Pavlopoulos E, Jones S, Kosmidis S, Close M, Kim C, Kovalerchik O, Small SA,
 > Kandel ER. Molecular mechanism for age-related memory loss: the

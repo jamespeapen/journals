@@ -1,12 +1,13 @@
 ---
-date: November 2, 2020
+categories: ["senescence", "alzheimer's", "p53"]
+date: June 29, 2020
+date-modified: November 2, 2020
+doi: 10.1038/s41583-020-0325-z
 ---
 
 # Cellular senescence and Alzheimer disease: the egg and the chicken scenario {.unnumbered}
 
-[Nature Reviews Neuroscience](https://doi.org/10.1038/s41583-020-0325-z)
-
-June 29, 2020
+[Nature Reviews Neuroscience](https://www.nature.com/articles/s41583-020-0325-z)
 
 > Saez-Atienzar S, Masliah E. Cellular senescence and Alzheimer disease: the egg
 > and the chicken scenario. Nat Rev Neurosci. 2020 Aug;21(8):433-444. doi:
@@ -31,5 +32,3 @@ This could account for how post-mitotic cells enter senescence.
 
 Are any known or yet­to­be discovered genetic risk loci associated with AD
 involved in the senescence pathway?
-
-tags: senescence, alzheimer's, p53

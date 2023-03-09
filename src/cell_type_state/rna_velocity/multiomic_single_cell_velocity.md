@@ -1,6 +1,8 @@
 ---
 categories: ["rna velocity", "cell-type vs cell-state", "single-cell", "transcriptomics", "epigenetics", "chromatin remodelling"]
-date: Oct 17, 2022
+date: Oct 13, 2022
+date-modified: Oct 17, 2022
+doi: 10.1038/s41587-022-01476-y
 ---
 
 # Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction {.unnumbered}
@@ -11,8 +13,6 @@ date: Oct 17, 2022
 > print. PMID: [36229609](https://pubmed.ncbi.nlm.nih.gov/36229609/).
 
 [Nature](https://doi.org/10.1038/s41587-022-01476-y)
-
-Oct 13, 2022
 
 This paper extends the work of RNA velocity to include chromatin accessibility
 in the model. Where the original RNA velocity model had ODEs modelling the

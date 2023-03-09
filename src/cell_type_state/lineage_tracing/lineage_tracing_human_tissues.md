@@ -1,6 +1,8 @@
 ---
 categories: ["lineage tracing", "epigenetics", "intro", "clocks"]
-date: Jun 06, 2022
+date: April 12, 2022
+date-modified: Jun 06, 2022
+doi: 10.1002/path.5911
 ---
 
 # Lineage tracing in human tissues {.unnumbered}
@@ -8,8 +10,6 @@ date: Jun 06, 2022
 > Gabbutt C, Wright NA, Baker AM, Shibata D, Graham TA. Lineage tracing in human
 > tissues. J Pathol. 2022 Apr 12. doi: 10.1002/path.5911. Epub ahead of print.
 > PMID: [35415852](https://pubmed.ncbi.nlm.nih.gov/35415852/).
-
-April 12, 2022
 
 Lineage tracing is a tool to detect cellular parent-daughter relationships using
 clonal markers. Somatic cells carry a many DNA and epigenetic mutations from the

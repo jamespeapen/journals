@@ -1,10 +1,10 @@
 ---
-date: September 01, 2021
+date: July 30, 2021
+date-modified: September 01, 2021
+doi: 10.1126/science.abc8479
 ---
 
 # Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span {.unnumbered}
-
-July 30, 2021
 
 >Grunewald M, Kumar S, Sharife H, Volinsky E, Gileles-Hillel A, Licht T,
 >Permyakova A, Hinden L, Azar S, Friedmann Y, Kupetz P, Tzuberi R, Anisimov A,

@@ -1,14 +1,13 @@
 ---
 categories: ["cancer genomics", "epigenetics", "intro"]
-date: May 17, 2022
+date: March 28, 2013
+date-modified: May 17, 2022
+doi: 10.1016/j.cell.2013.03.008
 ---
-
 
 # Interplay between the cancer genome and epigenome {.unnumbered}
 
-[Cell](https://www.sciencedirect.com/science/article/pii/S0092867413002961?via%3Dihub)
-
-March 28, 2013
+[Cell](https://www.sciencedirect.com/science/article/pii/S0092867413002961)
 
 > Shen H, Laird PW. Interplay between the cancer genome and epigenome. Cell.
 > 2013 Mar 28;153(1):38-55. doi: 10.1016/j.cell.2013.03.008. PMID:

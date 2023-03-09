@@ -1,12 +1,12 @@
 ---
-date: April 21, 2021
+date: June 15, 2018
+date-modified: April 21, 2021
+doi: 10.3389/fnins.2018.00407
 ---
 
 # Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model {.unnumbered}
 
-[Frontiers in Neuroscience](https://doi.org/10.3389/fnins.2018.00407)
-
-June 15, 2018
+[Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fnins.2018.00407/full)
 
 > Ham S, Kim TK, Hong H, Kim YS, Tang YP, Im HI. Big Data Analysis of Genes
 > Associated With Neuropsychiatric Disorders in an Alzheimer's Disease Animal

@@ -1,13 +1,13 @@
 ---
-date: March 18, 2021
 categories: ["senescence", "systems biology"] 
+date: April 07, 2020
+date-modified: March 18, 2021
+doi: 10.1186/s13059-020-01990-9
 ---
 
 # A multidimensional systems biology analysis of cellular senescence in aging and disease {.unnumbered}
 
-[Genome Biology](https://doi.org/10.1186/s13059-020-01990-9)
-
-April 07, 2020
+[Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-01990-9)
 
 > Avelar RA, Ortega JG, Tacutu R, Tyler EJ, Bennett D, Binetti P, Budovsky A,
 > Chatsirisupachai K, Johnson E, Murray A, Shields S, Tejada-Martinez D,

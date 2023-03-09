@@ -1,6 +1,8 @@
 ---
 categories: ["rna velocity", "single-cell", "transcriptomics"]
-date: May 26, 2022
+date: August 26, 2021
+date-modified: May 26, 2022
+doi: 10.15252/msb.202110282
 ---
 
 # RNA velocity—current challenges and future perspectives {.unnumbered}
@@ -11,8 +13,6 @@ date: May 26, 2022
 > challenges and future perspectives. Mol Syst Biol. 2021 Aug;17(8):e10282. doi:
 > 10.15252/msb.202110282. PMID:
 > [34435732](https://pubmed.ncbi.nlm.nih.gov/34435732/); PMCID: PMC8388041.
-
-August 26, 2021
 
 RNA velocity models cellular direction and speed in transcriptome space through
 the ratio between spliced and unspliced mRNA and its relation to a model.

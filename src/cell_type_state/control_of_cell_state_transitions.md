@@ -1,13 +1,13 @@
 ---
 categories: ["cell-type vs cell-state", "modelling", "systems biology"]
-date: September 15, 2022
+date: September 14, 2022
+date-modified: September 15, 2022
+doi: 10.1038/s41586-022-05194-y
 ---
 
-# RNA velocity of single cells {.unnumbered}
+# Control of cell state transitions {.unnumbered}
 
 [Nature](https://www.nature.com/articles/s41586-022-05194-y)
-
-September 14, 2022
 
 > Rukhlenko OS, Halasz M, Rauch N, Zhernovkov V, Prince T, Wynne K, Maher S,
 > Kashdan E, MacLeod K, Carragher NO, Kolch W, Kholodenko BN. Control of cell

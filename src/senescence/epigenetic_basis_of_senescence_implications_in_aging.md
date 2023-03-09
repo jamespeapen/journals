@@ -1,13 +1,13 @@
 ---
-date: March 17, 2021
 categories: ["epigenetics", "senescence", "ageing", "SASP"] 
+date: November 24, 2017
+date-modified: March 17, 2021
+doi: 10.3390/genes8120343
 ---
 
 # Epigenetic Basis of Cellular Senescence and Its Implications in Aging {.unnumbered}
 
-[Genes](https://doi.org/10.3390/genes8120343)
-
-November 24, 2017
+[Genes](https://www.mdpi.com/2073-4425/8/12/343)
 
 > Nacarelli T, Liu P, Zhang R. Epigenetic Basis of Cellular Senescence and Its
 > Implications in Aging. Genes (Basel). 2017 Nov 24;8(12):343. doi:

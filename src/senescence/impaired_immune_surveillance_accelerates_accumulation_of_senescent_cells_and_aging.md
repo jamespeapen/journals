@@ -1,13 +1,13 @@
 ---
-date: April 22, 2021
 categories: ["immune system", "senescence", "senolytics"] 
+date: December 21, 2018
+date-modified: April 22, 2021
+doi: 10.1038/s41467-018-07825-3
 ---
 
 # Impaired immune surveillance accelerates accumulation of senescent cells and aging {.unnumbered}
 
 [Nature Communications](https://www.nature.com/articles/s41467-018-07825-3)
-
-December 21, 2018
 
 > Ovadya Y, Landsberger T, Leins H, Vadai E, Gal H, Biran A, Yosef R, Sagiv A,
 > Agrawal A, Shapira A, Windheim J, Tsoory M, Schirmbeck R, Amit I, Geiger H,

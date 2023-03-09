@@ -1,6 +1,8 @@
 ---
 categories: ["state-space", "gene regulatory networks"]
-date: August 09, 2022
+date: October 19, 2016
+date-modified: August 09, 2022
+doi: https://doi.org/10.1371/journal.pcbi.1005146
 ---
 
 # DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks {.unnumbered}
@@ -11,7 +13,7 @@ date: August 09, 2022
 > 10.1371/journal.pcbi.1005146. PMID:
 > [27760135](https://pubmed.ncbi.nlm.nih.gov/27760135/); PMCID: PMC5070849.
 
-[PLoS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005146#sec009)
+[PLoS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005146)
 
 This methods paper uses state-space models to study gene expression patterns and
 their regulatory networks. This model system decomposes time-series expression

@@ -1,5 +1,8 @@
 ---
-date: June 2020
+categories: ["transcriptomics", "scRNA-seq", "single-cell"]
+date: April 6, 2020
+date-modified: June 2020
+doi: 10.1038/s41587-020-0465-8
 ---
 
 # Systematic comparison of single-cell and single-nucleus RNA-sequencing methods {.unnumbered}

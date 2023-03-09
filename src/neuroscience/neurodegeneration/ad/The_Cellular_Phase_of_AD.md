@@ -1,12 +1,12 @@
 ---
-date: February 15, 2021
+date: February 11, 2015
+date-modified: February 15, 2021
+doi: 10.1016/j.cell.2015.12.056
 ---
 
 # The Cellular Phase of Alzheimer's Disease {.unnumbered}
 
-[Cell Press](https://doi.org/10.1016/j.cell.2015.12.056)
-
-February 11, 2015
+[Cell Press](https://www.sciencedirect.com/science/article/pii/S0092867415017201)
 
 > De Strooper B, Karran E. The Cellular Phase of Alzheimer's Disease. Cell. 2016
 > Feb 11;164(4):603-15. doi: 10.1016/j.cell.2015.12.056. PMID:

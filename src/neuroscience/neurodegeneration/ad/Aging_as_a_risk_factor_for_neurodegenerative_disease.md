@@ -1,12 +1,12 @@
 ---
-date: December 17, 2020
+date: October 15, 2019
+date-modified: December 17, 2020
+doi: 10.1038/s41582-019-0244-7
 ---
 
 # Ageing as a risk factor for neurodegenerative disease {.unnumbered}
 
 [Nature](https://www.nature.com/articles/s41582-019-0244-7)
-
-October 15, 2019
 
 > Hou Y, Dan X, Babbar M, Wei Y, Hasselbalch SG, Croteau DL, Bohr VA. Ageing as
 > a risk factor for neurodegenerative disease. Nat Rev Neurol. 2019

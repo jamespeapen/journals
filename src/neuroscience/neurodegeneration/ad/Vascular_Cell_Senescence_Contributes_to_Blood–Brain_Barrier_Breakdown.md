@@ -1,12 +1,12 @@
 ---
-date: January 20, 2021
+date: Feb 16, 2021
+date-modified: January 20, 2021
+doi: 10.1161/STROKEAHA.115.010835
 ---
 
 # Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown {.unnumbered}
 
 [Stroke](https://www.ahajournals.org/doi/10.1161/STROKEAHA.115.010835)
-
-Feb 16, 2021
 
 > Yamazaki Y, Baker DJ, Tachibana M, Liu CC, van Deursen JM, Brott TG, Bu G,
 > Kanekiyo T. Vascular Cell Senescence Contributes to Blood-Brain Barrier

@@ -1,14 +1,13 @@
 ---
 categories: ["epigenetics", "mitosis", "demethylation", "PMD", "H3K36"]
-date: May 19, 2022
+date: April 2, 2018
+date-modified: May 19, 2022
+doi: 10.1038/s41588-018-0073-4
 ---
-
 
 # DNA methylation loss in late-replicating domains is linked to mitotic cell division {.unnumbered}
 
 [Nature Genetics](https://www.nature.com/articles/s41588-018-0073-4)
-
-April 2, 2018
 
 > Zhou W, Dinh HQ, Ramjan Z, Weisenberger DJ, Nicolet CM, Shen H, Laird PW,
 > Berman BP. DNA methylation loss in late-replicating domains is linked to

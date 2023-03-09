@@ -1,6 +1,8 @@
 ---
 categories: ["aml", "single-cell", "lineage tracing"]
-date: July 05, 2022
+date: December 8, 2021
+date-modified: July 05, 2022
+doi: 10.1038/s41586-021-04206-7
 ---
 
 # Non-genetic determinants of malignant clonal fitness at single-cell resolution {.unnumbered}
@@ -15,8 +17,6 @@ date: July 05, 2022
 [Nature](https://www.nature.com/articles/s41586-021-04206-7)
 
 [Commentary](https://www.nature.com/articles/d41586-021-03606-z)
-
-December 8, 2021
 
 Cancer cell evolution has been considered a genetically driven process where a
 cell acquires an advantageous mutation that allows it to better proliferate or

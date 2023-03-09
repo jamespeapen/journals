@@ -1,10 +1,9 @@
 ---
-date: April 06, 2021
+date: November 9, 2016
+date-modified: April 06, 2021
 ---
 
 # Ageing, neurodegeneration and brain rejuvenation {.unnumbered}
-
-November 9, 2016
 
 AD and other neurodegenerative conditions are increasing in prevalence and tend
 to be found among older people. Since many changes that occur during normal

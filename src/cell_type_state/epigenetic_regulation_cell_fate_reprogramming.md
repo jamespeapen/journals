@@ -1,7 +1,10 @@
 ---
 categories: ["cell-type vs cell-state", "metabolism", "chromatin remodelling", "epigenetics"]
-date: August 31, 2022
+date: March 15, 2018
+date-modified: August 31, 2022
+doi: 10.1371/journal.pcbi.1006052
 ---
+
 # Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model {.unnumbered}
 
 [PLoS computational biology](https://doi.org/10.1371/journal.pcbi.1006052)
@@ -11,8 +14,6 @@ date: August 31, 2022
 > model. PLoS Comput Biol. 2018 Mar 15;14(3):e1006052. doi:
 > 10.1371/journal.pcbi.1006052. PMID:
 > [29543808](https://pubmed.ncbi.nlm.nih.gov/29543808/); PMCID: PMC5871006.
-
-March 15, 2018
 
 Ageing is associated with changes to the epigenome and a greater incidence of
 cancer. Ageing related changes in metabolism, including a loss of epigenetic

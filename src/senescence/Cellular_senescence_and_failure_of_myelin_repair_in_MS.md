@@ -1,13 +1,13 @@
 ---
-date: February 26, 2020
 categories: ["senescence", "myelin", "MS"] 
+date: December, 2020
+date-modified: February 26, 2020
+doi: 10.1016/j.mad.2020.111366
 ---
 
 # Cellular senescence and failure of myelin repair in MS {.unnumbered}
 
-[Mechanisms of Ageing and Development](https://doi.org/10.1016/j.mad.2020.111366)
-
-December 2020
+[Mechanisms of Ageing and Development](https://www.sciencedirect.com/science/article/pii/S0047637420301627)
 
 > Koutsoudaki PN, Papadopoulos D, Passias PG, Koutsoudaki P, Gorgoulis VG.
 > Cellular senescence and failure of myelin repair in multiple sclerosis. Mech

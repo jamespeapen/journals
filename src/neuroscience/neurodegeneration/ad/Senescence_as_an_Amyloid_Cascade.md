@@ -1,5 +1,6 @@
 ---
 date: December 20, 2020
+doi: 10.3389/fncel.2020.00129
 ---
 
 # Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis {.unnumbered}

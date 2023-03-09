@@ -1,12 +1,12 @@
 ---
-date: July 02, 2021
+date: March 2021
+date-modified: July 02, 2021
+doi: 10.1016/j.neurobiolaging.2020.12.003
 ---
 
 # Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain {.unnumbered}
 
-March 2021
-
-[Neurobiology of Aging](https://doi.org/10.1016/j.neurobiolaging.2020.12.003)
+[Neurobiology of Aging](https://www.sciencedirect.com/science/article/pii/S0197458020304127)
 
 > Shahidehpour RK, Higdon RE, Crawford NG, Neltner JH, Ighodaro ET, Patel E,
 > Price D, Nelson PT, Bachstetter AD. Dystrophic microglia are associated with
