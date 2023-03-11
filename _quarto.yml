@@ -67,13 +67,11 @@ book:
     - part: "Cancer"
       chapters:
         - src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md 
-        - part: "Ovarian cancer"
-          chapters: 
-            - src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.md
-            - src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md
-            - src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md
-            - src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.md
-            - src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.md
+      - part: "Cancer stem cells"
+        chapters:
+          - src/cancer/csc/csc_vs_clonal_evolution.md
+          - src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.md
+          - src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.md
     - part: "Ageing"
       chapters: 
         - src/ageing/counteracting_age_related_VEGF_insufficiecy.md
@@ -135,6 +133,7 @@ format:
     theme: 
       light: lumen
       dark: superhero
+    number-sections: false
   pdf:
     documentclass: article
 

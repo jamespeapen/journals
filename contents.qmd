@@ -89,6 +89,11 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 
 - [Non-genetic determinants of malignant clonal fitness at single-cell resolution](src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md)
 
+##### Cancer stem cells
+
+- [Heterogeneity in Cancer: Cancer Stem Cells versus Clonal
+  Evolution](src/cancer/csc/csc_vs_clonal_evolution.md)
+
 #### Ovarian cancer
 
 - [Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx
