@@ -52,6 +52,9 @@ book:
         - part: "Cancer"
           chapters:
             - src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.md
+        - part: "Fallopian tube"
+          chapters:
+            - src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.md
         - part: "State space"
           chapters: 
             - src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.md

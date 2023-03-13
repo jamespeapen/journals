@@ -64,6 +64,11 @@
 - [An Integrative Model of Cellular States, Plasticity, and Genetics for
   Glioblastoma](src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.md)
 
+#### Fallopian tube
+
+- [The Notch and Wnt pathways regulate stemness and differentiation in human
+  fallopian tube organoids](src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.md)
+
 #### State space
 
 - [DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression
