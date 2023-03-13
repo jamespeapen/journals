@@ -104,6 +104,9 @@ origin?](src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_difference
 - [Stem-Like Epithelial Cells Are Concentrated in the Distal End of the
   Fallopian Tube: A Site for Injury and Serous Cancer Initiation](src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.md)
 
+- [Developing ovarian cancer stem cell models: laying the pipeline from
+  discovery to clinical intervention](src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.md)
+
 ### Ageing
 
 - [Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span

@@ -1,11 +1,11 @@
 ---
-categories: ["stem cells", "fallopian tube", "hgsoc", "wnt", "notch", "markers"]
+categories: ["stem cells", "fallopian tube", "hgsoc", "wnt", "notch", "markers", "ovarian cancer"]
 date: December 8, 2015
 date-modified: March 13, 2023
 doi: 10.1038/ncomms9989
 ---
 
-# The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids
+# The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids {.unnumbered}
 
 [Nature Communications](https://www.nature.com/articles/ncomms9989)
 
