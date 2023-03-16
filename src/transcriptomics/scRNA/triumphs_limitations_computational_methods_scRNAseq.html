@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-04-11">
+<meta name="dcterms.date" content="2021-06-21">
 
-<title>Journals - Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</title>
+<title>Journals - The triumphs and limitations of computational methods for scRNA-seq</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" rel="next">
-<link href="../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" rel="prev">
+<link href="../../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" rel="next">
+<link href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</h1>
+      <h1 class="quarto-secondary-nav-title">The triumphs and limitations of computational methods for scRNA-seq</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -313,20 +313,35 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">Transcriptomics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="true">Transcriptomics</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">Single-nucleus RNA-seq</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true">Single-cell RNA-seq</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="sidebar-item-text sidebar-link active">The triumphs and limitations of computational methods for scRNA-seq</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">Single-nucleus RNA-seq</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
@@ -343,12 +358,12 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true">Cancer</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">Cancer</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">Non-genetic determinants of malignant clonal fitness at single-cell resolution</a>
@@ -356,35 +371,25 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">Ovarian cancer</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">Cancer stem cells</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link active">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="sidebar-item-text sidebar-link">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A single-cell landscape of high-grade serous ovarian cancer</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
+  <a href="../../../src/cancer/csc/csc_vs_clonal_evolution.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Heterogeneity in Cancer: Cancer Stem Cells versus Clonal Evolution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="sidebar-item-text sidebar-link">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
   </div>
 </li>
       </ul>
@@ -393,12 +398,12 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">Ageing</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">Ageing</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
@@ -408,12 +413,12 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">Cellular Senescence</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">Cellular Senescence</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
@@ -493,20 +498,20 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">Neuroscience</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">Neurodegeneration</a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">Neuroscience</a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">Neurodegeneration</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">Cellular Senescence in Neurodegenerative Diseases</a>
@@ -539,12 +544,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">Alzheimer’s Disease</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">Alzheimer’s Disease</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
@@ -552,12 +557,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../src/neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Genetic Landscape of Alzheimer’s disease</span></a>
+  <a href="../../../src/neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Genetic Landscape of Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../src/neuroscience/neurodegeneration/ad/Genetics_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Genetics of Alzheimer’s disease: where we are, and where we are going</span></a>
+  <a href="../../../src/neuroscience/neurodegeneration/ad/Genetics_of_AD.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Genetics of Alzheimer’s disease: where we are, and where we are going</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -617,12 +622,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">Cellular senescence and AD</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false">Cellular senescence and AD</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth4 ">  
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
@@ -666,20 +671,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#dimensionality-reduction" id="toc-dimensionality-reduction" class="nav-link active" data-scroll-target="#dimensionality-reduction">Dimensionality reduction</a></li>
+  <li><a href="#expression-manifolds" id="toc-expression-manifolds" class="nav-link" data-scroll-target="#expression-manifolds">Expression manifolds</a></li>
+  <li><a href="#clustering-cells" id="toc-clustering-cells" class="nav-link" data-scroll-target="#clustering-cells">Clustering cells</a></li>
+  <li><a href="#dynamic-processes" id="toc-dynamic-processes" class="nav-link" data-scroll-target="#dynamic-processes">Dynamic processes</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.md" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</h1>
+<h1 class="title d-none d-lg-block">The triumphs and limitations of computational methods for scRNA-seq</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">ovarian cancer</div>
-    <div class="quarto-category">hgsoc</div>
-    <div class="quarto-category">single-cell</div>
+    <div class="quarto-category">transcriptomics</div>
     <div class="quarto-category">scRNA-seq</div>
-    <div class="quarto-category">stem cells</div>
+    <div class="quarto-category">intro</div>
   </div>
   </div>
 
@@ -691,14 +703,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 11, 2022</p>
+      <p class="date">June 21, 2021</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">December 2, 2022</p>
+      <p class="date-modified">March 16, 2023</p>
     </div>
   </div>
     
@@ -706,7 +718,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/10.1016/j.devcel.2022.02.017">10.1016/j.devcel.2022.02.017</a>
+        <a href="https://doi.org/10.1038/s41592-021-01171-x">10.1038/s41592-021-01171-x</a>
       </p>
     </div>
   </div>
@@ -715,17 +727,45 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><a href="https://www.nature.com/articles/s41592-021-01171-x">Nature Methods</a></p>
 <blockquote class="blockquote">
-<p>Ulrich ND, Shen YC, Ma Q, Yang K, Hannum DF, Jones A, Machlin J, Randolph JF Jr, Smith YR, Schon SB, Shikanov A, Marsh EE, Lieberman R, Gurczynski SJ, Moore BB, Li JZ, Hammoud S. Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq. Dev Cell. 2022 Apr 11;57(7):914-929.e7. doi: 10.1016/j.devcel.2022.02.017. Epub 2022 Mar 22. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35320732/">35320732</a>; PMCID: PMC9007916.</p>
+<p>Kharchenko PV. The triumphs and limitations of computational methods for scRNA-seq. Nat Methods. 2021 Jul;18(7):723-732. doi: 10.1038/s41592-021-01171-x. Epub 2021 Jun 21. Erratum in: Nat Methods. 2021 Jun 30;: PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34155396">34155396</a>.</p>
 </blockquote>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S1534580722001198">Developmental Cell</a></p>
-<p>The fallopian tube contains epithelial cells, stromal cells and immune cells. This study makes an atlas of these cell types and subtypes in normal and diseased conditions. They find four ciliated and six non-ciliated secretory cells. According to their analysis, two of the secretory subtypes represent potential progenitors of secretory, ciliated and stromal cells.</p>
-<p>Secretory cells are marked by PAX8<sup>+</sup>/KRT7<sup>+</sup>, ciliated cells by FOXJ1<sup>+</sup>/CAPS<sup>+</sup> and peg cells by EPCAM<sup>+</sup>/CD44<sup>+</sup>/ITGA6<sup>+</sup>. These peg cells can generate ciliated and secretory cells <em>in vitro</em> which led to them being considered progenitor cells. Their decrease was associated with a decrease in ovarian cancer risk suggesting that peg cells were the cell of origin for HGSOC.</p>
-<p>Interestingly, as an example of transcriptional heterogeneity, one of the ciliated cell subtypes, CE1-3 was a transitional population that had the markers of both ciliated and secretory cells. They also observed transcriptomic differences across the anatomic segments they studied. Gene expression values showed some differences for each cell type in each of the FT segments. Genes may be dynamically regulated to achieve normal reproduction or in response to disease.</p>
-<p>They found two groups of progenitor cells, both secretory subtypes. One were the precursors of mature secretory cells and the others had a bifurcating trajectory leading to either ciliated cells or stromal cells.</p>
-<p>They address a paper that identified two transitional populations with pseudotime. One of these was purported to be a RUNX3<sup>+</sup> progenitor population, but the data from this study did not support it. RUNX3<sup>+</sup> is a marker for T and natural killer cells and is not expressed highly in the other epithelial cells. The highest expression of RUNX3 in epithelial cells is in a secretory subtype that is not a predicted progenitor according to RNA velocity.</p>
+<p>Every cell’s individual state differs from other cells around it even in the same tissue and scRNA-seq can capture that variation with high resolution. Even if mean expression of some genes is similar, there can be biologically significant variability of expression between cells. That high resolution comes with some computational challenges that need to be overcome to gain the most from scRNA-seq data.</p>
+<p>Compared to bulk methods, single-cell methods only capture a small number of the total molecules in a cell with variation between cells reducing the confidence of expression profiles for some cells compared to others. In addition there is a gene-specific bias that prevents protocols from getting a random sampling of the molecules in the cell leading to different transcript-detection rates for different protocols. We can use more cells to compensate or use computational methods to infer and impute information. There is also the problem of sparsity: &gt;missing data could mean the failure to detect a transcript rather than a lack of that transcript.</p>
+<p>Using unique molecular identifiers has reduced the severity of this dropout problem. Sparsity also changes the way the data and analysis is viewed:</p>
+<blockquote class="blockquote">
+<p>finding the likelihood that the transcript is expressed at a particular level given the observed data</p>
+</blockquote>
+<p>For differential expression testing with large populations, parametric tests do not have a significant advantage over non-parametric tests, but have more unnecessary assumptions. However, with large populations, more genes will be reported as differentially expressed and the magnitude of the differences and the definitions of the subpopulations becomes important in analysis.</p>
+<p>With differential expression testing analysis can also include the quantification of similarity or distance between the cells in the data. Methods like Euclidean or L1 distances quantify the transcriptional differences between cells while methods like Poisson similarity or Jensen-Shannon divergence measure the statistical deviation of two cells from equality and can vary with depth of coverage. Both types of analysis are subject to the curse of dimensionality which is the loss of the ability to distinguish between the closest and most distant points in the data. This requires using a lower dimensional embedding of the data to calculate distances on.</p>
+<section id="dimensionality-reduction" class="level2">
+<h2 class="anchored" data-anchor-id="dimensionality-reduction">Dimensionality reduction</h2>
+<p>Lower dimensional representations of high dimensional biological data are useful because most of the variation in the data can be explained using just a few of the factors of the lower dimensional axes. This also reflects gene expression programs and the regulatory logic of cells. Although PCA is one of the most common and interpretable dimensionality reduction tools, the top principal components focus on the differences of highly expressed transcripts, losing information about broader expression patterns. One way to deal with this is to find the expected behaviour from all transcripts and then see if any one shows further variance above that. This would suggest that its expression pattern distinguishes major cell subpopulations.</p>
+<p>Since PCA works best on symmetrically distributed data (normal distributions), it is also affected by sparsity and can return technical variation as a top principal component with high sparsity. These dimensions may need to be explicitly regressed out. This correction, however, is affected by the fact that distinct subpopulations can have systematic differences in depth because of differences in the amounts of mRNA. Instead of normal distributions, count models like the negative binomial model can better approximate the spread of the data.</p>
+<p>Neural networks can be an easy way to map complex non-linear relationships. Autoencoders can</p>
+<blockquote class="blockquote">
+<p>learn a low-dimensional representation of scRNA-seq data by finding functions that map to and from low-dimensional data in the best way that allows reconstruction of the original data</p>
+</blockquote>
+<p>Although non-linear methods can capture the underlying structure of the populations than linear methods, they are significantly harder to interpret. Linear decoding can be combined with nonlinear encoding using an asymmetric autoencoder.</p>
+</section>
+<section id="expression-manifolds" class="level2">
+<h2 class="anchored" data-anchor-id="expression-manifolds">Expression manifolds</h2>
+<p>An expression manifold is &gt; a smooth low-dimensional surface on which the observed states of the cells lie and can be approximated by observing the distributions of the measured cells.</p>
+<p>This shape can be represented by neighbor graph representations that usually use <em>k</em>-nearest neighbors to build the network. This graph can then be represented as a matrix that has a Laplacian. The smallest eigenvalues of the Laplacian’s eigenvectors correspond to the connected components and main structural axes of the network graph. This approach can derive a low-dimensional representation of the expression manifold that helps with visualizing the data and analyzing it.</p>
+</section>
+<section id="clustering-cells" class="level2">
+<h2 class="anchored" data-anchor-id="clustering-cells">Clustering cells</h2>
+<p>A popular clustering approach is to find communities in the data with methods like Louvain or Leiden clustering. They find clusters of cells that, while useful for interpretation and differential expression analysis, are not guaranteed to carry any real meaning. They can capture anything from cell types, to cell states, to finding differences within a population that is quite transcriptionally uniform because of weak random variation.</p>
+</section>
+<section id="dynamic-processes" class="level2">
+<h2 class="anchored" data-anchor-id="dynamic-processes">Dynamic processes</h2>
+<p>Although scRNA-seq is typically a snapshot of a cell’s transcriptional state in time, there are measures in that snapshot that provide clues to its transcriptional dynamics. One way to do it is to trace cell density in a low-dimensional space to elucidate the trajectory cells take in that space. This requires a dataset with a representation from cells all align that trajectory. The clustering and dimensionality reduction algorithms specifics behaviours can affect the results from tracing analyses. It also needs information on the start and end points to find the path and trace the cells between them.</p>
+<p>Another way is to look at the entropy in the data since we know stem or progenitor cell populations have more heterogeneity than differentiated cells. Trajectory direction can be assigned in the direction of decreasing entropy.</p>
+<p>scRNA-seq also contains information about the RNA structure in terms of unspliced and spliced RNA. The difference between them can be used to infer what genes are being turned on and off in a cell population to see what the underlying trajectories are and what groups cells are moving towards or away from. This can reveal differentiation trajectories and lineage commitment points along them.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -976,16 +1016,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Non-genetic determinants of malignant clonal fitness at single-cell resolution</span>
+      <a href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="pagination-link">
-        <span class="nav-page-text">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="pagination-link">
+        <span class="nav-page-text">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
