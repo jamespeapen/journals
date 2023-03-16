@@ -77,6 +77,9 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 
 ### Transcriptomics
 
+- [The triumphs and limitations of computational methods for
+  scRNA-seq](src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.md)
+
 ##### Single-nucleus RNA-seq
 
 - [Systematic comparison of single-cell and single-nucleus RNA-sequencing

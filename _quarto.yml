@@ -1,7 +1,7 @@
 validate-yaml: false
 project:
   type: book
-  preview: 
+  preview:
     host: 0.0.0.0
     port: 5000
 
@@ -60,13 +60,16 @@ book:
             - src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.md
     - part: "Transcriptomics"
       chapters:
+      - part: "Single-cell RNA-seq"
+        chapters:
+        - src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.md
       - part: "Single-nucleus RNA-seq"
         chapters:
           - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
           - src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md
     - part: "Cancer"
       chapters:
-        - src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md 
+      - src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md
       - part: "Cancer stem cells"
         chapters:
           - src/cancer/csc/csc_vs_clonal_evolution.md
