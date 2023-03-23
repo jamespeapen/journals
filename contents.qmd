@@ -37,6 +37,8 @@
 
 - [Control of cell state transitions](src/cell_type_state/control_of_cell_state_transitions.md)
 
+- [Transcriptome-wide noise controls lineage choice in mammalian progenitor cells](src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.md)
+
 #### RNA velocity
 
 - [RNA velocity of single cells](src/cell_type_state/rna_velocity/rna_velocity_single_cells.md)

@@ -38,6 +38,7 @@ book:
         - src/cell_type_state/what_is_a_cell_type_how_to_define_it.md
         - src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.md
         - src/cell_type_state/control_of_cell_state_transitions.md
+        - src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.md
         - part: "RNA velocity"
           chapters:
             - src/cell_type_state/rna_velocity/rna_velocity_single_cells.md
