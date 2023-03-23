@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2016-09-12">
+<meta name="dcterms.date" content="2008-05-21">
 
-<title>Journals - Transition states and cell fate decisions in epigenetic landscapes</title>
+<title>Journals - Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" rel="next">
-<link href="../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" rel="prev">
+<link href="../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" rel="next">
+<link href="../../src/cell_type_state/control_of_cell_state_transitions.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -74,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Transition states and cell fate decisions in epigenetic landscapes</h1>
+      <h1 class="quarto-secondary-nav-title">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -181,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link active">Transition states and cell fate decisions in epigenetic landscapes</a>
+  <a href="../../src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link">Transition states and cell fate decisions in epigenetic landscapes</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -211,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
+  <a href="../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link active">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -683,11 +684,11 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Transition states and cell fate decisions in epigenetic landscapes</h1>
+<h1 class="title d-none d-lg-block">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</h1>
   <div class="quarto-categories">
     <div class="quarto-category">cell-type vs cell-state</div>
-    <div class="quarto-category">single-cell</div>
-    <div class="quarto-category">gene regulatory networks</div>
+    <div class="quarto-category">transcriptomics</div>
+    <div class="quarto-category">HSC</div>
   </div>
   </div>
 
@@ -699,14 +700,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 12, 2016</p>
+      <p class="date">May 21, 2008</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 19, 2022</p>
+      <p class="date-modified">March 20, 2023</p>
     </div>
   </div>
     
@@ -714,7 +715,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/10.1038/nrg.2016.98">10.1038/nrg.2016.98</a>
+        <a href="https://doi.org/10.1038/nature06965">10.1038/nature06965</a>
       </p>
     </div>
   </div>
@@ -723,14 +724,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><a href="http://www.nature.com/articles/nature06965">Nature</a></p>
 <blockquote class="blockquote">
-<p>Moris N, Pina C, Arias AM. Transition states and cell fate decisions in epigenetic landscapes. Nat Rev Genet. 2016 Nov;17(11):693-703. doi: 10.1038/nrg.2016.98. Epub 2016 Sep 12. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27616569/">27616569</a>.</p>
+<p>Chang HH, Hemberg M, Barahona M, Ingber DE, Huang S. Transcriptome-wide noise controls lineage choice in mammalian progenitor cells. Nature. 2008 May 22;453(7194):544-7. doi: 10.1038/nature06965. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/18497826">18497826</a>; PMCID: PMC5546414.</p>
 </blockquote>
-<p><a href="https://www.nature.com/articles/nrg.2016.98">Nature Reviews Genetics</a></p>
-<p>Waddington’s landscape shows how a progenitor cell may choose one of four paths as the path a ball rolling down a hill takes is influenced by the terrain. The biological terrain is made of genetic regulatory networks that shape the cell’s trajectory. This analogy, while intuitive, is hard to implement as a model since cellular potential cannot be calculated. Further, rather than passively sliding into the nearest channel, cells may need to jump into the next state.</p>
-<p>Cells can change their state through stochastic fluctuations that are an intrinsic part of biological systems. These fluctuations disturb the landscape and drive cells towards one state or another. Cells can also change their state based on changes to the landscape itself that affect the number of available states or the ease with which some states are reached. Knowing the underlying regulatory network allows us to predict behaviour.</p>
-<div class="page-columns page-full"><p> Single-cell RNA sequencing captures transcriptional information with cellular resolution and these studies have shown that, in general, differential expression profiles make up cell types. However, even within cell types of a certain expression profile, there remains transcriptional heterogeneity. Some of this is technical noise, but it could also represent a transition state where the cell is making a decision about its next state. The transition state contains the same cell type expressing different genes in varying levels. These cells can cluster into macrostates of the same cell type with different microstates. Each of these microstates have different probabilities of transitioning to the next state. Once a decision is made the cells express the genes associated with the final state. This transition state is dynamic and can be influenced by both cell intrinsic factors as well as external factors like cell-cell signalling and the transition may be discontinuous.</p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrg.2016.98/MediaObjects/41576_2016_Article_BFnrg201698_Fig3_HTML.jpg?as=webp" class="img-fluid"></span></div></div>
-<p>This discontinuity in some of these transition states represent the step before a state jump rather than cells along a transition continuum. While cellular trajectories do exist, some of them may be discontinuous and the heterogeneity seen in the macrostates represents the array of cells before they commit to a state. Such systems evolve as a function of parameters like extracellular signalling rather than as a function of time. Depending on the parameters, the stability of the transition state can change and push cells into another state. ES cells are an example of cells where the parameters stabilise the transition state to keep them in an pluripotent state.</p>
+<div class="page-columns page-full"><p> This study examined the transcriptional heterogeneity in a mouse haematopoietic cell progenitor cell line that expressed the Sca-1 stem cell marker across a 1000-fold range. They separated the cells into three groups based on Sca-1 expression levels as Sca-1<span class="math inline">\(^{high/mid/low}\)</span>. All three groups were cultured separately and their Sca-1 expression levels measured over 9 days. All groups, despite starting with different initial expression levels, reverted back to the distribution found in the parental group of mixed cells.</p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig2_HTML.jpg" class="img-fluid"></span></div></div>
+<div class="page-columns page-full"><p>These results could simplistically be modelled using an <strong>Ornstein-Uhlenbeck process</strong>  that models mean-reverting processes, but it did not explain the long left tail found in the expression data. They extended the Ornstein-Uhlenbeck model to include the transitions between the cellular subpopulations with a Gaussian mixture model made of two states. However, this only accounted for a small part of the process restoring heterogeneity, while the transitions between the populations had a more important role, demonstrating that the heterogeneity is not just mean-reverting noise around an attractor, but</p><div class="no-row-height column-margin column-container"><span class="">A model describing processes that tend towards the mean over time</span></div></div>
+<blockquote class="blockquote">
+<p>the result of a process involving stochastic state transitions in a system exhibiting multiple stable states.</p>
+</blockquote>
+<p>Clonal heterogeneity in the cells correlated with the heterogeneity in their differentiation potentials as the Sca-1<span class="math inline">\(^{low}\)</span> population had the highest commitment and differentiation rate to the erythroid lineage and Sca-1<span class="math inline">\(^{high}\)</span> had the lowest rates. Despise the faster commitment, the Sca-1<span class="math inline">\(^{low}\)</span> cells were still undifferentiated, expressing the c-kit stem cell marker, and maintained their ability to recreate the Sca-1 expression distribution of the parental population. They were transcriptionally more similar to the differentiated erythroid cells than the Sca-1<span class="math inline">\(^{high}\)</span> cells were. These differences in erythroid differentiation rates were lost when the cells were stimulated to at days 7, 14, and 21 h. Despite all three populations converging on a similar Sca-1 expression distribution, there was still variation in their differentiation rates even past 14 days which meant the Sca-1 heterogeneity is only one dimension controlling differentiation potential.</p>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig3_HTML.jpg" class="img-fluid"></span></div></div>
+<p>Other dimensions include the expression of other fate-determining factors like the transcription factors Gata1 and PU.1, which are mutually repressive. The Sca-1<span class="math inline">\(^{low}\)</span> group with faster erythroid differentiation had more <em>Gata1</em> mRNA and the Sca-1<span class="math inline">\(^{high}\)</span> group had high expression of <em>PU.1</em>. All three groups were transcriptionally significantly different, but the difference decreased over time, not only for Sca-1, but over their global gene expression profiles. Such heterogeneity</p>
+<blockquote class="blockquote">
+<p>primes the cells for different lineage choices.</p>
+</blockquote>
+<p>The relaxation of differences suggests a model where the progenitor state is a</p>
+<blockquote class="blockquote">
+<p>high dimensional attractor state.</p>
+</blockquote>
+<p>It is a dynamical system that shows multistability where cells can make discrete transitions to different states and prime for cell fate commitment. Average expression may not be a good indicator or determinant of function.</p>
 
 
 
@@ -985,13 +998,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</span>
+      <a href="../../src/cell_type_state/control_of_cell_state_transitions.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Control of cell state transitions</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="pagination-link">
-        <span class="nav-page-text">Defining cell types and states with single-cell genomics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="pagination-link">
+        <span class="nav-page-text">RNA velocity of single cells</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
