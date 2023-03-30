@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html",
       "/src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html",
       "/src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html",
       "/src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html",
@@ -56,6 +57,7 @@
       "/src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html",
       "/src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html",
       "/src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html",
+      "/src/cell_type_state/cell_fate_transition_high_dim_critical_state_transition.html",
       "/src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html",
       "/src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html",
       "/src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html",
