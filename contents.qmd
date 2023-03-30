@@ -21,6 +21,8 @@
 
 ### Cell type vs cell state
 
+- [SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data](src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.md)
+
 - [Transition states and cell fate decisions in epigenetic landscapes
 ](src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.md)
 
