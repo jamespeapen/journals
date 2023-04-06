@@ -111,9 +111,11 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 - [A single-cell landscape of high-grade serous ovarian
   cancer](src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md)
 
+- [Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic
+  protein 2](src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.md)
+
 - [Clear cell and endometrioid carcinomas: are their differences
-attributable to distinct cells of
-origin?](src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md)
+attributable to distinct cells of origin?](src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md)
 
 - [Stem-Like Epithelial Cells Are Concentrated in the Distal End of the
   Fallopian Tube: A Site for Injury and Serous Cancer Initiation](src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.md)
