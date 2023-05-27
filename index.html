@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.361">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -61,7 +61,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -74,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       page: 30,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author"],
@@ -95,6 +96,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -104,11 +106,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Journals</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Categories</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -116,47 +123,51 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Journals</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./contents.html" class="sidebar-item-text sidebar-link">Contents</a>
+  <a href="./contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Bioinformatics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Bioinformatics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Databases</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Databases</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="sidebar-item-text sidebar-link">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a>
+  <a href="./src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluation of relational and NoSQL database architectures to manage genomic annotations</span></a>
   </div>
 </li>
       </ul>
@@ -165,38 +176,44 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Epigenetics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Epigenetics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">General</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="sidebar-item-text sidebar-link">Interplay between the cancer genome and epigenome</a>
+  <a href="./src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interplay between the cancer genome and epigenome</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">The diverse roles of DNA methylation in mammalian development and disease</a>
+  <a href="./src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The diverse roles of DNA methylation in mammalian development and disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
+  <a href="./src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA methylation loss in late-replicating domains is linked to mitotic cell division</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="sidebar-item-text sidebar-link">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</a>
+  <a href="./src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</span></a>
   </div>
 </li>
       </ul>
@@ -205,45 +222,53 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Cell-type vs cell-state</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Cell-type vs cell-state</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</a>
+  <a href="./src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link">Transition states and cell fate decisions in epigenetic landscapes</a>
+  <a href="./src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transition states and cell fate decisions in epigenetic landscapes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="sidebar-item-text sidebar-link">Defining cell types and states with single-cell genomics</a>
+  <a href="./src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Defining cell types and states with single-cell genomics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="sidebar-item-text sidebar-link">The evolving concept of cell identity in the single cell era</a>
+  <a href="./src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The evolving concept of cell identity in the single cell era</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="sidebar-item-text sidebar-link">What is a cell type and how to define it</a>
+  <a href="./src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is a cell type and how to define it</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="sidebar-item-text sidebar-link">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</a>
+  <a href="./src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/control_of_cell_state_transitions.html" class="sidebar-item-text sidebar-link">Control of cell state transitions</a>
+  <a href="./src/cell_type_state/control_of_cell_state_transitions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Control of cell state transitions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -253,105 +278,127 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
+  <a href="./src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">RNA velocity</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">RNA velocity</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="sidebar-item-text sidebar-link">RNA velocity of single cells</a>
+  <a href="./src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA velocity of single cells</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="sidebar-item-text sidebar-link">Generalizing RNA velocity to transient cell states through dynamical modeling</a>
+  <a href="./src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generalizing RNA velocity to transient cell states through dynamical modeling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="sidebar-item-text sidebar-link">RNA velocity—current challenges and future perspectives</a>
+  <a href="./src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA velocity—current challenges and future perspectives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="sidebar-item-text sidebar-link">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</a>
+  <a href="./src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Lineage tracing</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Lineage tracing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="sidebar-item-text sidebar-link">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</a>
+  <a href="./src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="sidebar-item-text sidebar-link">Lineage tracing in human tissues</a>
+  <a href="./src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lineage tracing in human tissues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="sidebar-item-text sidebar-link">Barcode-free prediction of cell lineages from scRNA-seq datasets</a>
+  <a href="./src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Barcode-free prediction of cell lineages from scRNA-seq datasets</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="sidebar-item-text sidebar-link">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</a>
+  <a href="./src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">Fallopian tube</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Fallopian tube</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="sidebar-item-text sidebar-link">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</a>
+  <a href="./src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">State space</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">State space</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</a>
+  <a href="./src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</span></a>
   </div>
 </li>
       </ul>
@@ -360,43 +407,49 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">Transcriptomics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+ <span class="menu-text">Transcriptomics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">Single-cell RNA-seq</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+ <span class="menu-text">Single-cell RNA-seq</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="sidebar-item-text sidebar-link">The triumphs and limitations of computational methods for scRNA-seq</a>
+  <a href="./src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The triumphs and limitations of computational methods for scRNA-seq</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">Single-nucleus RNA-seq</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+ <span class="menu-text">Single-nucleus RNA-seq</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
+  <a href="./src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="sidebar-item-text sidebar-link">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a>
+  <a href="./src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</span></a>
   </div>
 </li>
       </ul>
@@ -405,21 +458,24 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">Cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+ <span class="menu-text">Cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">Non-genetic determinants of malignant clonal fitness at single-cell resolution</a>
+  <a href="./src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-genetic determinants of malignant clonal fitness at single-cell resolution</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">Cancer stem cells</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+ <span class="menu-text">Cancer stem cells</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -433,15 +489,17 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">Ovarian cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+ <span class="menu-text">Ovarian cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</a>
+  <a href="./src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -451,22 +509,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="sidebar-item-text sidebar-link">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</a>
+  <a href="./src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="sidebar-item-text sidebar-link">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</a>
+  <a href="./src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="sidebar-item-text sidebar-link">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</a>
+  <a href="./src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
+  <a href="./src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</span></a>
   </div>
 </li>
       </ul>
@@ -475,161 +537,189 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">Ageing</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
+ <span class="menu-text">Ageing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
+  <a href="./src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">Cellular Senescence</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">
+ <span class="menu-text">Cellular Senescence</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
+  <a href="./src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Four_faces_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Four faces of cellular senescence</a>
+  <a href="./src/senescence/Four_faces_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Four faces of cellular senescence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="sidebar-item-text sidebar-link">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a>
+  <a href="./src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="sidebar-item-text sidebar-link">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a>
+  <a href="./src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="sidebar-item-text sidebar-link">Cellular senescence: Immunosurveillance and future immunotherapy</a>
+  <a href="./src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence: Immunosurveillance and future immunotherapy</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/transcriptome_signature_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Transcriptome signature of cellular senescence</a>
+  <a href="./src/senescence/transcriptome_signature_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transcriptome signature of cellular senescence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="sidebar-item-text sidebar-link">Cellular senescence: Defining a path forward</a>
+  <a href="./src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence: Defining a path forward</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="sidebar-item-text sidebar-link">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a>
+  <a href="./src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Impaired immune surveillance accelerates accumulation of senescent cells and aging</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="sidebar-item-text sidebar-link">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a>
+  <a href="./src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Astrocyte senescence promotes glutamate toxicity in cortical neurons</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="sidebar-item-text sidebar-link">A multidimensional systems biology analysis of cellular senescence in aging and disease</a>
+  <a href="./src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A multidimensional systems biology analysis of cellular senescence in aging and disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="sidebar-item-text sidebar-link">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a>
+  <a href="./src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="sidebar-item-text sidebar-link">Cellular senescence and failure of myelin repair in MS</a>
+  <a href="./src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence and failure of myelin repair in MS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="sidebar-item-text sidebar-link">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a>
+  <a href="./src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="sidebar-item-text sidebar-link">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a>
+  <a href="./src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="sidebar-item-text sidebar-link">An aged immune system drives senescence and ageing of solid organs</a>
+  <a href="./src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An aged immune system drives senescence and ageing of solid organs</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">Neuroscience</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false">
+ <span class="menu-text">Neuroscience</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">Neurodegeneration</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false">
+ <span class="menu-text">Neurodegeneration</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">Cellular Senescence in Neurodegenerative Diseases</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular Senescence in Neurodegenerative Diseases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="sidebar-item-text sidebar-link">Ageing as a risk factor for neurodegenerative disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ageing as a risk factor for neurodegenerative disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="sidebar-item-text sidebar-link">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a>
+  <a href="./src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="sidebar-item-text sidebar-link">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a>
+  <a href="./src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="sidebar-item-text sidebar-link">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a>
+  <a href="./src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="sidebar-item-text sidebar-link">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a>
+  <a href="./src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false">Alzheimer’s Disease</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false">
+ <span class="menu-text">Alzheimer’s Disease</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -644,90 +734,107 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="sidebar-item-text sidebar-link">When does Alzheimer’s disease really start? The role of biomarkers</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">When does Alzheimer’s disease really start? The role of biomarkers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="sidebar-item-text sidebar-link">Genetic meta-analysis of diagnosed Alzheimer’s disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genetic meta-analysis of diagnosed Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="sidebar-item-text sidebar-link">The Cellular Phase of Alzheimer’s Disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Cellular Phase of Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="sidebar-item-text sidebar-link">Single-cell transcriptomic analysis of Alzheimer’s disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-cell transcriptomic analysis of Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="sidebar-item-text sidebar-link">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="sidebar-item-text sidebar-link">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="sidebar-item-text sidebar-link">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="sidebar-item-text sidebar-link">Telomere Attrition in Neurodegenerative Disorders</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Telomere Attrition in Neurodegenerative Disorders</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="sidebar-item-text sidebar-link">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="sidebar-item-text sidebar-link">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="sidebar-item-text sidebar-link">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">Cellular senescence and AD</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">
+ <span class="menu-text">Cellular senescence and AD</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="sidebar-item-text sidebar-link">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="sidebar-item-text sidebar-link">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="sidebar-item-text sidebar-link">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="sidebar-item-text sidebar-link">Astrocyte Senescence and Alzheimer’s Disease: A Review</a>
+  <a href="./src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Astrocyte Senescence and Alzheimer’s Disease: A Review</span></a>
   </div>
 </li>
       </ul>
@@ -740,12 +847,14 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Categories</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Categories</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -755,13 +864,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#categories" id="toc-categories" class="nav-link active" data-scroll-target="#categories">Categories</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/index.qmd" class="toc-action">View source</a></p></div></div></nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(76)</span></div><div class="category" data-category="ATAC-seq">ATAC-seq <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DNA damage">DNA damage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DNA methylation">DNA methylation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DNA replication">DNA replication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="H3K36">H3K36 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HSC">HSC <span class="quarto-category-count">(3)</span></div><div class="category" data-category="MS">MS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PMD">PMD <span class="quarto-category-count">(2)</span></div><div class="category" data-category="PSEN1">PSEN1 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SASP">SASP <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ageing">ageing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="alzheimer's">alzheimer's <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aml">aml <span class="quarto-category-count">(1)</span></div><div class="category" data-category="astrocytes">astrocytes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="brain injury">brain injury <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cancer genomics">cancer genomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cancer stem cells">cancer stem cells <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ccoc">ccoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cell-type vs cell-state">cell-type vs cell-state <span class="quarto-category-count">(13)</span></div><div class="category" data-category="chromatin remodelling">chromatin remodelling <span class="quarto-category-count">(2)</span></div><div class="category" data-category="clocks">clocks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="demethylation">demethylation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dynamical sytems">dynamical sytems <span class="quarto-category-count">(1)</span></div><div class="category" data-category="enoc">enoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="epigenetics">epigenetics <span class="quarto-category-count">(9)</span></div><div class="category" data-category="evolution">evolution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fallopian tube">fallopian tube <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gene regulatory networks">gene regulatory networks <span class="quarto-category-count">(4)</span></div><div class="category" data-category="glioblastoma">glioblastoma <span class="quarto-category-count">(1)</span></div><div class="category" data-category="glutamate">glutamate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="hgsoc">hgsoc <span class="quarto-category-count">(3)</span></div><div class="category" data-category="immune system">immune system <span class="quarto-category-count">(3)</span></div><div class="category" data-category="immunosenescence">immunosenescence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="immunotherapy">immunotherapy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="intro">intro <span class="quarto-category-count">(6)</span></div><div class="category" data-category="lineage tracing">lineage tracing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="lncRNA">lncRNA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="markers">markers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="metabolism">metabolism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="methylation">methylation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mitosis">mitosis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="modelling">modelling <span class="quarto-category-count">(4)</span></div><div class="category" data-category="myelin">myelin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="notch">notch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ovarian cancer">ovarian cancer <span class="quarto-category-count">(7)</span></div><div class="category" data-category="p53">p53 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rapamycin">rapamycin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rna velocity">rna velocity <span class="quarto-category-count">(4)</span></div><div class="category" data-category="scRNA-seq">scRNA-seq <span class="quarto-category-count">(10)</span></div><div class="category" data-category="senescence">senescence <span class="quarto-category-count">(15)</span></div><div class="category" data-category="senolytics">senolytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="single-cell">single-cell <span class="quarto-category-count">(12)</span></div><div class="category" data-category="state-space">state-space <span class="quarto-category-count">(1)</span></div><div class="category" data-category="stem cells">stem cells <span class="quarto-category-count">(6)</span></div><div class="category" data-category="systems biology">systems biology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="transcriptomics">transcriptomics <span class="quarto-category-count">(14)</span></div><div class="category" data-category="wnt">wnt <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(77)</span></div><div class="category" data-category="ATAC-seq">ATAC-seq <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DNA damage">DNA damage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DNA methylation">DNA methylation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="DNA replication">DNA replication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="H3K36">H3K36 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HSC">HSC <span class="quarto-category-count">(3)</span></div><div class="category" data-category="MS">MS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PMD">PMD <span class="quarto-category-count">(2)</span></div><div class="category" data-category="PSEN1">PSEN1 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SASP">SASP <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ageing">ageing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="alzheimer's">alzheimer's <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aml">aml <span class="quarto-category-count">(1)</span></div><div class="category" data-category="astrocytes">astrocytes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="brain injury">brain injury <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cancer genomics">cancer genomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cancer stem cells">cancer stem cells <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ccoc">ccoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cell-type vs cell-state">cell-type vs cell-state <span class="quarto-category-count">(14)</span></div><div class="category" data-category="chromatin remodelling">chromatin remodelling <span class="quarto-category-count">(2)</span></div><div class="category" data-category="clocks">clocks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="demethylation">demethylation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dynamical sytems">dynamical sytems <span class="quarto-category-count">(1)</span></div><div class="category" data-category="enoc">enoc <span class="quarto-category-count">(1)</span></div><div class="category" data-category="epigenetics">epigenetics <span class="quarto-category-count">(9)</span></div><div class="category" data-category="evolution">evolution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fallopian tube">fallopian tube <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gene regulatory networks">gene regulatory networks <span class="quarto-category-count">(4)</span></div><div class="category" data-category="glioblastoma">glioblastoma <span class="quarto-category-count">(1)</span></div><div class="category" data-category="glutamate">glutamate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="hgsoc">hgsoc <span class="quarto-category-count">(3)</span></div><div class="category" data-category="immune system">immune system <span class="quarto-category-count">(3)</span></div><div class="category" data-category="immunosenescence">immunosenescence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="immunotherapy">immunotherapy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="intro">intro <span class="quarto-category-count">(6)</span></div><div class="category" data-category="lineage tracing">lineage tracing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="lncRNA">lncRNA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="markers">markers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="metabolism">metabolism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="methylation">methylation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="mitosis">mitosis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="modelling">modelling <span class="quarto-category-count">(4)</span></div><div class="category" data-category="myelin">myelin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="notch">notch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ovarian cancer">ovarian cancer <span class="quarto-category-count">(7)</span></div><div class="category" data-category="p53">p53 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rapamycin">rapamycin <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rna velocity">rna velocity <span class="quarto-category-count">(4)</span></div><div class="category" data-category="scRNA-seq">scRNA-seq <span class="quarto-category-count">(10)</span></div><div class="category" data-category="senescence">senescence <span class="quarto-category-count">(15)</span></div><div class="category" data-category="senolytics">senolytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="single-cell">single-cell <span class="quarto-category-count">(12)</span></div><div class="category" data-category="state-space">state-space <span class="quarto-category-count">(1)</span></div><div class="category" data-category="stem cells">stem cells <span class="quarto-category-count">(7)</span></div><div class="category" data-category="systems biology">systems biology <span class="quarto-category-count">(5)</span></div><div class="category" data-category="transcriptomics">transcriptomics <span class="quarto-category-count">(15)</span></div><div class="category" data-category="wnt">wnt <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Journals</h1>
+<h1 class="title">Journals</h1>
 </div>
 
 
@@ -797,10 +906,10 @@ ul.task-list li input[type="checkbox"] {
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
          <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
+          Publication date - Oldest
         </option>
          <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
+          Publication date - Newest
         </option>
          <option value="listing-title-sort" data-direction="asc">
           Title
@@ -820,619 +929,861 @@ ul.task-list li input[type="checkbox"] {
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Publication date</a>
+</th>
+<th>
+Date added
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="cell-type vs cell-state,modelling,systems biology,gene regulatory networks,HSC,transcriptomics,ATAC-seq" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.26" data-listing-title-sort="SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data" data-listing-filename-sort="seacells_infers_transcriptional_epigenomic_states.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="title">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</a>
+<tr data-index="0" data-categories="transcriptomics,scRNA-seq,single-cell" data-listing-date-sort="1586131200000" data-listing-date-modified-sort="1590969600000" data-listing-title-sort="Systematic comparison of single-cell and single-nucleus RNA-sequencing methods" data-listing-filename-sort="Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md">
+<td>
+<a href="./src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="title listing-title">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
 </td>
-<td class="listing-date">
-Mar 27, 2023
+<td>
+<span class="listing-date">Apr 6, 2020</span>
 </td>
-</tr>
-<tr data-index="1" data-categories="lineage tracing,scRNA-seq,modelling,evolution" data-listing-date-sort="1672358400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.38" data-listing-title-sort="Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution" data-listing-filename-sort="defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="title">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</a>
-</td>
-<td class="listing-date">
-Dec 30, 2022
+<td>
+<span class="listing-date-modified">Jun 1, 2020</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="epigenetics,clocks,mitosis,demethylation,PMD,DNA replication,DNA methylation" data-listing-date-sort="1667865600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.105" data-listing-title-sort="Cell division drives DNA methylation loss in late-replicating domains in primary human cells" data-listing-filename-sort="cell_division_drives_dna_methylation_loss_late_replicating_domains.md">
-<td class="listing-title">
-<a href="./src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="title">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</a>
+<tr data-index="1" data-listing-date-sort="1228176000000" data-listing-date-modified-sort="1607558400000" data-listing-title-sort="Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor" data-listing-filename-sort="Senescence-Associated_Secretory_Phenotypes.md">
+<td>
+<a href="./src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="title listing-title">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
 </td>
-<td class="listing-date">
-Nov 8, 2022
+<td>
+<span class="listing-date">Dec 2, 2008</span>
 </td>
-</tr>
-<tr data-index="3" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics,epigenetics,chromatin remodelling" data-listing-date-sort="1665619200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.05" data-listing-title-sort="Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction" data-listing-filename-sort="multiomic_single_cell_velocity.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="title">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</a>
-</td>
-<td class="listing-date">
-Oct 13, 2022
+<td>
+<span class="listing-date-modified">Dec 10, 2020</span>
 </td>
 </tr>
-<tr data-index="4" data-categories="lineage tracing,scRNA-seq,transcriptomics" data-listing-date-sort="1663632000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.9" data-listing-title-sort="Barcode-free prediction of cell lineages from scRNA-seq datasets" data-listing-filename-sort="gemli_barcode_free_lineage_prediction.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="title">Barcode-free prediction of cell lineages from scRNA-seq datasets</a>
+<tr data-index="2" data-categories="intro,senescence" data-listing-date-sort="1298246400000" data-listing-date-modified-sort="1611100800000" data-listing-title-sort="Four faces of cellular senescence" data-listing-filename-sort="Four_faces_of_cellular_senescence.md">
+<td>
+<a href="./src/senescence/Four_faces_of_cellular_senescence.html" class="title listing-title">Four faces of cellular senescence</a>
 </td>
-<td class="listing-date">
-Sep 20, 2022
+<td>
+<span class="listing-date">Feb 21, 2011</span>
 </td>
-</tr>
-<tr data-index="5" data-categories="cell-type vs cell-state,modelling,systems biology" data-listing-date-sort="1663113600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.165" data-listing-title-sort="Control of cell state transitions" data-listing-filename-sort="control_of_cell_state_transitions.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/control_of_cell_state_transitions.html" class="title">Control of cell state transitions</a>
-</td>
-<td class="listing-date">
-Sep 14, 2022
+<td>
+<span class="listing-date-modified">Jan 20, 2021</span>
 </td>
 </tr>
-<tr data-index="6" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics" data-listing-date-sort="1659484800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.265" data-listing-title-sort="Generalizing RNA velocity to transient cell states through dynamical modeling" data-listing-filename-sort="generalizing_rna_velocity_to_transient_cell_states.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="title">Generalizing RNA velocity to transient cell states through dynamical modeling</a>
+<tr data-index="3" data-listing-date-sort="1477872000000" data-listing-date-modified-sort="1623283200000" data-listing-title-sort="Evaluation of relational and NoSQL database architectures to manage genomic annotations" data-listing-filename-sort="evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md">
+<td>
+<a href="./src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="title listing-title">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a>
 </td>
-<td class="listing-date">
-Aug 3, 2022
+<td>
+<span class="listing-date">Oct 31, 2016</span>
 </td>
-</tr>
-<tr data-index="7" data-categories="cell-type vs cell-state,single-cell,transcriptomics,systems biology" data-listing-date-sort="1658361600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="3.185" data-listing-title-sort="What is a cell type and how to define it" data-listing-filename-sort="what_is_a_cell_type_how_to_define_it.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="title">What is a cell type and how to define it</a>
-</td>
-<td class="listing-date">
-Jul 21, 2022
+<td>
+<span class="listing-date-modified">Jun 10, 2021</span>
 </td>
 </tr>
-<tr data-index="8" data-categories="lineage tracing,epigenetics,intro,clocks" data-listing-date-sort="1649721600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.41" data-listing-title-sort="Lineage tracing in human tissues" data-listing-filename-sort="lineage_tracing_human_tissues.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="title">Lineage tracing in human tissues</a>
+<tr data-index="4" data-listing-date-sort="1627603200000" data-listing-date-modified-sort="1630454400000" data-listing-title-sort="Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span" data-listing-filename-sort="counteracting_age_related_VEGF_insufficiecy.md">
+<td>
+<a href="./src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="title listing-title">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
 </td>
-<td class="listing-date">
-Apr 12, 2022
+<td>
+<span class="listing-date">Jul 30, 2021</span>
 </td>
-</tr>
-<tr data-index="9" data-categories="ovarian cancer,hgsoc,single-cell,scRNA-seq,stem cells" data-listing-date-sort="1649635200000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="1.63" data-listing-title-sort="Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq" data-listing-filename-sort="cellular_heterogeneity_ft_scRNA_seq.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="title">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</a>
-</td>
-<td class="listing-date">
-Apr 11, 2022
+<td>
+<span class="listing-date-modified">Sep 1, 2021</span>
 </td>
 </tr>
-<tr data-index="10" data-categories="aml,single-cell,lineage tracing" data-listing-date-sort="1638921600000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="1.345" data-listing-title-sort="Non-genetic determinants of malignant clonal fitness at single-cell resolution" data-listing-filename-sort="non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md">
-<td class="listing-title">
-<a href="./src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="title">Non-genetic determinants of malignant clonal fitness at single-cell resolution</a>
+<tr data-index="5" data-categories="cancer genomics,epigenetics,intro" data-listing-date-sort="1364428800000" data-listing-date-modified-sort="1652745600000" data-listing-title-sort="Interplay between the cancer genome and epigenome" data-listing-filename-sort="interplay_between_cancer_genome_epigenome.md">
+<td>
+<a href="./src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="title listing-title">Interplay between the cancer genome and epigenome</a>
 </td>
-<td class="listing-date">
-Dec 8, 2021
+<td>
+<span class="listing-date">Mar 28, 2013</span>
 </td>
-</tr>
-<tr data-index="11" data-categories="rna velocity,single-cell,transcriptomics" data-listing-date-sort="1629936000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.92" data-listing-title-sort="RNA velocity—current challenges and future perspectives" data-listing-filename-sort="rna_velocity_current_challenges_future_perspectives.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="title">RNA velocity—current challenges and future perspectives</a>
-</td>
-<td class="listing-date">
-Aug 26, 2021
+<td>
+<span class="listing-date-modified">May 17, 2022</span>
 </td>
 </tr>
-<tr data-index="12" data-listing-date-sort="1627603200000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="0.635" data-listing-title-sort="Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span" data-listing-filename-sort="counteracting_age_related_VEGF_insufficiecy.md">
-<td class="listing-title">
-<a href="./src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="title">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
+<tr data-index="6" data-categories="epigenetics,methylation,intro" data-listing-date-sort="1565308800000" data-listing-date-modified-sort="1652832000000" data-listing-title-sort="The diverse roles of DNA methylation in mammalian development and disease" data-listing-filename-sort="diverse_roles_dna_methylation_mammalian_development_disease.md">
+<td>
+<a href="./src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="title listing-title">The diverse roles of DNA methylation in mammalian development and disease</a>
 </td>
-<td class="listing-date">
-Jul 30, 2021
+<td>
+<span class="listing-date">Aug 9, 2019</span>
 </td>
-</tr>
-<tr data-index="13" data-categories="transcriptomics,scRNA-seq,intro" data-listing-date-sort="1624233600000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="4.695" data-listing-title-sort="The triumphs and limitations of computational methods for scRNA-seq" data-listing-filename-sort="triumphs_limitations_computational_methods_scRNAseq.md">
-<td class="listing-title">
-<a href="./src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="title">The triumphs and limitations of computational methods for scRNA-seq</a>
-</td>
-<td class="listing-date">
-Jun 21, 2021
+<td>
+<span class="listing-date-modified">May 18, 2022</span>
 </td>
 </tr>
-<tr data-index="14" data-categories="immune system,immunosenescence,senescence,rapamycin" data-listing-date-sort="1620777600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.57" data-listing-title-sort="An aged immune system drives senescence and ageing of solid organs" data-listing-filename-sort="aged_immune_system_drives_senescence_ageing_of_solid_organs.md">
-<td class="listing-title">
-<a href="./src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="title">An aged immune system drives senescence and ageing of solid organs</a>
+<tr data-index="7" data-categories="epigenetics,mitosis,demethylation,PMD,H3K36" data-listing-date-sort="1522627200000" data-listing-date-modified-sort="1652918400000" data-listing-title-sort="DNA methylation loss in late-replicating domains is linked to mitotic cell division" data-listing-filename-sort="dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md">
+<td>
+<a href="./src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="title listing-title">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
 </td>
-<td class="listing-date">
-May 12, 2021
+<td>
+<span class="listing-date">Apr 2, 2018</span>
 </td>
-</tr>
-<tr data-index="15" data-categories="brain injury,senescence,DNA damage" data-listing-date-sort="1620432000000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.125" data-listing-title-sort="Early onset senescence and cognitive impairment in a murine model of repeated mTBI" data-listing-filename-sort="early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.md">
-<td class="listing-title">
-<a href="./src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="title">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a>
-</td>
-<td class="listing-date">
-May 8, 2021
+<td>
+<span class="listing-date-modified">May 19, 2022</span>
 </td>
 </tr>
-<tr data-index="16" data-listing-date-sort="1620345600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.385" data-listing-title-sort="Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration" data-listing-filename-sort="evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="title">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a>
+<tr data-index="8" data-categories="cell-type vs cell-state,single-cell,scRNA-seq" data-listing-date-sort="1445731200000" data-listing-date-modified-sort="1653264000000" data-listing-title-sort="Defining cell types and states with single-cell genomics" data-listing-filename-sort="defining_cell_type_states_single_cell_genomics.md">
+<td>
+<a href="./src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="title listing-title">Defining cell types and states with single-cell genomics</a>
 </td>
-<td class="listing-date">
-May 7, 2021
+<td>
+<span class="listing-date">Oct 25, 2015</span>
 </td>
-</tr>
-<tr data-index="17" data-categories="SASP,senescence,lncRNA" data-listing-date-sort="1619568000000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.115" data-listing-title-sort="The long non-coding RNA *MIR31HG* regulates the senescence associated secretory phenotype" data-listing-filename-sort="lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.md">
-<td class="listing-title">
-<a href="./src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="title">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a>
-</td>
-<td class="listing-date">
-Apr 28, 2021
+<td>
+<span class="listing-date-modified">May 23, 2022</span>
 </td>
 </tr>
-<tr data-index="18" data-listing-date-sort="1618185600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.915" data-listing-title-sort="Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes" data-listing-filename-sort="genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="title">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a>
+<tr data-index="9" data-categories="cell-type vs cell-state,single-cell,transcriptomics,scRNA-seq" data-listing-date-sort="1561593600000" data-listing-date-modified-sort="1653350400000" data-listing-title-sort="The evolving concept of cell identity in the single cell era" data-listing-filename-sort="the_evolving_concept_of_cell_identity_in_single_cell_era.md">
+<td>
+<a href="./src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="title listing-title">The evolving concept of cell identity in the single cell era</a>
 </td>
-<td class="listing-date">
-Apr 12, 2021
+<td>
+<span class="listing-date">Jun 27, 2019</span>
 </td>
-</tr>
-<tr data-index="19" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.855" data-listing-title-sort="Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain" data-listing-filename-sort="dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="title">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a>
-</td>
-<td class="listing-date">
-Mar 1, 2021
+<td>
+<span class="listing-date-modified">May 24, 2022</span>
 </td>
 </tr>
-<tr data-index="20" data-listing-date-sort="1613433600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.23" data-listing-title-sort="Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown" data-listing-filename-sort="Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="title">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
+<tr data-index="10" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics" data-listing-date-sort="1533686400000" data-listing-date-modified-sort="1653436800000" data-listing-title-sort="RNA velocity of single cells" data-listing-filename-sort="rna_velocity_single_cells.md">
+<td>
+<a href="./src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="title listing-title">RNA velocity of single cells</a>
 </td>
-<td class="listing-date">
-Feb 16, 2021
+<td>
+<span class="listing-date">Aug 8, 2018</span>
 </td>
-</tr>
-<tr data-index="21" data-listing-date-sort="1613088000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.005" data-listing-title-sort="Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation" data-listing-filename-sort="AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="title">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a>
-</td>
-<td class="listing-date">
-Feb 12, 2021
+<td>
+<span class="listing-date-modified">May 25, 2022</span>
 </td>
 </tr>
-<tr data-index="22" data-listing-date-sort="1612396800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.645" data-listing-title-sort="Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish" data-listing-filename-sort="Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="title">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a>
+<tr data-index="11" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics" data-listing-date-sort="1659484800000" data-listing-date-modified-sort="1653436800000" data-listing-title-sort="Generalizing RNA velocity to transient cell states through dynamical modeling" data-listing-filename-sort="generalizing_rna_velocity_to_transient_cell_states.md">
+<td>
+<a href="./src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="title listing-title">Generalizing RNA velocity to transient cell states through dynamical modeling</a>
 </td>
-<td class="listing-date">
-Feb 4, 2021
+<td>
+<span class="listing-date">Aug 3, 2022</span>
 </td>
-</tr>
-<tr data-index="23" data-listing-date-sort="1608422400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.35" data-listing-title-sort="Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis" data-listing-filename-sort="Senescence_as_an_Amyloid_Cascade.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="title">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a>
-</td>
-<td class="listing-date">
-Dec 20, 2020
+<td>
+<span class="listing-date-modified">May 25, 2022</span>
 </td>
 </tr>
-<tr data-index="24" data-listing-date-sort="1607385600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.385" data-listing-title-sort="Genetic meta-analysis of diagnosed Alzheimer’s disease" data-listing-filename-sort="Genetic_meta-analysis_of_diagnosed_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="title">Genetic meta-analysis of diagnosed Alzheimer’s disease</a>
+<tr data-index="12" data-categories="rna velocity,single-cell,transcriptomics" data-listing-date-sort="1629936000000" data-listing-date-modified-sort="1653523200000" data-listing-title-sort="RNA velocity—current challenges and future perspectives" data-listing-filename-sort="rna_velocity_current_challenges_future_perspectives.md">
+<td>
+<a href="./src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="title listing-title">RNA velocity—current challenges and future perspectives</a>
 </td>
-<td class="listing-date">
-Dec 8, 2020
+<td>
+<span class="listing-date">Aug 26, 2021</span>
 </td>
-</tr>
-<tr data-index="25" data-categories="senescence,myelin,MS" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.22" data-listing-title-sort="Cellular senescence and failure of myelin repair in MS" data-listing-filename-sort="Cellular_senescence_and_failure_of_myelin_repair_in_MS.md">
-<td class="listing-title">
-<a href="./src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="title">Cellular senescence and failure of myelin repair in MS</a>
-</td>
-<td class="listing-date">
-Dec 1, 2020
-</td>
-</tr>
-<tr data-index="26" data-listing-date-sort="1606694400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.125" data-listing-title-sort="Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition" data-listing-filename-sort="neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="title">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a>
-</td>
-<td class="listing-date">
-Nov 30, 2020
-</td>
-</tr>
-<tr data-index="27" data-listing-date-sort="1604966400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.695" data-listing-title-sort="When does Alzheimer's disease really start? The role of biomarkers" data-listing-filename-sort="When_does_AD_really_start.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="title">When does Alzheimer’s disease really start? The role of biomarkers</a>
-</td>
-<td class="listing-date">
-Nov 10, 2020
-</td>
-</tr>
-<tr data-index="28" data-listing-date-sort="1604275200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.605" data-listing-title-sort="The Genetic Landscape of Alzheimer's disease" data-listing-filename-sort="The_Genetic_Landscape_of_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html" class="title">The Genetic Landscape of Alzheimer’s disease</a>
-</td>
-<td class="listing-date">
-Nov 2, 2020
-</td>
-</tr>
-<tr data-index="29" data-listing-date-sort="1604275200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.11" data-listing-title-sort="Genetics of Alzheimer’s disease: where we are, and where we are going" data-listing-filename-sort="Genetics_of_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Genetics_of_AD.html" class="title">Genetics of Alzheimer’s disease: where we are, and where we are going</a>
-</td>
-<td class="listing-date">
-Nov 2, 2020
-</td>
-</tr>
-<tr data-index="30" data-listing-date-sort="1600214400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.915" data-listing-title-sort="Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease" data-listing-filename-sort="Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="title">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a>
-</td>
-<td class="listing-date">
-Sep 16, 2020
+<td>
+<span class="listing-date-modified">May 26, 2022</span>
 </td>
 </tr>
 
-<tr data-index="31" data-listing-date-sort="1599609600000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.625" data-listing-title-sort="Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans" data-listing-filename-sort="snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md">
-<td class="listing-title">
-<a href="./src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="title">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a>
+<tr data-index="13" data-categories="ovarian cancer,ccoc,enoc" data-listing-date-sort="1502064000000" data-listing-date-modified-sort="1653609600000" data-listing-title-sort="Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?" data-listing-filename-sort="clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="title listing-title">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</a>
 </td>
-<td class="listing-date">
-Sep 9, 2020
+<td>
+<span class="listing-date">Aug 7, 2017</span>
 </td>
-</tr>
-<tr data-index="32" data-categories="transcriptomics,scRNA-seq,senescence" data-listing-date-sort="1597104000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.425" data-listing-title-sort="Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts" data-listing-filename-sort="Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.md">
-<td class="listing-title">
-<a href="./src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="title">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a>
-</td>
-<td class="listing-date">
-Aug 11, 2020
+<td>
+<span class="listing-date-modified">May 27, 2022</span>
 </td>
 </tr>
-<tr data-index="33" data-listing-date-sort="1594771200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.195" data-listing-title-sort="Telomere Attrition in Neurodegenerative Disorders" data-listing-filename-sort="Telomere_Attrition_in_Neurodegenerative_Disorders.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="title">Telomere Attrition in Neurodegenerative Disorders</a>
+<tr data-index="14" data-categories="lineage tracing,epigenetics,intro,clocks" data-listing-date-sort="1649721600000" data-listing-date-modified-sort="1654473600000" data-listing-title-sort="Lineage tracing in human tissues" data-listing-filename-sort="lineage_tracing_human_tissues.md">
+<td>
+<a href="./src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="title listing-title">Lineage tracing in human tissues</a>
 </td>
-<td class="listing-date">
-Jul 15, 2020
+<td>
+<span class="listing-date">Apr 12, 2022</span>
 </td>
-</tr>
-<tr data-index="34" data-categories="senescence,alzheimer" s,p53'="" data-listing-date-sort="1593388800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.825" data-listing-title-sort="Cellular senescence and Alzheimer disease: the egg and the chicken scenario" data-listing-filename-sort="Cellular_senescence_and_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="title">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a>
-</td>
-<td class="listing-date">
-Jun 29, 2020
+<td>
+<span class="listing-date-modified">Jun 6, 2022</span>
 </td>
 </tr>
-<tr data-index="35" data-categories="ovarian cancer,hgsoc,single-cell,scRNA-seq" data-listing-date-sort="1592784000000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="2.355" data-listing-title-sort="A single-cell landscape of high-grade serous ovarian cancer" data-listing-filename-sort="single_cell_landscape_hgsoc.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.html" class="title">A single-cell landscape of high-grade serous ovarian cancer</a>
+<tr data-index="15" data-categories="cell-type vs cell-state,glioblastoma,scRNA-seq" data-listing-date-sort="1565222400000" data-listing-date-modified-sort="1656374400000" data-listing-title-sort="An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma" data-listing-filename-sort="integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.md">
+<td>
+<a href="./src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="title listing-title">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</a>
 </td>
-<td class="listing-date">
-Jun 22, 2020
+<td>
+<span class="listing-date">Aug 8, 2019</span>
 </td>
-</tr>
-<tr data-index="36" data-listing-date-sort="1591660800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.35" data-listing-title-sort="Astrocyte Senescence and Alzheimer’s Disease: A Review" data-listing-filename-sort="Astrocyte_Senescence_and_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="title">Astrocyte Senescence and Alzheimer’s Disease: A Review</a>
-</td>
-<td class="listing-date">
-Jun 9, 2020
+<td>
+<span class="listing-date-modified">Jun 28, 2022</span>
 </td>
 </tr>
-<tr data-index="37" data-categories="senescence,systems biology" data-listing-date-sort="1586217600000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="3.435" data-listing-title-sort="A multidimensional systems biology analysis of cellular senescence in aging and disease" data-listing-filename-sort="multidim_systems_bio_analysis_senescence_aging_disease.md">
-<td class="listing-title">
-<a href="./src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="title">A multidimensional systems biology analysis of cellular senescence in aging and disease</a>
+<tr data-index="16" data-categories="ovarian cancer,hgsoc,single-cell,scRNA-seq" data-listing-date-sort="1592784000000" data-listing-date-modified-sort="1656633600000" data-listing-title-sort="A single-cell landscape of high-grade serous ovarian cancer" data-listing-filename-sort="single_cell_landscape_hgsoc.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.html" class="title listing-title">A single-cell landscape of high-grade serous ovarian cancer</a>
 </td>
-<td class="listing-date">
-Apr 7, 2020
+<td>
+<span class="listing-date">Jun 22, 2020</span>
 </td>
-</tr>
-<tr data-index="38" data-categories="transcriptomics,scRNA-seq,single-cell" data-listing-date-sort="1586131200000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="0.4" data-listing-title-sort="Systematic comparison of single-cell and single-nucleus RNA-sequencing methods" data-listing-filename-sort="Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md">
-<td class="listing-title">
-<a href="./src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="title">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
-</td>
-<td class="listing-date">
-Apr 6, 2020
+<td>
+<span class="listing-date-modified">Jul 1, 2022</span>
 </td>
 </tr>
-<tr data-index="39" data-listing-date-sort="1581379200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.345" data-listing-title-sort="Cellular Senescence in Neurodegenerative Diseases" data-listing-filename-sort="Cellular_Senescence_in_Neurodegenerative_Diseases.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="title">Cellular Senescence in Neurodegenerative Diseases</a>
+<tr data-index="17" data-categories="aml,single-cell,lineage tracing" data-listing-date-sort="1638921600000" data-listing-date-modified-sort="1656979200000" data-listing-title-sort="Non-genetic determinants of malignant clonal fitness at single-cell resolution" data-listing-filename-sort="non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md">
+<td>
+<a href="./src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="title listing-title">Non-genetic determinants of malignant clonal fitness at single-cell resolution</a>
 </td>
-<td class="listing-date">
-Feb 11, 2020
+<td>
+<span class="listing-date">Dec 8, 2021</span>
 </td>
-</tr>
-<tr data-index="40" data-categories="astrocytes,senescence,glutamate" data-listing-date-sort="1579132800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.63" data-listing-title-sort="Astrocyte senescence promotes glutamate toxicity in cortical neurons" data-listing-filename-sort="Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.md">
-<td class="listing-title">
-<a href="./src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="title">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a>
-</td>
-<td class="listing-date">
-Jan 16, 2020
+<td>
+<span class="listing-date-modified">Jul 5, 2022</span>
 </td>
 </tr>
-<tr data-index="41" data-categories="intro,SASP,senescence" data-listing-date-sort="1572480000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.825" data-listing-title-sort="Cellular senescence: Defining a path forward" data-listing-filename-sort="Cellular_senescence_Defining_a_path_forward.md">
-<td class="listing-title">
-<a href="./src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="title">Cellular senescence: Defining a path forward</a>
+<tr data-index="18" data-categories="cell-type vs cell-state,single-cell,gene regulatory networks" data-listing-date-sort="1473638400000" data-listing-date-modified-sort="1658188800000" data-listing-title-sort="Transition states and cell fate decisions in epigenetic landscapes" data-listing-filename-sort="transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.md">
+<td>
+<a href="./src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="title listing-title">Transition states and cell fate decisions in epigenetic landscapes</a>
 </td>
-<td class="listing-date">
-Oct 31, 2019
+<td>
+<span class="listing-date">Sep 12, 2016</span>
 </td>
-</tr>
-<tr data-index="42" data-listing-date-sort="1571097600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.03" data-listing-title-sort="Ageing as a risk factor for neurodegenerative disease" data-listing-filename-sort="Aging_as_a_risk_factor_for_neurodegenerative_disease.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="title">Ageing as a risk factor for neurodegenerative disease</a>
-</td>
-<td class="listing-date">
-Oct 15, 2019
+<td>
+<span class="listing-date-modified">Jul 19, 2022</span>
 </td>
 </tr>
-<tr data-index="43" data-categories="epigenetics,methylation,intro" data-listing-date-sort="1565308800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.24" data-listing-title-sort="The diverse roles of DNA methylation in mammalian development and disease" data-listing-filename-sort="diverse_roles_dna_methylation_mammalian_development_disease.md">
-<td class="listing-title">
-<a href="./src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="title">The diverse roles of DNA methylation in mammalian development and disease</a>
+<tr data-index="19" data-categories="cell-type vs cell-state,single-cell,transcriptomics,systems biology" data-listing-date-sort="1658361600000" data-listing-date-modified-sort="1658448000000" data-listing-title-sort="What is a cell type and how to define it" data-listing-filename-sort="what_is_a_cell_type_how_to_define_it.md">
+<td>
+<a href="./src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="title listing-title">What is a cell type and how to define it</a>
 </td>
-<td class="listing-date">
-Aug 9, 2019
+<td>
+<span class="listing-date">Jul 21, 2022</span>
 </td>
-</tr>
-<tr data-index="44" data-categories="cell-type vs cell-state,glioblastoma,scRNA-seq" data-listing-date-sort="1565222400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="5.58" data-listing-title-sort="An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma" data-listing-filename-sort="integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="title">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</a>
-</td>
-<td class="listing-date">
-Aug 8, 2019
+<td>
+<span class="listing-date-modified">Jul 22, 2022</span>
 </td>
 </tr>
-<tr data-index="45" data-categories="transcriptomics,senescence" data-listing-date-sort="1561680000000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.26" data-listing-title-sort="Transcriptome signature of cellular senescence" data-listing-filename-sort="transcriptome_signature_of_cellular_senescence.md">
-<td class="listing-title">
-<a href="./src/senescence/transcriptome_signature_of_cellular_senescence.html" class="title">Transcriptome signature of cellular senescence</a>
+<tr data-index="20" data-categories="state-space,gene regulatory networks" data-listing-date-sort="1476835200000" data-listing-date-modified-sort="1660003200000" data-listing-title-sort="DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks" data-listing-filename-sort="dreiss_using_state_space_model_infer_gene_exp_dynamics.md">
+<td>
+<a href="./src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="title listing-title">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</a>
 </td>
-<td class="listing-date">
-Jun 28, 2019
+<td>
+<span class="listing-date">Oct 19, 2016</span>
 </td>
-</tr>
-<tr data-index="46" data-categories="cell-type vs cell-state,single-cell,transcriptomics,scRNA-seq" data-listing-date-sort="1561593600000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.655" data-listing-title-sort="The evolving concept of cell identity in the single cell era" data-listing-filename-sort="the_evolving_concept_of_cell_identity_in_single_cell_era.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="title">The evolving concept of cell identity in the single cell era</a>
-</td>
-<td class="listing-date">
-Jun 27, 2019
+<td>
+<span class="listing-date-modified">Aug 9, 2022</span>
 </td>
 </tr>
-<tr data-index="47" data-listing-date-sort="1560902400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.32" data-listing-title-sort="Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease" data-listing-filename-sort="cellular_senescence_iron_dyshomeostasis_in_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="title">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a>
+<tr data-index="21" data-categories="ovarian cancer,stem cells" data-listing-date-sort="1350864000000" data-listing-date-modified-sort="1661299200000" data-listing-title-sort="Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation" data-listing-filename-sort="stem_like_epithelial_cells_concentrated_in_distal_end.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="title listing-title">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
 </td>
-<td class="listing-date">
-Jun 19, 2019
+<td>
+<span class="listing-date">Oct 22, 2012</span>
 </td>
-</tr>
-<tr data-index="48" data-listing-date-sort="1556668800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.185" data-listing-title-sort="Single-cell transcriptomic analysis of Alzheimer’s disease" data-listing-filename-sort="Single-cell_transcriptomic_analysis_of_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="title">Single-cell transcriptomic analysis of Alzheimer’s disease</a>
-</td>
-<td class="listing-date">
-May 1, 2019
+<td>
+<span class="listing-date-modified">Aug 24, 2022</span>
 </td>
 </tr>
-<tr data-index="49" data-categories="immune system,senescence,senolytics" data-listing-date-sort="1545350400000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="2.36" data-listing-title-sort="Impaired immune surveillance accelerates accumulation of senescent cells and aging" data-listing-filename-sort="impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.md">
-<td class="listing-title">
-<a href="./src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="title">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a>
+<tr data-index="22" data-categories="cell-type vs cell-state,metabolism,chromatin remodelling,epigenetics" data-listing-date-sort="1521072000000" data-listing-date-modified-sort="1661904000000" data-listing-title-sort="Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model" data-listing-filename-sort="epigenetic_regulation_cell_fate_reprogramming.md">
+<td>
+<a href="./src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="title listing-title">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</a>
 </td>
-<td class="listing-date">
-Dec 21, 2018
+<td>
+<span class="listing-date">Mar 15, 2018</span>
 </td>
-</tr>
-<tr data-index="50" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics" data-listing-date-sort="1533686400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.5" data-listing-title-sort="RNA velocity of single cells" data-listing-filename-sort="rna_velocity_single_cells.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="title">RNA velocity of single cells</a>
-</td>
-<td class="listing-date">
-Aug 8, 2018
+<td>
+<span class="listing-date-modified">Aug 31, 2022</span>
 </td>
 </tr>
-<tr data-index="51" data-listing-date-sort="1529020800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.865" data-listing-title-sort="Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model" data-listing-filename-sort="big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="title">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a>
+<tr data-index="23" data-categories="cell-type vs cell-state,modelling,systems biology" data-listing-date-sort="1663113600000" data-listing-date-modified-sort="1663200000000" data-listing-title-sort="Control of cell state transitions" data-listing-filename-sort="control_of_cell_state_transitions.md">
+<td>
+<a href="./src/cell_type_state/control_of_cell_state_transitions.html" class="title listing-title">Control of cell state transitions</a>
 </td>
-<td class="listing-date">
-Jun 15, 2018
+<td>
+<span class="listing-date">Sep 14, 2022</span>
 </td>
-</tr>
-<tr data-index="52" data-categories="immune system,senescence,immunotherapy" data-listing-date-sort="1525132800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.87" data-listing-title-sort="Cellular senescence: Immunosurveillance and future immunotherapy" data-listing-filename-sort="Cellular_senescence_Immunosurveillance_and_future_immunotherapy.md">
-<td class="listing-title">
-<a href="./src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="title">Cellular senescence: Immunosurveillance and future immunotherapy</a>
-</td>
-<td class="listing-date">
-May 1, 2018
+<td>
+<span class="listing-date-modified">Sep 15, 2022</span>
 </td>
 </tr>
-<tr data-index="53" data-listing-date-sort="1524268800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.8" data-listing-title-sort="Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease" data-listing-filename-sort="Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="title">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a>
+<tr data-index="24" data-categories="rna velocity,cell-type vs cell-state,single-cell,transcriptomics,epigenetics,chromatin remodelling" data-listing-date-sort="1665619200000" data-listing-date-modified-sort="1665964800000" data-listing-title-sort="Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction" data-listing-filename-sort="multiomic_single_cell_velocity.md">
+<td>
+<a href="./src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="title listing-title">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</a>
 </td>
-<td class="listing-date">
-Apr 21, 2018
+<td>
+<span class="listing-date">Oct 13, 2022</span>
 </td>
-</tr>
-<tr data-index="54" data-categories="epigenetics,mitosis,demethylation,PMD,H3K36" data-listing-date-sort="1522627200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.26" data-listing-title-sort="DNA methylation loss in late-replicating domains is linked to mitotic cell division" data-listing-filename-sort="dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md">
-<td class="listing-title">
-<a href="./src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="title">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
-</td>
-<td class="listing-date">
-Apr 2, 2018
+<td>
+<span class="listing-date-modified">Oct 17, 2022</span>
 </td>
 </tr>
-<tr data-index="55" data-categories="cell-type vs cell-state,metabolism,chromatin remodelling,epigenetics" data-listing-date-sort="1521072000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.01" data-listing-title-sort="Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model" data-listing-filename-sort="epigenetic_regulation_cell_fate_reprogramming.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="title">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</a>
+<tr data-index="25" data-categories="epigenetics,clocks,mitosis,demethylation,PMD,DNA replication,DNA methylation" data-listing-date-sort="1667865600000" data-listing-date-modified-sort="1668729600000" data-listing-title-sort="Cell division drives DNA methylation loss in late-replicating domains in primary human cells" data-listing-filename-sort="cell_division_drives_dna_methylation_loss_late_replicating_domains.md">
+<td>
+<a href="./src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="title listing-title">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</a>
 </td>
-<td class="listing-date">
-Mar 15, 2018
+<td>
+<span class="listing-date">Nov 8, 2022</span>
+</td>
+<td>
+<span class="listing-date-modified">Nov 18, 2022</span>
 </td>
 </tr>
-<tr data-index="56" data-categories="epigenetics,senescence,ageing,SASP" data-listing-date-sort="1511481600000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.53" data-listing-title-sort="Epigenetic Basis of Cellular Senescence and Its Implications in Aging" data-listing-filename-sort="epigenetic_basis_of_senescence_implications_in_aging.md">
-<td class="listing-title">
-<a href="./src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="title">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a>
+<tr data-index="26" data-categories="lineage tracing,scRNA-seq,transcriptomics" data-listing-date-sort="1663632000000" data-listing-date-modified-sort="1668988800000" data-listing-title-sort="Barcode-free prediction of cell lineages from scRNA-seq datasets" data-listing-filename-sort="gemli_barcode_free_lineage_prediction.md">
+<td>
+<a href="./src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="title listing-title">Barcode-free prediction of cell lineages from scRNA-seq datasets</a>
 </td>
-<td class="listing-date">
-Nov 24, 2017
+<td>
+<span class="listing-date">Sep 20, 2022</span>
+</td>
+<td>
+<span class="listing-date-modified">Nov 21, 2022</span>
+</td>
+</tr>
+<tr data-index="27" data-categories="ovarian cancer,hgsoc,single-cell,scRNA-seq,stem cells" data-listing-date-sort="1649635200000" data-listing-date-modified-sort="1669939200000" data-listing-title-sort="Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq" data-listing-filename-sort="cellular_heterogeneity_ft_scRNA_seq.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="title listing-title">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</a>
+</td>
+<td>
+<span class="listing-date">Apr 11, 2022</span>
+</td>
+<td>
+<span class="listing-date-modified">Dec 2, 2022</span>
+</td>
+</tr>
+<tr data-index="28" data-categories="lineage tracing,scRNA-seq,modelling,evolution" data-listing-date-sort="1672358400000" data-listing-date-modified-sort="1672790400000" data-listing-title-sort="Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution" data-listing-filename-sort="defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.md">
+<td>
+<a href="./src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="title listing-title">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</a>
+</td>
+<td>
+<span class="listing-date">Dec 30, 2022</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 4, 2023</span>
+</td>
+</tr>
+<tr data-index="29" data-categories="cancer stem cells,stem cells,epigenetics" data-listing-date-sort="1252022400000" data-listing-date-modified-sort="1678406400000" data-listing-title-sort="Heterogeneity in Cancer: Cancer Stem Cells versus Clonal Evolution" data-listing-filename-sort="csc_vs_clonal_evolution.md">
+<td>
+<a href="./src/cancer/csc/csc_vs_clonal_evolution.html" class="title listing-title">Heterogeneity in Cancer: Cancer Stem Cells versus Clonal Evolution</a>
+</td>
+<td>
+<span class="listing-date">Sep 4, 2009</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 10, 2023</span>
+</td>
+</tr>
+<tr data-index="30" data-categories="stem cells,fallopian tube,hgsoc,wnt,notch,markers,ovarian cancer" data-listing-date-sort="1449532800000" data-listing-date-modified-sort="1678665600000" data-listing-title-sort="The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids" data-listing-filename-sort="notch_wnt_regulate_stemness_differentiation_fte.md">
+<td>
+<a href="./src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="title listing-title">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</a>
+</td>
+<td>
+<span class="listing-date">Dec 8, 2015</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 13, 2023</span>
+</td>
+</tr>
+<tr data-index="31" data-categories="stem cells,cancer stem cells,ovarian cancer" data-listing-date-sort="1418169600000" data-listing-date-modified-sort="1678665600000" data-listing-title-sort="Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention" data-listing-filename-sort="developing_ovarian_cancer_stem_cell_models.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="title listing-title">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</a>
+</td>
+<td>
+<span class="listing-date">Dec 10, 2014</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 13, 2023</span>
+</td>
+</tr>
+<tr data-index="32" data-categories="transcriptomics,scRNA-seq,intro" data-listing-date-sort="1624233600000" data-listing-date-modified-sort="1678924800000" data-listing-title-sort="The triumphs and limitations of computational methods for scRNA-seq" data-listing-filename-sort="triumphs_limitations_computational_methods_scRNAseq.md">
+<td>
+<a href="./src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="title listing-title">The triumphs and limitations of computational methods for scRNA-seq</a>
+</td>
+<td>
+<span class="listing-date">Jun 21, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 16, 2023</span>
+</td>
+</tr>
+<tr data-index="33" data-categories="cell-type vs cell-state,transcriptomics,HSC" data-listing-date-sort="1211328000000" data-listing-date-modified-sort="1679270400000" data-listing-title-sort="Transcriptome-wide noise controls lineage choice in mammalian progenitor cells" data-listing-filename-sort="transcriptome_wide_noise_controls_lineage_choice.md">
+<td>
+<a href="./src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="title listing-title">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
+</td>
+<td>
+<span class="listing-date">May 21, 2008</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 20, 2023</span>
+</td>
+</tr>
+<tr data-index="34" data-categories="cell-type vs cell-state,modelling,systems biology,gene regulatory networks,dynamical sytems,HSC,transcriptomics" data-listing-date-sort="1483920000000" data-listing-date-modified-sort="1679529600000" data-listing-title-sort="Cell Fate Decision as High-Dimensional Critical State Transition" data-listing-filename-sort="cell_fate_transition_high_dim_critical_state_transition.md">
+<td>
+<a href="./src/cell_type_state/cell_fate_transition_high_dim_critical_state_transition.html" class="title listing-title">Cell Fate Decision as High-Dimensional Critical State Transition</a>
+</td>
+<td>
+<span class="listing-date">Jan 9, 2017</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 23, 2023</span>
+</td>
+</tr>
+<tr data-index="35" data-categories="cell-type vs cell-state,modelling,systems biology,gene regulatory networks,HSC,transcriptomics,ATAC-seq" data-listing-date-sort="1679875200000" data-listing-date-modified-sort="1680134400000" data-listing-title-sort="SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data" data-listing-filename-sort="seacells_infers_transcriptional_epigenomic_states.md">
+<td>
+<a href="./src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="title listing-title">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</a>
+</td>
+<td>
+<span class="listing-date">Mar 27, 2023</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 30, 2023</span>
+</td>
+</tr>
+<tr data-index="36" data-categories="cancer stem cells,stem cells,ovarian cancer" data-listing-date-sort="1448841600000" data-listing-date-modified-sort="1680739200000" data-listing-title-sort="Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2" data-listing-filename-sort="identifying_ovca_cell_hierarchy_regulated_by_bmp2.md">
+<td>
+<a href="./src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="title listing-title">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</a>
+</td>
+<td>
+<span class="listing-date">Nov 30, 2015</span>
+</td>
+<td>
+<span class="listing-date-modified">Apr 6, 2023</span>
+</td>
+</tr>
+<tr data-index="37" data-categories="cell-type vs cell-state,transcriptomics,DNA methylation,demethylation,stem cells" data-listing-date-sort="1405641600000" data-listing-date-modified-sort="1685145600000" data-listing-title-sort="Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells" data-listing-filename-sort="dynamic_heterogeneity_dna_meth_escs.md">
+<td>
+<a href="./src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html" class="title listing-title">Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells</a>
+</td>
+<td>
+<span class="listing-date">Jul 18, 2014</span>
+</td>
+<td>
+<span class="listing-date-modified">May 27, 2023</span>
 </td>
 </tr>
 
-<tr data-index="57" data-categories="ovarian cancer,ccoc,enoc" data-listing-date-sort="1502064000000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="1.27" data-listing-title-sort="Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?" data-listing-filename-sort="clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="title">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</a>
+<tr data-index="38" data-listing-date-sort="1599609600000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans" data-listing-filename-sort="snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.md">
+<td>
+<a href="./src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="title listing-title">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a>
 </td>
-<td class="listing-date">
-Aug 7, 2017
+<td>
+<span class="listing-date">Sep 9, 2020</span>
 </td>
-</tr>
-<tr data-index="58" data-categories="cell-type vs cell-state,modelling,systems biology,gene regulatory networks,dynamical sytems,HSC,transcriptomics" data-listing-date-sort="1483920000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="3.26" data-listing-title-sort="Cell Fate Decision as High-Dimensional Critical State Transition" data-listing-filename-sort="cell_fate_transition_high_dim_critical_state_transition.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/cell_fate_transition_high_dim_critical_state_transition.html" class="title">Cell Fate Decision as High-Dimensional Critical State Transition</a>
-</td>
-<td class="listing-date">
-Jan 9, 2017
+<td>
+<span class="listing-date-modified">Invalid Date</span>
 </td>
 </tr>
-<tr data-index="59" data-listing-date-sort="1477872000000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="1.315" data-listing-title-sort="Evaluation of relational and NoSQL database architectures to manage genomic annotations" data-listing-filename-sort="evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.md">
-<td class="listing-title">
-<a href="./src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="title">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a>
+<tr data-index="39" data-categories="senescence,myelin,MS" data-listing-date-sort="1606780800000" data-listing-date-modified-sort="1582675200000" data-listing-title-sort="Cellular senescence and failure of myelin repair in MS" data-listing-filename-sort="Cellular_senescence_and_failure_of_myelin_repair_in_MS.md">
+<td>
+<a href="./src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="title listing-title">Cellular senescence and failure of myelin repair in MS</a>
 </td>
-<td class="listing-date">
-Oct 31, 2016
+<td>
+<span class="listing-date">Dec 1, 2020</span>
 </td>
-</tr>
-<tr data-index="60" data-categories="state-space,gene regulatory networks" data-listing-date-sort="1476835200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.405" data-listing-title-sort="DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks" data-listing-filename-sort="dreiss_using_state_space_model_infer_gene_exp_dynamics.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="title">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</a>
-</td>
-<td class="listing-date">
-Oct 19, 2016
+<td>
+<span class="listing-date-modified">Feb 26, 2020</span>
 </td>
 </tr>
-<tr data-index="61" data-categories="cell-type vs cell-state,single-cell,gene regulatory networks" data-listing-date-sort="1473638400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.99" data-listing-title-sort="Transition states and cell fate decisions in epigenetic landscapes" data-listing-filename-sort="transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="title">Transition states and cell fate decisions in epigenetic landscapes</a>
+<tr data-index="40" data-categories="senescence,alzheimer" s,p53'="" data-listing-date-sort="1593388800000" data-listing-date-modified-sort="1604275200000" data-listing-title-sort="Cellular senescence and Alzheimer disease: the egg and the chicken scenario" data-listing-filename-sort="Cellular_senescence_and_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="title listing-title">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a>
 </td>
-<td class="listing-date">
-Sep 12, 2016
+<td>
+<span class="listing-date">Jun 29, 2020</span>
 </td>
-</tr>
-<tr data-index="62" data-categories="stem cells,fallopian tube,hgsoc,wnt,notch,markers,ovarian cancer" data-listing-date-sort="1449532800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.565" data-listing-title-sort="The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids" data-listing-filename-sort="notch_wnt_regulate_stemness_differentiation_fte.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="title">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</a>
-</td>
-<td class="listing-date">
-Dec 8, 2015
+<td>
+<span class="listing-date-modified">Nov 2, 2020</span>
 </td>
 </tr>
-<tr data-index="63" data-categories="cancer stem cells,stem cells,ovarian cancer" data-listing-date-sort="1448841600000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="2.165" data-listing-title-sort="Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2" data-listing-filename-sort="identifying_ovca_cell_hierarchy_regulated_by_bmp2.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="title">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</a>
+<tr data-index="41" data-listing-date-sort="1581379200000" data-listing-date-modified-sort="1604880000000" data-listing-title-sort="Cellular Senescence in Neurodegenerative Diseases" data-listing-filename-sort="Cellular_Senescence_in_Neurodegenerative_Diseases.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="title listing-title">Cellular Senescence in Neurodegenerative Diseases</a>
 </td>
-<td class="listing-date">
-Nov 30, 2015
+<td>
+<span class="listing-date">Feb 11, 2020</span>
 </td>
-</tr>
-<tr data-index="64" data-categories="cell-type vs cell-state,single-cell,scRNA-seq" data-listing-date-sort="1445731200000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.59" data-listing-title-sort="Defining cell types and states with single-cell genomics" data-listing-filename-sort="defining_cell_type_states_single_cell_genomics.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="title">Defining cell types and states with single-cell genomics</a>
-</td>
-<td class="listing-date">
-Oct 25, 2015
+<td>
+<span class="listing-date-modified">Nov 9, 2020</span>
 </td>
 </tr>
-<tr data-index="65" data-listing-date-sort="1423612800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.535" data-listing-title-sort="The Cellular Phase of Alzheimer's Disease" data-listing-filename-sort="The_Cellular_Phase_of_AD.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="title">The Cellular Phase of Alzheimer’s Disease</a>
+<tr data-index="42" data-listing-date-sort="1594771200000" data-listing-date-modified-sort="1605657600000" data-listing-title-sort="Telomere Attrition in Neurodegenerative Disorders" data-listing-filename-sort="Telomere_Attrition_in_Neurodegenerative_Disorders.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="title listing-title">Telomere Attrition in Neurodegenerative Disorders</a>
 </td>
-<td class="listing-date">
-Feb 11, 2015
+<td>
+<span class="listing-date">Jul 15, 2020</span>
 </td>
-</tr>
-<tr data-index="66" data-categories="stem cells,cancer stem cells,ovarian cancer" data-listing-date-sort="1418169600000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="2.375" data-listing-title-sort="Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention" data-listing-filename-sort="developing_ovarian_cancer_stem_cell_models.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="title">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</a>
-</td>
-<td class="listing-date">
-Dec 10, 2014
+<td>
+<span class="listing-date-modified">Nov 18, 2020</span>
 </td>
 </tr>
-<tr data-index="67" data-categories="senescence,PSEN1" data-listing-date-sort="1405382400000" data-listing-file-modified-sort="1680809141745" data-listing-reading-time-sort="1.295" data-listing-title-sort="Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub>" data-listing-filename-sort="inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.md">
-<td class="listing-title">
-<a href="./src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="title">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a>
+<tr data-index="43" data-categories="intro,SASP,senescence" data-listing-date-sort="1572480000000" data-listing-date-modified-sort="1607644800000" data-listing-title-sort="Cellular senescence: Defining a path forward" data-listing-filename-sort="Cellular_senescence_Defining_a_path_forward.md">
+<td>
+<a href="./src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="title listing-title">Cellular senescence: Defining a path forward</a>
 </td>
-<td class="listing-date">
-Jul 15, 2014
+<td>
+<span class="listing-date">Oct 31, 2019</span>
 </td>
-</tr>
-<tr data-index="68" data-listing-date-sort="1377648000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.93" data-listing-title-sort="Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48" data-listing-filename-sort="molecular_mechanism_for_age_related_memory_loss_rbap48.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="title">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a>
-</td>
-<td class="listing-date">
-Aug 28, 2013
+<td>
+<span class="listing-date-modified">Dec 11, 2020</span>
 </td>
 </tr>
-<tr data-index="69" data-categories="cancer genomics,epigenetics,intro" data-listing-date-sort="1364428800000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="4.99" data-listing-title-sort="Interplay between the cancer genome and epigenome" data-listing-filename-sort="interplay_between_cancer_genome_epigenome.md">
-<td class="listing-title">
-<a href="./src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="title">Interplay between the cancer genome and epigenome</a>
+<tr data-index="44" data-listing-date-sort="1571097600000" data-listing-date-modified-sort="1608163200000" data-listing-title-sort="Ageing as a risk factor for neurodegenerative disease" data-listing-filename-sort="Aging_as_a_risk_factor_for_neurodegenerative_disease.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="title listing-title">Ageing as a risk factor for neurodegenerative disease</a>
 </td>
-<td class="listing-date">
-Mar 28, 2013
+<td>
+<span class="listing-date">Oct 15, 2019</span>
 </td>
-</tr>
-<tr data-index="70" data-categories="ovarian cancer,stem cells" data-listing-date-sort="1350864000000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="1.025" data-listing-title-sort="Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation" data-listing-filename-sort="stem_like_epithelial_cells_concentrated_in_distal_end.md">
-<td class="listing-title">
-<a href="./src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="title">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
-</td>
-<td class="listing-date">
-Oct 22, 2012
+<td>
+<span class="listing-date-modified">Dec 17, 2020</span>
 </td>
 </tr>
-<tr data-index="71" data-categories="intro,senescence" data-listing-date-sort="1298246400000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.585" data-listing-title-sort="Four faces of cellular senescence" data-listing-filename-sort="Four_faces_of_cellular_senescence.md">
-<td class="listing-title">
-<a href="./src/senescence/Four_faces_of_cellular_senescence.html" class="title">Four faces of cellular senescence</a>
+<tr data-index="45" data-listing-date-sort="1600214400000" data-listing-date-modified-sort="1608163200000" data-listing-title-sort="Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer's Disease" data-listing-filename-sort="Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="title listing-title">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a>
 </td>
-<td class="listing-date">
-Feb 21, 2011
+<td>
+<span class="listing-date">Sep 16, 2020</span>
 </td>
-</tr>
-<tr data-index="72" data-categories="cancer stem cells,stem cells,epigenetics" data-listing-date-sort="1252022400000" data-listing-file-modified-sort="1680809141737" data-listing-reading-time-sort="2.475" data-listing-title-sort="Heterogeneity in Cancer: Cancer Stem Cells versus Clonal Evolution" data-listing-filename-sort="csc_vs_clonal_evolution.md">
-<td class="listing-title">
-<a href="./src/cancer/csc/csc_vs_clonal_evolution.html" class="title">Heterogeneity in Cancer: Cancer Stem Cells versus Clonal Evolution</a>
-</td>
-<td class="listing-date">
-Sep 4, 2009
+<td>
+<span class="listing-date-modified">Dec 17, 2020</span>
 </td>
 </tr>
-<tr data-index="73" data-listing-date-sort="1228176000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="1.145" data-listing-title-sort="Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor" data-listing-filename-sort="Senescence-Associated_Secretory_Phenotypes.md">
-<td class="listing-title">
-<a href="./src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="title">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
+<tr data-index="46" data-listing-date-sort="1556668800000" data-listing-date-modified-sort="1608595200000" data-listing-title-sort="Single-cell transcriptomic analysis of Alzheimer’s disease" data-listing-filename-sort="Single-cell_transcriptomic_analysis_of_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="title listing-title">Single-cell transcriptomic analysis of Alzheimer’s disease</a>
 </td>
-<td class="listing-date">
-Dec 2, 2008
+<td>
+<span class="listing-date">May 1, 2019</span>
 </td>
-</tr>
-<tr data-index="74" data-categories="cell-type vs cell-state,transcriptomics,HSC" data-listing-date-sort="1211328000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="2.195" data-listing-title-sort="Transcriptome-wide noise controls lineage choice in mammalian progenitor cells" data-listing-filename-sort="transcriptome_wide_noise_controls_lineage_choice.md">
-<td class="listing-title">
-<a href="./src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="title">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
-</td>
-<td class="listing-date">
-May 21, 2008
+<td>
+<span class="listing-date-modified">Dec 22, 2020</span>
 </td>
 </tr>
-<tr data-index="75" data-listing-date-sort="844128000000" data-listing-file-modified-sort="1680809141741" data-listing-reading-time-sort="0.85" data-listing-title-sort="Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration" data-listing-filename-sort="inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md">
-<td class="listing-title">
-<a href="./src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="title">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
+<tr data-index="47" data-listing-date-sort="1613433600000" data-listing-date-modified-sort="1611100800000" data-listing-title-sort="Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown" data-listing-filename-sort="Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="title listing-title">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
 </td>
-<td class="listing-date">
-Oct 1, 1996
+<td>
+<span class="listing-date">Feb 16, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 20, 2021</span>
+</td>
+</tr>
+<tr data-index="48" data-listing-date-sort="1591660800000" data-listing-date-modified-sort="1611100800000" data-listing-title-sort="Astrocyte Senescence and Alzheimer’s Disease: A Review" data-listing-filename-sort="Astrocyte_Senescence_and_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="title listing-title">Astrocyte Senescence and Alzheimer’s Disease: A Review</a>
+</td>
+<td>
+<span class="listing-date">Jun 9, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 20, 2021</span>
+</td>
+</tr>
+<tr data-index="49" data-categories="transcriptomics,scRNA-seq,senescence" data-listing-date-sort="1597104000000" data-listing-date-modified-sort="1613001600000" data-listing-title-sort="Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts" data-listing-filename-sort="Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.md">
+<td>
+<a href="./src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="title listing-title">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a>
+</td>
+<td>
+<span class="listing-date">Aug 11, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Feb 11, 2021</span>
+</td>
+</tr>
+<tr data-index="50" data-listing-date-sort="1423612800000" data-listing-date-modified-sort="1613347200000" data-listing-title-sort="The Cellular Phase of Alzheimer's Disease" data-listing-filename-sort="The_Cellular_Phase_of_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="title listing-title">The Cellular Phase of Alzheimer’s Disease</a>
+</td>
+<td>
+<span class="listing-date">Feb 11, 2015</span>
+</td>
+<td>
+<span class="listing-date-modified">Feb 15, 2021</span>
+</td>
+</tr>
+<tr data-index="51" data-categories="astrocytes,senescence,glutamate" data-listing-date-sort="1579132800000" data-listing-date-modified-sort="1615161600000" data-listing-title-sort="Astrocyte senescence promotes glutamate toxicity in cortical neurons" data-listing-filename-sort="Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.md">
+<td>
+<a href="./src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="title listing-title">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a>
+</td>
+<td>
+<span class="listing-date">Jan 16, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 8, 2021</span>
+</td>
+</tr>
+<tr data-index="52" data-listing-date-sort="1612396800000" data-listing-date-modified-sort="1615507200000" data-listing-title-sort="Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish" data-listing-filename-sort="Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="title listing-title">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a>
+</td>
+<td>
+<span class="listing-date">Feb 4, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 12, 2021</span>
+</td>
+</tr>
+<tr data-index="53" data-listing-date-sort="1524268800000" data-listing-date-modified-sort="1615852800000" data-listing-title-sort="Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease" data-listing-filename-sort="Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="title listing-title">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a>
+</td>
+<td>
+<span class="listing-date">Apr 21, 2018</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 16, 2021</span>
+</td>
+</tr>
+<tr data-index="54" data-categories="epigenetics,senescence,ageing,SASP" data-listing-date-sort="1511481600000" data-listing-date-modified-sort="1615939200000" data-listing-title-sort="Epigenetic Basis of Cellular Senescence and Its Implications in Aging" data-listing-filename-sort="epigenetic_basis_of_senescence_implications_in_aging.md">
+<td>
+<a href="./src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="title listing-title">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a>
+</td>
+<td>
+<span class="listing-date">Nov 24, 2017</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 17, 2021</span>
+</td>
+</tr>
+<tr data-index="55" data-categories="immune system,senescence,immunotherapy" data-listing-date-sort="1525132800000" data-listing-date-modified-sort="1615939200000" data-listing-title-sort="Cellular senescence: Immunosurveillance and future immunotherapy" data-listing-filename-sort="Cellular_senescence_Immunosurveillance_and_future_immunotherapy.md">
+<td>
+<a href="./src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="title listing-title">Cellular senescence: Immunosurveillance and future immunotherapy</a>
+</td>
+<td>
+<span class="listing-date">May 1, 2018</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 17, 2021</span>
+</td>
+</tr>
+<tr data-index="56" data-categories="senescence,systems biology" data-listing-date-sort="1586217600000" data-listing-date-modified-sort="1616025600000" data-listing-title-sort="A multidimensional systems biology analysis of cellular senescence in aging and disease" data-listing-filename-sort="multidim_systems_bio_analysis_senescence_aging_disease.md">
+<td>
+<a href="./src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="title listing-title">A multidimensional systems biology analysis of cellular senescence in aging and disease</a>
+</td>
+<td>
+<span class="listing-date">Apr 7, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 18, 2021</span>
+</td>
+</tr>
+<tr data-index="57" data-listing-date-sort="1560902400000" data-listing-date-modified-sort="1616025600000" data-listing-title-sort="Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease" data-listing-filename-sort="cellular_senescence_iron_dyshomeostasis_in_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="title listing-title">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a>
+</td>
+<td>
+<span class="listing-date">Jun 19, 2019</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 18, 2021</span>
+</td>
+</tr>
+<tr data-index="58" data-listing-date-sort="1377648000000" data-listing-date-modified-sort="1616976000000" data-listing-title-sort="Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48" data-listing-filename-sort="molecular_mechanism_for_age_related_memory_loss_rbap48.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="title listing-title">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a>
+</td>
+<td>
+<span class="listing-date">Aug 28, 2013</span>
+</td>
+<td>
+<span class="listing-date-modified">Mar 29, 2021</span>
+</td>
+</tr>
+<tr data-index="59" data-categories="transcriptomics,senescence" data-listing-date-sort="1561680000000" data-listing-date-modified-sort="1618790400000" data-listing-title-sort="Transcriptome signature of cellular senescence" data-listing-filename-sort="transcriptome_signature_of_cellular_senescence.md">
+<td>
+<a href="./src/senescence/transcriptome_signature_of_cellular_senescence.html" class="title listing-title">Transcriptome signature of cellular senescence</a>
+</td>
+<td>
+<span class="listing-date">Jun 28, 2019</span>
+</td>
+<td>
+<span class="listing-date-modified">Apr 19, 2021</span>
+</td>
+</tr>
+<tr data-index="60" data-categories="immune system,senescence,senolytics" data-listing-date-sort="1545350400000" data-listing-date-modified-sort="1619049600000" data-listing-title-sort="Impaired immune surveillance accelerates accumulation of senescent cells and aging" data-listing-filename-sort="impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.md">
+<td>
+<a href="./src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="title listing-title">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a>
+</td>
+<td>
+<span class="listing-date">Dec 21, 2018</span>
+</td>
+<td>
+<span class="listing-date-modified">Apr 22, 2021</span>
+</td>
+</tr>
+<tr data-index="61" data-listing-date-sort="844128000000" data-listing-date-modified-sort="1619395200000" data-listing-title-sort="Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer's disease neurodegeneration" data-listing-filename-sort="inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="title listing-title">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
+</td>
+<td>
+<span class="listing-date">Oct 1, 1996</span>
+</td>
+<td>
+<span class="listing-date-modified">Apr 26, 2021</span>
+</td>
+</tr>
+<tr data-index="62" data-categories="brain injury,senescence,DNA damage" data-listing-date-sort="1620432000000" data-listing-date-modified-sort="1620950400000" data-listing-title-sort="Early onset senescence and cognitive impairment in a murine model of repeated mTBI" data-listing-filename-sort="early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.md">
+<td>
+<a href="./src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="title listing-title">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a>
+</td>
+<td>
+<span class="listing-date">May 8, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">May 14, 2021</span>
+</td>
+</tr>
+<tr data-index="63" data-categories="immune system,immunosenescence,senescence,rapamycin" data-listing-date-sort="1620777600000" data-listing-date-modified-sort="1621382400000" data-listing-title-sort="An aged immune system drives senescence and ageing of solid organs" data-listing-filename-sort="aged_immune_system_drives_senescence_ageing_of_solid_organs.md">
+<td>
+<a href="./src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="title listing-title">An aged immune system drives senescence and ageing of solid organs</a>
+</td>
+<td>
+<span class="listing-date">May 12, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">May 19, 2021</span>
+</td>
+</tr>
+<tr data-index="64" data-categories="senescence,PSEN1" data-listing-date-sort="1405382400000" data-listing-date-modified-sort="1622764800000" data-listing-title-sort="Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub>" data-listing-filename-sort="inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.md">
+<td>
+<a href="./src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="title listing-title">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a>
+</td>
+<td>
+<span class="listing-date">Jul 15, 2014</span>
+</td>
+<td>
+<span class="listing-date-modified">Jun 4, 2021</span>
+</td>
+</tr>
+<tr data-index="65" data-categories="SASP,senescence,lncRNA" data-listing-date-sort="1619568000000" data-listing-date-modified-sort="1623974400000" data-listing-title-sort="The long non-coding RNA *MIR31HG* regulates the senescence associated secretory phenotype" data-listing-filename-sort="lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.md">
+<td>
+<a href="./src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="title listing-title">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a>
+</td>
+<td>
+<span class="listing-date">Apr 28, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Jun 18, 2021</span>
+</td>
+</tr>
+<tr data-index="66" data-listing-date-sort="1618185600000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes" data-listing-filename-sort="genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="title listing-title">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a>
+</td>
+<td>
+<span class="listing-date">Apr 12, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="67" data-listing-date-sort="1620345600000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration" data-listing-filename-sort="evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="title listing-title">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a>
+</td>
+<td>
+<span class="listing-date">May 7, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="68" data-listing-date-sort="1606694400000" data-listing-date-modified-sort="1624579200000" data-listing-title-sort="Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition" data-listing-filename-sort="neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="title listing-title">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a>
+</td>
+<td>
+<span class="listing-date">Nov 30, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Jun 25, 2021</span>
+</td>
+</tr>
+<tr data-index="69" data-listing-date-sort="1614556800000" data-listing-date-modified-sort="1625184000000" data-listing-title-sort="Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain" data-listing-filename-sort="dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="title listing-title">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a>
+</td>
+<td>
+<span class="listing-date">Mar 1, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Jul 2, 2021</span>
+</td>
+</tr>
+<tr data-index="70" data-listing-date-sort="1604275200000" data-listing-date-modified-sort="NaN" data-listing-title-sort="The Genetic Landscape of Alzheimer's disease" data-listing-filename-sort="The_Genetic_Landscape_of_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/The_Genetic_Landscape_of_AD.html" class="title listing-title">The Genetic Landscape of Alzheimer’s disease</a>
+</td>
+<td>
+<span class="listing-date">Nov 2, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="71" data-listing-date-sort="1604275200000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Genetics of Alzheimer’s disease: where we are, and where we are going" data-listing-filename-sort="Genetics_of_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Genetics_of_AD.html" class="title listing-title">Genetics of Alzheimer’s disease: where we are, and where we are going</a>
+</td>
+<td>
+<span class="listing-date">Nov 2, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="72" data-listing-date-sort="1604966400000" data-listing-date-modified-sort="NaN" data-listing-title-sort="When does Alzheimer's disease really start? The role of biomarkers" data-listing-filename-sort="When_does_AD_really_start.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="title listing-title">When does Alzheimer’s disease really start? The role of biomarkers</a>
+</td>
+<td>
+<span class="listing-date">Nov 10, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="73" data-listing-date-sort="1607385600000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Genetic meta-analysis of diagnosed Alzheimer’s disease" data-listing-filename-sort="Genetic_meta-analysis_of_diagnosed_AD.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="title listing-title">Genetic meta-analysis of diagnosed Alzheimer’s disease</a>
+</td>
+<td>
+<span class="listing-date">Dec 8, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="74" data-listing-date-sort="1613088000000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation" data-listing-filename-sort="AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="title listing-title">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a>
+</td>
+<td>
+<span class="listing-date">Feb 12, 2021</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
+</td>
+</tr>
+<tr data-index="75" data-listing-date-sort="1529020800000" data-listing-date-modified-sort="1618963200000" data-listing-title-sort="Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model" data-listing-filename-sort="big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="title listing-title">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a>
+</td>
+<td>
+<span class="listing-date">Jun 15, 2018</span>
+</td>
+<td>
+<span class="listing-date-modified">Apr 21, 2021</span>
+</td>
+</tr>
+<tr data-index="76" data-listing-date-sort="1608422400000" data-listing-date-modified-sort="NaN" data-listing-title-sort="Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis" data-listing-filename-sort="Senescence_as_an_Amyloid_Cascade.md">
+<td>
+<a href="./src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="title listing-title">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a>
+</td>
+<td>
+<span class="listing-date">Dec 20, 2020</span>
+</td>
+<td>
+<span class="listing-date-modified">Invalid Date</span>
 </td>
 </tr>
 </tbody>
@@ -1587,9 +1938,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1654,6 +2019,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

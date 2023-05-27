@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.361">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -72,11 +73,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Neuroscience</li><li class="breadcrumb-item"><a href="../../../../src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html">Neurodegeneration</a></li><li class="breadcrumb-item"><a href="../../../../src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html">Alzheimer’s Disease</a></li><li class="breadcrumb-item"><a href="../../../../src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -84,47 +90,51 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../../../">Journals</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../contents.html" class="sidebar-item-text sidebar-link">Contents</a>
+  <a href="../../../../contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Bioinformatics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Bioinformatics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Databases</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Databases</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="sidebar-item-text sidebar-link">Evaluation of relational and NoSQL database architectures to manage genomic annotations</a>
+  <a href="../../../../src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluation of relational and NoSQL database architectures to manage genomic annotations</span></a>
   </div>
 </li>
       </ul>
@@ -133,38 +143,44 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Epigenetics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Epigenetics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">General</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="sidebar-item-text sidebar-link">Interplay between the cancer genome and epigenome</a>
+  <a href="../../../../src/epigenetics/interplay_between_cancer_genome_epigenome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interplay between the cancer genome and epigenome</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">The diverse roles of DNA methylation in mammalian development and disease</a>
+  <a href="../../../../src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The diverse roles of DNA methylation in mammalian development and disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">DNA methylation loss in late-replicating domains is linked to mitotic cell division</a>
+  <a href="../../../../src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA methylation loss in late-replicating domains is linked to mitotic cell division</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="sidebar-item-text sidebar-link">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</a>
+  <a href="../../../../src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cell division drives DNA methylation loss in late-replicating domains in primary human cells</span></a>
   </div>
 </li>
       </ul>
@@ -173,45 +189,53 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Cell-type vs cell-state</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Cell-type vs cell-state</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</a>
+  <a href="../../../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SEACells infers transcriptional and epigenomic cellular states from single-cell genomics data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link">Transition states and cell fate decisions in epigenetic landscapes</a>
+  <a href="../../../../src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transition states and cell fate decisions in epigenetic landscapes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="sidebar-item-text sidebar-link">Defining cell types and states with single-cell genomics</a>
+  <a href="../../../../src/cell_type_state/defining_cell_type_states_single_cell_genomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Defining cell types and states with single-cell genomics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="sidebar-item-text sidebar-link">The evolving concept of cell identity in the single cell era</a>
+  <a href="../../../../src/cell_type_state/the_evolving_concept_of_cell_identity_in_single_cell_era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The evolving concept of cell identity in the single cell era</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="sidebar-item-text sidebar-link">What is a cell type and how to define it</a>
+  <a href="../../../../src/cell_type_state/what_is_a_cell_type_how_to_define_it.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is a cell type and how to define it</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="sidebar-item-text sidebar-link">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</a>
+  <a href="../../../../src/cell_type_state/epigenetic_regulation_cell_fate_reprogramming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epigenetic regulation of cell fate reprogramming in aging and disease: A predictive computational model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/control_of_cell_state_transitions.html" class="sidebar-item-text sidebar-link">Control of cell state transitions</a>
+  <a href="../../../../src/cell_type_state/control_of_cell_state_transitions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Control of cell state transitions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,105 +245,127 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a>
+  <a href="../../../../src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">RNA velocity</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">RNA velocity</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="sidebar-item-text sidebar-link">RNA velocity of single cells</a>
+  <a href="../../../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA velocity of single cells</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="sidebar-item-text sidebar-link">Generalizing RNA velocity to transient cell states through dynamical modeling</a>
+  <a href="../../../../src/cell_type_state/rna_velocity/generalizing_rna_velocity_to_transient_cell_states.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generalizing RNA velocity to transient cell states through dynamical modeling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="sidebar-item-text sidebar-link">RNA velocity—current challenges and future perspectives</a>
+  <a href="../../../../src/cell_type_state/rna_velocity/rna_velocity_current_challenges_future_perspectives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA velocity—current challenges and future perspectives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="sidebar-item-text sidebar-link">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</a>
+  <a href="../../../../src/cell_type_state/rna_velocity/multiomic_single_cell_velocity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multi-omic single-cell velocity models epigenome–transcriptome interactions and improves cell fate prediction</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Lineage tracing</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Lineage tracing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="sidebar-item-text sidebar-link">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</a>
+  <a href="../../../../src/cell_type_state/lineage_tracing/defining_ancestry_heritability_plasticity_cell_phenotypes_evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Defining ancestry, heritability and plasticity of cellular phenotypes in somatic evolution</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="sidebar-item-text sidebar-link">Lineage tracing in human tissues</a>
+  <a href="../../../../src/cell_type_state/lineage_tracing/lineage_tracing_human_tissues.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lineage tracing in human tissues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="sidebar-item-text sidebar-link">Barcode-free prediction of cell lineages from scRNA-seq datasets</a>
+  <a href="../../../../src/cell_type_state/lineage_tracing/gemli_barcode_free_lineage_prediction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Barcode-free prediction of cell lineages from scRNA-seq datasets</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text">Cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="sidebar-item-text sidebar-link">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</a>
+  <a href="../../../../src/cell_type_state/cancer/integrative_model_of_cellular_states_plasticity_genetics_glioblastoma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">Fallopian tube</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text">Fallopian tube</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="sidebar-item-text sidebar-link">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</a>
+  <a href="../../../../src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">State space</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text">State space</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</a>
+  <a href="../../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</span></a>
   </div>
 </li>
       </ul>
@@ -328,43 +374,49 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">Transcriptomics</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false">
+ <span class="menu-text">Transcriptomics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">Single-cell RNA-seq</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false">
+ <span class="menu-text">Single-cell RNA-seq</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="sidebar-item-text sidebar-link">The triumphs and limitations of computational methods for scRNA-seq</a>
+  <a href="../../../../src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The triumphs and limitations of computational methods for scRNA-seq</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">Single-nucleus RNA-seq</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false">
+ <span class="menu-text">Single-nucleus RNA-seq</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</a>
+  <a href="../../../../src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Systematic comparison of single-cell and single-nucleus RNA-sequencing methods</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="sidebar-item-text sidebar-link">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</a>
+  <a href="../../../../src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-Nucleus RNA-Seq Is Not Suitable for Detection of Microglial Activation Genes in Humans</span></a>
   </div>
 </li>
       </ul>
@@ -373,21 +425,24 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">Cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+ <span class="menu-text">Cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">Non-genetic determinants of malignant clonal fitness at single-cell resolution</a>
+  <a href="../../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Non-genetic determinants of malignant clonal fitness at single-cell resolution</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">Cancer stem cells</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false">
+ <span class="menu-text">Cancer stem cells</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -401,15 +456,17 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">Ovarian cancer</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+ <span class="menu-text">Ovarian cancer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</a>
+  <a href="../../../../src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular heterogeneity of human fallopian tubes in normal and hydrosalpinx disease states identified using scRNA-seq</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -419,22 +476,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="sidebar-item-text sidebar-link">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</a>
+  <a href="../../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="sidebar-item-text sidebar-link">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</a>
+  <a href="../../../../src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="sidebar-item-text sidebar-link">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</a>
+  <a href="../../../../src/cancer/ovarian_cancer/developing_ovarian_cancer_stem_cell_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Developing ovarian cancer stem cell models: laying the pipeline from discovery to clinical intervention</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</a>
+  <a href="../../../../src/cancer/ovarian_cancer/stem_like_epithelial_cells_concentrated_in_distal_end.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stem-Like Epithelial Cells Are Concentrated in the Distal End of the Fallopian Tube: A Site for Injury and Serous Cancer Initiation</span></a>
   </div>
 </li>
       </ul>
@@ -443,161 +504,189 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">Ageing</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false">
+ <span class="menu-text">Ageing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</a>
+  <a href="../../../../src/ageing/counteracting_age_related_VEGF_insufficiecy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Counteracting age-related VEGF signaling insufficiency promotes healthy aging and extends life span</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">Cellular Senescence</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false">
+ <span class="menu-text">Cellular Senescence</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</a>
+  <a href="../../../../src/senescence/Senescence-Associated_Secretory_Phenotypes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senescence-Associated Secretory Phenotypes Reveal Cell-Nonautonomous Functions of Oncogenic RAS and the p53 Tumor Suppressor</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Four_faces_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Four faces of cellular senescence</a>
+  <a href="../../../../src/senescence/Four_faces_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Four faces of cellular senescence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="sidebar-item-text sidebar-link">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></a>
+  <a href="../../../../src/senescence/inhibition_of_SIPS_in_PSEN1_mutated_cells_with_water_soluble_coenzyme_q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inhibition of stress induced premature senescence in presenilin-1 mutated cells with water soluble Coenzyme Q<sub>10</sub></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="sidebar-item-text sidebar-link">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</a>
+  <a href="../../../../src/senescence/epigenetic_basis_of_senescence_implications_in_aging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epigenetic Basis of Cellular Senescence and Its Implications in Aging</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="sidebar-item-text sidebar-link">Cellular senescence: Immunosurveillance and future immunotherapy</a>
+  <a href="../../../../src/senescence/Cellular_senescence_Immunosurveillance_and_future_immunotherapy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence: Immunosurveillance and future immunotherapy</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/transcriptome_signature_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">Transcriptome signature of cellular senescence</a>
+  <a href="../../../../src/senescence/transcriptome_signature_of_cellular_senescence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transcriptome signature of cellular senescence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="sidebar-item-text sidebar-link">Cellular senescence: Defining a path forward</a>
+  <a href="../../../../src/senescence/Cellular_senescence_Defining_a_path_forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence: Defining a path forward</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="sidebar-item-text sidebar-link">Impaired immune surveillance accelerates accumulation of senescent cells and aging</a>
+  <a href="../../../../src/senescence/impaired_immune_surveillance_accelerates_accumulation_of_senescent_cells_and_aging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Impaired immune surveillance accelerates accumulation of senescent cells and aging</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="sidebar-item-text sidebar-link">Astrocyte senescence promotes glutamate toxicity in cortical neurons</a>
+  <a href="../../../../src/senescence/Astrocyte_senescence_promotes_glutamate_toxicity_in_cortical_neurons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Astrocyte senescence promotes glutamate toxicity in cortical neurons</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="sidebar-item-text sidebar-link">A multidimensional systems biology analysis of cellular senescence in aging and disease</a>
+  <a href="../../../../src/senescence/multidim_systems_bio_analysis_senescence_aging_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A multidimensional systems biology analysis of cellular senescence in aging and disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="sidebar-item-text sidebar-link">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</a>
+  <a href="../../../../src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-Cell Transcriptome Analysis Reveals Six Subpopulations Reflecting Distinct Cellular Fates in Senescent Mouse Embryonic Fibroblasts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="sidebar-item-text sidebar-link">Cellular senescence and failure of myelin repair in MS</a>
+  <a href="../../../../src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence and failure of myelin repair in MS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="sidebar-item-text sidebar-link">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</a>
+  <a href="../../../../src/senescence/lncRNA_MIR31HG_regulates_the_senescence_associated_secretory_phenotype.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The long non-coding RNA <em>MIR31HG</em> regulates the senescence associated secretory phenotype</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="sidebar-item-text sidebar-link">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</a>
+  <a href="../../../../src/senescence/early_onset_senescence_cognitive_impairment_in_murine_model_of_repeated_mTBI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Early onset senescence and cognitive impairment in a murine model of repeated mTBI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="sidebar-item-text sidebar-link">An aged immune system drives senescence and ageing of solid organs</a>
+  <a href="../../../../src/senescence/aged_immune_system_drives_senescence_ageing_of_solid_organs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An aged immune system drives senescence and ageing of solid organs</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="true">Neuroscience</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="true">
+ <span class="menu-text">Neuroscience</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="true">Neurodegeneration</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="true">
+ <span class="menu-text">Neurodegeneration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">Cellular Senescence in Neurodegenerative Diseases</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cellular_Senescence_in_Neurodegenerative_Diseases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular Senescence in Neurodegenerative Diseases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="sidebar-item-text sidebar-link">Ageing as a risk factor for neurodegenerative disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ageing as a risk factor for neurodegenerative disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="sidebar-item-text sidebar-link">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/genetically_determined_susceptibility_neurodegeneration_expression_inflammatory_genes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genetically determined susceptibility to neurodegeneration is associated with expression of inflammatory genes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="sidebar-item-text sidebar-link">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/evidence_of_the_cellular_senescence_stress_response_in_mitotically_active_brain_cell_cancer_neurodegeneration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evidence of the Cellular Senescence Stress Response in Mitotically Active Brain Cells — Implications for Cancer and Neurodegeneration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="sidebar-item-text sidebar-link">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/neuroblast_senescence_aged_brain_augments_nk_cell_cytotoxicity_leading_to_impaired_neurogenesis_cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Neuroblast senescence in the aged brain augments natural killer cell cytotoxicity leading to impaired neurogenesis and cognition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="sidebar-item-text sidebar-link">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/dystrophic_microglia_associated_with_neurodegenerative_disease_not_healthy_ageing_in_brain.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dystrophic microglia are associated with neurodegenerative disease and not healthy aging in the human brain</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="true">Alzheimer’s Disease</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="true">
+ <span class="menu-text">Alzheimer’s Disease</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/inflammation_a_beta_deposition_nft_tangle_formation_correlates_of_ad_neurodegeneration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inflammation, A beta deposition, and neurofibrillary tangle formation as correlates of Alzheimer’s disease neurodegeneration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -612,90 +701,107 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="sidebar-item-text sidebar-link">When does Alzheimer’s disease really start? The role of biomarkers</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/When_does_AD_really_start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">When does Alzheimer’s disease really start? The role of biomarkers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="sidebar-item-text sidebar-link">Genetic meta-analysis of diagnosed Alzheimer’s disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genetic meta-analysis of diagnosed Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="sidebar-item-text sidebar-link">The Cellular Phase of Alzheimer’s Disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/The_Cellular_Phase_of_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Cellular Phase of Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="sidebar-item-text sidebar-link">Single-cell transcriptomic analysis of Alzheimer’s disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Single-cell transcriptomic analysis of Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="sidebar-item-text sidebar-link">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alzheimer’s Patient Microglia Exhibit Enhanced Aging and Unique Transcriptional Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="sidebar-item-text sidebar-link">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Dysregulation_of_the_epigenetic_landscape_of_normal_aging_in_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dysregulation of the epigenetic landscape of normal aging in Alzheimer’s disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="sidebar-item-text sidebar-link">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Loss-of-function_of_p53_isoform_accelerates_brain_aging_in_zebrafish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loss-of-function of p53 isoform Δ113p53 accelerates brain ageing in zebrafish</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="sidebar-item-text sidebar-link">Telomere Attrition in Neurodegenerative Disorders</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Telomere_Attrition_in_Neurodegenerative_Disorders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Telomere Attrition in Neurodegenerative Disorders</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="sidebar-item-text sidebar-link active">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="sidebar-item-text sidebar-link">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Molecular Mechanism for Age-Related Memory Loss: The Histone-Binding Protein RbAp48</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="sidebar-item-text sidebar-link">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Big Data Analysis of Genes Associated With Neuropsychiatric Disorders in an Alzheimer’s Disease Animal Model</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">Cellular senescence and AD</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false">
+ <span class="menu-text">Cellular senescence and AD</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vascular Cell Senescence Contributes to Blood–Brain Barrier Breakdown</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="sidebar-item-text sidebar-link">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/cellular_senescence_iron_dyshomeostasis_in_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular Senescence and Iron Dyshomeostasis in Alzheimer’s Disease</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="sidebar-item-text sidebar-link">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cellular senescence and Alzheimer disease: the egg and the chicken scenario</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="sidebar-item-text sidebar-link">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senescence as an Amyloid Cascade: The Amyloid Senescence Hypothesis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="sidebar-item-text sidebar-link">Astrocyte Senescence and Alzheimer’s Disease: A Review</a>
+  <a href="../../../../src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Astrocyte Senescence and Alzheimer’s Disease: A Review</span></a>
   </div>
 </li>
       </ul>
@@ -708,12 +814,14 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">Categories</a>
+  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Categories</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -729,7 +837,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</h1>
+<h1 class="title">Cerebrovascular Senescence Is Associated With Tau Pathology in Alzheimer’s Disease</h1>
 </div>
 
 
@@ -922,9 +1030,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -989,6 +1111,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
