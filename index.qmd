@@ -5,8 +5,15 @@ listing:
     - "src/"
   type: table
   categories: true
-  fields: [title, date]
-  sort: "date desc"
+  fields: [title, date, date-modified]
+  field-types:
+    date: date
+    date-modified: date
+  field-display-names:
+    date: "Publication date"
+    date-modified: "Date added"
+  sort: "date-modified asc"
+  sort-ui: true
 ---
 
 # Categories {.unnumbered}

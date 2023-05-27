@@ -41,6 +41,8 @@
 
 - [Cell Fate Decision as High-Dimensional Critical State Transition](src/cell_type_state/cell_fate_transition_high_dim_critical_state_transition.md)
 
+- [Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells](src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.md)
+
 - [Transcriptome-wide noise controls lineage choice in mammalian progenitor cells](src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.md)
 
 #### RNA velocity
