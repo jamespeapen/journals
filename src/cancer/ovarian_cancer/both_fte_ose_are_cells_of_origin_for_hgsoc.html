@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2016-10-19">
+<meta name="dcterms.date" content="2019-11-26">
 
-<title>Journals - DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</title>
+<title>Journals - Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" rel="next">
-<link href="../../../src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" rel="prev">
+<link href="../../../src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" rel="next">
+<link href="../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -80,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html">Cell-type vs cell-state</a></li><li class="breadcrumb-item"><a href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html">State space</a></li><li class="breadcrumb-item"><a href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html">Cancer</a></li><li class="breadcrumb-item"><a href="../../../src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html">Ovarian cancer</a></li><li class="breadcrumb-item"><a href="../../../src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html">Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -191,13 +189,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">Cell-type vs cell-state</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">
@@ -357,16 +355,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false">
  <span class="menu-text">State space</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</span></a>
   </div>
 </li>
@@ -427,13 +425,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true">
  <span class="menu-text">Cancer</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.html" class="sidebar-item-text sidebar-link">
@@ -458,13 +456,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="true">
  <span class="menu-text">Ovarian cancer</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.html" class="sidebar-item-text sidebar-link">
@@ -484,7 +482,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma</span></a>
   </div>
 </li>
@@ -839,10 +837,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks</h1>
+<h1 class="title">Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">state-space</div>
-    <div class="quarto-category">gene regulatory networks</div>
+    <div class="quarto-category">ovarian cancer</div>
+    <div class="quarto-category">hgsoc</div>
+    <div class="quarto-category">RNA-seq</div>
+    <div class="quarto-category">mouse model</div>
   </div>
   </div>
 
@@ -854,14 +854,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 19, 2016</p>
+      <p class="date">November 26, 2019</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 9, 2022</p>
+      <p class="date-modified">July 10, 2023</p>
     </div>
   </div>
     
@@ -869,7 +869,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/https://doi.org/10.1371/journal.pcbi.1005146">https://doi.org/10.1371/journal.pcbi.1005146</a>
+        <a href="https://doi.org/10.1038/s41467-019-13116-2">10.1038/s41467-019-13116-2</a>
       </p>
     </div>
   </div>
@@ -878,42 +878,12 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><a href="https://www.nature.com/articles/s41467-019-13116-2">Nature Communications</a></p>
 <blockquote class="blockquote">
-<p>Wang D, He F, Maslov S, Gerstein M. DREISS: Using State-Space Models to Infer the Dynamics of Gene Expression Driven by External and Internal Regulatory Networks. PLoS Comput Biol. 2016 Oct 19;12(10):e1005146. doi: 10.1371/journal.pcbi.1005146. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/27760135/">27760135</a>; PMCID: PMC5070849.</p>
+<p>Zhang S, Dolgalev I, Zhang T, Ran H, Levine DA, Neel BG. Both fallopian tube and ovarian surface epithelium are cells-of-origin for high-grade serous ovarian carcinoma. Nat Commun. 2019 Nov 26;10(1):5367. doi: 10.1038/s41467-019-13116-2. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/31772167">31772167</a>; PMCID: PMC6879755.</p>
 </blockquote>
-<p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005146">PLoS Computational Biology</a></p>
-<p>This methods paper uses state-space models to study gene expression patterns and their regulatory networks. This model system decomposes time-series expression data into components driven by the external regulatory network and the internal regulatory network.</p>
-<p>A state-space model is generally of the form</p>
-<p><span id="eq-general"><span class="math display">\[ \dot{X} = AX + BU \tag{1}\]</span></span></p>
-<p>where</p>
-<ul>
-<li><span class="math inline">\(\dot{X}\)</span> is the differential state vector and <span class="math inline">\(X\)</span> is the state vector,</li>
-<li><span class="math inline">\(U\)</span> is the input vector,</li>
-<li><span class="math inline">\(A\)</span> is the system matrix,</li>
-<li><span class="math inline">\(B\)</span> is the input matrix.</li>
-</ul>
-<p>In a biological context given that</p>
-<ul>
-<li><span class="math inline">\(\mathfrak{R}\)</span> is the real number domain,</li>
-<li><span class="math inline">\(\Omega\)</span> is the internal gene set made of <span class="math inline">\(N_{1}\)</span> genes,</li>
-<li><span class="math inline">\(\Psi\)</span> is the external gene set made of <span class="math inline">\(N_{2}\)</span> genes,</li>
-<li><span class="math inline">\(X_{t} \in \mathfrak{R}^{N_{1} \times 1}\)</span>,</li>
-<li><span class="math inline">\(U_{t} \in \mathfrak{R}^{N_{2} \times 1}\)</span>,</li>
-<li><span class="math inline">\(A \in \mathfrak{R}^{N_{1} \times N_{1}}\)</span>: the causal interactions between genes in <span class="math inline">\(\Omega\)</span>, and</li>
-<li><span class="math inline">\(B \in \mathfrak{R}^{N_{1} \times N_{2}}\)</span>: the causal regulations of genes in <span class="math inline">\(\Psi\)</span> on genes in <span class="math inline">\(\Omega\)</span></li>
-</ul>
-<p>the state space model is <span id="eq-gene-regulation"><span class="math display">\[X_{t+1} = AX_{t} + BU_{t} \tag{2}\]</span></span></p>
-<p>Then since <span class="math inline">\(X_t = AX_{t-1} + BU_{t-1}\)</span>, and <span class="math inline">\(X_{t-1} = AX_{t-2} + BU_{t-2}\)</span> <a href="#eq-gene-regulation">Equation&nbsp;<span>2</span></a> becomes</p>
-<p><span id="eq-gene-regulation-t-1"><span class="math display">\[X_{t} = \underbrace{A^{t-1}X_{1}}_{X_{t}^{INT}} +
-\underbrace{\sum\nolimits_{k=1}^{t-2}A^{k}BU_{t-1-k}}_{X_{t}^{INTER}} +
-\underbrace{BU_{t-1}}_{X_{t}^{EXT}} \tag{3}\]</span></span></p>
-<p>where</p>
-<ul>
-<li><span class="math inline">\(X_t^{INT}\)</span> is the expression vector of the gene components driven only internally by genes in <span class="math inline">\(\Omega\)</span>,</li>
-<li><span class="math inline">\(X_t^{INTER}\)</span> is the expression vector of gene components in <span class="math inline">\(\Omega\)</span> driven by interactions between internal and external groups.</li>
-<li><span class="math inline">\(X_t^{EXT}\)</span> is the expression vector of gene componets driven only by the genes in <span class="math inline">\(\Psi\)</span>.</li>
-</ul>
-<p>This separates the expression data into its internal and external components.</p>
+<p>There is debate over whether the cell-of-origin for High Grade Serous Ovarian Cancer (HGSOC) is from the fallopian tube epithelium (FTE) or the ovarian surface epithelium. This study used mice and organoids to assess the tumor forming capacities of FTE and OSE that had the same tumorigenic potential. Most HGSOC transcriptomes look more like FTE and OSE, but there are around 12% of HGSOC that do look transcriptomically like OSE. There may be two subtypes depending on their cell-of-origin with OSE-derived tumors holding a worse prognosis.</p>
+<p>They found that perturbing <em>Tp53</em> and the RB family in FTE <em>Pax8+</em> cells causes STIC lesions and metastasis, which are typically PAX8+. HGSOC is also not known to express ciliated cell markers and ciliated cells were not found in the FTE organoids that became tumors suggesting that the inactivating the RB family restricts differentiation to the secretory lineage. The same perturbations in OSE also result in HGSOC. There were over 8000 differentially expressed genes between the two cancer subtypes with known FT or OSE specific genes being expressed as expected. The cell-of-origin also affected tumor response to chemotherapeutic agents. FTE-derived tumors disseminated more while the OSE-derived tumors were less frequently metastatic.</p>
 
 
 
@@ -1266,15 +1236,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../src/cell_type_state/fte/notch_wnt_regulate_stemness_differentiation_fte.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">The Notch and Wnt pathways regulate stemness and differentiation in human fallopian tube organoids</span>
+      <a href="../../../src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Clear cell and endometrioid carcinomas: are their differences attributable to distinct cells of origin?</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.html" class="pagination-link">
-        <span class="nav-page-text">The triumphs and limitations of computational methods for scRNA-seq</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html" class="pagination-link">
+        <span class="nav-page-text">Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic protein 2</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1282,4 +1253,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/src/cell_type_state/state_space/dreiss_using_state_space_model_infer_gene_exp_dynamics.md" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.md" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>

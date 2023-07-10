@@ -4,7 +4,6 @@
     "items": [
       "/src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.html",
       "/src/senescence/Senescence-Associated_Secretory_Phenotypes.html",
-      "/src/senescence/Four_faces_of_cellular_senescence.html",
       "/src/bioinformatics/databases/evaluation_of_relational_and_nosql_database_architectures_to_manage_genomic_annotations.html",
       "/src/ageing/counteracting_age_related_VEGF_insufficiecy.html",
       "/src/epigenetics/interplay_between_cancer_genome_epigenome.html",
@@ -38,7 +37,6 @@
       "/src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html",
       "/src/cell_type_state/cell_fate_transition_high_dim_critical_state_transition.html",
       "/src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html",
-      "/src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html",
       "/src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html",
       "/src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html",
       "/src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html",
@@ -49,6 +47,7 @@
       "/src/neuroscience/neurodegeneration/ad/Aging_as_a_risk_factor_for_neurodegenerative_disease.html",
       "/src/neuroscience/neurodegeneration/ad/Cerebrovascular_Senescence_Is_Associated_With_Tau_Pathology_in_AD.html",
       "/src/neuroscience/neurodegeneration/ad/Single-cell_transcriptomic_analysis_of_AD.html",
+      "/src/senescence/Four_faces_of_cellular_senescence.html",
       "/src/neuroscience/neurodegeneration/ad/Vascular_Cell_Senescence_Contributes_to_Blood–Brain_Barrier_Breakdown.html",
       "/src/neuroscience/neurodegeneration/ad/Astrocyte_Senescence_and_AD.html",
       "/src/senescence/Single-Cell_Transcriptome_Analysis_Reveals_Six_Subpopulations.html",
@@ -78,6 +77,8 @@
       "/src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html",
       "/src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html",
       "/src/neuroscience/neurodegeneration/ad/big_data_analysis_of_genes_associated_with_neuropsychiatric_disorders_in_an_AD_animal_model.html",
+      "/src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html",
+      "/src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html",
       "/src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html"
     ]
   }
