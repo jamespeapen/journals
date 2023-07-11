@@ -98,6 +98,8 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 
 ### Cancer
 
+- [Selective advantage of epigenetically disrupted cancer cells via phenotypic inertia](src/cancer/selective_advantage_cancer_cells_phenotypic_inertia.md)
+
 - [Non-genetic determinants of malignant clonal fitness at single-cell resolution](src/cancer/non_genetic_determinants_malignant_clonal_fitness_sc_resolution.md)
 
 ##### Cancer stem cells
