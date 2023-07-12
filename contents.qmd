@@ -115,6 +115,8 @@ Networks](src/cell_type_state/state_space/dreiss_using_state_space_model_infer_g
 - [A single-cell landscape of high-grade serous ovarian
   cancer](src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md)
 
+- [The Repertoire of Serous Ovarian Cancer Nongenetic Heterogeneity Revealed by Single-Cell Sequencing of Normal Fallopian Tube Epithelial Cells](src/cancer/ovarian_cancer/repertoire_of_hgsoc_non_genetic_heterogeneity_fte.md)
+
 - [Identifying an ovarian cancer cell hierarchy regulated by bone morphogenetic
   protein 2](src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.md)
 

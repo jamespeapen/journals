@@ -82,6 +82,7 @@ book:
         chapters:
           - src/cancer/ovarian_cancer/cellular_heterogeneity_ft_scRNA_seq.md
           - src/cancer/ovarian_cancer/single_cell_landscape_hgsoc.md
+          - src/cancer/ovarian_cancer/repertoire_of_hgsoc_non_genetic_heterogeneity_fte.md
           - src/cancer/ovarian_cancer/clear_cell_endometrioid_carcinomas_differences_attributable_to_distinct_cells_of_origin.md
           - src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.md
           - src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.md
