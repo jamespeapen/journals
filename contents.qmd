@@ -2,6 +2,9 @@
 
 ### Bioinformatics
 
+- [MATCHER: manifold alignment reveals correspondence between single cell
+  transcriptome and epigenome dynamics](src/bioinformatics/matcher_manifold_alignment_correspondence_sc_rna_epi.md)
+
 #### Databases
 
 - [Evaluation of relational and NoSQL database architectures to manage genomic
