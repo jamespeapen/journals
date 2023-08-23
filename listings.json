@@ -38,7 +38,10 @@
       "/src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html",
       "/src/cancer/ovarian_cancer/identifying_ovca_cell_hierarchy_regulated_by_bmp2.html",
       "/src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html",
+      "/src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html",
       "/src/cancer/selective_advantage_cancer_cells_phenotypic_inertia.html",
+      "/src/cancer/ovarian_cancer/repertoire_of_hgsoc_non_genetic_heterogeneity_fte.html",
+      "/src/bioinformatics/matcher_manifold_alignment_correspondence_sc_rna_epi.html",
       "/src/transcriptomics/snRNA/snRNA_eq_Is_Not_Suitable_for_Detection_of_Microglial_Activation_Genes_in_Humans.html",
       "/src/senescence/Cellular_senescence_and_failure_of_myelin_repair_in_MS.html",
       "/src/neuroscience/neurodegeneration/ad/Cellular_senescence_and_AD.html",
@@ -79,8 +82,6 @@
       "/src/neuroscience/neurodegeneration/ad/Genetic_meta-analysis_of_diagnosed_AD.html",
       "/src/neuroscience/neurodegeneration/ad/AD_Patient_Microglia_Exhibit_Enhanced_Aging_and_Unique_Transcriptional_Activation.html",
       "/src/neuroscience/neurodegeneration/ad/molecular_mechanism_for_age_related_memory_loss_rbap48.html",
-      "/src/cancer/ovarian_cancer/both_fte_ose_are_cells_of_origin_for_hgsoc.html",
-      "/src/cancer/ovarian_cancer/repertoire_of_hgsoc_non_genetic_heterogeneity_fte.html",
       "/src/neuroscience/neurodegeneration/ad/Senescence_as_an_Amyloid_Cascade.html"
     ]
   }
