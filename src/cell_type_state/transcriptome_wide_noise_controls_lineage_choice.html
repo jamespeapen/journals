@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -68,21 +75,47 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar floating slimcontent">
-
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html">Cell-type vs cell-state</a></li><li class="breadcrumb-item"><a href="../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/cell_type_state/precise_identification_cell_states_altered_in_disease_using_healthy_sc_references.html">Cell-type vs cell-state</a></li><li class="breadcrumb-item"><a href="../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -92,12 +125,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Journals</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/jamespeapen/journals/" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/jamespeapen/journals/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -204,6 +237,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/cell_type_state/precise_identification_cell_states_altered_in_disease_using_healthy_sc_references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Precise identification of cell states altered in disease using healthy single-cell references</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.html" class="sidebar-item-text sidebar-link">
@@ -846,7 +885,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
@@ -854,7 +893,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/cell_type_state/precise_identification_cell_states_altered_in_disease_using_healthy_sc_references.html">Cell-type vs cell-state</a></li><li class="breadcrumb-item"><a href="../../src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.html">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Transcriptome-wide noise controls lineage choice in mammalian progenitor cells</h1>
   <div class="quarto-categories">
@@ -894,19 +933,21 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p><a href="http://www.nature.com/articles/nature06965">Nature</a></p>
 <blockquote class="blockquote">
 <p>Chang HH, Hemberg M, Barahona M, Ingber DE, Huang S. Transcriptome-wide noise controls lineage choice in mammalian progenitor cells. Nature. 2008 May 22;453(7194):544-7. doi: 10.1038/nature06965. PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/18497826">18497826</a>; PMCID: PMC5546414.</p>
 </blockquote>
-<div class="page-columns page-full"><p> This study examined the transcriptional heterogeneity in a mouse haematopoietic cell progenitor cell line that expressed the Sca-1 stem cell marker across a 1000-fold range. They separated the cells into three groups based on Sca-1 expression levels as Sca-1<span class="math inline">\(^{high/mid/low}\)</span>. All three groups were cultured separately and their Sca-1 expression levels measured over 9 days. All groups, despite starting with different initial expression levels, reverted back to the distribution found in the parental group of mixed cells.</p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig2_HTML.jpg" class="img-fluid"></span></div></div>
-<div class="page-columns page-full"><p>These results could simplistically be modelled using an <strong>Ornstein-Uhlenbeck process</strong>  that models mean-reverting processes, but it did not explain the long left tail found in the expression data. They extended the Ornstein-Uhlenbeck model to include the transitions between the cellular subpopulations with a Gaussian mixture model made of two states. However, this only accounted for a small part of the process restoring heterogeneity, while the transitions between the populations had a more important role, demonstrating that the heterogeneity is not just mean-reverting noise around an attractor, but</p><div class="no-row-height column-margin column-container"><span class="">A model describing processes that tend towards the mean over time</span></div></div>
+<div class="page-columns page-full"><p> This study examined the transcriptional heterogeneity in a mouse haematopoietic cell progenitor cell line that expressed the Sca-1 stem cell marker across a 1000-fold range. They separated the cells into three groups based on Sca-1 expression levels as Sca-1<span class="math inline">\(^{high/mid/low}\)</span>. All three groups were cultured separately and their Sca-1 expression levels measured over 9 days. All groups, despite starting with different initial expression levels, reverted back to the distribution found in the parental group of mixed cells.</p><div class="no-row-height column-margin column-container"><span class="margin-aside"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig2_HTML.jpg" class="img-fluid"></span></div></div>
+<div class="page-columns page-full"><p>These results could simplistically be modelled using an <strong>Ornstein-Uhlenbeck process</strong>  that models mean-reverting processes, but it did not explain the long left tail found in the expression data. They extended the Ornstein-Uhlenbeck model to include the transitions between the cellular subpopulations with a Gaussian mixture model made of two states. However, this only accounted for a small part of the process restoring heterogeneity, while the transitions between the populations had a more important role, demonstrating that the heterogeneity is not just mean-reverting noise around an attractor, but</p><div class="no-row-height column-margin column-container"><span class="margin-aside">A model describing processes that tend towards the mean over time</span></div></div>
 <blockquote class="blockquote">
 <p>the result of a process involving stochastic state transitions in a system exhibiting multiple stable states.</p>
 </blockquote>
 <p>Clonal heterogeneity in the cells correlated with the heterogeneity in their differentiation potentials as the Sca-1<span class="math inline">\(^{low}\)</span> population had the highest commitment and differentiation rate to the erythroid lineage and Sca-1<span class="math inline">\(^{high}\)</span> had the lowest rates. Despise the faster commitment, the Sca-1<span class="math inline">\(^{low}\)</span> cells were still undifferentiated, expressing the c-kit stem cell marker, and maintained their ability to recreate the Sca-1 expression distribution of the parental population. They were transcriptionally more similar to the differentiated erythroid cells than the Sca-1<span class="math inline">\(^{high}\)</span> cells were. These differences in erythroid differentiation rates were lost when the cells were stimulated to at days 7, 14, and 21 h. Despite all three populations converging on a similar Sca-1 expression distribution, there was still variation in their differentiation rates even past 14 days which meant the Sca-1 heterogeneity is only one dimension controlling differentiation potential.</p>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class=""><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig3_HTML.jpg" class="img-fluid"></span></div></div>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature06965/MediaObjects/41586_2008_Article_BFnature06965_Fig3_HTML.jpg" class="img-fluid"></span></div></div>
 <p>Other dimensions include the expression of other fate-determining factors like the transcription factors Gata1 and PU.1, which are mutually repressive. The Sca-1<span class="math inline">\(^{low}\)</span> group with faster erythroid differentiation had more <em>Gata1</em> mRNA and the Sca-1<span class="math inline">\(^{high}\)</span> group had high expression of <em>PU.1</em>. All three groups were transcriptionally significantly different, but the difference decreased over time, not only for Sca-1, but over their global gene expression profiles. Such heterogeneity</p>
 <blockquote class="blockquote">
 <p>primes the cells for different lineage choices.</p>
@@ -961,6 +1002,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -1029,13 +1097,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1114,10 +1184,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1127,8 +1214,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1140,7 +1236,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1184,6 +1403,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1209,6 +1429,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1270,12 +1516,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html" class="pagination-link">
+      <a href="../../src/cell_type_state/dynamic_heterogeneity_dna_meth_escs.html" class="pagination-link" aria-label="Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dynamic Heterogeneity and DNA Methylation in Embryonic Stem Cells</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="pagination-link">
+      <a href="../../src/cell_type_state/rna_velocity/rna_velocity_single_cells.html" class="pagination-link" aria-label="RNA velocity of single cells">
         <span class="nav-page-text">RNA velocity of single cells</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1284,4 +1530,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jamespeapen/journals/blob/main/src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.md" class="toc-action">View source</a></p></div></div></div></div></footer></body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jamespeapen/journals/blob/main/src/cell_type_state/transcriptome_wide_noise_controls_lineage_choice.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>
