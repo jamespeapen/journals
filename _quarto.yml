@@ -33,6 +33,7 @@ book:
           - src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md
     - part: "Cell-type vs cell-state"
       chapters:
+        - src/cell_type_state/precise_identification_cell_states_altered_in_disease_using_healthy_sc_references.md
         - src/cell_type_state/seacells_infers_transcriptional_epigenomic_states.md
         - src/cell_type_state/transition_states_and_cell_fate_decisions_in_epigenetic_landscapes.md
         - src/cell_type_state/defining_cell_type_states_single_cell_genomics.md
