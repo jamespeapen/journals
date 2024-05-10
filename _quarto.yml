@@ -70,6 +70,7 @@ book:
       - part: "Single-cell RNA-seq"
         chapters:
         - src/transcriptomics/scRNA/triumphs_limitations_computational_methods_scRNAseq.md
+        - src/transcriptomics/scRNA/separating_measurement_expression_models_clarifies_confusion_scRNAseq_analysis.md
       - part: "Single-nucleus RNA-seq"
         chapters:
           - src/transcriptomics/snRNA/Systematic_comparison_of_scRNA_and_snRNA-sequencing_methods.md
