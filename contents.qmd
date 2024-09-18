@@ -24,6 +24,9 @@
 
 ### Cell type vs cell state
 
+- [Quantifying cell-state densities in single-cell phenotypic landscapes using
+Mellon](src/cell_type_state/quantifying_cell_state_densities_mellon.md)
+
 - [Precise identification of cell states altered in disease using healthy single-cell
   references](src/cell_type_state/precise_identification_cell_states_altered_in_disease_using_healthy_sc_references.md)
 
