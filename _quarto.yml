@@ -31,6 +31,9 @@ book:
           - src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md
           - src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md
           - src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md
+      - part: "Chromatin organization"
+        chapters:
+          - src/epigenetics/rna_promotes_formation_spatial_compartments_in_nucleus.md
     - part: "Cell-type vs cell-state"
       chapters:
         - src/cell_type_state/quantifying_cell_state_densities_mellon.md
