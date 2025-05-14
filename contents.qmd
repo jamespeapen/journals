@@ -21,11 +21,17 @@
   disease](./src/epigenetics/diverse_roles_dna_methylation_mammalian_development_disease.md)
 
 - [DNA methylation loss in late-replicating domains is linked to mitotic cell division](src/epigenetics/dna_methylation_loss_late_replicating_domains_linked_mitotic_cell_division.md)
-- [Cell division drives DNA methylation loss in late-replicating domains in primary human cells](src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md)
+- [Cell division drives DNA methyl anion loss in late-replicating domains in primary human cells](src/epigenetics/cell_division_drives_dna_methylation_loss_late_replicating_domains.md)
 
 #### Chromatin organization
 
 - [RNA promotes the formation of spatial compartments in the nucleus](src/epigenetics/rna_promotes_formation_spatial_compartments_in_nucleus.md)
+
+- [Enhancer networks revealed by correlated DNAse hypersensitivity states of enhancers](src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md)
+
+- [Encode explained](src/epigenetics/chromatin/encode_explained.md)
+
+- [The long-range interaction landscape of gene promoters](src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md)
 
 ### Cell type vs cell state
 

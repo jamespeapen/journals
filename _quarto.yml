@@ -35,6 +35,10 @@ book:
       - part: "Chromatin organization"
         chapters:
           - src/epigenetics/rna_promotes_formation_spatial_compartments_in_nucleus.md
+          - src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md
+          - src/epigenetics/chromatin/encode_explained.md
+          - src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md
+
     - part: "Cell-type vs cell-state"
       chapters:
         - src/cell_type_state/quantifying_cell_state_densities_mellon.md
