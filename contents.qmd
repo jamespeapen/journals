@@ -29,6 +29,8 @@
 
 - [Enhancer networks revealed by correlated DNAse hypersensitivity states of enhancers](src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md)
 
+- [The long-range interaction landscape of gene promoters](src/epigenetics/chromatin/the_long-range_interaction_landscape_of_gene_promoters.md)
+
 ### Cell type vs cell state
 
 - [Quantifying cell-state densities in single-cell phenotypic landscapes using
