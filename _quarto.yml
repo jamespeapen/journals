@@ -35,6 +35,7 @@ book:
       - part: "Chromatin organization"
         chapters:
           - src/epigenetics/rna_promotes_formation_spatial_compartments_in_nucleus.md
+          - src/epigenetics/chromatin/enhancer_networks_revealed_by_correlated_dhs_states_of_enhancers.md
     - part: "Cell-type vs cell-state"
       chapters:
         - src/cell_type_state/quantifying_cell_state_densities_mellon.md
